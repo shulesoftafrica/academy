@@ -1,0 +1,14 @@
+# Environment-specific config — contains live DB credentials, must never be
+# committed. Each environment (local/production) keeps its own copy in place;
+# database.php.example documents the required shape for a fresh setup.
+application/config/database.php
+
+# Runtime/user data — not source code, never managed by git. The live
+# server's copies are authoritative and must never be overwritten by a
+# deploy pull.
+uploads/
+backups/
+
+# OS junk
+.DS_Store
+Thumbs.db
