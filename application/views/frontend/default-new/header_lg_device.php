@@ -78,6 +78,16 @@
           </ul>
         </li>
       </ul>
+
+      <!-- Skills Assessment -->
+      <ul class="navbar-nav main-nav-wrap mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link header-dropdown bg-white text-dark fw-600 text-nowrap" href="<?php echo site_url('skills'); ?>">
+            <span><?php echo get_phrase('Skills'); ?></span>
+          </a>
+        </li>
+      </ul>
+
       <!-- Menu  -->
        <?php if(addon_status('course_bundle')): ?>
         <?php $header_menu_counter += 1; ?>

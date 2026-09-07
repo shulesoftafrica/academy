@@ -29,6 +29,25 @@
         </li>
 
         <?php if (has_permission('course')): ?>
+        <!-- Skills Assessment Management -->
+        <li class="side-nav-item<?php if (in_array($page_name, ['skills_dashboard','skills_list','skill_form','skill_categories','skill_competencies','assessment_pricing','assessment_reviews','assessment_review','assessment_credentials','skills_analytics','assessment_quality'])) echo ' active'; ?>">
+            <a href="javascript: void(0);" class="side-nav-link<?php if (in_array($page_name, ['skills_dashboard','skills_list','skill_form','skill_categories','skill_competencies','assessment_pricing','assessment_reviews','assessment_review','assessment_credentials','skills_analytics','assessment_quality'])) echo ' active'; ?>">
+                <i class="mdi mdi-certificate"></i>
+                <span> <?php echo get_phrase('Skills Assessment'); ?> </span>
+                <span class="menu-arrow"></span>
+            </a>
+            <ul class="side-nav-second-level" aria-expanded="false">
+                <li class="<?php if ($page_name == 'skills_dashboard') echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/dashboard'); ?>"><?php echo get_phrase('Dashboard'); ?></a></li>
+                <li class="<?php if (in_array($page_name, ['skills_list','skill_form','skill_competencies'])) echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/skills'); ?>"><?php echo get_phrase('Skills'); ?></a></li>
+                <li class="<?php if (in_array($page_name, ['assessments_list','assessment_form','questions_list','question_form'])) echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/assessments'); ?>"><?php echo get_phrase('Assessments'); ?></a></li>
+                <li class="<?php if (in_array($page_name, ['assessment_reviews','assessment_review'])) echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/reviews'); ?>"><?php echo get_phrase('Review Queue'); ?></a></li>
+                <li class="<?php if ($page_name == 'assessment_credentials') echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/credentials'); ?>"><?php echo get_phrase('Credentials'); ?></a></li>
+                <li class="<?php if (in_array($page_name, ['skills_analytics','assessment_quality'])) echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/analytics'); ?>"><?php echo get_phrase('Analytics'); ?></a></li>
+                <li class="<?php if ($page_name == 'skill_categories') echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/categories'); ?>"><?php echo get_phrase('Categories'); ?></a></li>
+                <li class="<?php if ($page_name == 'assessment_pricing') echo 'active'; ?>"><a href="<?php echo site_url('skill_admin/pricing'); ?>"><?php echo get_phrase('Pricing'); ?></a></li>
+            </ul>
+        </li>
+
         <li class="side-nav-item<?php if ($page_name == 'courses' || $page_name == 'course_add' || $page_name == 'course_edit' || $page_name == 'categories' || $page_name == 'category_add' || $page_name == 'category_edit' || $page_name == 'coupons' || $page_name == 'coupon_add' || $page_name == 'coupon_edit' || $page_name == 'add_bundle' || $page_name == 'manage_course_bundle' || $page_name == 'edit_bundle' || $page_name == 'active_bundle_subscription_report' || $page_name == 'expire_bundle_subscription_report' || $page_name == 'bundle_invoice') {
         echo 'active';
 }

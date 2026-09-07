@@ -396,9 +396,9 @@
 
 .pagenation .active,
 .page-item.active .page-link {
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     color: #fff;
-    box-shadow: 0px 7px 18px -8px #754ffe;
+    box-shadow: 0px 7px 18px -8px #0e9f8e;
 }
 
 .page-item:last-child:not(.active) .page-link,
@@ -565,7 +565,7 @@
       position: absolute;
       width: 1.5px;
       height: 45px;
-      background-color: #754ffe58;
+      background-color: #0e9f8e58;
       left: -14px;
       top: 8px;
     }
@@ -626,7 +626,7 @@ ul.step-down li::before {
     position: absolute;
     width: 1.5px;
     height: calc(100% + 28px);
-    background-color: #754ffe58;
+    background-color: #0e9f8e58;
     left: -14px;
     top: 8px;
 }
@@ -759,7 +759,7 @@ ul.step-down li:last-child::before {
 }
 
 .blog-search-input.form-control:focus {
-    border-color: #754ffe !important;
+    border-color: #0e9f8e !important;
 }
 
 /*End Blog page*/
@@ -1436,13 +1436,13 @@ ul.step-down li:last-child::before {
 
 
 .btn-fill {
-    border: 1px solid #754FFE !important;
+    border: 1px solid #0e9f8e !important;
     transition: .5s;
     padding: 12px 30px;
 }
 
 .btn-fill:hover {
-    background: #754FFE;
+    background: #0e9f8e;
     color: #fff;
 }
 
@@ -1457,7 +1457,7 @@ ul.step-down li:last-child::before {
 }
 
 .follow-btn {
-    border: 1px solid #754FFE !important;
+    border: 1px solid #0e9f8e !important;
     font-size: 13px;
     padding: 8px 30px;
     transition: .5s;
@@ -1465,7 +1465,7 @@ ul.step-down li:last-child::before {
 }
 
 .follow-btn:hover {
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     color: #fff;
 }
 
@@ -1486,7 +1486,7 @@ ul.step-down li:last-child::before {
 }
 
 .ctBtn {
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     padding: 7px 18px;
     border-radius: 5px;
     color: #fff !important;

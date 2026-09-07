@@ -1,10 +1,39 @@
 <?php include 'home_elegant_assets.php'; ?>
 
+<!-- ShuleSoft hero banner styling -->
+<style>
+.ss-hero-row{
+    position: relative;
+    background: #ffffff url('<?php echo base_url(); ?>assets/frontend/default-new/image/img/shulesoft-hero.jpg') no-repeat right center;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 480px;
+}
+/* white fade on the left so the headline stays legible over the image's open third */
+.ss-hero-row::before{
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.85) 44%, rgba(255,255,255,0) 68%);
+    z-index: 1;
+}
+.ss-hero-row > .col-lg-6:first-child{ position: relative; z-index: 2; }
+.ss-hero-row > .col-lg-6:nth-child(2){ display: none; } /* retire the old collage */
+.ss-hero-row .lms-hero-content2{ padding: 44px 12px; }
+/* keep the hero call-to-action on ShuleSoft teal */
+.ss-hero-row .lms1-btn-purple{ background-color: #0e9f8e !important; border-color: #0e9f8e !important; color: #fff !important; }
+@media (max-width: 991px){
+    .ss-hero-row{ min-height: 520px; background-position: 72% center; }
+    .ss-hero-row::before{ background: rgba(255,255,255,0.9); }
+    .ss-hero-row .lms-hero-content2{ padding: 32px 8px; }
+}
+@media (max-width: 575px){ .ss-hero-row{ min-height: 540px; } }
+</style>
 
 <!-- Corporate Training Hero Area Start -->
 <section class="lms-hero-section2 mb-100px">
     <div class="container">
-        <div class="row align-items-center gy-30px mb-80px">
+        <div class="row align-items-center gy-30px mb-80px ss-hero-row">
             <div class="col-lg-6">
                 <div class="lms-hero-content2">
                     <h1 class="title-9 fs-52px mb-12px"><?php echo site_phrase(get_frontend_settings('banner_title')); ?></h1>
@@ -125,39 +154,8 @@
                 </div>
             </div>
         </div>
-        <div class="row mb-100px">
-            <div class="col-12">
-                <!-- Swiper -->
-                <div class="swiper brandSlider brandSlider1-height">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-slide1">
-                                <img class="logo" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/brand1.png" alt="">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-slide1">
-                                <img class="logo" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/brand2.png" alt="">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-slide1">
-                                <img class="logo" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/brand3.png" alt="">
-
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-slide1">
-                                <img class="logo" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/brand4.png" alt="">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Partner/university logo strip removed: the placeholder logos (Chicago,
+             Duke, Texas, Stanford) implied endorsements ShuleSoft does not have. -->
     </div>
 </section>
 <!-- Corporate Training Hero Area End -->
@@ -430,6 +428,14 @@
 </section>
 <?php endif; ?>
 <!--Courses Card Design 1 End -->
+
+<!-- ShuleSoft newsletter / call-to-action banner -->
+<section class="container mb-100px">
+    <a href="<?php echo site_url('home/registration'); ?>" class="d-block" aria-label="<?php echo get_phrase('Join ShuleSoft Academy'); ?>">
+        <img loading="lazy" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/shulesoft/newsletter.jpg"
+             alt="Keep Learning. Keep Growing." class="img-fluid w-100" style="border-radius:20px;">
+    </a>
+</section>
 
 <!-- Why Choose Area Start -->
 <?php

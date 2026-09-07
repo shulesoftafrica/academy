@@ -724,6 +724,54 @@ class User_model extends CI_Model
         }
     }
 
+    /**
+     * Upsert the local Academy shadow account for a resolved ShuleSoft-community
+     * member. Keyed on the durable `sid` (falls back to email when sid is null) so
+     * a member who later changes email/phone maps to the SAME Academy account.
+     * Returns academy.users.id. Never overwrites an approved instructor flag.
+     *
+     * @param array $profile output of Community_model::resolve()
+     */
+    function provision_community_user($profile)
+    {
+        $sid   = !empty($profile['sid']) ? (int) $profile['sid'] : null;
+        $email = strtolower(trim($profile['email']));
+
+        $existing = null;
+        if ($sid) {
+            $existing = $this->db->get_where('users', ['sid' => $sid])->row();
+        }
+        if (!$existing && $email !== '') {
+            $existing = $this->db->get_where('users', ['email' => $email])->row();
+        }
+
+        $name  = trim((string) ($profile['display_name'] ?? ''));
+        $parts = $name !== '' ? preg_split('/\s+/', $name, 2) : ['', ''];
+
+        $data = [
+            'first_name'       => $parts[0] ?? '',
+            'last_name'        => $parts[1] ?? '',
+            'email'            => $email,
+            'phone'            => $profile['phone'] ?? '',
+            'role_id'          => !empty($profile['is_admin']) ? 1 : 2,
+            'status'           => 1,
+            'sid'              => $sid,
+            'community_source' => implode(',', $profile['sources'] ?? []),
+            'is_career_person' => (!empty($profile['is_teacher']) || !empty($profile['is_job_seeker'])) ? 1 : 0,
+        ];
+
+        if ($existing) {
+            $this->db->where('id', $existing->id)->update('users', $data); // keep existing is_instructor/password
+            return $existing->id;
+        }
+
+        $data['is_instructor'] = 0;                              // teachers must still apply
+        $data['password']      = sha1(random_bytes(20));         // unusable — OTP only
+        $data['date_added']    = time();
+        $this->db->insert('users', $data);
+        return $this->db->insert_id();
+    }
+
     function check_session_data($user_type = ""){
         $this->remove_garbage_collection();
 

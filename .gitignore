@@ -3,11 +3,23 @@
 # database.php.example documents the required shape for a fresh setup.
 application/config/database.php
 
+# ShuleSoft community auth — notification + WhatsApp API tokens. Never commit.
+application/config/shulesoft_auth.php
+
 # Runtime/user data — not source code, never managed by git. The live
 # server's copies are authoritative and must never be overwritten by a
 # deploy pull.
 uploads/
 backups/
+
+# Runtime logs — may contain emails, tokens and API response bodies. Never commit.
+application/logs/*.php
+application/logs/*.html
+
+# Runtime billing caches — billing_token.json holds a live OAuth access token
+# (secret); the product cache is per-environment runtime state, not source.
+application/cache/billing_token.json
+application/cache/billing_assessment_product.json
 
 # OS junk
 .DS_Store

@@ -682,9 +682,10 @@ class Crud_model extends CI_Model
         $category_details          = $this->get_category_details_by_id($this->input->post('sub_category_id'))->row_array();
         $data['category_id']       = $category_details['parent'];
         $data['requirements']      = $requirements;
-        $data['price']             = $this->input->post('price');
+        // price columns are numeric; an empty field must be NULL on PostgreSQL (not '')
+        $data['price']             = is_numeric($this->input->post('price')) ? $this->input->post('price') : null;
         $data['discount_flag']     = $this->input->post('discount_flag');
-        $data['discounted_price']  = $this->input->post('discounted_price');
+        $data['discounted_price']  = is_numeric($this->input->post('discounted_price')) ? $this->input->post('discounted_price') : null;
         $data['level']             = $this->input->post('level');
         $data['is_free_course']    = $this->input->post('is_free_course');
         $data['publish_date']      = $this->input->post('publish_date');
@@ -784,9 +785,10 @@ class Crud_model extends CI_Model
 
         $data['requirements']     = '[]';
         $data['faqs']             = json_encode([]);
-        $data['price']            = $this->input->post('price');
+        // price columns are numeric; an empty field must be NULL on PostgreSQL (not '')
+        $data['price']            = is_numeric($this->input->post('price')) ? $this->input->post('price') : null;
         $data['discount_flag']    = $this->input->post('discount_flag');
-        $data['discounted_price'] = $this->input->post('discounted_price');
+        $data['discounted_price'] = is_numeric($this->input->post('discounted_price')) ? $this->input->post('discounted_price') : null;
         $data['level']            = $this->input->post('level');
         $data['is_free_course']   = $this->input->post('is_free_course');
 
@@ -887,9 +889,10 @@ class Crud_model extends CI_Model
             $data['expiry_period'] = null;
         }
 
-        $data['price']            = $this->input->post('price');
+        // price columns are numeric; an empty field must be NULL on PostgreSQL (not '')
+        $data['price']            = is_numeric($this->input->post('price')) ? $this->input->post('price') : null;
         $data['discount_flag']    = $this->input->post('discount_flag');
-        $data['discounted_price'] = $this->input->post('discounted_price');
+        $data['discounted_price'] = is_numeric($this->input->post('discounted_price')) ? $this->input->post('discounted_price') : null;
         $data['level']            = $this->input->post('level');
         $data['video_url']        = $this->input->post('course_overview_url');
 
@@ -1814,7 +1817,8 @@ class Crud_model extends CI_Model
 
         $data['date_added'] = strtotime(date('D, d-M-Y'));
         $data['summary']    = htmlspecialchars_(remove_js($this->input->post('summary', false)));
-        $data['is_free']    = htmlspecialchars_($this->input->post('free_lesson') ?? "");
+        // is_free is an integer flag (0/1); an unchecked checkbox posts '' which is invalid for integer on PostgreSQL
+        $data['is_free']    = $this->input->post('free_lesson') == 1 ? 1 : 0;
 
         //video caption
         if (isset($_FILES['caption']) && ! empty($_FILES['caption']['name'])) {

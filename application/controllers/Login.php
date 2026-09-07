@@ -27,46 +27,136 @@ class Login extends CI_Controller
         //Check custom session data
         $this->user_model->check_session_data('login');
 
-        $page_data['page_name'] = 'login';
+        $page_data['page_name']  = 'login';
         $page_data['page_title'] = site_phrase('login');
+        // Two-step OTP state: step 2 (enter code) once an identifier is pending, else step 1.
+        $page_data['otp_step']       = $this->session->userdata('otp_identifier') ? 2 : 1;
+        $page_data['otp_identifier'] = $this->session->userdata('otp_identifier');
+        $page_data['otp_channel']    = $this->session->userdata('otp_channel');
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
+    // Public signup is disabled — accounts are provisioned automatically for ShuleSoft-community members on OTP login.
     public function sign_up()
     {
-        if ($this->session->userdata('admin_login')) {
-            redirect(site_url('admin'), 'refresh');
-        } elseif ($this->session->userdata('user_login')) {
-            redirect(site_url('user'), 'refresh');
-        }
-        $page_data['page_name'] = 'sign_up';
-        $page_data['page_title'] = site_phrase('sign_up');
-        $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
+        $this->session->set_flashdata('error_message', get_phrase('Public sign up is disabled. Log in with your ShuleSoft email or phone.'));
+        redirect(site_url('login'), 'refresh');
     }
 
 
+    // Password login is disabled — the platform is OTP-only for ShuleSoft-community members.
     public function validate_login($from = "")
     {
-        if ($this->crud_model->check_recaptcha() == false && (get_frontend_settings('recaptcha_status') == true || get_frontend_settings('recaptcha_status_v3') == true)) {
-            $this->session->set_flashdata('error_message', get_phrase('recaptcha_verification_failed'));
+        redirect(site_url('login'), 'refresh');
+    }
+
+    /**
+     * Step 1 — the user submits an email or WhatsApp phone. We first confirm they are a
+     * ShuleSoft-community member (no code is sent to non-members), then deliver an OTP.
+     */
+    public function request_otp()
+    {
+        $identifier = trim((string) $this->input->post('identifier'));
+        if ($identifier === '') {
+            $this->session->set_flashdata('error_message', get_phrase('Please enter your email or phone number.'));
             redirect(site_url('login'), 'refresh');
         }
 
-        $email = $this->input->post('email');
-        $password = $this->input->post('password');
-        $credential = array('email' => $email, 'password' => sha1($password), 'status' => 1);
+        $is_email = (strpos($identifier, '@') !== false);
 
-        // Checking login credential for admin
-        $query = $this->db->get_where('users', $credential);
-
-        if ($query->num_rows() > 0) {
-            $row = $query->row();
-            $this->user_model->new_device_login_tracker($row->id);
-            $this->user_model->set_login_userdata($row->id);
-        } else {
-            $this->session->set_flashdata('error_message', get_phrase('invalid_login_credentials'));
+        // Membership gate — reject non-members politely, without sending a code.
+        $this->load->model('community_model');
+        $profile = $this->community_model->resolve($is_email ? $identifier : '', $is_email ? '' : $identifier);
+        if (! $profile['found']) {
+            $this->session->set_flashdata('error_message', get_phrase('You must belong to the ShuleSoft community (ShuleSoft, Talent or SafariBook) to use this platform.'));
             redirect(site_url('login'), 'refresh');
         }
+
+        // Member — send the OTP. For a phone login, also copy the code to their known email.
+        $this->load->library('otp_service');
+        $extra_email = (! $is_email && ! empty($profile['email'])) ? $profile['email'] : null;
+        $this->otp_service->send($identifier, 'login', $extra_email);
+
+        $this->session->set_userdata('otp_identifier', $identifier);
+        $this->session->set_userdata('otp_channel', $is_email ? 'email' : 'whatsapp');
+        $this->session->set_flashdata('flash_message', get_phrase('We have sent a verification code to your ') . ($is_email ? get_phrase('email') : 'WhatsApp') . '.');
+        redirect(site_url('login'), 'refresh');
+    }
+
+    /**
+     * Step 2 — verify the code, resolve the role, provision the local shadow account,
+     * and establish the session.
+     */
+    public function verify_otp()
+    {
+        $identifier = (string) $this->session->userdata('otp_identifier');
+        $code       = trim((string) $this->input->post('code'));
+        if ($identifier === '') {
+            redirect(site_url('login'), 'refresh');
+        }
+
+        $this->load->library('otp_service');
+        $result = $this->otp_service->verify($identifier, $code, 'login');
+        if ($result !== 'success') {
+            $messages = [
+                'invalid_code'       => 'The code you entered is incorrect. Please try again.',
+                'too_many_attempts'  => 'Too many attempts. Please request a new code.',
+                'expired_or_missing' => 'This code has expired. Please request a new one.',
+            ];
+            $this->session->set_flashdata('error_message', get_phrase($messages[$result] ?? 'Verification failed.'));
+            redirect(site_url('login'), 'refresh');
+        }
+
+        // Re-resolve (authoritative) → provision → login.
+        $is_email = (strpos($identifier, '@') !== false);
+        $this->load->model('community_model');
+        $profile = $this->community_model->resolve($is_email ? $identifier : '', $is_email ? '' : $identifier);
+        if (! $profile['found']) {
+            $this->session->set_flashdata('error_message', get_phrase('You must belong to the ShuleSoft community to use this platform.'));
+            redirect(site_url('login'), 'refresh');
+        }
+
+        $user_id = $this->user_model->provision_community_user($profile);
+
+        // A ShuleSoft teacher who has not yet been approved as an instructor is nudged to apply.
+        if (! empty($profile['is_teacher'])) {
+            $u = $this->db->get_where('users', ['id' => $user_id])->row();
+            if ($u && (int) $u->is_instructor !== 1) {
+                $this->session->set_flashdata('flash_message', get_phrase('As a teacher you can apply to become an instructor from your dashboard.'));
+            }
+        }
+
+        $this->session->unset_userdata('otp_identifier');
+        $this->session->unset_userdata('otp_channel');
+        $this->user_model->set_login_userdata($user_id);   // sets session + redirects
+    }
+
+    /** Re-send a code to the pending identifier (session). */
+    public function resend_otp()
+    {
+        $identifier = (string) $this->session->userdata('otp_identifier');
+        if ($identifier === '') {
+            redirect(site_url('login'), 'refresh');
+        }
+        $is_email = (strpos($identifier, '@') !== false);
+        $this->load->model('community_model');
+        $profile = $this->community_model->resolve($is_email ? $identifier : '', $is_email ? '' : $identifier);
+        if (! $profile['found']) {
+            $this->reset_otp();
+        }
+        $this->load->library('otp_service');
+        $extra_email = (! $is_email && ! empty($profile['email'])) ? $profile['email'] : null;
+        $this->otp_service->send($identifier, 'login', $extra_email);
+        $this->session->set_flashdata('flash_message', get_phrase('A new code has been sent.'));
+        redirect(site_url('login'), 'refresh');
+    }
+
+    /** Clear the pending OTP so the user can enter a different email/phone. */
+    public function reset_otp()
+    {
+        $this->session->unset_userdata('otp_identifier');
+        $this->session->unset_userdata('otp_channel');
+        redirect(site_url('login'), 'refresh');
     }
 
     function new_login_confirmation($param1 = ""){

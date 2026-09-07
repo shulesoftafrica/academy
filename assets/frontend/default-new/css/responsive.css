@@ -60,7 +60,7 @@
     border: 1.5px solid #6e798a45;
     margin-top: 18px;
     margin-left: 0;
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     margin-bottom: 30px;
     padding: 6px 12px 6px 12px;
   }
@@ -151,7 +151,7 @@
   .btn-bar {
     font-size: 30px;
     margin-right: 12px;
-    color: #754FFE;
+    color: #0e9f8e;
   }
 
   .m-search-icon {
@@ -317,7 +317,7 @@
     border: 1.5px solid #6e798a45;
     margin-top: 18px;
     margin-left: 0;
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     margin-bottom: 30px;
     padding: 6px 12px 6px 12px;
   }
@@ -573,7 +573,7 @@
     border: 1.5px solid #6e798a45;
     margin-top: 18px;
     margin-left: 0;
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     margin-bottom: 30px;
     padding: 6px 12px 6px 12px;
   }
@@ -587,7 +587,7 @@
     border: 1.5px solid #6e798a45;
     margin-top: 18px;
     margin-left: 0;
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     margin-bottom: 30px;
     padding: 6px 12px 6px 12px;
   }
@@ -1663,7 +1663,7 @@
     border: 1.5px solid #6e798a45;
     margin-top: 18px;
     margin-left: 0;
-    background-color: #754FFE;
+    background-color: #0e9f8e;
     margin-bottom: 30px;
     padding: 6px 12px 6px 12px;
   }
@@ -1744,14 +1744,14 @@
   }
 
   .invoice-no .invoice-color {
-    color: #754FFE;
+    color: #0e9f8e;
     margin-right: 3px;
   }
 
   .invoice-bill .invoice-total h2 {
     font-size: 25px;
     font-weight: 600;
-    color: #754FFE;
+    color: #0e9f8e;
   }
 
   .invoice-2 .invoice-total {
