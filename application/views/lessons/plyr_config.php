@@ -2,6 +2,22 @@
 <script src="<?php echo base_url(); ?>assets/global/plyr/plyr.js"></script>
 <script>
     var player = new Plyr('#player', {
+        // Full control bar: a draggable seek/progress bar plus 10s rewind and
+        // fast-forward buttons, so learners can move back to any earlier part of
+        // the video and re-watch what they missed (Challenge 1).
+        controls: [
+            'play-large', 'restart', 'rewind', 'play', 'fast-forward',
+            'progress', 'current-time', 'duration', 'mute', 'volume',
+            'captions', 'settings', 'pip', 'airplay', 'fullscreen'
+        ],
+        // Playback-speed menu so dense lessons can be slowed down (0.5x–0.75x) or
+        // sped up — available from the settings (gear) icon (Challenge 1).
+        settings: ['captions', 'quality', 'speed'],
+        speed: { selected: 1, options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2] },
+        seekTime: 10, // rewind / fast-forward jump length, in seconds
+        // Keyboard shortcuts: ← / → seek 10s, 0-9 jump to %, etc.
+        keyboard: { focused: true, global: true },
+        tooltips: { controls: true, seek: true },
         youtube: {
             // Options for YouTube player
             controls: 1, // Show YouTube controls
