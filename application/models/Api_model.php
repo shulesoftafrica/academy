@@ -303,7 +303,7 @@ class Api_model extends CI_Model
 	public function login_get()
 	{
 		$userdata = array();
-		$credential = array('email' => $_GET['email'], 'password' => sha1($_GET['password']), 'status' => 1);
+		$credential = array('email' => $_GET['email'] ?? '', 'password' => sha1($_GET['password'] ?? ''), 'status' => 1);
 		$query = $this->db->get_where('users', $credential);
 		if ($query->num_rows() > 0) {
 			$row = $query->row_array();

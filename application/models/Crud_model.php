@@ -2952,8 +2952,9 @@ class Crud_model extends CI_Model
     public function get_ratings($ratable_type = "", $ratable_id = "", $is_sum = false)
     {
         if ($is_sum) {
+            // PostgreSQL rejects ORDER BY "id" next to SUM() without GROUP BY (broke the home and course pages)
             $this->db->select_sum('rating');
-            return $this->db->order_by('id', 'desc')->get_where('rating', ['ratable_type' => $ratable_type, 'ratable_id' => $ratable_id]);
+            return $this->db->get_where('rating', ['ratable_type' => $ratable_type, 'ratable_id' => $ratable_id]);
         } else {
             return $this->db->order_by('id', 'desc')->get_where('rating', ['ratable_type' => $ratable_type, 'ratable_id' => $ratable_id]);
         }
@@ -3145,7 +3146,7 @@ class Crud_model extends CI_Model
         if ($selected_category_id != "all") {
             $category_details = $this->get_category_details_by_id($selected_category_id)->row_array();
 
-            if ($category_details['parent'] > 0) {
+            if (($category_details['parent'] ?? 0) > 0) {
                 $category_type = 'sub_category';
             } else {
                 $category_type = 'parent_category';
@@ -3515,7 +3516,7 @@ class Crud_model extends CI_Model
     // multiple_choice_question crud functions
     public function manage_mcq_choice_question($quiz_id, $question_id, $action)
     {
-        if (sizeof($this->input->post('options')) != $this->input->post('number_of_options')) {
+        if (count((array) $this->input->post('options')) != $this->input->post('number_of_options')) {
             echo get_phrase('no_options_can_be_blank_and_there_has_to_be_atleast_one_answer');
             return;
         }
@@ -3859,7 +3860,8 @@ class Crud_model extends CI_Model
             $insert_data['completed_lesson']   = json_encode([$lesson_id]);
             $insert_data['course_progress']    = $course_progress;
             $insert_data['watching_lesson_id'] = $lesson_id;
-            $insert_data['date_added']         = $course_progress;
+            $insert_data['quiz_result']        = json_encode([]);
+            $insert_data['date_added']         = time();
             $this->db->insert('watch_histories', $insert_data);
         }
 
@@ -4290,6 +4292,10 @@ class Crud_model extends CI_Model
                     $data['course_id']          = $course_id;
                     $data['student_id']         = $user_id;
                     $data['watching_lesson_id'] = $lesson_id;
+                    // PostgreSQL enforces the NOT NULL columns that MySQL silently defaulted
+                    $data['completed_lesson']   = json_encode([]);
+                    $data['course_progress']    = 0;
+                    $data['quiz_result']        = json_encode([]);
                     $data['date_added']         = time();
                     $this->db->insert('watch_histories', $data);
                 endif;

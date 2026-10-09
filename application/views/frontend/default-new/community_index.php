@@ -45,7 +45,7 @@
                         <div class="create-post-card">
                             <div class="create-post-body">
                                 <div class="d-flex align-items-center mb-2">
-                                    <img src="<?php echo $this->user_model->get_user_image_url($user['id']) ?? ''; ?>" class="post-user-img">
+                                    <img src="<?php echo $this->user_model->get_user_image_url($user['id'] ?? 0) ?? ''; ?>" class="post-user-img">
                                     <div><strong><?php echo $user['first_name'] ?? ''; ?></strong></div>
                                 </div>
                                 <textarea name="description" class="form-control post-textarea" placeholder="Share your thoughts with the community..."></textarea>

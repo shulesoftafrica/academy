@@ -258,9 +258,9 @@ $course_details = $this->crud_model->get_course_by_id($course_id)->row_array();
                                                             ?>
                                                                 <?php $instructor_details = $this->user_model->get_instructor($instructor_id)->row_array(); ?>
                                                                 <div class="m-2">
-                                                                    <img class="rounded-circle" src="<?php echo $this->user_model->get_user_image_url($instructor_details['id']);; ?>" height="30px" alt="">
+                                                                    <img class="rounded-circle" src="<?php echo $this->user_model->get_user_image_url($instructor_details['id'] ?? 0); ?>" height="30px" alt="">
                                                                     <span style="font-weight: 700; font-size: 15px; vertical-align: sub; margin-left: 6px;">
-                                                                        <?php echo html_escape($instructor_details['first_name'] . ' ' . $instructor_details['last_name']); ?>
+                                                                        <?php echo html_escape(($instructor_details['first_name'] ?? '') . ' ' . ($instructor_details['last_name'] ?? '')); ?>
                                                                     </span>
                                                                     <?php if (count($instructor_ids) > 1 && $course_details['creator'] != $instructor_id) : ?>
                                                                         <a class="btn text-danger mt-1" href="javascript:void(0)" onclick="confirm_modal('<?php echo site_url('admin/remove_an_instructor/' . $course_details['id'] . '/' . $instructor_details['id']); ?>');"> <i class="mdi mdi-delete"></i> <?php echo get_phrase('Remove'); ?></a>

@@ -104,7 +104,7 @@
                                         <label class="text-dark fw-600"><?php echo site_phrase('add_your_linkedin_link'); ?></label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text"><i class="fab fa-linkedin"></i></span>
-                                            <input type="text" class="form-control bg-white-2 text-14px" maxlength="60" name="linkedin_link" placeholder="<?php echo site_phrase('linkedin_link'); ?>" value="<?php echo $social_links['linkedin']; ?>">
+                                            <input type="text" class="form-control bg-white-2 text-14px" maxlength="60" name="linkedin_link" placeholder="<?php echo site_phrase('linkedin_link'); ?>" value="<?php echo $social_links['linkedin'] ?? ''; ?>">
                                         </div>
                                     </div>
 

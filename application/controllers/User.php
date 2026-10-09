@@ -967,7 +967,7 @@ class User extends CI_Controller
         $completed_lessons = $this->crud_model->get_watch_histories($user_id, $lesson['course_id'])->row_array();
         $course_details = $this->crud_model->get_course_by_id($lesson['course_id'])->row_array();
         $quiz_results = $this->db->where('user_id', $user_id)->where('quiz_id', $quiz_id)->order_by('quiz_result_id', 'DESC')->get('quiz_results')->row_array();
-        $completed_lessons = json_decode($completed_lessons['completed_lesson'], true);
+        $completed_lessons = json_decode($completed_lessons['completed_lesson'] ?? '[]', true);
         if (!is_array($completed_lessons) || !in_array($quiz_id, $completed_lessons)) {
 
             //check passing mark

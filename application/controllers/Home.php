@@ -1386,6 +1386,9 @@ class Home extends CI_Controller
             $data['watching_lesson_id'] = $quiz_id;
             $data['date_added']         = time();
             $data['quiz_result']        = json_encode([$quiz_id => $obtained_marks]);
+            // PostgreSQL enforces the NOT NULL columns that MySQL silently defaulted
+            $data['completed_lesson']   = json_encode([]);
+            $data['course_progress']    = 0;
             $this->db->insert('watch_histories', $data);
         }
     }
@@ -1746,7 +1749,7 @@ class Home extends CI_Controller
     public function subscribe_to_our_newsletter()
     {
         $data['email'] = $this->input->post('email');
-        $referrer_url  = $_SERVER['HTTP_REFERER'];
+        $referrer_url  = $_SERVER['HTTP_REFERER'] ?? site_url();
 
         if ($this->crud_model->check_recaptcha() == false && get_frontend_settings('recaptcha_status_v3') == true) {
             $response['error'] = get_phrase('recaptcha_verification_failed');
@@ -2313,8 +2316,13 @@ class Home extends CI_Controller
         $this->load->view('frontend/' . get_frontend_settings('theme') . '/index', $page_data);
     }
 
-    public function add_comment($post_id)
+    public function add_comment($post_id = '')
     {
+        if ($post_id === '') {
+            echo json_encode(['status' => 'error', 'message' => 'Post not specified']);
+            return;
+        }
+
         if (! $this->session->userdata('user_id')) {
 
             echo json_encode([

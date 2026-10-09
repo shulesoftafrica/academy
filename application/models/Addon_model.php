@@ -69,6 +69,13 @@ class Addon_model extends CI_Model
 			$config_str = file_get_contents('uploads/addons/' . $unzipped_file_name . '/config.json');
 			$config = json_decode($config_str, true);
 
+			// A missing/invalid config.json used to reach INSERT INTO addons with all-NULL values
+			if (!is_array($config) || empty($config['name']) || empty($config['unique_identifier'])) {
+				$this->remove_from_uploads($unzipped_file_name);
+				$this->session->set_flashdata('error_message', get_phrase('this_addon_package_is_invalid'));
+				redirect(site_url('admin/addon'), 'refresh');
+			}
+
 			// CREATE DIRECTORIES
 			if (!empty($config['directories'])) {
 				foreach ($config['directories'] as $directory) {

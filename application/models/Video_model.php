@@ -112,7 +112,8 @@ class Video_model extends CI_Model {
 			$video_id = $this->get_youtube_video_id($url);
 			$hash = json_decode(file_get_contents("https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=".$video_id."&key=".$youtube_api_key.""));
 
-			if (!$hash) {
+			// Unknown id / wrong API key: the API answers with an empty items list
+			if (!$hash || empty($hash->items)) {
 				return;
 			}
 			//header("Content-Type: text/plain");
