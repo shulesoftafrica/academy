@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="ShuleSoft Module Training">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#g)"/>
+<circle cx="360" cy="40" r="168" fill="#fff" opacity=".07"/>
+<circle cx="20" cy="380" r="136" fill="#fff" opacity=".07"/>
+<g fill="#fff" transform="translate(105 105) scale(0.95)" opacity=".95"><rect x="22" y="22" width="68" height="68" rx="14"/><rect x="110" y="22" width="68" height="68" rx="14" opacity=".75"/><rect x="22" y="110" width="68" height="68" rx="14" opacity=".75"/><rect x="110" y="110" width="68" height="68" rx="14"/></g>
+
+</svg>

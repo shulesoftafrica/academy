@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Foundation Course">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5a4"/><stop offset="1" stop-color="#1e40af"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#g)"/>
+<circle cx="360" cy="40" r="168" fill="#fff" opacity=".07"/>
+<circle cx="20" cy="380" r="136" fill="#fff" opacity=".07"/>
+<g fill="#fff" transform="translate(105 105) scale(0.95)" opacity=".95"><path d="M16 46h74c8 0 10 6 10 12v104c-4-8-12-10-20-10H16z"/><path d="M184 46h-74c-8 0-10 6-10 12v104c4-8 12-10 20-10h64z"/><g fill="rgba(0,0,0,.28)"><rect x="32" y="66" width="48" height="7" rx="3"/><rect x="32" y="84" width="48" height="7" rx="3"/><rect x="32" y="102" width="40" height="7" rx="3"/><rect x="120" y="66" width="48" height="7" rx="3"/><rect x="120" y="84" width="48" height="7" rx="3"/><rect x="120" y="102" width="40" height="7" rx="3"/></g></g>
+
+</svg>
