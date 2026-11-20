@@ -26,7 +26,7 @@
                        </div>
                        <div class="uv-hero1-images">
                            <div class="uv-hero1-banner">
-                               <!-- <img class="banner" loading="lazy" src="<?php echo base_url("uploads/system/" . get_current_banner('banner_image')); ?>" alt="" /> -->
+                               <!-- <img class="banner" loading="lazy" src="<?php echo safe_upload_url("uploads/system/" . get_current_banner('banner_image'), 'image'); ?>" alt="" /> -->
                                <img class="banner" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/unv-hero-banner1.webp" alt="">
                            </div>
                            <div class="uv-hero1-userWrap">
@@ -131,7 +131,7 @@
                <div class="col">
                    <a href="<?php echo site_url('home/courses?category=' . $category_details['slug']); ?>" class="lms-category-type1">
                        <figure class="category-type1-banner">
-                           <img class="banner" src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail']); ?>" alt="">
+                           <img class="banner" src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="">
                            <span class="category-type1-icon">
                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                    <path
@@ -424,7 +424,7 @@
                            </div>
                            <div class="col-lg-3 col-md-5 col-10 order-1 order-md-1">
                                <div class="speech-item-img">
-                                   <img loading="lazy" src="<?php echo site_url('uploads/system/motivations/' . $motivational_speech['image']) ?>" alt="">
+                                   <img loading="lazy" src="<?php echo safe_upload_url('uploads/system/motivations/' . $motivational_speech['image'], 'avatar') ?>" alt="">
                                </div>
                            </div>
                        </div>
@@ -529,7 +529,7 @@
 	                       <a href="<?php echo site_url('blog/details/' . slugify($latest_blog['title']) . '/' . $latest_blog['blog_id']); ?>" class="lms4-bCard-banner">
 	                           <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                        if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                           $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                           $blog_thumbnail = default_image_url('blog');
                                    endif; ?>
 	                           <img class="banner" src="<?php echo $blog_thumbnail; ?>" alt="">
 	                       </a>

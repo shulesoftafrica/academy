@@ -27,7 +27,7 @@
                                             <?php if(file_exists($blog_thumbnail) && is_file($blog_thumbnail)): ?>
                                                 <img loading="lazy" src="<?php echo base_url($blog_thumbnail); ?>" alt="<?php echo $blog['title']; ?>">
                                             <?php else: ?>
-                                                <img loading="lazy" src="<?php echo base_url('uploads/blog/thumbnail/placeholder.png'); ?>" alt="<?php echo $blog['title']; ?>">
+                                                <img loading="lazy" src="<?php echo default_image_url('blog'); ?>" alt="<?php echo $blog['title']; ?>">
                                             <?php endif; ?>
                                         </div>
                                         <div class="courses-card-image-text position-absolute">

@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container">
     <a class="navbar-brand logo pt-0" href="<?php echo site_url(); ?>">
-      <img loading="lazy" src="<?php echo site_url('uploads/system/'.get_frontend_settings('dark_logo')) ?>" alt="Logo" />
+      <img loading="lazy" src="<?php echo safe_upload_url('uploads/system/'.get_frontend_settings('dark_logo'), 'logo') ?>" alt="Logo" />
     </a>
     
     <!-- Mobile Offcanves  Icon Show -->

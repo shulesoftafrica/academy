@@ -396,6 +396,83 @@ if (!function_exists('slugify')) {
     }
 }
 
+// ---------------------------------------------------------------------------------------------------------------------
+// Pictures that may be missing.
+// uploads/ is runtime data (git-ignored) and was not carried over to this server, so a picture named in the database
+// (logo, category, course, user, blog) can point to a file that does not exist: the page then shows a broken image, or an
+// HTML error page that is served with status 200. The defaults live in assets/ (committed) and are used instead.
+// ---------------------------------------------------------------------------------------------------------------------
+if (!function_exists('default_image_url')) {
+    /**
+     * URL of the default picture for a kind of image.
+     * $type: logo | favicon | avatar | blog | category | course | image.  $slug picks a specific default when one exists
+     * (a category or course slug), otherwise the generic default of that type is returned.
+     */
+    function default_image_url($type = 'image', $slug = '')
+    {
+        $dir  = 'assets/frontend/default-new/image/defaults/';
+        $slug = preg_replace('/[^a-z0-9\-]+/', '', strtolower((string) $slug));
+
+        if ($slug !== '' && in_array($type, ['category', 'course'], true)) {
+            $specific = $dir . ($type === 'category' ? 'categories/' : 'courses/') . $slug . '.svg';
+            if (is_file(FCPATH . $specific)) {
+                return base_url($specific);
+            }
+        }
+
+        $generic = [
+            'logo'     => 'logo.png',
+            'favicon'  => 'favicon.png',
+            'avatar'   => 'avatar.svg',
+            'blog'     => 'blog.svg',
+            'category' => 'category.svg',
+            'course'   => 'course.jpg',
+            'image'    => 'image.svg',
+        ];
+
+        return base_url($dir . ($generic[$type] ?? $generic['image']));
+    }
+}
+
+if (!function_exists('safe_upload_url')) {
+    /**
+     * URL of a file under uploads/ when it really exists, otherwise the default picture of $default_type.
+     * An empty name, a folder path (ends with "/") or a zero-byte file counts as missing.
+     */
+    function safe_upload_url($relative_path, $default_type = 'image', $default_slug = '')
+    {
+        $relative_path = ltrim((string) $relative_path, '/');
+        $file          = FCPATH . $relative_path;
+
+        if ($relative_path !== '' && substr($relative_path, -1) !== '/' && is_file($file) && filesize($file) > 0) {
+            return base_url($relative_path);
+        }
+
+        return default_image_url($default_type, $default_slug);
+    }
+}
+
+if (!function_exists('category_image_url')) {
+    /**
+     * Picture of a category: its uploaded thumbnail (or the other thumbnail field) when the file exists, otherwise the
+     * default picture made for that category slug, otherwise the generic category picture.
+     */
+    function category_image_url($category, $field = 'thumbnail')
+    {
+        $category = (array) $category;
+        $other    = $field === 'thumbnail' ? 'sub_category_thumbnail' : 'thumbnail';
+
+        foreach ([$field, $other] as $key) {
+            $name = trim((string) ($category[$key] ?? ''));
+            if ($name !== '' && is_file(FCPATH . 'uploads/thumbnails/category_thumbnails/' . $name)) {
+                return base_url('uploads/thumbnails/category_thumbnails/' . $name);
+            }
+        }
+
+        return default_image_url('category', $category['slug'] ?? '');
+    }
+}
+
 if (!function_exists('get_video_extension')) {
     // Checks if a video is youtube, vimeo or any other
     function get_video_extension($url)

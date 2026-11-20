@@ -108,9 +108,9 @@
                 <a href="<?php echo site_url('home/courses?category=' . $category_details['slug']); ?>" class="d-block lms-2-card max-sml-350px-auto">
                     <div class="lms-2-card-image mb-14px">
                         <?php if ($category_details['sub_category_thumbnail'] && file_exists('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail'])): ?>
-                        <img src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail']); ?>" alt="">
+                        <img src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="">
                         <?php else: ?>
-                        <img src="<?php echo base_url(); ?>uploads/thumbnails/category_thumbnails/category-thumbnail.png" alt="">
+                        <img src="<?php echo default_image_url('category'); ?>" alt="">
                         <?php endif; ?>
                     </div>
                     <div class="mb-2px d-flex align-items-center justify-content-between gap-1">
@@ -453,7 +453,7 @@
                             <p class="subtitle-3 fs-15px lh-25px text-white"><?php echo nl2br($motivational_speech['description']); ?></p>
                         </div>
                         <div class="img-wrap-313px">
-                            <img loading="lazy" src="<?php echo site_url('uploads/system/motivations/' . $motivational_speech['image']) ?>" alt="" />
+                            <img loading="lazy" src="<?php echo safe_upload_url('uploads/system/motivations/' . $motivational_speech['image'], 'avatar') ?>" alt="" />
                         </div>
                     </div>
                 </div>
@@ -555,7 +555,7 @@
 	                    <a href="<?php echo site_url('blog/details/' . slugify($latest_blog['title']) . '/' . $latest_blog['blog_id']); ?>" class="d-block lms-2-blog-banner">
 	                        <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                     if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                        $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                        $blog_thumbnail = default_image_url('blog');
                                 endif; ?>
 	                        <img src="<?php echo $blog_thumbnail; ?>" alt="banner">
 	                    </a>

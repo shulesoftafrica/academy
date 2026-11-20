@@ -1023,7 +1023,15 @@ class Crud_model extends CI_Model
 
             return base_url() . 'uploads/thumbnails/course_thumbnails/' . $type . '_' . get_frontend_settings('theme') . '_' . $course_id . $last_modified . '.jpg';
         } else {
-            return base_url() . $course_media_placeholders[$type . '_placeholder'];
+            // No uploaded thumbnail: use the picture made for this course (by its slug), else the branded default course
+            // picture (this replaces the theme's grey "400 x 250" placeholder box).
+            $course = $this->get_course_by_id($course_id)->row_array();
+            $specific = default_image_url('course', slugify($course['title'] ?? ''));
+            if (strpos($specific, '/courses/') !== false) {
+                return $specific;
+            }
+
+            return default_image_url('course');
         }
     }
     public function get_lesson_thumbnail_url($lesson_id)
@@ -1032,7 +1040,7 @@ class Crud_model extends CI_Model
         if (file_exists('uploads/thumbnails/lesson_thumbnails/' . $lesson_id . '.jpg')) {
             return base_url() . 'uploads/thumbnails/lesson_thumbnails/' . $lesson_id . '.jpg';
         } else {
-            return base_url() . 'uploads/thumbnails/thumbnail.png';
+            return default_image_url('course');
         }
 
     }

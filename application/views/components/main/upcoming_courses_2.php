@@ -36,7 +36,7 @@
                         foreach ($upcoming_courses->result_array() as $upcoming_course):
                             $image_url = $upcoming_course['upcoming_image_thumbnail']
                                 ? 'uploads/thumbnails/upcoming_thumbnails/' . $upcoming_course['upcoming_image_thumbnail']
-                                : 'uploads/thumbnails/course_thumbnails/placeholder.png';
+                                : 'assets/frontend/default-new/image/defaults/course.jpg';
                         ?>
                             <div class="col-lg-4">
                                 <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($upcoming_course['title'])) . '/' . $upcoming_course['id']); ?>" class="course-item-one">

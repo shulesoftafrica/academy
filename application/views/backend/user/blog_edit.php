@@ -72,7 +72,7 @@
                                 	if(file_exists($blog_thumbnail) && is_file($blog_thumbnail)):
                                 		$blog_thumbnail = base_url($blog_thumbnail);
                                 	else:
-                                		$blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                		$blog_thumbnail = default_image_url('blog');
                                 	endif;
                                 ?>
 								<div class="js--image-preview" style="background-image: url('<?php echo $blog_thumbnail; ?>'); background-color: #F5F5F5; background-size: cover; background-position: center;"></div>

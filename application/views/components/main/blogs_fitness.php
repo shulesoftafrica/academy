@@ -23,7 +23,7 @@ if (!isset($home_fitness_assets)) {
                                 <a href="<?php echo site_url('blog/details/' . slugify($latest_blog['title']) . '/' . $latest_blog['blog_id']); ?>" class="d-block lms-2-blog-banner">
                                     <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                     if (!file_exists($blog_thumbnail) || !is_file($blog_thumbnail)):
-                                        $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                        $blog_thumbnail = default_image_url('blog');
                                     endif; ?>
                                     <img src="<?php echo $blog_thumbnail; ?>" alt="banner">
                                 </a>

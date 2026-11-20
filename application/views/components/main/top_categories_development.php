@@ -35,7 +35,7 @@
                <div class="col">
                    <a href="<?php echo site_url('home/courses?category=' . $category_details['slug']); ?>" class="lms-category-type2">
                        <figure class="category-type2-banner">
-                           <img class="banner" src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail']); ?>" alt="">
+                           <img class="banner" src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="">
                        </figure>
                        <h6 class="category-type2-title"><?php echo $category_details['name']; ?></h6>
                    </a>

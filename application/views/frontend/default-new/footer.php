@@ -8,7 +8,12 @@
                     <div class="col-12 col-md-4 col-xl-4">
                         <div class="ft2-logo-area">
                             <a href="<?php echo base_url('home'); ?>" class="lms2-footer-logo mb-3">
-                                <img width="180px" height="40px" loading="lazy" src="<?php echo base_url('uploads/system/' . get_frontend_settings('light_logo')); ?>">
+                                <?php
+                                    // the uploaded white logo, or (file missing) the default ShuleSoft logo on a white badge so it reads on the dark footer
+                                    $footer_logo = safe_upload_url('uploads/system/' . get_frontend_settings('light_logo'), 'logo');
+                                    $footer_logo_is_default = strpos($footer_logo, '/defaults/') !== false;
+                                ?>
+                                <img width="180" loading="lazy" src="<?php echo $footer_logo; ?>" alt="ShuleSoft Academy"<?php if ($footer_logo_is_default): ?> style="height:auto;background:#fff;border-radius:8px;padding:6px 12px"<?php endif; ?>>
                             </a>
                             <p><?php echo get_settings('website_description'); ?></p>
                             <h4 class="ft2-title mt-4 mb-4"><?php echo get_phrase('Contact_us'); ?></h4>

@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="lms-hero7-banner">
-                        <!-- <img class="banner" loading="lazy" src="<?php echo base_url("uploads/system/" . get_current_banner('banner_image')); ?>" alt="" /> -->
+                        <!-- <img class="banner" loading="lazy" src="<?php echo safe_upload_url("uploads/system/" . get_current_banner('banner_image'), 'image'); ?>" alt="" /> -->
                         <img class="banner" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/hero7-banner.webp" alt="">
                     </div>
                     <div class="lms-hero7-banner-shape">
@@ -380,7 +380,7 @@
 
                     $image_url = $upcoming_course['upcoming_image_thumbnail']
                         ? 'uploads/thumbnails/upcoming_thumbnails/' . $upcoming_course['upcoming_image_thumbnail']
-                        : 'uploads/thumbnails/course_thumbnails/placeholder.png';
+                        : 'assets/frontend/default-new/image/defaults/course.jpg';
                 ?>
 	            <li>
 	                <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($upcoming_course['title'])) . '/' . $upcoming_course['id']); ?>" class="upcoming-course-six">
@@ -851,7 +851,7 @@
 	                    <a href="<?php echo site_url('blog/details/' . slugify($latest_blog['title']) . '/' . $latest_blog['blog_id']); ?>" class="lms4-bCard-banner">
 	                        <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                     if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                        $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                        $blog_thumbnail = default_image_url('blog');
                                 endif; ?>
 	                        <img class="banner" src="<?php echo $blog_thumbnail; ?>" alt="">
 	                    </a>

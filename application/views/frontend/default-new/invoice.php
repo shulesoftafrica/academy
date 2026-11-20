@@ -19,7 +19,7 @@ $instructor_details = $this->user_model->get_all_user($course_details['user_id']
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                     <div class="invioce-logo d-flex justify-content-end">
-                        <a href="#"><img loading="lazy" src="<?php echo base_url('uploads/system/').get_frontend_settings('dark_logo');?>" alt="" style="height: 55px; width: auto;"></a> 
+                        <a href="#"><img loading="lazy" src="<?php echo safe_upload_url('uploads/system/'.get_frontend_settings('dark_logo'), 'logo');?>" alt="" style="height: 55px; width: auto;"></a> 
                     </div>
                 </div>
             </div>

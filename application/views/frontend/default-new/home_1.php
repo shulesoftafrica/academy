@@ -70,7 +70,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-12 order-md-2 order-1  order-lg-1 pt-0 pt-md-5 ">
                 <div class="EbannerRight">
                     <div class="Ebanner  animate__animated  animate__fadeInUp" data-wow-duration="1000" data-wow-delay="500">
-                        <img loading="lazy" width="100%" src="<?php echo base_url("uploads/system/" . get_current_banner('banner_image')); ?>">
+                        <img loading="lazy" width="100%" src="<?php echo safe_upload_url("uploads/system/" . get_current_banner('banner_image'), 'image'); ?>">
                     </div>
                 </div>
             </div>
@@ -395,15 +395,10 @@
                             $textColor = '#' . rand(100000, 999999);
                             // $bgColor = '#' . rand(100000, 999999);
                         ?>
-                        <?php if ($category_details['sub_category_thumbnail']): ?>
+                        <?php // always a picture: the uploaded thumbnail when the file exists, else the default made for this category ?>
                         <div class="cate-image">
-                            <img src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail']); ?>" alt="">
+                            <img src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="<?php echo html_escape($category_details['name']); ?>">
                         </div>
-                        <?php else: ?>
-                        <div class="cate-icon" style="color:<?php echo $textColor; ?>;">
-                            <i class="<?php echo $category_details['font_awesome_class']; ?>"></i>
-                        </div>
-                        <?php endif; ?>
 
                         <!-- <span class="category-hide-icon"><i class="fa-solid fa-angle-right"></i></span> -->
                         <div class="eText">
@@ -450,7 +445,7 @@
 	                    <?php
                                 $image_url = $upcoming_course['upcoming_image_thumbnail']
                                     ? 'uploads/thumbnails/upcoming_thumbnails/' . $upcoming_course['upcoming_image_thumbnail']
-                                    : 'uploads/thumbnails/course_thumbnails/placeholder.png';
+                                    : 'assets/frontend/default-new/image/defaults/course.jpg';
                             ?>
 	                    <div class="col-lg-4 col-md-6 col-sm-6    " data-wow-duration="500" data-wow-delay="300">
 	                        <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($upcoming_course['title'])) . '/' . $upcoming_course['id']); ?>"
@@ -852,7 +847,7 @@
                         </div>
                         <div class="col-lg-3 col-md-5 col-10 order-1 order-md-1">
                             <div class="speech-item-img">
-                                <img loading="lazy" src="<?php echo site_url('uploads/system/motivations/' . $motivational_speech['image']) ?>" alt="" />
+                                <img loading="lazy" src="<?php echo safe_upload_url('uploads/system/motivations/' . $motivational_speech['image'], 'avatar') ?>" alt="" />
                             </div>
                         </div>
                     </div>
@@ -998,7 +993,7 @@
 	                        <div class="courses-card-image">
 	                            <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                         if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                            $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                            $blog_thumbnail = default_image_url('blog');
                                     endif; ?>
 	                            <div class="courses-card-image ">
 	                                <img loading="lazy" src="<?php echo $blog_thumbnail; ?>">

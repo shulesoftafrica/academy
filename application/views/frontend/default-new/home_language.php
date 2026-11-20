@@ -7,7 +7,7 @@
         <div class="row mb-80px align-items-center gy-30px">
             <div class="col-lg-6 order-lg-2">
                 <div class="lms-hero5-banner ms-auto me-auto me-lg-0">
-                    <img class="banner" loading="lazy" src="<?php echo base_url("uploads/system/" . get_current_banner('banner_image')); ?>" alt="" />
+                    <img class="banner" loading="lazy" src="<?php echo safe_upload_url("uploads/system/" . get_current_banner('banner_image'), 'image'); ?>" alt="" />
                     <!-- <img class="banner" src="<?php echo base_url(); ?>assets/frontend/default-new/image/img/hero5-bannar.png" alt="location"> -->
                 </div>
             </div>
@@ -621,7 +621,7 @@
                     <a href="<?php echo site_url('blog/details/' . slugify($latest_blog['title']) . '/' . $latest_blog['blog_id']); ?>" class="lms2-bCard-banner">
                         <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                         if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                            $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                            $blog_thumbnail = default_image_url('blog');
                                     endif; ?>
                         <img class="banner" src="<?php echo $blog_thumbnail; ?>" alt="">
                     </a>

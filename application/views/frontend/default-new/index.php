@@ -21,8 +21,8 @@
 
 
 
-        <link rel="icon" href="<?php echo base_url('uploads/system/' . get_frontend_settings('favicon')); ?>" type="image/x-icon">
-        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url('uploads/system/' . get_frontend_settings('favicon')); ?>">
+        <link rel="icon" href="<?php echo safe_upload_url('uploads/system/' . get_frontend_settings('favicon'), 'favicon'); ?>" type="image/png">
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo safe_upload_url('uploads/system/' . get_frontend_settings('favicon'), 'favicon'); ?>">
 
         <?php include 'includes_top.php'; ?>
 
@@ -123,6 +123,36 @@
         </script>
 
         <?php echo get_frontend_settings('embed_code'); ?>
+
+        <!-- Safety net: any picture that still fails to load (missing upload, server error page) is swapped for the default one. -->
+        <script>
+        (function () {
+            var base = '<?php echo base_url('assets/frontend/default-new/image/defaults/'); ?>';
+            function fallbackFor(src) {
+                src = (src || '').toLowerCase();
+                if (/user_image|avatar|profile|instructor/.test(src)) return base + 'avatar.svg';
+                if (/category/.test(src)) return base + 'category.svg';
+                if (/blog|banner/.test(src)) return base + 'blog.svg';
+                if (/logo/.test(src)) return base + 'logo.png';
+                if (/thumbnail|course/.test(src)) return base + 'course.jpg';
+                return base + 'image.svg';
+            }
+            function swap(img) {
+                if (!img || img.getAttribute('data-fallback-done')) return;
+                img.setAttribute('data-fallback-done', '1');
+                img.removeAttribute('srcset');
+                img.src = fallbackFor(img.currentSrc || img.src);
+            }
+            document.addEventListener('error', function (e) {
+                if (e.target && e.target.tagName === 'IMG') swap(e.target);
+            }, true);
+            // pictures that already failed before this script ran
+            var all = document.images;
+            for (var i = 0; i < all.length; i++) {
+                if (all[i].complete && all[i].naturalWidth === 0 && all[i].getAttribute('src')) swap(all[i]);
+            }
+        })();
+        </script>
     </body>
 
 </html>

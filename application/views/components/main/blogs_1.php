@@ -15,7 +15,7 @@
                         <div class="courses-card-image">
                             <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                                 if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                                    $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                                    $blog_thumbnail = default_image_url('blog');
                                             endif; ?>
                             <div class="courses-card-image ">
                                 <img loading="lazy" src="<?php echo $blog_thumbnail; ?>">

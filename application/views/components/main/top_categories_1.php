@@ -21,15 +21,10 @@
                             $textColor = '#' . rand(100000, 999999);
                             // $bgColor = '#' . rand(100000, 999999);
                             ?>
-                             <?php if($category_details['sub_category_thumbnail']):?>
+                                <?php // always a picture: the uploaded thumbnail when the file exists, else the default made for this category ?>
                                 <div class="cate-image">
-                                   <img src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' .$category_details['sub_category_thumbnail']); ?>" alt="">
+                                   <img src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="<?php echo html_escape($category_details['name']); ?>">
                                  </div>
-                               <?php else:?>
-                                <div class="cate-icon"  style="color: <?php echo $textColor; ?>;">
-                                    <i class="<?php echo $category_details['font_awesome_class']; ?>"></i>
-                                </div>
-                             <?php endif;?>
                           
                             <!-- <span class="category-hide-icon"><i class="fa-solid fa-angle-right"></i></span> -->
                             <div class="eText">

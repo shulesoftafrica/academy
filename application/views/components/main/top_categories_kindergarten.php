@@ -32,7 +32,7 @@
             <div class="col">
                 <a href="<?php echo site_url('home/courses?category=' . $category_details['slug']); ?>" class="lms-category-type1">
                     <figure class="category-type1-banner">
-                        <img class="banner" src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail']); ?>" alt="">
+                        <img class="banner" src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="">
                         <span class="category-type1-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path

@@ -59,7 +59,7 @@
 						<label for="thumbnail"><?php echo get_phrase('blog_thumbnail'); ?></label>
 						<div class="wrapper-image-preview" style="margin-left: -6px;">
 							<div class="box" style="width: 300px;">
-								<div class="js--image-preview" style="background-image: url('<?php echo base_url('uploads/blog/thumbnail/placeholder.png') ?>'); background-color: #F5F5F5; background-size: cover; background-position: center;"></div>
+								<div class="js--image-preview" style="background-image: url('<?php echo default_image_url('blog') ?>'); background-color: #F5F5F5; background-size: cover; background-position: center;"></div>
 								<div class="upload-options">
 									<label for="thumbnail" class="btn"> <i class="mdi mdi-camera"></i> <?php echo get_phrase('choose_a_thumbnail'); ?> <br> <small>(800 x 500)</small> </label>
 									<input id="thumbnail" style="visibility:hidden;" type="file" class="image-upload" name="thumbnail" accept="image/*">

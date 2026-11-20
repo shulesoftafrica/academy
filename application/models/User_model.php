@@ -349,7 +349,8 @@ class User_model extends CI_Model
             resizeImage('uploads/user_image/' . $user_profile_image . '.jpg', 'uploads/user_image/optimized/', 220);
             return base_url() . 'uploads/user_image/' . $user_profile_image . '.jpg';
         }else{
-            return base_url() . 'uploads/user_image/placeholder.png';
+            // no photo, or the file is missing on this server: the default avatar (uploads/ is not part of the code)
+            return default_image_url('avatar');
         }
     }
 

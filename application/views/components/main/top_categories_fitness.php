@@ -21,9 +21,9 @@ if (!isset($home_fitness_assets)) {
                         <a href="<?php echo site_url('home/courses?category=' . $category_details['slug']); ?>" class="d-block lms-2-card max-sml-350px-auto">
                             <div class="lms-2-card-image mb-14px">
                                 <?php if ($category_details['sub_category_thumbnail'] && file_exists('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail'])): ?>
-                                    <img src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail']); ?>" alt="">
+                                    <img src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="">
                                 <?php else: ?>
-                                    <img src="<?php echo base_url(); ?>uploads/thumbnails/category_thumbnails/category-thumbnail.png" alt="">
+                                    <img src="<?php echo default_image_url('category'); ?>" alt="">
                                 <?php endif; ?>
                             </div>
                             <div class="mb-2px d-flex align-items-center justify-content-between gap-1">

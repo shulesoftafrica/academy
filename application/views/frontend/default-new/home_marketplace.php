@@ -486,7 +486,7 @@
 	                    <a href="<?php echo site_url('blog/details/' . slugify($latest_blog['title']) . '/' . $latest_blog['blog_id']); ?>" class="lms1-bCard-banner">
 	                        <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                     if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                        $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                        $blog_thumbnail = default_image_url('blog');
                                 endif; ?>
 	                        <img class="banner" src="<?php echo $blog_thumbnail; ?>" alt="">
 	                    </a>

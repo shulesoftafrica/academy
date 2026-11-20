@@ -21,7 +21,7 @@
           foreach($upcoming_courses->result_array() as $upcoming_course):
             $image_url = $upcoming_course['upcoming_image_thumbnail'] 
             ? 'uploads/thumbnails/upcoming_thumbnails/' . $upcoming_course['upcoming_image_thumbnail'] 
-            : 'uploads/thumbnails/course_thumbnails/placeholder.png';
+            : 'assets/frontend/default-new/image/defaults/course.jpg';
           ?>
           <li>
             <!-- <div class="date"><span>12</span> April, 2023</div> -->

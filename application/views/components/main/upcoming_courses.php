@@ -40,7 +40,7 @@
                             <?php
                             $image_url = $upcoming_course['upcoming_image_thumbnail']
                                 ? 'uploads/thumbnails/upcoming_thumbnails/' . $upcoming_course['upcoming_image_thumbnail']
-                                : 'uploads/thumbnails/course_thumbnails/placeholder.png';
+                                : 'assets/frontend/default-new/image/defaults/course.jpg';
                             ?>
                             <div class="col-lg-4 col-md-6 col-sm-6    " data-wow-duration="500" data-wow-delay="300">
                                 <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($upcoming_course['title'])) . '/' . $upcoming_course['id']); ?>" id="top_course_<?php echo $upcoming_course['id']; ?>" class="course-item-one" style="background: url('<?php echo $image_url; ?>') no-repeat center center; background-size: cover;">

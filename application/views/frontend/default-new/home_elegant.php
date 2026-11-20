@@ -181,7 +181,7 @@
             <div class="col">
                 <a href="<?php echo site_url('home/courses?category=' . $category_details['slug']); ?>" class="lms-category-type1">
                     <figure class="category-type1-banner">
-                        <img class="banner" src="<?php echo base_url('uploads/thumbnails/category_thumbnails/' . $category_details['sub_category_thumbnail']); ?>" alt="">
+                        <img class="banner" src="<?php echo category_image_url($category_details, 'sub_category_thumbnail'); ?>" alt="">
                         <span class="category-type1-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                 <path
@@ -511,7 +511,7 @@
                     <?php
                                     $image_url = $upcoming_course['upcoming_image_thumbnail']
                                         ? 'uploads/thumbnails/upcoming_thumbnails/' . $upcoming_course['upcoming_image_thumbnail']
-                                        : 'uploads/thumbnails/course_thumbnails/placeholder.png';
+                                        : 'assets/frontend/default-new/image/defaults/course.jpg';
                                 ?>
                     <div class="col-lg-4 col-md-6 col-sm-6    " data-wow-duration="500" data-wow-delay="300">
                         <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($upcoming_course['title'])) . '/' . $upcoming_course['id']); ?>"
@@ -694,7 +694,7 @@
                         <div class="courses-card-image">
                             <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                             if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                                $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                                $blog_thumbnail = default_image_url('blog');
                                         endif; ?>
                             <div class="courses-card-image ">
                                 <img loading="lazy" src="<?php echo $blog_thumbnail; ?>">

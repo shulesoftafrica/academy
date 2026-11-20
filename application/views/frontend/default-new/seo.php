@@ -10,7 +10,7 @@
         $canonical_url = '';
         $og_title = $meta_title;
         $og_description = $meta_description;
-        $og_image = base_url('uploads/seo-og-images/placeholder.png'); // Default placeholder image
+        $og_image = default_image_url('course'); // Default placeholder image
         $json_ld = '{}';
 
         if (!empty($seo)) {
@@ -57,7 +57,7 @@
                 $ebook_thumbnail = 'uploads/ebook/thumbnails/' . $data['thumbnail'];
                 $og_image = (!empty($data['thumbnail']) && file_exists($ebook_thumbnail)) 
                             ? base_url($ebook_thumbnail) 
-                            : base_url('uploads/ebook/thumbnails/placeholder.png');
+                            : default_image_url('course');
 
                 $json_ld = $data['json_ld'] ?? '{}';
 
@@ -72,7 +72,7 @@
                 $blog_banner = 'uploads/blog/banner/' . $data['banner'];
                 $og_image = (!empty($data['banner']) && file_exists($blog_banner)) 
                             ? base_url($blog_banner) 
-                            : base_url('uploads/blog/banner/placeholder.png');
+                            : default_image_url('course');
 
             } elseif ($route_first_segment == 'bundle_details' && isset($bundle_details)) {
                 $data = $bundle_details;
@@ -98,7 +98,7 @@
                 $bootcamp_thumbnail = 'uploads/bootcamp/bootcamp_thumbnail/' . $data['bootcamp_thumbnail'];
                 $og_image = (!empty($data['bootcamp_thumbnail']) && file_exists($bootcamp_thumbnail)) 
                             ? base_url($bootcamp_thumbnail) 
-                            : base_url('uploads/bootcamp/bootcamp_thumbnail/placeholder.png');
+                            : default_image_url('course');
 
                 $json_ld = $data['json_ld'] ?? '{}';
                 
@@ -114,7 +114,7 @@
                 $package_thumbnail = 'uploads/team_training/thumbnail/' . $data['thumbnail'];
                 $og_image = (!empty($data['thumbnail']) && file_exists($package_thumbnail)) 
                             ? base_url($package_thumbnail) 
-                            : base_url('uploads/seo-og-images/placeholder.png');
+                            : default_image_url('course');
             } else {
 
                 $meta_title = $page_title;

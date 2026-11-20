@@ -59,7 +59,7 @@
             </div>
             <div class="col-lg-6 col-md-12 bannar-hide animate__animated  animate__fadeInUp" data-wow-duration="1000" data-wow-delay="500">
                 <div class="h-3-banner-image pt-5">
-                    <img loading="lazy" src="<?php echo base_url("uploads/system/" . get_current_banner('banner_image')); ?>" alt="">
+                    <img loading="lazy" src="<?php echo safe_upload_url("uploads/system/" . get_current_banner('banner_image'), 'image'); ?>" alt="">
                 </div>
             </div>
         </div>
@@ -176,7 +176,7 @@
                         foreach ($upcoming_courses->result_array() as $upcoming_course):
                             $image_url = $upcoming_course['upcoming_image_thumbnail']
                                 ? 'uploads/thumbnails/upcoming_thumbnails/' . $upcoming_course['upcoming_image_thumbnail']
-                                : 'uploads/thumbnails/course_thumbnails/placeholder.png';
+                                : 'assets/frontend/default-new/image/defaults/course.jpg';
                         ?>
                     <div class="col-lg-4">
                         <a href="<?php echo site_url('home/course/' . rawurlencode(slugify($upcoming_course['title'])) . '/' . $upcoming_course['id']); ?>" class="course-item-one">
@@ -691,7 +691,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-4 col-md-5">
                             <div class="speech-item-img">
-                                <img loading="lazy" src="<?php echo site_url('uploads/system/motivations/' . $motivational_speech['image']) ?>" alt="" />
+                                <img loading="lazy" src="<?php echo safe_upload_url('uploads/system/motivations/' . $motivational_speech['image'], 'avatar') ?>" alt="" />
                             </div>
                         </div>
                         <div class="col-lg-8 col-md-7">
@@ -799,7 +799,7 @@
                         <div class="scall-img">
                             <?php $blog_thumbnail = 'uploads/blog/thumbnail/' . $latest_blog['thumbnail'];
                                         if (! file_exists($blog_thumbnail) || ! is_file($blog_thumbnail)):
-                                            $blog_thumbnail = base_url('uploads/blog/thumbnail/placeholder.png');
+                                            $blog_thumbnail = default_image_url('blog');
                                     endif; ?>
                             <img loading="lazy" src="<?php echo $blog_thumbnail; ?>" alt="" style="min-height: 200px;">
                         </div>
