@@ -1,0 +1,75 @@
+{
+  "new_categories": [
+    {"slug": "human-resources", "name": "Human Resources", "sort_order": 11},
+    {"slug": "operations-support", "name": "Operations & Support Services", "sort_order": 12}
+  ],
+  "batches": {
+    "A_teaching_core": [
+      {"slug": "teaching", "name": "Teaching / Classroom Practice", "category": "education", "existing": true, "validity": 24, "about": "General classroom practice for pre-primary, primary and secondary teachers"},
+      {"slug": "classroom-management", "name": "Classroom Management", "category": "education", "validity": 24, "about": "Discipline, routines, positive behaviour, managing large classes (40-100 pupils), engagement"},
+      {"slug": "lesson-planning-assessment", "name": "Lesson Planning & Assessment", "category": "education", "validity": 24, "about": "Schemes of work, lesson plans, learning objectives, formative and summative assessment, feedback, competency-based assessment"},
+      {"slug": "early-childhood-education", "name": "Early Childhood Education", "category": "education", "validity": 24, "about": "Pre-primary (awali) teaching: play-based learning, early literacy and numeracy, child development, safety"},
+      {"slug": "special-needs-education", "name": "Special Needs & Inclusive Education", "category": "education", "validity": 24, "about": "Identifying and supporting learners with disabilities and learning difficulties, inclusive classrooms, individual plans"},
+      {"slug": "school-counselling", "name": "School Guidance & Counselling", "category": "education", "validity": 24, "about": "Learner guidance, counselling basics, confidentiality, referral, career guidance, handling bullying and abuse disclosures"}
+    ],
+    "B_teaching_subjects": [
+      {"slug": "teaching-mathematics", "name": "Teaching Mathematics", "category": "education", "validity": 24, "about": "Primary and O-level mathematics content and pedagogy (numeracy, algebra, geometry, statistics, common misconceptions)"},
+      {"slug": "teaching-english", "name": "Teaching English", "category": "education", "validity": 24, "about": "English language teaching in a Tanzanian school: grammar, reading, writing, listening and speaking, second-language learners"},
+      {"slug": "teaching-kiswahili", "name": "Teaching Kiswahili", "category": "education", "validity": 24, "about": "Kiswahili language and literature teaching (sarufi, ufahamu, insha, fasihi). Questions may be written in Kiswahili where natural, but keep option text clear"},
+      {"slug": "teaching-science", "name": "Teaching Science (Physics, Chemistry, Biology)", "category": "education", "validity": 24, "about": "Primary science and O-level sciences: concepts, practical work, lab safety, scientific method, common misconceptions"},
+      {"slug": "teaching-ict", "name": "Teaching ICT / Computer Studies", "category": "education", "validity": 24, "about": "Computer studies for schools: hardware/software, office tools, internet safety, basic programming, teaching with limited equipment"},
+      {"slug": "teaching-social-studies", "name": "Teaching Social Studies (Geography, History, Civics)", "category": "education", "validity": 24, "about": "Geography, history and civics teaching in Tanzania and East Africa, map skills, source analysis, civic education"}
+    ],
+    "C_finance_admin": [
+      {"slug": "accounting", "name": "Accounting", "category": "finance-accounting", "existing": true, "validity": 24, "about": "Bookkeeping to financial statements, controls, reconciliations for schools and small businesses"},
+      {"slug": "bookkeeping", "name": "Bookkeeping", "category": "finance-accounting", "validity": 24, "about": "Daily records, cash book, ledgers, trial balance, bank reconciliation, double entry"},
+      {"slug": "payroll-administration", "name": "Payroll Administration", "category": "finance-accounting", "validity": 24, "about": "Payroll in Tanzania: PAYE, NSSF/PSSSF, WCF, SDL, deductions, payslips, statutory returns, payroll controls"},
+      {"slug": "budgeting-financial-planning", "name": "Budgeting & Financial Planning", "category": "finance-accounting", "validity": 24, "about": "School and business budgets, variance analysis, cash-flow forecasting, financial controls"},
+      {"slug": "fee-collection-credit-control", "name": "Fee Collection & Credit Control", "category": "finance-accounting", "validity": 24, "about": "School fee billing, receipts, arrears follow-up, payment plans, reconciliation of mobile money and bank payments, fraud awareness"},
+      {"slug": "procurement-stores", "name": "Procurement & Stores Management", "category": "administration", "validity": 24, "about": "Purchasing procedures, quotations, tenders, goods received, stock control, stores records, asset registers"}
+    ],
+    "D_admin_hr": [
+      {"slug": "office-administration", "name": "Office Administration", "category": "administration", "existing": true, "validity": null, "about": "Coordination, scheduling, correspondence, filing, office operations"},
+      {"slug": "records-management", "name": "Records Management", "category": "administration", "validity": 24, "about": "Student and staff records, filing systems, confidentiality, retention, digital records, data protection"},
+      {"slug": "school-administration", "name": "School Administration", "category": "administration", "validity": 24, "about": "Running a school office: admissions, timetables, registers, compliance with ministry requirements, parent communication"},
+      {"slug": "library-management", "name": "Library Management", "category": "administration", "validity": 24, "about": "Cataloguing, classification (Dewey), lending, collection care, reading promotion, library records"},
+      {"slug": "hr-management", "name": "Human Resource Management", "category": "human-resources", "validity": 24, "about": "Employment contracts, leave, discipline and grievance, performance appraisal, Tanzanian labour law basics, staff records"},
+      {"slug": "recruitment-selection", "name": "Recruitment & Selection", "category": "human-resources", "validity": 24, "about": "Job analysis, advertising, shortlisting, structured interviews, reference checks, fair and lawful hiring, onboarding"}
+    ],
+    "E_tech": [
+      {"slug": "software-development", "name": "Software Development", "category": "technology", "existing": true, "validity": 18, "about": "Programming fundamentals, debugging, version control, testing, databases, APIs"},
+      {"slug": "web-development", "name": "Web Development", "category": "technology", "validity": 18, "about": "HTML, CSS, JavaScript, responsive design, HTTP, accessibility, security basics"},
+      {"slug": "it-support-networking", "name": "IT Support & Networking", "category": "technology", "validity": 18, "about": "Troubleshooting PCs and printers, Windows, LAN/Wi-Fi, IP addressing, backups, user support in schools and offices"},
+      {"slug": "database-sql", "name": "Databases & SQL", "category": "technology", "validity": 18, "about": "Relational design, SQL queries and joins, normalisation, indexes, backups, data integrity"},
+      {"slug": "cybersecurity-awareness", "name": "Cybersecurity Awareness", "category": "technology", "validity": 18, "about": "Passwords, phishing, malware, safe use of mobile money and email, data protection, device and network security"},
+      {"slug": "technical-support", "name": "Technical Support (Helpdesk)", "category": "customer-service", "validity": 18, "about": "Supporting software users: triage, troubleshooting, escalation, ticket handling, clear instructions by phone/WhatsApp"}
+    ],
+    "F_data_marketing_sales": [
+      {"slug": "excel-data-analysis", "name": "Excel / Data Analysis", "category": "data-analytics", "existing": true, "validity": null, "about": "Spreadsheet formulas, pivot tables, charts, cleaning data, reporting"},
+      {"slug": "data-visualization-reporting", "name": "Data Visualization & Reporting", "category": "data-analytics", "validity": 24, "about": "Choosing charts, dashboards, KPIs, telling a story with data, avoiding misleading visuals"},
+      {"slug": "digital-marketing", "name": "Digital Marketing", "category": "marketing", "existing": true, "validity": 18, "about": "Campaigns, SEO, social media, email/SMS/WhatsApp marketing, measuring results"},
+      {"slug": "social-media-management", "name": "Social Media Management", "category": "marketing", "validity": 18, "about": "Content calendars, platform choice (Facebook, Instagram, WhatsApp, LinkedIn, TikTok), community management, analytics, crisis handling"},
+      {"slug": "content-writing", "name": "Content Writing & Copywriting", "category": "marketing", "validity": 24, "about": "Clear persuasive writing, editing, audience, headlines, tone, plagiarism and fact-checking"},
+      {"slug": "graphic-design-basics", "name": "Graphic Design Basics", "category": "marketing", "validity": 24, "about": "Layout, colour, typography, file formats, brand consistency, preparing print and social media assets"},
+      {"slug": "account-management", "name": "Account Management", "category": "sales", "validity": 24, "about": "Managing existing customers (schools): renewals, upselling, relationship building, handling escalations"}
+    ],
+    "G_service_leadership": [
+      {"slug": "customer-service", "name": "Customer Service", "category": "customer-service", "existing": true, "validity": 24, "about": "Handling customers professionally and effectively across phone, WhatsApp and in person"},
+      {"slug": "customer-success-onboarding", "name": "Customer Success & Onboarding", "category": "customer-service", "validity": 24, "about": "Onboarding new customers (schools using school software), adoption, health scoring, retention, training users, churn prevention"},
+      {"slug": "communication", "name": "Communication", "category": "business", "existing": true, "validity": null, "about": "Clear written and verbal communication at work"},
+      {"slug": "report-writing", "name": "Report Writing", "category": "business", "validity": 24, "about": "Structuring workplace reports, executive summaries, evidence, recommendations, minutes"},
+      {"slug": "project-management", "name": "Project Management", "category": "business", "validity": 24, "about": "Scope, planning, scheduling, risks, stakeholders, tracking, closing projects"},
+      {"slug": "leadership", "name": "Leadership", "category": "leadership", "existing": true, "validity": 24, "about": "Leading teams and driving performance"},
+      {"slug": "team-management", "name": "Team Management", "category": "leadership", "validity": 24, "about": "Delegation, coaching, performance conversations, conflict resolution, motivation, running meetings"},
+      {"slug": "strategic-planning", "name": "Strategic Planning", "category": "leadership", "validity": 24, "about": "Vision, goals and KPIs, SWOT, resource allocation, school improvement plans, monitoring and review"}
+    ],
+    "H_operations": [
+      {"slug": "child-safeguarding", "name": "Child Protection & Safeguarding", "category": "operations-support", "validity": 12, "about": "Recognising and reporting abuse, safe recruitment, safe behaviour codes, handling disclosures, confidentiality (Tanzania Law of the Child context)"},
+      {"slug": "first-aid-school-health", "name": "First Aid & School Health", "category": "operations-support", "validity": 12, "about": "Basic first aid, common school emergencies, hygiene, infection control, when to refer, record keeping"},
+      {"slug": "driving-fleet-safety", "name": "School Transport Driving & Safety", "category": "operations-support", "validity": 12, "about": "Safe driving with children, vehicle checks, Tanzanian road rules, emergencies, loading and offloading, record keeping"},
+      {"slug": "food-safety-catering", "name": "Food Safety & Catering", "category": "operations-support", "validity": 12, "about": "Hygiene, storage, cross-contamination, menu planning for school meals, portion control, kitchen safety"},
+      {"slug": "facilities-maintenance", "name": "Facilities & Maintenance", "category": "operations-support", "validity": 24, "about": "Preventive maintenance, repairs, cleaning schedules, health and safety, fire safety, contractor management"},
+      {"slug": "laboratory-management", "name": "Laboratory Management", "category": "administration", "validity": 24, "about": "School science laboratory: safe storage of chemicals, equipment care, preparing practicals, waste disposal, inventory"}
+    ]
+  }
+}

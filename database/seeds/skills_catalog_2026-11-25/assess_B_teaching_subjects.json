@@ -1,0 +1,2152 @@
+[
+    {
+        "skill_slug": "teaching-mathematics",
+        "skill_name": "Teaching Mathematics",
+        "description": "Checks primary and O-level mathematics content knowledge and the teaching methods used to address common pupil misconceptions.",
+        "competencies": [
+            {
+                "name": "Number and Numeracy",
+                "description": "Fractions, decimals, place value and operations with numbers.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Algebra",
+                "description": "Solving equations, expanding and simplifying expressions.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Geometry and Measurement",
+                "description": "Area, perimeter, units and right-angled triangles.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Statistics and Probability",
+                "description": "Mean, data handling and simple probability.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Pedagogy and Misconceptions",
+                "description": "Teaching for understanding, diagnosing errors and responding to results.",
+                "weight": 25,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Number and Numeracy",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is 3/4 ÷ 1/2?",
+                "options": [
+                    {
+                        "text": "3/8",
+                        "correct": false
+                    },
+                    {
+                        "text": "1 1/4",
+                        "correct": false
+                    },
+                    {
+                        "text": "2/3",
+                        "correct": false
+                    },
+                    {
+                        "text": "1 1/2",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Dividing by 1/2 means multiplying by 2: 3/4 × 2 = 6/4 = 1 1/2."
+            },
+            {
+                "competency": "Number and Numeracy",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A Standard Six pupil says 0.35 is bigger than 0.5 \"because 35 is bigger than 5\". What is the best way to correct this?",
+                "options": [
+                    {
+                        "text": "Write both as 0.35 and 0.50 on a place-value chart and compare tenths first",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give the pupil ten more decimal sums to practise without discussion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mark it wrong and move on because the rule is in the textbook",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the pupil that the number with more digits is always smaller",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The pupil treats the digits after the point as a whole number. A place-value chart with equal decimal places shows 5 tenths is greater than 3 tenths."
+            },
+            {
+                "competency": "Algebra",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Solve for x: 3x − 7 = 11.",
+                "options": [
+                    {
+                        "text": "x = 4",
+                        "correct": false
+                    },
+                    {
+                        "text": "x = 4/3",
+                        "correct": false
+                    },
+                    {
+                        "text": "x = 18",
+                        "correct": false
+                    },
+                    {
+                        "text": "x = 6",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Add 7 to both sides to get 3x = 18, then divide by 3 to get x = 6."
+            },
+            {
+                "competency": "Algebra",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Expand (x + 3)².",
+                "options": [
+                    {
+                        "text": "x² + 3x + 9",
+                        "correct": false
+                    },
+                    {
+                        "text": "x² + 6x + 9",
+                        "correct": true
+                    },
+                    {
+                        "text": "x² + 6x + 36",
+                        "correct": false
+                    },
+                    {
+                        "text": "x² + 9",
+                        "correct": false
+                    }
+                ],
+                "explanation": "(x + 3)(x + 3) = x² + 3x + 3x + 9 = x² + 6x + 9. The middle term is the common error when pupils write x² + 9."
+            },
+            {
+                "competency": "Algebra",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Which of these expressions are equal to 2(x − 3) + 4 for every value of x? Select all that apply.",
+                "options": [
+                    {
+                        "text": "2x − 6 + 4",
+                        "correct": true
+                    },
+                    {
+                        "text": "2x − 10",
+                        "correct": false
+                    },
+                    {
+                        "text": "2(x − 1)",
+                        "correct": true
+                    },
+                    {
+                        "text": "2x + 1",
+                        "correct": false
+                    },
+                    {
+                        "text": "2x − 2",
+                        "correct": true
+                    }
+                ],
+                "explanation": "2(x − 3) + 4 = 2x − 6 + 4 = 2x − 2, which also equals 2(x − 1)."
+            },
+            {
+                "competency": "Geometry and Measurement",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A triangle has a base of 10 cm and a perpendicular height of 6 cm. What is its area?",
+                "options": [
+                    {
+                        "text": "30 cm²",
+                        "correct": true
+                    },
+                    {
+                        "text": "60 cm²",
+                        "correct": false
+                    },
+                    {
+                        "text": "32 cm²",
+                        "correct": false
+                    },
+                    {
+                        "text": "100 cm²",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Area of a triangle = 1/2 × base × height = 1/2 × 10 × 6 = 30 cm²."
+            },
+            {
+                "competency": "Geometry and Measurement",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A rectangular classroom floor is 5 m by 12 m. What is the length of the diagonal?",
+                "options": [
+                    {
+                        "text": "13 m",
+                        "correct": true
+                    },
+                    {
+                        "text": "60 m",
+                        "correct": false
+                    },
+                    {
+                        "text": "11 m",
+                        "correct": false
+                    },
+                    {
+                        "text": "17 m",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The diagonal is the hypotenuse: √(5² + 12²) = √169 = 13 m."
+            },
+            {
+                "competency": "Geometry and Measurement",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A pupil writes \"area of a 4 m by 3 m rectangle = 12 m, perimeter = 14 m²\". How would you best help the pupil?",
+                "options": [
+                    {
+                        "text": "Use square tiles to show that area counts squares (m²) while perimeter is the length around the edge (m)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask the pupil to memorise the rule \"area uses squares\" and write it out ten times in the exercise book",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the pupil to simply swap the two units around because the textbook example shows them that way",
+                        "correct": false
+                    },
+                    {
+                        "text": "Accept the answer and move on since the numbers 12 and 14 are correct even if the units are not",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A concrete model links the unit to what is being measured. Correct numbers with wrong units show a conceptual gap that should be fixed."
+            },
+            {
+                "competency": "Statistics and Probability",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The mean of five numbers is 8. A sixth number, 14, is added. What is the new mean?",
+                "options": [
+                    {
+                        "text": "11",
+                        "correct": false
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "8.5",
+                        "correct": false
+                    },
+                    {
+                        "text": "9",
+                        "correct": true
+                    }
+                ],
+                "explanation": "The original total is 5 × 8 = 40. The new total is 54, and 54 ÷ 6 = 9."
+            },
+            {
+                "competency": "Statistics and Probability",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A bag has 3 red, 5 blue and 2 green balls. One ball is picked at random. What is the probability that it is NOT blue?",
+                "options": [
+                    {
+                        "text": "5/8",
+                        "correct": false
+                    },
+                    {
+                        "text": "3/10",
+                        "correct": false
+                    },
+                    {
+                        "text": "1/2",
+                        "correct": true
+                    },
+                    {
+                        "text": "1/5",
+                        "correct": false
+                    }
+                ],
+                "explanation": "There are 10 balls and 5 are not blue, so the probability is 5/10 = 1/2."
+            },
+            {
+                "competency": "Pedagogy and Misconceptions",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your pupils solve equations by chanting \"change side, change sign\" but cannot explain why. What is the best next step?",
+                "options": [
+                    {
+                        "text": "Let pupils who get answers right skip the explanation and move on to harder problems",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give more examples so the chant becomes automatic and pupils answer faster each time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Replace the chant with a longer list of rules to memorise for each type of equation",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a balance picture so pupils see the same operation done on both sides",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Understanding the balance idea (doing the same to both sides) prevents rule-based errors when equations change form."
+            },
+            {
+                "competency": "Pedagogy and Misconceptions",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "About 60% of your class got the fractions question wrong in a monthly test. Which actions are most useful? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Look through the scripts to find the most common error patterns",
+                        "correct": true
+                    },
+                    {
+                        "text": "Move on to the next topic because the syllabus time is short",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reteach with concrete or drawn models, then check understanding with a short quiz",
+                        "correct": true
+                    },
+                    {
+                        "text": "Repeat the same lesson in the same way at a louder pace",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give targeted practice on the weak steps and return marked work with feedback",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Diagnosing errors, reteaching in a different way and giving feedback address the cause of the poor results; moving on or repeating unchanged does not."
+            }
+        ]
+    },
+    {
+        "skill_slug": "teaching-english",
+        "skill_name": "Teaching English",
+        "description": "Checks English grammar knowledge and the ability to teach reading, writing, speaking and listening to second-language learners.",
+        "competencies": [
+            {
+                "name": "Grammar and Language Knowledge",
+                "description": "Accurate knowledge of grammar, tenses, word forms and pronunciation.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Reading and Comprehension",
+                "description": "Teaching reading skills and developing understanding of texts.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Writing",
+                "description": "Teaching the writing process and giving useful feedback.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Listening and Speaking",
+                "description": "Developing oral skills and pronunciation in the classroom.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Second-Language Learners and Assessment",
+                "description": "Supporting learners whose first language is Kiswahili or a mother tongue, and assessing fairly.",
+                "weight": 25,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Grammar and Language Knowledge",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Choose the correct word: \"She ___ to school every day.\"",
+                "options": [
+                    {
+                        "text": "going",
+                        "correct": false
+                    },
+                    {
+                        "text": "goes",
+                        "correct": true
+                    },
+                    {
+                        "text": "go",
+                        "correct": false
+                    },
+                    {
+                        "text": "gone",
+                        "correct": false
+                    }
+                ],
+                "explanation": "With a third-person singular subject in the simple present, the verb takes -s/-es: she goes."
+            },
+            {
+                "competency": "Grammar and Language Knowledge",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which sentence is correct?",
+                "options": [
+                    {
+                        "text": "I am living in Dodoma since the year 2015.",
+                        "correct": false
+                    },
+                    {
+                        "text": "I lived in Dodoma since 2015.",
+                        "correct": false
+                    },
+                    {
+                        "text": "I have lived in Dodoma since 2015.",
+                        "correct": true
+                    },
+                    {
+                        "text": "I have lived in Dodoma for 2015.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "\"Since\" is used with the starting point of a period and the present perfect, not the simple past or continuous."
+            },
+            {
+                "competency": "Grammar and Language Knowledge",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which sentence contains a dangling modifier?",
+                "options": [
+                    {
+                        "text": "Amina was walking to school when the rain began.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Walking to school, the rain began to fall heavily.",
+                        "correct": true
+                    },
+                    {
+                        "text": "While we walked to school, the rain began to fall.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Walking to school, Amina got wet in the rain.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The opening phrase \"walking to school\" should describe a person, but the subject that follows is \"the rain\", so the modifier dangles."
+            },
+            {
+                "competency": "Reading and Comprehension",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A pupil needs to find the date of an event in a long passage as quickly as possible. Which reading skill is most useful?",
+                "options": [
+                    {
+                        "text": "Scanning",
+                        "correct": true
+                    },
+                    {
+                        "text": "Summarising",
+                        "correct": false
+                    },
+                    {
+                        "text": "Intensive reading",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reading aloud",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Scanning means looking quickly for specific information such as a date or a name."
+            },
+            {
+                "competency": "Reading and Comprehension",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your pupils read a passage aloud fluently but cannot answer questions about it. What should you do?",
+                "options": [
+                    {
+                        "text": "Ask them to memorise the whole passage so they can answer the questions from memory the next day",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let them read the passage aloud many more times until they can remember most of the details",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teach strategies such as predicting, pre-teaching key words and asking questions as they read",
+                        "correct": true
+                    },
+                    {
+                        "text": "Stop asking comprehension questions because fluent reading already shows that they understand",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Fluency and comprehension are different skills. Explicit strategies help pupils understand what they decode."
+            },
+            {
+                "competency": "Reading and Comprehension",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which activities are useful BEFORE pupils read a text? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Giving a spelling test on every word in the text",
+                        "correct": false
+                    },
+                    {
+                        "text": "Asking pupils to write a final summary of the text",
+                        "correct": false
+                    },
+                    {
+                        "text": "Discussing what pupils already know about the topic",
+                        "correct": true
+                    },
+                    {
+                        "text": "Teaching a few key words that pupils need to understand the text",
+                        "correct": true
+                    },
+                    {
+                        "text": "Predicting what the text is about from the title and pictures",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Pre-reading activities activate prior knowledge and prepare vocabulary. A summary can only be written after reading."
+            },
+            {
+                "competency": "Writing",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is the usual order of the stages in the writing process?",
+                "options": [
+                    {
+                        "text": "Plan, edit, draft, publish, revise",
+                        "correct": false
+                    },
+                    {
+                        "text": "Draft, plan, edit, revise, publish",
+                        "correct": false
+                    },
+                    {
+                        "text": "Plan, draft, revise, edit, publish",
+                        "correct": true
+                    },
+                    {
+                        "text": "Draft, edit, plan, revise, publish",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Writers plan first, draft, revise ideas and organisation, then edit spelling and grammar, and finally publish or share."
+            },
+            {
+                "competency": "Writing",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Pupils' compositions contain many spelling, tense and punctuation errors. Which feedback approach is best?",
+                "options": [
+                    {
+                        "text": "Rewrite every sentence correctly for the pupil so the final copy has no errors at all",
+                        "correct": false
+                    },
+                    {
+                        "text": "Focus on one or two recurring error types per piece and let pupils fix them",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give only a mark and no comments so that pupils work out their mistakes themselves",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignore the errors completely so pupils do not lose confidence in their writing",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Selective feedback is manageable for learners and helps them notice and fix patterns themselves."
+            },
+            {
+                "competency": "Listening and Speaking",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Several shy pupils never speak English in class. What is the best strategy?",
+                "options": [
+                    {
+                        "text": "Let only the confident pupils answer so that lessons move faster and no time is wasted",
+                        "correct": false
+                    },
+                    {
+                        "text": "Start with pair or small-group speaking tasks before asking for answers in front of everyone",
+                        "correct": true
+                    },
+                    {
+                        "text": "Call on them first so they get used to speaking in front of everyone in the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give lower marks to pupils who stay silent so that they are forced to speak up in lessons",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Low-pressure pair and group work builds confidence and gives every pupil more speaking practice."
+            },
+            {
+                "competency": "Listening and Speaking",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "In standard English, how is the word \"record\" stressed when it is a noun (a school record) and when it is a verb (to record a song)?",
+                "options": [
+                    {
+                        "text": "Both: reCORD",
+                        "correct": false
+                    },
+                    {
+                        "text": "Noun: REcord, verb: reCORD",
+                        "correct": true
+                    },
+                    {
+                        "text": "Both: REcord",
+                        "correct": false
+                    },
+                    {
+                        "text": "Noun: reCORD, verb: REcord",
+                        "correct": false
+                    }
+                ],
+                "explanation": "In many English noun–verb pairs, the noun is stressed on the first syllable and the verb on the second."
+            },
+            {
+                "competency": "Second-Language Learners and Assessment",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "During an English lesson a pupil gives a correct idea in Kiswahili because she lacks the English words. What is the best response?",
+                "options": [
+                    {
+                        "text": "Tell her that Kiswahili is forbidden in class and ignore her answer completely",
+                        "correct": false
+                    },
+                    {
+                        "text": "Translate the whole lesson into Kiswahili from now on so that nobody has difficulty",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move on to another pupil without comment and hope that someone else gives the idea in English",
+                        "correct": false
+                    },
+                    {
+                        "text": "Accept the idea, give her the English phrase and ask her to repeat it in a sentence",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Using the learner's first language briefly as a bridge supports understanding while still moving her towards English."
+            },
+            {
+                "competency": "Second-Language Learners and Assessment",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "You want to assess your pupils' speaking fairly. Which practices are appropriate? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Test speaking only with a written grammar exam",
+                        "correct": false
+                    },
+                    {
+                        "text": "Observe pupils during pair work using a checklist and note examples",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use a simple rubric with clear criteria that pupils know in advance",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give higher marks to pupils who sound most like a native speaker",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give feedback on both fluency and accuracy",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Speaking should be assessed through speaking, using shared criteria. Intelligibility matters more than accent."
+            }
+        ]
+    },
+    {
+        "skill_slug": "teaching-kiswahili",
+        "skill_name": "Teaching Kiswahili",
+        "description": "Checks Kiswahili grammar, comprehension, composition and literature knowledge together with the methods used to teach and assess them.",
+        "competencies": [
+            {
+                "name": "Sarufi na Matumizi ya Lugha",
+                "description": "Sarufi: ngeli, nyakati, ukanushaji na aina za maneno.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Ufahamu na Msamiati",
+                "description": "Kufundisha ufahamu wa kifungu na maana za maneno.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Insha na Uandishi",
+                "description": "Kufundisha uandishi wa insha na barua.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Fasihi",
+                "description": "Fasihi simulizi na andishi, methali, maudhui na dhamira.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Mbinu za Ufundishaji na Tathmini",
+                "description": "Mbinu bora za kufundisha na kupima stadi za lugha.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Sarufi na Matumizi ya Lugha",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Chagua wingi sahihi wa sentensi \"Mtoto analia.\"",
+                "options": [
+                    {
+                        "text": "Vitoto wanalia.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Watoto analia.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Watoto wanalia.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mtoto wanalia.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Wingi wa \"mtoto\" ni \"watoto\" na kiambishi cha kitenzi hubadilika kuwa \"wa-\": wanalia."
+            },
+            {
+                "competency": "Sarufi na Matumizi ya Lugha",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Chagua ukanushaji sahihi wa sentensi \"Nilikula chakula.\"",
+                "options": [
+                    {
+                        "text": "Sitakula chakula.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sinakula chakula.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sikula chakula.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sijala chakula.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Wakati uliopita unakanushwa kwa \"ku\" baada ya kiambishi cha nafsi: sikula. \"Sijala\" ni ukanushaji wa wakati timilifu."
+            },
+            {
+                "competency": "Sarufi na Matumizi ya Lugha",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Katika sentensi \"Mwalimu mrefu amenunua vitabu vitatu vizuri\", ni maneno yapi ni vivumishi? (Chagua zote zinazofaa — select all that apply.)",
+                "options": [
+                    {
+                        "text": "Mwalimu",
+                        "correct": false
+                    },
+                    {
+                        "text": "mrefu",
+                        "correct": true
+                    },
+                    {
+                        "text": "vitatu",
+                        "correct": true
+                    },
+                    {
+                        "text": "vizuri",
+                        "correct": true
+                    },
+                    {
+                        "text": "amenunua",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Vivumishi huelezea nomino: \"mrefu\" (sifa), \"vitatu\" (idadi) na \"vizuri\" (sifa). \"Amenunua\" ni kitenzi na \"Mwalimu\" ni nomino."
+            },
+            {
+                "competency": "Sarufi na Matumizi ya Lugha",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Chagua sentensi yenye upatanisho wa kisarufi sahihi.",
+                "options": [
+                    {
+                        "text": "Miti mirefu zimeanguka.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Miti mirefu imeanguka.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Miti mrefu imeanguka.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Miti mirefu yameanguka.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "\"Miti\" ni wingi wa \"mti\" (ngeli ya U-I), kwa hivyo kivumishi ni \"mirefu\" na kiambishi cha kitenzi ni \"i-\": imeanguka."
+            },
+            {
+                "competency": "Fasihi",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Nini maana ya methali \"Haraka haraka haina baraka\"?",
+                "options": [
+                    {
+                        "text": "Haraka ni dalili ya mtu mwenye bahati na mafanikio makubwa",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kufanya mambo kwa pupa mara nyingi huleta makosa au hasara",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mtu anayefanya kazi haraka hupata baraka nyingi kuliko wengine",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kazi iliyofanywa kwa haraka hulipwa zaidi kuliko kazi ya polepole",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Methali hii inaonya kuwa kukimbilia jambo bila kujipa muda wa kutosha huleta makosa."
+            },
+            {
+                "competency": "Mbinu za Ufundishaji na Tathmini",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Ni mfano upi wa tathmini endelevu (ya kujenga) darasani?",
+                "options": [
+                    {
+                        "text": "Kuuliza maswali mafupi wakati wa somo na kutoa mrejesho mara moja",
+                        "correct": true
+                    },
+                    {
+                        "text": "Kutoa alama bila kurudisha kazi kwa wanafunzi",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kutangaza nafasi ya darasani mwishoni mwa mwaka pekee",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kufanya mtihani mmoja tu wa mwisho wa mwaka",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Tathmini endelevu hufanyika wakati wa kujifunza na humsaidia mwalimu kurekebisha ufundishaji mara moja."
+            },
+            {
+                "competency": "Fasihi",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Mwanafunzi anasema \"dhamira ya riwaya ni muhtasari wa hadithi yote\". Mwalimu afanye nini?",
+                "options": [
+                    {
+                        "text": "Amwambie mwanafunzi akariri maana ya dhamira bila mfano wowote kutoka kitabuni",
+                        "correct": false
+                    },
+                    {
+                        "text": "Aeleze kuwa dhamira ni wazo kuu au ujumbe wa mwandishi, kisha atoe mfano mmoja",
+                        "correct": true
+                    },
+                    {
+                        "text": "Akubali jibu kwa sababu muhtasari wa hadithi na dhamira ni kitu kimoja kabisa",
+                        "correct": false
+                    },
+                    {
+                        "text": "Aache kufundisha dhamira kwa sababu ni ngumu kwa wanafunzi wa darasa hili",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Dhamira ni ujumbe mkuu mwandishi anaotaka kuwasilisha, tofauti na muhtasari wa matukio. Mfano halisi husaidia kuelewa."
+            },
+            {
+                "competency": "Ufahamu na Msamiati",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Wanafunzi wanasoma kifungu vizuri kwa sauti lakini hawawezi kujibu maswali ya ufahamu. Mwalimu afanye nini?",
+                "options": [
+                    {
+                        "text": "Awaambie wasome kifungu kwa sauti mara nyingi zaidi hadi wakikumbuke maneno yote ndani yake",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ajibu maswali yote mwenyewe ubaoni ili wanafunzi wanakili majibu kwenye daftari lao",
+                        "correct": false
+                    },
+                    {
+                        "text": "Awafundishe mbinu za kusoma kwa kuelewa: kutabiri, kuuliza maswali na kufupisha kifungu",
+                        "correct": true
+                    },
+                    {
+                        "text": "Awaambie wakariri kifungu chote na kukisema neno kwa neno mbele ya darasa zima",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Kusoma kwa ufasaha si sawa na kuelewa. Mbinu za wazi za ufahamu humsaidia mwanafunzi kutafuta maana."
+            },
+            {
+                "competency": "Ufahamu na Msamiati",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Chagua kinyume cha neno \"ukarimu\".",
+                "options": [
+                    {
+                        "text": "ubahili",
+                        "correct": true
+                    },
+                    {
+                        "text": "uvivu",
+                        "correct": false
+                    },
+                    {
+                        "text": "ushujaa",
+                        "correct": false
+                    },
+                    {
+                        "text": "unyenyekevu",
+                        "correct": false
+                    }
+                ],
+                "explanation": "\"Ukarimu\" ni kutoa kwa moyo mkunjufu; kinyume chake ni \"ubahili\", yaani kukataa kutoa."
+            },
+            {
+                "competency": "Insha na Uandishi",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Ni kauli ipi inaeleza tofauti sahihi kati ya barua rasmi na barua ya kirafiki?",
+                "options": [
+                    {
+                        "text": "Barua rasmi haina tarehe wala anwani ya mwandishi, lakini barua ya kirafiki inazo zote mbili",
+                        "correct": false
+                    },
+                    {
+                        "text": "Barua ya kirafiki lazima iwe na kichwa cha barua na anwani mbili za pande zote",
+                        "correct": false
+                    },
+                    {
+                        "text": "Barua rasmi huandikwa kwa lugha ya mitaani ili ieleweke kwa urahisi na kila msomaji",
+                        "correct": false
+                    },
+                    {
+                        "text": "Barua rasmi ina kichwa cha barua na lugha ya heshima; ya kirafiki hutumia lugha ya kawaida",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Barua rasmi hufuata muundo maalum na lugha ya heshima, huku barua ya kirafiki ikiwa huru zaidi."
+            },
+            {
+                "competency": "Insha na Uandishi",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Insha za wanafunzi wako zina mawazo mazuri lakini hazina mpangilio wa aya. Ni hatua ipi ni bora?",
+                "options": [
+                    {
+                        "text": "Kufundisha muundo wa aya (wazo kuu na maelezo) na kuwafanya wapange mpango mfupi",
+                        "correct": true
+                    },
+                    {
+                        "text": "Kuwaambia waandike insha ndefu zaidi bila mpango ili wapate mawazo mengi zaidi",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kutoa alama tu bila maoni yoyote na kuendelea na mada inayofuata mara moja",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kurekebisha insha zote mwenyewe na kuziandika upya kabla ya kuzirudisha",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Mpango mfupi na muundo wa aya husaidia wanafunzi kupanga mawazo kabla ya kuandika."
+            },
+            {
+                "competency": "Mbinu za Ufundishaji na Tathmini",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Unataka kupima stadi ya kuzungumza ya wanafunzi. Ni njia zipi zinafaa? (Chagua zote zinazofaa — select all that apply.)",
+                "options": [
+                    {
+                        "text": "Kutoa mrejesho kuhusu ufasaha na usahihi wa lugha",
+                        "correct": true
+                    },
+                    {
+                        "text": "Kutumia kigezo wazi (rubriki) wanachokijua mapema",
+                        "correct": true
+                    },
+                    {
+                        "text": "Kutoa alama za juu kwa wanaozungumza kwa sauti kubwa zaidi",
+                        "correct": false
+                    },
+                    {
+                        "text": "Kuwaangalia wanafunzi wakati wa majadiliano ya vikundi na kuandika vielelezo",
+                        "correct": true
+                    },
+                    {
+                        "text": "Kutumia mtihani wa kuandika sarufi pekee",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Stadi ya kuzungumza hupimwa kwa kuzungumza, kwa vigezo vilivyo wazi na mrejesho. Sauti kubwa si kipimo cha ubora wa lugha."
+            }
+        ]
+    },
+    {
+        "skill_slug": "teaching-science",
+        "skill_name": "Teaching Science (Physics, Chemistry, Biology)",
+        "description": "Checks primary and O-level science content knowledge, safe practical work and ways of correcting common misconceptions.",
+        "competencies": [
+            {
+                "name": "Physics Concepts",
+                "description": "Forces, motion and light at primary and O-level.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Chemistry Concepts",
+                "description": "Matter, acids and bases, chemical change and reaction rates.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Biology Concepts",
+                "description": "Cells, health, genetics and human body systems.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Practical Work and Lab Safety",
+                "description": "Safe handling of materials, fair tests and scientific method.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Teaching Science and Misconceptions",
+                "description": "Explaining concepts, correcting misconceptions and teaching with limited resources.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Physics Concepts",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is the SI unit of force?",
+                "options": [
+                    {
+                        "text": "Newton",
+                        "correct": true
+                    },
+                    {
+                        "text": "Joule",
+                        "correct": false
+                    },
+                    {
+                        "text": "Watt",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pascal",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Force is measured in newtons (N). Joules measure energy, watts measure power and pascals measure pressure."
+            },
+            {
+                "competency": "Physics Concepts",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A bus travels 150 km in 2.5 hours. What is its average speed?",
+                "options": [
+                    {
+                        "text": "60 km/h",
+                        "correct": true
+                    },
+                    {
+                        "text": "75 km/h",
+                        "correct": false
+                    },
+                    {
+                        "text": "375 km/h",
+                        "correct": false
+                    },
+                    {
+                        "text": "6 km/h",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Average speed = distance ÷ time = 150 ÷ 2.5 = 60 km/h."
+            },
+            {
+                "competency": "Teaching Science and Misconceptions",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A pupil insists that a heavy stone always falls faster than a light one. What is the best way to address this?",
+                "options": [
+                    {
+                        "text": "Tell the pupil the answer is wrong and move on to the next topic without any demonstration",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree, because heavier objects feel a stronger pull of gravity and so must always fall faster to the ground than light ones",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the pupil to copy the definition of gravity into the notebook and learn it by heart for the next test on Friday",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let pupils test it: drop two objects of different mass together, then a flat and a crumpled paper",
+                        "correct": true
+                    }
+                ],
+                "explanation": "In air, shape affects air resistance, but without it all objects fall with the same acceleration. A simple test helps pupils confront the idea."
+            },
+            {
+                "competency": "Chemistry Concepts",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Pure water at room temperature has a pH of about:",
+                "options": [
+                    {
+                        "text": "14",
+                        "correct": false
+                    },
+                    {
+                        "text": "0",
+                        "correct": false
+                    },
+                    {
+                        "text": "1",
+                        "correct": false
+                    },
+                    {
+                        "text": "7",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A neutral solution such as pure water has a pH of about 7; acids are below 7 and alkalis above 7."
+            },
+            {
+                "competency": "Chemistry Concepts",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which of these are chemical changes? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Wood burning",
+                        "correct": true
+                    },
+                    {
+                        "text": "Iron rusting",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ice melting",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sugar dissolving in water",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cooking an egg",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Chemical changes form new substances. Melting and dissolving are physical changes that can be reversed more easily."
+            },
+            {
+                "competency": "Chemistry Concepts",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "According to collision theory, why does a reaction go faster when the temperature is raised?",
+                "options": [
+                    {
+                        "text": "The particles become smaller when heated and so they react with each other more easily",
+                        "correct": false
+                    },
+                    {
+                        "text": "The activation energy of the reaction becomes smaller because the mixture is hotter",
+                        "correct": false
+                    },
+                    {
+                        "text": "More particles are created when the mixture is heated, so there are more to react",
+                        "correct": false
+                    },
+                    {
+                        "text": "Particles move faster, collide more often and more collisions have enough energy",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Heating increases particle speed and energy, so there are more frequent and more successful collisions."
+            },
+            {
+                "competency": "Biology Concepts",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "In which part of a plant cell does photosynthesis take place?",
+                "options": [
+                    {
+                        "text": "Nucleus",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mitochondrion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Chloroplast",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ribosome",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Chloroplasts contain chlorophyll and are the site of photosynthesis."
+            },
+            {
+                "competency": "Biology Concepts",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which insect transmits the malaria parasite to people?",
+                "options": [
+                    {
+                        "text": "The tsetse fly",
+                        "correct": false
+                    },
+                    {
+                        "text": "The female Anopheles mosquito",
+                        "correct": true
+                    },
+                    {
+                        "text": "The female Aedes mosquito",
+                        "correct": false
+                    },
+                    {
+                        "text": "The male Anopheles mosquito",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Only female Anopheles mosquitoes feed on blood and carry Plasmodium. Aedes carries dengue and tsetse flies carry sleeping sickness."
+            },
+            {
+                "competency": "Biology Concepts",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Two pea plants that are both heterozygous for height (Tt) are crossed, and T is dominant. What is the expected ratio of tall to short offspring?",
+                "options": [
+                    {
+                        "text": "3 tall : 1 short",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 tall : 1 short",
+                        "correct": false
+                    },
+                    {
+                        "text": "1 tall : 3 short",
+                        "correct": false
+                    },
+                    {
+                        "text": "All tall",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Tt × Tt gives TT, Tt, Tt and tt, so three offspring show the dominant trait for every one with the recessive trait."
+            },
+            {
+                "competency": "Practical Work and Lab Safety",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "During a practical, a pupil gets a few drops of dilute acid on her hand. What should you do first?",
+                "options": [
+                    {
+                        "text": "Rub the area with a dry cloth and let her continue the practical so she does not miss it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do nothing at all if the pupil says there is no pain and the skin looks normal",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour a strong alkali on the skin to neutralise the acid and stop it from burning",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rinse the area under plenty of running water, then check for irritation and report it",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Flushing with plenty of water dilutes and removes the acid. Neutralising with a strong alkali would cause further injury."
+            },
+            {
+                "competency": "Teaching Science and Misconceptions",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your school has no laboratory or equipment. How should you teach a lesson on states of matter?",
+                "options": [
+                    {
+                        "text": "Demonstrate with local materials such as water, ice and bottles and let pupils record observations",
+                        "correct": true
+                    },
+                    {
+                        "text": "Skip practical work and let pupils copy the notes about solids, liquids and gases from the board into exercise books",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use only a textbook diagram of the three states and ask pupils not to interrupt the lesson with questions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask each pupil to buy laboratory apparatus from a shop and bring it to the next lesson",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Simple local materials allow observation and discussion, which help pupils understand better than copying notes."
+            },
+            {
+                "competency": "Practical Work and Lab Safety",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Pupils plan an experiment to find out whether fertiliser affects bean growth. Which design features make it a fair test? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Keep soil, water, light and seed type the same for all plants",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use several plants for each condition and take the average growth",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use one plant for each condition and compare them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give some plants more water to save time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change only one variable, the amount of fertiliser",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A fair test changes one variable and controls others. Repeating with several plants reduces the effect of chance."
+            }
+        ]
+    },
+    {
+        "skill_slug": "teaching-ict",
+        "skill_name": "Teaching ICT / Computer Studies",
+        "description": "Checks computer-studies knowledge, safe internet practice and the ability to teach ICT with limited equipment.",
+        "competencies": [
+            {
+                "name": "Hardware and Software Fundamentals",
+                "description": "Devices, memory, storage and types of software.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Office Productivity Tools",
+                "description": "Word processing and spreadsheet skills including formulas.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Internet Safety and Digital Citizenship",
+                "description": "Passwords, phishing, scams and protecting pupils online.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Programming and Computational Thinking",
+                "description": "Reading simple code and understanding algorithms.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Teaching ICT with Limited Equipment",
+                "description": "Organising lessons and assessment when computers are few.",
+                "weight": 25,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Hardware and Software Fundamentals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which of these is an output device?",
+                "options": [
+                    {
+                        "text": "Mouse",
+                        "correct": false
+                    },
+                    {
+                        "text": "Microphone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Printer",
+                        "correct": true
+                    },
+                    {
+                        "text": "Scanner",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A printer produces output from the computer; the others send data into the computer."
+            },
+            {
+                "competency": "Hardware and Software Fundamentals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which statement about RAM is correct?",
+                "options": [
+                    {
+                        "text": "It is the main processor that carries out calculations for the whole computer",
+                        "correct": false
+                    },
+                    {
+                        "text": "It permanently stores all of the user's files even when there is no power",
+                        "correct": false
+                    },
+                    {
+                        "text": "It is storage that is only used for photos, videos and other large media files",
+                        "correct": false
+                    },
+                    {
+                        "text": "It is temporary working memory whose contents are lost when the power is off",
+                        "correct": true
+                    }
+                ],
+                "explanation": "RAM is volatile memory used for programs and data in use; files are saved on storage such as a hard disk or SSD."
+            },
+            {
+                "competency": "Hardware and Software Fundamentals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which of these is an example of an operating system?",
+                "options": [
+                    {
+                        "text": "Google Chrome",
+                        "correct": false
+                    },
+                    {
+                        "text": "Microsoft Excel",
+                        "correct": false
+                    },
+                    {
+                        "text": "PowerPoint",
+                        "correct": false
+                    },
+                    {
+                        "text": "Windows",
+                        "correct": true
+                    }
+                ],
+                "explanation": "An operating system manages the computer hardware and runs other programs. Excel, Chrome and PowerPoint are application software."
+            },
+            {
+                "competency": "Office Productivity Tools",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which spreadsheet formula gives the average of the values in cells B2 to B6?",
+                "options": [
+                    {
+                        "text": "=MEAN(B2:B6)",
+                        "correct": false
+                    },
+                    {
+                        "text": "=AVERAGE(B2:B6)",
+                        "correct": true
+                    },
+                    {
+                        "text": "=AVERAGE(B2:B6)/5",
+                        "correct": false
+                    },
+                    {
+                        "text": "=SUM(B2:B6)",
+                        "correct": false
+                    }
+                ],
+                "explanation": "AVERAGE(range) adds the values and divides by how many there are. MEAN is not a spreadsheet function."
+            },
+            {
+                "competency": "Office Productivity Tools",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "In a fee sheet, cell D2 contains =B2*C1 where C1 holds the discount rate. When copied down to D3, the result is wrong. What is the best fix?",
+                "options": [
+                    {
+                        "text": "Change D2 to =B2*$C$1 and copy it down again",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delete column C and enter the rate in each cell",
+                        "correct": false
+                    },
+                    {
+                        "text": "Type each formula by hand in every row with the new C number",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change D2 to =B2*C2 and copy it down",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The $ signs make the reference to C1 absolute, so it does not move when the formula is copied."
+            },
+            {
+                "competency": "Internet Safety and Digital Citizenship",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A pupil tells you a stranger on social media is asking for her photos and her home address. What is the best advice?",
+                "options": [
+                    {
+                        "text": "Ask the stranger to send his own photo and address first to prove who he is",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do not reply or share anything, block and report the person, and tell a trusted adult",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delete the messages straight away and tell nobody at home or at school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reply politely and share only the home address but not the photos",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Pupils should never share personal information with strangers, and the incident should be reported to a trusted adult so they are protected."
+            },
+            {
+                "competency": "Internet Safety and Digital Citizenship",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which are features of a strong password? Select all that apply.",
+                "options": [
+                    {
+                        "text": "It is the same on every account so you can remember it",
+                        "correct": false
+                    },
+                    {
+                        "text": "It mixes letters, numbers and symbols",
+                        "correct": true
+                    },
+                    {
+                        "text": "It is long, for example 12 or more characters",
+                        "correct": true
+                    },
+                    {
+                        "text": "It is different for each important account",
+                        "correct": true
+                    },
+                    {
+                        "text": "It is your name followed by your birth year",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Long, varied and unique passwords are harder to guess and one stolen password does not open other accounts."
+            },
+            {
+                "competency": "Internet Safety and Digital Citizenship",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A caller says he is from your mobile money provider and asks for your PIN to \"reverse a wrong transfer\". What should you do?",
+                "options": [
+                    {
+                        "text": "Share only the first two digits of the PIN so the caller can verify the account",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the PIN quickly so that the wrong transfer can be reversed and the money returned",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send a small amount of money to the caller first to prove that the request is genuine",
+                        "correct": false
+                    },
+                    {
+                        "text": "End the call, never share the PIN and contact the provider on its official number",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Providers never ask for your PIN. This is a common scam, so you should end the call and report it through official channels."
+            },
+            {
+                "competency": "Programming and Computational Thinking",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is the output of this Python code?  for i in range(3):  print(i)",
+                "options": [
+                    {
+                        "text": "0 1 2 3 (each on a new line)",
+                        "correct": false
+                    },
+                    {
+                        "text": "0 1 2 (each on a new line)",
+                        "correct": true
+                    },
+                    {
+                        "text": "1 2 3 (each on a new line)",
+                        "correct": false
+                    },
+                    {
+                        "text": "3",
+                        "correct": false
+                    }
+                ],
+                "explanation": "range(3) produces 0, 1 and 2, so three numbers are printed starting from 0."
+            },
+            {
+                "competency": "Programming and Computational Thinking",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What does this program print?  x = 5;  x = x + 2;  if x > 6: x = x - 3;  print(x * 2)",
+                "options": [
+                    {
+                        "text": "4",
+                        "correct": false
+                    },
+                    {
+                        "text": "10",
+                        "correct": false
+                    },
+                    {
+                        "text": "14",
+                        "correct": false
+                    },
+                    {
+                        "text": "8",
+                        "correct": true
+                    }
+                ],
+                "explanation": "x becomes 7, which is greater than 6, so x becomes 4. Then 4 × 2 = 8 is printed."
+            },
+            {
+                "competency": "Teaching ICT with Limited Equipment",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You have 40 pupils and only 5 working computers. What is the best way to organise a practical lesson?",
+                "options": [
+                    {
+                        "text": "Let the pupils decide among themselves who may use a computer and who must wait",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let only the best pupils use the computers while the rest watch from their desks",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rotate small groups with defined roles on the computers while others do paper-based planning",
+                        "correct": true
+                    },
+                    {
+                        "text": "Teach only theory from the notes and skip all practice because computers are few",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Rotation gives everyone hands-on time, and paper tasks keep the other pupils learning."
+            },
+            {
+                "competency": "Teaching ICT with Limited Equipment",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Your school has a power cut and no computers for a week. Which activities can still teach ICT concepts? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Ask pupils to memorise definitions only without any activity",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pupils draw a paper keyboard and practise finger positions",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pupils role-play input, processing, storage and output as a human computer",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cancel ICT lessons until new computers are bought",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pupils write step-by-step instructions or a flowchart for a daily task",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Unplugged activities teach hardware, typing and algorithm concepts without electricity."
+            }
+        ]
+    },
+    {
+        "skill_slug": "teaching-social-studies",
+        "skill_name": "Teaching Social Studies (Geography, History, Civics)",
+        "description": "Checks geography, history and civics knowledge for Tanzania and East Africa, map and source skills, and teaching approaches for social studies.",
+        "competencies": [
+            {
+                "name": "Geography",
+                "description": "Physical and human geography of Tanzania and East Africa, including climate.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "History",
+                "description": "Key events in Tanzanian and East African history.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Civics and Citizenship",
+                "description": "Government, rights and responsibilities of citizens.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Map Skills and Source Analysis",
+                "description": "Reading maps and judging historical sources.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Teaching Methods and Assessment",
+                "description": "Active methods for social studies and handling sensitive topics.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Geography",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is the largest lake in Africa by surface area?",
+                "options": [
+                    {
+                        "text": "Lake Rukwa",
+                        "correct": false
+                    },
+                    {
+                        "text": "Lake Nyasa",
+                        "correct": false
+                    },
+                    {
+                        "text": "Lake Tanganyika",
+                        "correct": false
+                    },
+                    {
+                        "text": "Lake Victoria",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Lake Victoria is the largest African lake by area; Lake Tanganyika is the deepest."
+            },
+            {
+                "competency": "Geography",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Why does the windward side of Mount Kilimanjaro receive heavy rainfall?",
+                "options": [
+                    {
+                        "text": "Air sinks and warms as it passes over the peak",
+                        "correct": false
+                    },
+                    {
+                        "text": "Moist air is forced upwards, cools and condenses to form rain",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hot ground heats the air and causes daily thunderstorms",
+                        "correct": false
+                    },
+                    {
+                        "text": "Strong tides carry sea water onto the slopes",
+                        "correct": false
+                    }
+                ],
+                "explanation": "This is relief (orographic) rainfall: moist air rising over high ground cools, condenses and falls as rain."
+            },
+            {
+                "competency": "History",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which event took place on 26 April 1964?",
+                "options": [
+                    {
+                        "text": "The Union of Tanganyika and Zanzibar",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tanganyika's independence from Britain",
+                        "correct": false
+                    },
+                    {
+                        "text": "The Zanzibar Revolution against the Sultan",
+                        "correct": false
+                    },
+                    {
+                        "text": "The Arusha Declaration on socialism",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Union Day marks the union of Tanganyika and Zanzibar to form the United Republic. The Zanzibar Revolution was in January 1964."
+            },
+            {
+                "competency": "Map Skills and Source Analysis",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A pupil writes that \"Africans accepted colonial taxes happily\" based only on a colonial officer's report. How should you guide the pupil?",
+                "options": [
+                    {
+                        "text": "Tell the pupil that old documents cannot be used in history",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the pupil to remove all sources and just write from memory",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the pupil that official reports are always true because they were written at the time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask who wrote it and why, and compare it with other sources such as African oral accounts",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Sources have authors with viewpoints and purposes. Comparing different sources gives a more balanced conclusion."
+            },
+            {
+                "competency": "Civics and Citizenship",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which body makes laws in Mainland Tanzania?",
+                "options": [
+                    {
+                        "text": "The Police Force",
+                        "correct": false
+                    },
+                    {
+                        "text": "The Judiciary",
+                        "correct": false
+                    },
+                    {
+                        "text": "The President acting alone",
+                        "correct": false
+                    },
+                    {
+                        "text": "The Parliament (Bunge)",
+                        "correct": true
+                    }
+                ],
+                "explanation": "The Bunge is the legislature that passes laws. The judiciary interprets them and the executive implements them."
+            },
+            {
+                "competency": "Civics and Citizenship",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "During a class prefect election, some pupils complain that one candidate is giving out sweets for votes. How should you use this?",
+                "options": [
+                    {
+                        "text": "Punish the pupils who complained for creating trouble during the election",
+                        "correct": false
+                    },
+                    {
+                        "text": "Discuss why bribery is unfair and let the class set rules for a fair election",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore the complaint because it is only a school election and not a national one",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cancel the election and appoint the prefect yourself without asking the class",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Practising fair rules teaches civic values such as honesty, equal opportunity and respect for the vote."
+            },
+            {
+                "competency": "Civics and Citizenship",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which are responsibilities of a good citizen? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Choosing which laws to follow",
+                        "correct": false
+                    },
+                    {
+                        "text": "Punishing suspected thieves yourself",
+                        "correct": false
+                    },
+                    {
+                        "text": "Protecting public property such as school buildings and roads",
+                        "correct": true
+                    },
+                    {
+                        "text": "Obeying the laws of the country",
+                        "correct": true
+                    },
+                    {
+                        "text": "Paying taxes honestly as required by law",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Citizens have duties to support the state and the community; justice should be left to the courts and not to the public."
+            },
+            {
+                "competency": "Map Skills and Source Analysis",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "On a map with scale 1:50,000, two villages are 4 cm apart. What is the real distance?",
+                "options": [
+                    {
+                        "text": "200 m",
+                        "correct": false
+                    },
+                    {
+                        "text": "20 km",
+                        "correct": false
+                    },
+                    {
+                        "text": "4 km",
+                        "correct": false
+                    },
+                    {
+                        "text": "2 km",
+                        "correct": true
+                    }
+                ],
+                "explanation": "4 cm × 50,000 = 200,000 cm = 2,000 m = 2 km."
+            },
+            {
+                "competency": "History",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What was a main cause of the Maji Maji uprising (1905–1907) against German rule?",
+                "options": [
+                    {
+                        "text": "A dispute over borders set at the Berlin Conference",
+                        "correct": false
+                    },
+                    {
+                        "text": "Forced cotton growing and harsh labour demands",
+                        "correct": true
+                    },
+                    {
+                        "text": "Competition over clove plantations in Zanzibar",
+                        "correct": false
+                    },
+                    {
+                        "text": "A British ban on the ivory trade",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Forced communal cotton cultivation and heavy labour demands angered many communities in southern Tanganyika."
+            },
+            {
+                "competency": "Geography",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What mainly causes the two rainy seasons (masika and vuli) in northern and eastern Tanzania?",
+                "options": [
+                    {
+                        "text": "The tides of the Indian Ocean rising and falling twice in a year",
+                        "correct": false
+                    },
+                    {
+                        "text": "Volcanic activity in the Rift Valley that releases moisture into the air",
+                        "correct": false
+                    },
+                    {
+                        "text": "The north–south movement of the Inter-Tropical Convergence Zone (ITCZ)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Seasonal changes in the speed of the Earth's rotation on its axis",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The ITCZ passes over these areas twice a year as it moves north and south, bringing the two rainy seasons."
+            },
+            {
+                "competency": "Teaching Methods and Assessment",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your pupils say history is boring because it is only dates to memorise. What is the best way to respond?",
+                "options": [
+                    {
+                        "text": "Dictate longer notes on every event and test the exact dates each week in class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teach only the most recent history because it is easier for pupils to remember",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give lessons in complete silence so pupils concentrate on memorising names and dates",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use timelines, storytelling and role-play to link events to people's lives",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Active, story-based methods help pupils understand why events matter and remember them better than memorising dates."
+            },
+            {
+                "competency": "Teaching Methods and Assessment",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A class discussion about the Union becomes heated and pupils begin to insult each other. What should you do?",
+                "options": [
+                    {
+                        "text": "Declare which side is right and punish everyone on the other side in front of the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pause, remind pupils of the ground rules, and ask them to support their views with evidence",
+                        "correct": true
+                    },
+                    {
+                        "text": "Stop all discussion of sensitive topics such as the Union for the rest of the year",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let the argument continue so that pupils learn to defend themselves without help",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Ground rules and evidence-based discussion allow pupils to explore sensitive topics respectfully."
+            }
+        ]
+    }
+]

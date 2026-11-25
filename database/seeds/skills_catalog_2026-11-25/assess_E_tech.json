@@ -1,0 +1,2136 @@
+[
+    {
+        "skill_slug": "software-development",
+        "skill_name": "Software Development",
+        "description": "Checks programming fundamentals, debugging, Git, testing, and safe use of databases and APIs.",
+        "competencies": [
+            {
+                "name": "Programming Fundamentals",
+                "description": "Understands variables, functions, loops and how data is stored and passed in code.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Debugging & Problem Solving",
+                "description": "Finds and fixes faults in a logical, step-by-step way.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Version Control",
+                "description": "Uses Git to save, share and merge work safely with other developers.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Testing & Quality",
+                "description": "Uses tests to prove that code works and keeps working.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Databases & APIs",
+                "description": "Writes safe database queries and understands how web APIs behave.",
+                "weight": 25,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Programming Fundamentals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which statement best describes a function in programming?",
+                "options": [
+                    {
+                        "text": "A variable whose value can never be changed once the program has started",
+                        "correct": false
+                    },
+                    {
+                        "text": "A program that translates source code into machine code for the computer to run",
+                        "correct": false
+                    },
+                    {
+                        "text": "A named block of code that can be run many times, often with inputs",
+                        "correct": true
+                    },
+                    {
+                        "text": "A file that keeps data on disk after the computer is switched off",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A function is a named, reusable block of code that can take inputs and return a result."
+            },
+            {
+                "competency": "Programming Fundamentals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "In JavaScript, what is printed by this code?  let x = 5; x = x + 2; x = x * 3; console.log(x);",
+                "options": [
+                    {
+                        "text": "21",
+                        "correct": true
+                    },
+                    {
+                        "text": "11",
+                        "correct": false
+                    },
+                    {
+                        "text": "17",
+                        "correct": false
+                    },
+                    {
+                        "text": "15",
+                        "correct": false
+                    }
+                ],
+                "explanation": "x becomes 7 after the addition, then 7 * 3 = 21."
+            },
+            {
+                "competency": "Programming Fundamentals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "In JavaScript, what is printed?  let a = [1, 2, 3]; let b = a; b.push(4); console.log(a.length);",
+                "options": [
+                    {
+                        "text": "3",
+                        "correct": false
+                    },
+                    {
+                        "text": "7",
+                        "correct": false
+                    },
+                    {
+                        "text": "It causes an error",
+                        "correct": false
+                    },
+                    {
+                        "text": "4",
+                        "correct": true
+                    }
+                ],
+                "explanation": "b is not a copy; both a and b point to the same array, so adding to b also changes a, which now has 4 items."
+            },
+            {
+                "competency": "Debugging & Problem Solving",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A loop should print the numbers 1 to 10 but prints only 1 to 9. The loop is: for (i = 1; i < 10; i++). What is the problem?",
+                "options": [
+                    {
+                        "text": "The loop must start at 0 instead of 1, because counting always begins from zero",
+                        "correct": false
+                    },
+                    {
+                        "text": "The condition i < 10 stops before 10; it should be i <= 10",
+                        "correct": true
+                    },
+                    {
+                        "text": "The variable i must be declared as a string before the loop starts",
+                        "correct": false
+                    },
+                    {
+                        "text": "The loop needs a second counter variable to track the last number",
+                        "correct": false
+                    }
+                ],
+                "explanation": "With i < 10 the loop stops when i reaches 10, so 10 is never printed. Using i <= 10 includes it."
+            },
+            {
+                "competency": "Debugging & Problem Solving",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A user reports that your app crashes when saving a student who has no phone number. You cannot reproduce it because your test students all have phone numbers. What is the best first step?",
+                "options": [
+                    {
+                        "text": "Tell the user the problem is probably on their phone and close the report as resolved",
+                        "correct": false
+                    },
+                    {
+                        "text": "Add a fake phone number to every student record in the database and test again",
+                        "correct": false
+                    },
+                    {
+                        "text": "Save a student with no phone number yourself and read the error message or log",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rewrite the whole save function before you know the real cause of the crash",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Reproducing the problem with the same kind of data, and reading the error, shows the real cause before you change anything."
+            },
+            {
+                "competency": "Debugging & Problem Solving",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "A report page worked yesterday but shows an error after today's update. Select all that apply: which steps are good debugging practice?",
+                "options": [
+                    {
+                        "text": "Read the exact error message and check the server error log",
+                        "correct": true
+                    },
+                    {
+                        "text": "Look at what changed in the latest update, for example in the commit history",
+                        "correct": true
+                    },
+                    {
+                        "text": "Change several settings at once so that one of them is bound to fix it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Try to reproduce the error in a test copy and narrow down the failing step",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delete the log files so that new errors are easier to see",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Good debugging uses evidence (errors, logs, recent changes) and isolates the problem. Changing many things at once or deleting logs destroys information."
+            },
+            {
+                "competency": "Version Control",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "In Git, what does the command \"git commit\" do?",
+                "options": [
+                    {
+                        "text": "Saves a snapshot of the staged changes in your local repository",
+                        "correct": true
+                    },
+                    {
+                        "text": "Uploads your commits to the remote server such as GitHub so that others can see them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Downloads the latest changes from the remote repository into your working folder",
+                        "correct": false
+                    },
+                    {
+                        "text": "Creates a new branch from the current one so that you can work separately",
+                        "correct": false
+                    }
+                ],
+                "explanation": "git commit records staged changes in your local history. Uploading is done with git push."
+            },
+            {
+                "competency": "Version Control",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You and a colleague changed the same lines of one file on different branches. When you merge, Git reports a conflict. What should you do?",
+                "options": [
+                    {
+                        "text": "Delete the other branch so that the conflict disappears and you can continue working",
+                        "correct": false
+                    },
+                    {
+                        "text": "Force-push your version so that it replaces your colleague's work on the remote branch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Run git add and commit straight away without opening the file, leaving the conflict markers inside it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Edit the file, keep the correct lines, remove the conflict markers, test, then commit",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A conflict must be resolved by choosing the right content, removing the markers, testing, and then committing the merge."
+            },
+            {
+                "competency": "Testing & Quality",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is the main purpose of a unit test?",
+                "options": [
+                    {
+                        "text": "Measure how fast the server responds when thousands of users connect at the same time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check that the final website colours and fonts match the design given by the client",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let real users try the full system in a realistic setting before it is released",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check that a small piece of code, such as a function, gives the expected result",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A unit test checks one small unit of code in isolation against an expected result."
+            },
+            {
+                "competency": "Testing & Quality",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You fixed a bug in the fee-balance calculation. Which action best stops the same bug from returning later?",
+                "options": [
+                    {
+                        "text": "Send an email to the team describing what was changed",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask a colleague to check one balance by hand",
+                        "correct": false
+                    },
+                    {
+                        "text": "Add an automated test that fails with the old code and passes with the fix",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delete the comments so the function is shorter",
+                        "correct": false
+                    }
+                ],
+                "explanation": "An automated test will fail again if the bug ever comes back, so it protects the fix permanently."
+            },
+            {
+                "competency": "Databases & APIs",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A PHP page builds this query from a form field: \"SELECT * FROM users WHERE name = '\" . $name . \"'\". An attacker types  ' OR '1'='1  as the name. What is the best fix?",
+                "options": [
+                    {
+                        "text": "Hide all error messages so attackers cannot see the query",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use prepared statements with bound parameters instead of joining strings",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use a longer password for the database account",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remove the word OR from every input using str_replace",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Prepared statements keep user input separate from the SQL command, which prevents SQL injection. Filtering words or hiding errors is not reliable."
+            },
+            {
+                "competency": "Databases & APIs",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Select all that apply: which statements about web APIs are correct?",
+                "options": [
+                    {
+                        "text": "A GET request is normally used to read data",
+                        "correct": true
+                    },
+                    {
+                        "text": "HTTP status 404 means the requested resource was not found",
+                        "correct": true
+                    },
+                    {
+                        "text": "HTTP status 500 means the user typed a wrong URL",
+                        "correct": false
+                    },
+                    {
+                        "text": "HTTP status 200 means the request failed",
+                        "correct": false
+                    },
+                    {
+                        "text": "JSON is a common format for sending data in APIs",
+                        "correct": true
+                    }
+                ],
+                "explanation": "GET reads data, 404 means not found, and JSON is widely used. 500 is a server error and 200 means success."
+            }
+        ]
+    },
+    {
+        "skill_slug": "web-development",
+        "skill_name": "Web Development",
+        "description": "Checks HTML, CSS, JavaScript, HTTP, performance on slow connections, accessibility and web security basics.",
+        "competencies": [
+            {
+                "name": "HTML & Semantics",
+                "description": "Writes correct, meaningful HTML for pages and forms.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "CSS & Responsive Design",
+                "description": "Styles pages with CSS and makes them work on phones and small screens.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "JavaScript & DOM",
+                "description": "Uses JavaScript to read and change the page and respond to users.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "HTTP & Performance",
+                "description": "Understands HTTP methods and makes pages load well on slow mobile data.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Web Security & Accessibility",
+                "description": "Builds pages that are safe from common attacks and usable by everyone.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "HTML & Semantics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which HTML tag is used for the main (largest) heading on a page?",
+                "options": [
+                    {
+                        "text": "<head>",
+                        "correct": false
+                    },
+                    {
+                        "text": "<title>",
+                        "correct": false
+                    },
+                    {
+                        "text": "<h1>",
+                        "correct": true
+                    },
+                    {
+                        "text": "<h6>",
+                        "correct": false
+                    }
+                ],
+                "explanation": "<h1> is the top-level heading. <h6> is the smallest heading, and <head> and <title> belong to the page header information."
+            },
+            {
+                "competency": "HTML & Semantics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Why do we write <label for=\"phone\"> together with <input id=\"phone\">?",
+                "options": [
+                    {
+                        "text": "It makes the phone field compulsory, so the form cannot be sent while it is empty",
+                        "correct": false
+                    },
+                    {
+                        "text": "It links the label to the field, so clicking the label focuses the field",
+                        "correct": true
+                    },
+                    {
+                        "text": "It makes the form send its data to the server faster than a form without labels",
+                        "correct": false
+                    },
+                    {
+                        "text": "It changes the font and size of the text typed inside the field",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The for attribute connects the label to the input with the same id, which helps mouse, touch and screen-reader users."
+            },
+            {
+                "competency": "CSS & Responsive Design",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which CSS property changes the colour of text?",
+                "options": [
+                    {
+                        "text": "font-color",
+                        "correct": false
+                    },
+                    {
+                        "text": "text-style",
+                        "correct": false
+                    },
+                    {
+                        "text": "background",
+                        "correct": false
+                    },
+                    {
+                        "text": "color",
+                        "correct": true
+                    }
+                ],
+                "explanation": "The color property sets text colour. background changes the area behind the text."
+            },
+            {
+                "competency": "CSS & Responsive Design",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your school website looks fine on a laptop, but on phones users must scroll sideways. What is the best fix?",
+                "options": [
+                    {
+                        "text": "Make all the text smaller so that everything fits inside the screen width",
+                        "correct": false
+                    },
+                    {
+                        "text": "Add the viewport meta tag and use flexible widths such as max-width: 100%",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask users to turn their phones sideways every time they open the school website",
+                        "correct": false
+                    },
+                    {
+                        "text": "Add more images so that the page fills the whole width of the screen",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A viewport meta tag plus flexible widths and media queries lets the layout adapt to any screen width."
+            },
+            {
+                "competency": "CSS & Responsive Design",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What does this CSS do?  @media (max-width: 600px) { .menu { display: none; } }",
+                "options": [
+                    {
+                        "text": "Hides .menu when the screen is 600 pixels wide or any wider than that",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hides .menu only when the page is printed on paper from the browser",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hides .menu when the screen is 600 pixels wide or narrower",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hides .menu on screens that are exactly 600 pixels tall in any width",
+                        "correct": false
+                    }
+                ],
+                "explanation": "max-width: 600px applies the rules when the viewport width is 600 pixels or less."
+            },
+            {
+                "competency": "JavaScript & DOM",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What does this line do?  document.getElementById('total').textContent = '5000';",
+                "options": [
+                    {
+                        "text": "Creates a new element with the id total",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reads the text of the element with the id total",
+                        "correct": false
+                    },
+                    {
+                        "text": "Removes the element with the id total from the page",
+                        "correct": false
+                    },
+                    {
+                        "text": "Changes the text of the element with the id total to 5000",
+                        "correct": true
+                    }
+                ],
+                "explanation": "getElementById finds the element, and assigning to textContent replaces its text."
+            },
+            {
+                "competency": "JavaScript & DOM",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What does this code print?  console.log('5' + 3);  console.log('5' - 3);",
+                "options": [
+                    {
+                        "text": "53 and 2",
+                        "correct": true
+                    },
+                    {
+                        "text": "8 and 2",
+                        "correct": false
+                    },
+                    {
+                        "text": "53 and 53",
+                        "correct": false
+                    },
+                    {
+                        "text": "8 and 8",
+                        "correct": false
+                    }
+                ],
+                "explanation": "With + and a string, JavaScript joins the values to give \"53\". The - operator converts the string to a number, giving 2."
+            },
+            {
+                "competency": "JavaScript & DOM",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "You add a click handler to a button, but nothing happens when you click it. Select all that apply: which checks are useful?",
+                "options": [
+                    {
+                        "text": "Open the browser console and look for JavaScript errors",
+                        "correct": true
+                    },
+                    {
+                        "text": "Check that the id or selector in the JavaScript matches the HTML",
+                        "correct": true
+                    },
+                    {
+                        "text": "Make sure the script runs after the button exists on the page",
+                        "correct": true
+                    },
+                    {
+                        "text": "Replace the button with a picture of a button",
+                        "correct": false
+                    },
+                    {
+                        "text": "Increase the font size of the button text",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Errors, a wrong selector, or a script running before the element exists are the usual causes. Changing the look does not help."
+            },
+            {
+                "competency": "HTTP & Performance",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A login form sends a password to the server. Which method should the form use, and why?",
+                "options": [
+                    {
+                        "text": "GET, because the page can then be bookmarked easily by every user",
+                        "correct": false
+                    },
+                    {
+                        "text": "GET, because it is faster for small amounts of data",
+                        "correct": false
+                    },
+                    {
+                        "text": "HEAD, because it hides the page content from other users",
+                        "correct": false
+                    },
+                    {
+                        "text": "POST, so that the password is not placed in the URL",
+                        "correct": true
+                    }
+                ],
+                "explanation": "GET puts data in the URL, where it can appear in history and logs. POST sends it in the request body."
+            },
+            {
+                "competency": "HTTP & Performance",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Users on slow mobile data say your page takes very long to load. It has 6 MB of full-size photos. What is the best first improvement?",
+                "options": [
+                    {
+                        "text": "Add animated banners so users enjoy waiting",
+                        "correct": false
+                    },
+                    {
+                        "text": "Replace the photos with larger, sharper versions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Resize and compress the photos before putting them on the page",
+                        "correct": true
+                    },
+                    {
+                        "text": "Load three more JavaScript libraries for effects",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Large images are the biggest cost on slow connections; resizing and compressing them reduces data a lot."
+            },
+            {
+                "competency": "Web Security & Accessibility",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A comment box shows visitors' comments using innerHTML. A visitor posts: <script>stealCookies()</script>. What is this attack, and what is the best fix?",
+                "options": [
+                    {
+                        "text": "SQL injection; use prepared statements for every database query",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cross-site scripting (XSS); escape the output or use textContent",
+                        "correct": true
+                    },
+                    {
+                        "text": "Clickjacking; remove all the images from the page and block every iframe",
+                        "correct": false
+                    },
+                    {
+                        "text": "Denial of service; add a faster server to handle more visitors",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Injecting script into a page is XSS. Escaping output, or using textContent instead of innerHTML, stops the script from running."
+            },
+            {
+                "competency": "Web Security & Accessibility",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your page shows light grey text on a white background and some users cannot read it. What should you do?",
+                "options": [
+                    {
+                        "text": "Increase the colour contrast, aiming for at least 4.5:1 for normal text",
+                        "correct": true
+                    },
+                    {
+                        "text": "Make the text italic so it stands out",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reduce the font size so it looks neater",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use an even lighter grey so it looks softer",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Low contrast is hard to read, especially in bright sunlight or for low-vision users. WCAG recommends at least 4.5:1 for normal text."
+            }
+        ]
+    },
+    {
+        "skill_slug": "it-support-networking",
+        "skill_name": "IT Support & Networking",
+        "description": "Checks troubleshooting of PCs and printers, Windows, LAN/Wi-Fi and IP basics, backups, and supporting users.",
+        "competencies": [
+            {
+                "name": "Hardware & Peripherals",
+                "description": "Diagnoses simple faults in computers, monitors, printers and other devices.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Windows & Software Support",
+                "description": "Fixes common Windows and software problems safely.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Networking & IP Addressing",
+                "description": "Understands LAN, Wi-Fi, IP addresses and basic network troubleshooting.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Backup & Data Protection",
+                "description": "Protects data with sound backups and knows how to recover from failures.",
+                "weight": 15,
+                "is_critical": 1
+            },
+            {
+                "name": "User Support & Communication",
+                "description": "Helps users calmly, clearly and securely.",
+                "weight": 20,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Hardware & Peripherals",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A staff PC is switched on and its power light is on, but the monitor shows \"No signal\". What should you check first?",
+                "options": [
+                    {
+                        "text": "Reinstall Windows on the computer and restore all the programs again",
+                        "correct": false
+                    },
+                    {
+                        "text": "Replace the hard disk with a new one and copy the old data onto it",
+                        "correct": false
+                    },
+                    {
+                        "text": "The video cable at both ends and the monitor input source",
+                        "correct": true
+                    },
+                    {
+                        "text": "Buy a new keyboard and mouse and plug them into other USB ports",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A \"No signal\" message usually means a loose cable or the wrong input source, so check these simple things first."
+            },
+            {
+                "competency": "Hardware & Peripherals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which part of a computer holds the data and programs currently in use, and loses them when power is switched off?",
+                "options": [
+                    {
+                        "text": "Hard disk",
+                        "correct": false
+                    },
+                    {
+                        "text": "ROM",
+                        "correct": false
+                    },
+                    {
+                        "text": "Power supply",
+                        "correct": false
+                    },
+                    {
+                        "text": "RAM",
+                        "correct": true
+                    }
+                ],
+                "explanation": "RAM is temporary working memory. Its contents are lost when the computer is switched off."
+            },
+            {
+                "competency": "Windows & Software Support",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which Windows tool shows which program is using the most CPU or memory and lets you close a frozen program?",
+                "options": [
+                    {
+                        "text": "Device Manager",
+                        "correct": false
+                    },
+                    {
+                        "text": "Task Manager",
+                        "correct": true
+                    },
+                    {
+                        "text": "Disk Cleanup",
+                        "correct": false
+                    },
+                    {
+                        "text": "Windows Update",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Task Manager shows running programs and resource use, and can end a program that has stopped responding."
+            },
+            {
+                "competency": "Windows & Software Support",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "After a new Wi-Fi driver is installed, a PC shows a blue screen every time Windows starts. What is the best recovery step?",
+                "options": [
+                    {
+                        "text": "Start in Safe Mode and roll back or uninstall the new driver",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reinstall Windows at once and format the whole drive before anything else",
+                        "correct": false
+                    },
+                    {
+                        "text": "Replace the RAM chips with new ones from another brand of computer",
+                        "correct": false
+                    },
+                    {
+                        "text": "Turn off the antivirus permanently and restart the PC many times",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The fault started after the driver change, so Safe Mode lets you remove that driver without losing data."
+            },
+            {
+                "competency": "Windows & Software Support",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "A user's PC has become very slow. Select all that apply: which checks are reasonable?",
+                "options": [
+                    {
+                        "text": "Look in Task Manager for programs using high CPU, memory or disk",
+                        "correct": true
+                    },
+                    {
+                        "text": "Check how much free space is left on the C: drive",
+                        "correct": true
+                    },
+                    {
+                        "text": "Scan the PC with an up-to-date antivirus program",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delete the Windows folder to free disk space",
+                        "correct": false
+                    },
+                    {
+                        "text": "Switch the PC off at the wall while updates are installing",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Resource use, low disk space and malware are common causes of slowness. Deleting Windows or cutting power during updates damages the system."
+            },
+            {
+                "competency": "Networking & IP Addressing",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A PC shows the IP address 169.254.12.7 and cannot reach the network. What does this usually mean?",
+                "options": [
+                    {
+                        "text": "It has a fixed public address given by the ISP",
+                        "correct": false
+                    },
+                    {
+                        "text": "It could not get an address from the DHCP server",
+                        "correct": true
+                    },
+                    {
+                        "text": "The firewall has blocked all websites",
+                        "correct": false
+                    },
+                    {
+                        "text": "It is connected normally to the internet",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Addresses starting with 169.254 are self-assigned when the PC cannot get an address from a DHCP server (for example the router)."
+            },
+            {
+                "competency": "Networking & IP Addressing",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which of these is a private IPv4 address?",
+                "options": [
+                    {
+                        "text": "172.40.0.5",
+                        "correct": false
+                    },
+                    {
+                        "text": "192.169.1.10",
+                        "correct": false
+                    },
+                    {
+                        "text": "11.20.0.8",
+                        "correct": false
+                    },
+                    {
+                        "text": "192.168.10.25",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Private ranges are 10.x.x.x, 172.16.x.x to 172.31.x.x, and 192.168.x.x. The other addresses are public."
+            },
+            {
+                "competency": "Networking & IP Addressing",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "In the computer lab all PCs can open shared folders on each other, but none can open websites. The router connects the lab to the ISP. What should you check first?",
+                "options": [
+                    {
+                        "text": "Reinstall the web browser on every PC",
+                        "correct": false
+                    },
+                    {
+                        "text": "The router's internet (WAN) connection and the ISP link",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rename every computer in the lab",
+                        "correct": false
+                    },
+                    {
+                        "text": "Replace all the cables between the PCs and the switch",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Local sharing works, so the LAN is fine. The fault is probably between the router and the ISP."
+            },
+            {
+                "competency": "Backup & Data Protection",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What does the 3-2-1 backup rule mean?",
+                "options": [
+                    {
+                        "text": "Three copies of the data, on two kinds of storage, one of them kept off-site",
+                        "correct": true
+                    },
+                    {
+                        "text": "Three backups a day, made by two staff members who share one common password for the drive",
+                        "correct": false
+                    },
+                    {
+                        "text": "Three servers, two printers and one router installed in the school computer lab",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep backups for three weeks, then for two months, and finally for one year",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The 3-2-1 rule gives protection against disk failure, theft, fire and ransomware."
+            },
+            {
+                "competency": "Backup & Data Protection",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A school's only backup is an external disk that stays plugged into the server. Ransomware then encrypts the server. What is the main weakness of this setup?",
+                "options": [
+                    {
+                        "text": "The backup disk was made by a different brand from the server hardware",
+                        "correct": false
+                    },
+                    {
+                        "text": "The backup was not compressed into a single zip file before it was saved",
+                        "correct": false
+                    },
+                    {
+                        "text": "The backup disk is always connected, so ransomware can encrypt it too",
+                        "correct": true
+                    },
+                    {
+                        "text": "The backup ran at night instead of during the day when staff are working",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A backup that is always attached can be encrypted with the server. Keep at least one copy offline or off-site."
+            },
+            {
+                "competency": "User Support & Communication",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A teacher phones, worried, because she must print exam papers in 10 minutes and the printer does not respond. How should you start?",
+                "options": [
+                    {
+                        "text": "Tell her you will call back after you have finished your other open tickets",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask her to email a long written report of the problem before you start",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reinstall the printer driver remotely without telling her what you are doing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stay calm, ask what she sees, and offer a workaround such as another PC",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Calm questions find the problem, and a workaround helps her meet the deadline while you find the real fix."
+            },
+            {
+                "competency": "User Support & Communication",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A caller says he is the bursar and asks you to reset his password by phone. You do not recognise his voice. What should you do?",
+                "options": [
+                    {
+                        "text": "Reset it at once because he sounds confident and says he needs it urgently today",
+                        "correct": false
+                    },
+                    {
+                        "text": "Verify him first, for example by calling the number registered for the bursar",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask him to tell you his old password as proof of who he is",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send the new password to any phone number that he gives you",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Confirm identity through a trusted record before a password reset; scammers often pretend to be senior staff."
+            }
+        ]
+    },
+    {
+        "skill_slug": "database-sql",
+        "skill_name": "Databases & SQL",
+        "description": "Checks relational design, SQL queries and joins, indexes, and data integrity and backup practice.",
+        "competencies": [
+            {
+                "name": "Relational Design & Normalisation",
+                "description": "Designs tables with keys and relationships and avoids repeated data.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "SQL Queries & Filtering",
+                "description": "Writes correct SELECT, UPDATE and filtering queries and edits live data safely.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Joins & Aggregation",
+                "description": "Combines tables with joins and summarises data with GROUP BY and HAVING.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Indexes & Performance",
+                "description": "Uses indexes sensibly to keep queries fast.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Integrity, Backup & Security",
+                "description": "Protects data accuracy with constraints and tested backups.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Relational Design & Normalisation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is the purpose of a primary key in a table?",
+                "options": [
+                    {
+                        "text": "To store the most important piece of information about each row",
+                        "correct": false
+                    },
+                    {
+                        "text": "To list every column in the table that holds numbers only",
+                        "correct": false
+                    },
+                    {
+                        "text": "To link the table to a backup file on the server",
+                        "correct": false
+                    },
+                    {
+                        "text": "To identify each row; it cannot be empty or repeated",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A primary key uniquely identifies each row, so it must be unique and not NULL."
+            },
+            {
+                "competency": "Relational Design & Normalisation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A table stores student_name, class_name and class_teacher, so the teacher's name is repeated for every student in the class. What is the best improvement?",
+                "options": [
+                    {
+                        "text": "Combine all the columns into one text column",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete the class_teacher column and keep it on paper",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copy the table so each class has its own backup",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move class details to a separate classes table and link it with a class_id",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Normalisation stores each fact once. A classes table linked by class_id avoids repeated and inconsistent teacher names."
+            },
+            {
+                "competency": "SQL Queries & Filtering",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which query lists the names of students in class 3 in alphabetical order? (Table students has columns id, name, class_id.)",
+                "options": [
+                    {
+                        "text": "SELECT name FROM students WHERE class_id = 3 ORDER BY name DESC;",
+                        "correct": false
+                    },
+                    {
+                        "text": "SELECT name FROM students ORDER BY name WHERE class_id = 3;",
+                        "correct": false
+                    },
+                    {
+                        "text": "SELECT name FROM students WHERE class_id = 3 ORDER BY name;",
+                        "correct": true
+                    },
+                    {
+                        "text": "SELECT * FROM students WHERE class_id = 3;",
+                        "correct": false
+                    }
+                ],
+                "explanation": "WHERE comes before ORDER BY, and ORDER BY name sorts A to Z. DESC would reverse the order."
+            },
+            {
+                "competency": "SQL Queries & Filtering",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The students table has a phone column. What does this query return?  SELECT COUNT(*) FROM students WHERE phone = NULL;",
+                "options": [
+                    {
+                        "text": "The number of students with no phone number",
+                        "correct": false
+                    },
+                    {
+                        "text": "The total number of students",
+                        "correct": false
+                    },
+                    {
+                        "text": "0, because comparing with = NULL is never true",
+                        "correct": true
+                    },
+                    {
+                        "text": "An error, because NULL cannot be used in a query",
+                        "correct": false
+                    }
+                ],
+                "explanation": "NULL means unknown, so phone = NULL is never true. Use phone IS NULL to find missing values."
+            },
+            {
+                "competency": "SQL Queries & Filtering",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You must correct the amount of one payment (id 57) on the live database. What is the safest way?",
+                "options": [
+                    {
+                        "text": "Run UPDATE payments SET amount = 50000; on the whole table and fix the other rows later",
+                        "correct": false
+                    },
+                    {
+                        "text": "First SELECT with WHERE id = 57, then UPDATE with the same WHERE, after a backup",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delete the whole payments table and enter all the payments again from paper receipts",
+                        "correct": false
+                    },
+                    {
+                        "text": "Skip the WHERE clause, since only one row looks wrong to you",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Previewing the row with SELECT and using a WHERE clause (with a backup) prevents changing or losing other rows."
+            },
+            {
+                "competency": "Joins & Aggregation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which query lists every student, even those with no payments, together with any payment amounts?",
+                "options": [
+                    {
+                        "text": "SELECT s.name, p.amount FROM students s INNER JOIN payments p ON p.student_id = s.id;",
+                        "correct": false
+                    },
+                    {
+                        "text": "SELECT s.name, p.amount FROM students s LEFT JOIN payments p ON p.student_id = s.id;",
+                        "correct": true
+                    },
+                    {
+                        "text": "SELECT s.name, p.amount FROM payments p LEFT JOIN students s ON p.student_id = s.id;",
+                        "correct": false
+                    },
+                    {
+                        "text": "SELECT s.name, p.amount FROM students s CROSS JOIN payments p;",
+                        "correct": false
+                    }
+                ],
+                "explanation": "LEFT JOIN keeps every row from the left table (students), with NULL where no payment exists."
+            },
+            {
+                "competency": "Joins & Aggregation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does this query return?  SELECT class_id, COUNT(*) FROM students GROUP BY class_id;",
+                "options": [
+                    {
+                        "text": "The total number of students as a single row",
+                        "correct": false
+                    },
+                    {
+                        "text": "All students sorted by class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only the class with the most students",
+                        "correct": false
+                    },
+                    {
+                        "text": "One row for each class, showing how many students it has",
+                        "correct": true
+                    }
+                ],
+                "explanation": "GROUP BY makes one group per class_id, and COUNT(*) counts the rows in each group."
+            },
+            {
+                "competency": "Joins & Aggregation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A manager wants to list only the classes with more than 40 students. After GROUP BY class_id, which clause should you use?",
+                "options": [
+                    {
+                        "text": "WHERE COUNT(*) > 40",
+                        "correct": false
+                    },
+                    {
+                        "text": "ORDER BY COUNT(*) > 40",
+                        "correct": false
+                    },
+                    {
+                        "text": "GROUP BY COUNT(*) > 40",
+                        "correct": false
+                    },
+                    {
+                        "text": "HAVING COUNT(*) > 40",
+                        "correct": true
+                    }
+                ],
+                "explanation": "WHERE filters rows before grouping; HAVING filters groups after aggregation, so it can use COUNT(*)."
+            },
+            {
+                "competency": "Indexes & Performance",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is the main trade-off of adding an index to a column?",
+                "options": [
+                    {
+                        "text": "It makes inserts faster but searches slower, because the data is stored twice",
+                        "correct": false
+                    },
+                    {
+                        "text": "It removes duplicate values from the column automatically, and this cannot be undone",
+                        "correct": false
+                    },
+                    {
+                        "text": "It makes searches on the column faster but uses more storage and slows inserts",
+                        "correct": true
+                    },
+                    {
+                        "text": "It encrypts the column but needs a password for every query that uses it",
+                        "correct": false
+                    }
+                ],
+                "explanation": "An index speeds up reads on that column, but the database must maintain it on every write and store it."
+            },
+            {
+                "competency": "Indexes & Performance",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The query SELECT * FROM payments WHERE student_id = 120 is slow on a table with 2 million rows, and student_id has no index. What is the best action?",
+                "options": [
+                    {
+                        "text": "Add an index on every column in the table",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete payments older than a year without asking anyone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change the student_id column type to text",
+                        "correct": false
+                    },
+                    {
+                        "text": "Create an index on payments.student_id",
+                        "correct": true
+                    }
+                ],
+                "explanation": "An index on the column used in the WHERE clause lets the database find rows without scanning the whole table."
+            },
+            {
+                "competency": "Integrity, Backup & Security",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Select all that apply: which features help keep the data in a database accurate?",
+                "options": [
+                    {
+                        "text": "A foreign key from payments.student_id to students.id",
+                        "correct": true
+                    },
+                    {
+                        "text": "NOT NULL on columns that must always have a value",
+                        "correct": true
+                    },
+                    {
+                        "text": "A UNIQUE constraint on the admission number column",
+                        "correct": true
+                    },
+                    {
+                        "text": "Storing all details in one large text column",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving every user the admin password",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Foreign keys, NOT NULL and UNIQUE constraints stop invalid or duplicate data. The other two practices weaken data quality and security."
+            },
+            {
+                "competency": "Integrity, Backup & Security",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your database backup runs every night, but nobody has ever restored one. What should you do?",
+                "options": [
+                    {
+                        "text": "Nothing; if the job says \"success\" the backup must be fine",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete the older backups first to save space",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move the backup file to a folder on the same disk",
+                        "correct": false
+                    },
+                    {
+                        "text": "Test a restore on a separate server regularly to confirm the backup works",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A backup is only proven when it has been restored successfully, so test restores should be done regularly."
+            }
+        ]
+    },
+    {
+        "skill_slug": "cybersecurity-awareness",
+        "skill_name": "Cybersecurity Awareness",
+        "description": "Checks safe password habits, spotting phishing and scams, malware response, mobile money safety, and protection of data and networks.",
+        "competencies": [
+            {
+                "name": "Passwords & Authentication",
+                "description": "Creates and protects strong passwords and uses two-step verification.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Phishing & Social Engineering",
+                "description": "Recognises phishing, scams and impersonation and responds safely.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Malware & Device Security",
+                "description": "Prevents and responds to viruses, ransomware and risky software.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Mobile Money & Safe Online Use",
+                "description": "Uses mobile money and online services without being defrauded.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Data Protection & Network Security",
+                "description": "Protects personal data and uses secure networks and shared computers.",
+                "weight": 20,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Passwords & Authentication",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which password is the strongest?",
+                "options": [
+                    {
+                        "text": "Dar-es-Salaam2024",
+                        "correct": false
+                    },
+                    {
+                        "text": "Password@1234",
+                        "correct": false
+                    },
+                    {
+                        "text": "tembo-mvua-chai-Kigoma-47",
+                        "correct": true
+                    },
+                    {
+                        "text": "Amina&Juma2010",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A long passphrase of unrelated words with numbers is hard to guess. The others use names, dates or very common patterns."
+            },
+            {
+                "competency": "Passwords & Authentication",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A colleague asks to use your login for the school system because her account is locked. What is the best response?",
+                "options": [
+                    {
+                        "text": "Share it, but change the password after she finishes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Share it, because you both work for the same school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write the password on paper and leave it in her office",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell her to ask IT to unlock her own account",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Passwords must never be shared. Actions done under your login are traced to you, and IT can restore her access."
+            },
+            {
+                "competency": "Passwords & Authentication",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Select all that apply: which habits make your accounts safer?",
+                "options": [
+                    {
+                        "text": "Use a different password for each important account",
+                        "correct": true
+                    },
+                    {
+                        "text": "Turn on two-step verification where it is offered",
+                        "correct": true
+                    },
+                    {
+                        "text": "Keep your password on a sticky note on your monitor",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a trusted password manager to store your passwords",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give the one-time code to a caller who says he is from support",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Unique passwords, two-step verification and a trusted password manager reduce risk. Never display passwords or share one-time codes."
+            },
+            {
+                "competency": "Phishing & Social Engineering",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which sign makes an email most likely to be phishing?",
+                "options": [
+                    {
+                        "text": "It is addressed to you by name and comes from a colleague you know well",
+                        "correct": false
+                    },
+                    {
+                        "text": "It has a signature with the school's logo and the sender's phone number",
+                        "correct": false
+                    },
+                    {
+                        "text": "It says your account closes in 24 hours unless you click a link",
+                        "correct": true
+                    },
+                    {
+                        "text": "It arrives during working hours from the head office address",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Phishing creates false urgency and pushes you to click a link and enter your login details."
+            },
+            {
+                "competency": "Phishing & Social Engineering",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "You get an SMS: \"You won TZS 5,000,000! Send TZS 20,000 fee to this number to receive your prize.\" What should you do?",
+                "options": [
+                    {
+                        "text": "Send the fee, since it is small compared with the prize you will receive",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reply with your full name and ID number so that they can send the prize",
+                        "correct": false
+                    },
+                    {
+                        "text": "Forward it to all your friends so that they can try to win it too",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do not pay; delete it, because real prizes never ask you to pay first",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Real prizes do not require you to pay first. This is an advance-fee scam."
+            },
+            {
+                "competency": "Phishing & Social Engineering",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "An email appears to be from the head teacher, but one letter in the address is different. It asks the finance officer to urgently send TZS 3,000,000 to a new account. What should the officer do?",
+                "options": [
+                    {
+                        "text": "Pay now, because the request comes from school management and says it is urgent",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reply to the email and ask if it is really from the head teacher",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pay half the amount now and the rest after the weekend is over",
+                        "correct": false
+                    },
+                    {
+                        "text": "Confirm the request by calling the head teacher on a known number first",
+                        "correct": true
+                    }
+                ],
+                "explanation": "This is a typical impersonation fraud. Verify through a separate trusted channel, not by replying to the email."
+            },
+            {
+                "competency": "Malware & Device Security",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What does ransomware do?",
+                "options": [
+                    {
+                        "text": "It speeds up the computer in exchange for a fee",
+                        "correct": false
+                    },
+                    {
+                        "text": "It locks or encrypts your files and demands payment to unlock them",
+                        "correct": true
+                    },
+                    {
+                        "text": "It only shows advertisements on web pages",
+                        "correct": false
+                    },
+                    {
+                        "text": "It copies your files to a cloud backup automatically",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Ransomware encrypts files and demands payment. Good offline backups are the best protection."
+            },
+            {
+                "competency": "Malware & Device Security",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A PC shows pop-ups and becomes very slow after someone installed free \"cracked\" software. What is the best first action?",
+                "options": [
+                    {
+                        "text": "Keep working and restart the PC once a day",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete only the desktop shortcut of the cracked software",
+                        "correct": false
+                    },
+                    {
+                        "text": "Install more free cracked software to remove the pop-ups",
+                        "correct": false
+                    },
+                    {
+                        "text": "Disconnect it from the network and report to IT for a malware scan",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Isolating the PC stops malware from spreading to other computers, and IT can then scan and clean it."
+            },
+            {
+                "competency": "Mobile Money & Safe Online Use",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You get an SMS saying you received TZS 200,000 by mistake. Soon a number calls and asks you to send it back urgently. What is the best first step?",
+                "options": [
+                    {
+                        "text": "Send the money back straight away so that you avoid any trouble later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check your real balance using the official USSD menu or app first",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send half of it back and keep the other half as a small fee",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the caller your PIN so that he can reverse the transaction",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Fake \"sent by mistake\" SMS messages are a common scam. Confirm the money really arrived using your official menu or app."
+            },
+            {
+                "competency": "Mobile Money & Safe Online Use",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A caller says he is from your mobile money provider and will block your account unless you tell him your PIN and the code just sent by SMS. What should you do?",
+                "options": [
+                    {
+                        "text": "Give him the SMS code only, but keep your PIN secret from him",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give both, so that your account is not blocked by the provider",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask him to call back after you send him a copy of your ID number",
+                        "correct": false
+                    },
+                    {
+                        "text": "End the call and never share your PIN or codes with anyone",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Providers never ask for your PIN or SMS codes. End the call and contact the official number yourself."
+            },
+            {
+                "competency": "Data Protection & Network Security",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which Wi-Fi security setting is best for the school's staff network?",
+                "options": [
+                    {
+                        "text": "No password, so visitors can connect easily",
+                        "correct": false
+                    },
+                    {
+                        "text": "WEP with the default router password",
+                        "correct": false
+                    },
+                    {
+                        "text": "An open network with a hidden network name",
+                        "correct": false
+                    },
+                    {
+                        "text": "WPA2 or WPA3 with a strong passphrase",
+                        "correct": true
+                    }
+                ],
+                "explanation": "WPA2 or WPA3 with a strong passphrase encrypts traffic. WEP is broken, and hiding the network name does not secure it."
+            },
+            {
+                "competency": "Data Protection & Network Security",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which action best protects student records on a shared office computer?",
+                "options": [
+                    {
+                        "text": "Use one shared login for the whole office so that everyone can find files quickly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Save the records on the desktop so that they are easy to reach",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give each user their own account, lock the screen when away, and limit access",
+                        "correct": true
+                    },
+                    {
+                        "text": "Email the records to personal addresses as a backup copy",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Separate accounts, screen locking and limited access protect personal data and show who opened what."
+            }
+        ]
+    },
+    {
+        "skill_slug": "technical-support",
+        "skill_name": "Technical Support (Helpdesk)",
+        "description": "Checks triage, structured troubleshooting, clear phone/WhatsApp instructions, escalation, and secure customer handling for software support.",
+        "competencies": [
+            {
+                "name": "Triage & Prioritisation",
+                "description": "Decides which requests to handle first based on impact and urgency.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Troubleshooting Method",
+                "description": "Finds the cause of user problems with a logical, step-by-step method.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Clear Communication",
+                "description": "Gives clear, simple instructions and handles upset users well.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Escalation & Ticket Handling",
+                "description": "Escalates and records tickets with the right information.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Customer Handling & Security",
+                "description": "Handles users honestly and protects accounts from impersonators.",
+                "weight": 20,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Triage & Prioritisation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "You have four open requests. Which one should you handle first?",
+                "options": [
+                    {
+                        "text": "A teacher wants to change her profile photo",
+                        "correct": false
+                    },
+                    {
+                        "text": "A school cannot log in at all and must print report cards today",
+                        "correct": true
+                    },
+                    {
+                        "text": "A school asks for a new column to be added to a report",
+                        "correct": false
+                    },
+                    {
+                        "text": "A parent asks how to find last term's invoice",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A school fully blocked from working on a deadline has the greatest impact, so it comes first."
+            },
+            {
+                "competency": "Triage & Prioritisation",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Select all that apply: which facts help you decide the priority of a support ticket?",
+                "options": [
+                    {
+                        "text": "How many users are affected",
+                        "correct": true
+                    },
+                    {
+                        "text": "Whether there is a workaround",
+                        "correct": true
+                    },
+                    {
+                        "text": "Whether a deadline such as fee collection or report cards is at risk",
+                        "correct": true
+                    },
+                    {
+                        "text": "How long the user's message is",
+                        "correct": false
+                    },
+                    {
+                        "text": "How politely the user writes",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Impact, workaround and deadlines decide priority. Message length and politeness do not change how serious the problem is."
+            },
+            {
+                "competency": "Troubleshooting Method",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A user writes only: \"The system is not working.\" What is the best first step?",
+                "options": [
+                    {
+                        "text": "Reset the user's password straight away and ask them to log in once more today",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask what happens, what the user was doing, and for a screenshot of any error",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the user to uninstall and reinstall the app on their device first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Restart the server for all schools so that any error is cleared",
+                        "correct": false
+                    }
+                ],
+                "explanation": "You need facts before you can fix anything: what the user sees, what they tried, and when it started."
+            },
+            {
+                "competency": "Troubleshooting Method",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which approach is best when diagnosing a problem?",
+                "options": [
+                    {
+                        "text": "Check the simplest causes first and change only one thing at a time",
+                        "correct": true
+                    },
+                    {
+                        "text": "Change many settings at once, so that you save time while looking for the cause",
+                        "correct": false
+                    },
+                    {
+                        "text": "Assume the user made a mistake and close the ticket straight away",
+                        "correct": false
+                    },
+                    {
+                        "text": "Escalate every ticket immediately without doing any checks yourself first",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Starting simple and changing one thing at a time shows which step solved the problem and avoids new faults."
+            },
+            {
+                "competency": "Troubleshooting Method",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A bursar says the fee totals in an exported report do not match her cash book. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Edit the figures in the report data so that they match the totals in her cash book",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell her the system is always correct and that the cash book must be wrong",
+                        "correct": false
+                    },
+                    {
+                        "text": "Take one example, compare it with the system records, and check the date range",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask her to export the report again ten times and compare the totals each time",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Comparing a specific example and checking filters finds where the difference starts. Never change data just to match a total."
+            },
+            {
+                "competency": "Clear Communication",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You are guiding a bursar who is not confident with computers to export a report by phone. Which approach is best?",
+                "options": [
+                    {
+                        "text": "Give short numbered steps one at a time and confirm what she sees after each step",
+                        "correct": true
+                    },
+                    {
+                        "text": "Explain the full process quickly so the call is short",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use technical terms so she learns them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell her to read the manual and call back later",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Short steps, plain words and checking each screen help non-technical users succeed."
+            },
+            {
+                "competency": "Clear Communication",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which WhatsApp reply is the clearest for a user who needs to export a report?",
+                "options": [
+                    {
+                        "text": "\"Just export it from the menu and send me the file when it is ready.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Check the settings, run the export module, and tell me if there are any errors.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Go to Reports, click Fees, then click Export. Tell me what you see next.\"",
+                        "correct": true
+                    },
+                    {
+                        "text": "\"It is simple, and you should know how to do this by now.\"",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The clearest reply names each place to click, in order, and asks for confirmation."
+            },
+            {
+                "competency": "Clear Communication",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A head teacher writes in capital letters that the system failed again before a parents' meeting. What is the best reply?",
+                "options": [
+                    {
+                        "text": "Ask him to calm down and stop writing in capital letters, so that you can help him properly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain that the system is rarely down and that this must be a one-off issue",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait until it is fixed before you reply, so that you can give good news",
+                        "correct": false
+                    },
+                    {
+                        "text": "Acknowledge the problem, say what you are doing now, and when you will update him",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Acknowledging the impact and giving a clear action and time builds trust. Defending or ignoring increases anger."
+            },
+            {
+                "competency": "Escalation & Ticket Handling",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "When is it right to escalate a ticket to a developer?",
+                "options": [
+                    {
+                        "text": "As soon as the ticket arrives, before you collect any details or try any of the known fixes",
+                        "correct": false
+                    },
+                    {
+                        "text": "After you have steps to reproduce, tried the documented fixes, and it looks like a bug",
+                        "correct": true
+                    },
+                    {
+                        "text": "Only when the user becomes angry or threatens to leave the school's contract",
+                        "correct": false
+                    },
+                    {
+                        "text": "Never, because support staff should always fix every problem on their own",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Escalate with full details after basic checks, so the developer can start straight away."
+            },
+            {
+                "competency": "Escalation & Ticket Handling",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Within ten minutes, five different schools report the same error after an update was released. What is the best action?",
+                "options": [
+                    {
+                        "text": "Reply to each school separately, ask them to wait, and fix each ticket on its own later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell each school to reinstall the app and clear all its data on the phone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Treat it as one incident: alert the technical team with examples and link the tickets",
+                        "correct": true
+                    },
+                    {
+                        "text": "Close four tickets as duplicates without telling the schools about the problem",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Several reports at once after a change suggest a common fault. Raise it quickly, group the tickets and keep schools informed."
+            },
+            {
+                "competency": "Customer Handling & Security",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A person on WhatsApp says he is a head teacher and asks you to reset the admin password and send it to him in the chat. You cannot verify him. What is best?",
+                "options": [
+                    {
+                        "text": "Send the new password at once, because he knows the school's name and sounds sure",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask him to send a photo of his ID and then send the password in the chat",
+                        "correct": false
+                    },
+                    {
+                        "text": "Verify him using contact details on record, and never send passwords in chat",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reset it and tell him to change it later when he has time",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Verify identity with the registered contact. Passwords should never be sent in an open chat."
+            },
+            {
+                "competency": "Customer Handling & Security",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A user asks a question and you do not know the answer. What is the best response?",
+                "options": [
+                    {
+                        "text": "Guess an answer so the user is not kept waiting",
+                        "correct": false
+                    },
+                    {
+                        "text": "Say that the question is not part of your job",
+                        "correct": false
+                    },
+                    {
+                        "text": "Be honest, say you will find out, give a time, and then follow up",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore the question and talk about something else",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Honesty, a clear time and follow-up keep user trust. Wrong guesses can cause more problems."
+            }
+        ]
+    }
+]

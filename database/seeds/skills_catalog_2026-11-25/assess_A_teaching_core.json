@@ -1,0 +1,2136 @@
+[
+    {
+        "skill_slug": "teaching",
+        "skill_name": "Teaching / Classroom Practice",
+        "description": "Checks general classroom practice for pre-primary, primary and secondary teachers: methods, engagement, assessment, inclusion and professional conduct.",
+        "competencies": [
+            {
+                "name": "Subject knowledge and teaching methods",
+                "description": "Understands clear objectives and effective teaching methods such as scaffolding.",
+                "weight": 25,
+                "is_critical": 0
+            },
+            {
+                "name": "Lesson delivery and learner engagement",
+                "description": "Keeps learners active, thinking and on task during lessons.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Assessment and feedback",
+                "description": "Uses assessment and feedback to guide teaching and help learners improve.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Inclusion and meeting individual needs",
+                "description": "Adapts teaching so learners of different abilities and needs can learn.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Child protection and professional conduct",
+                "description": "Protects learners from harm and behaves professionally with pupils.",
+                "weight": 15,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Lesson delivery and learner engagement",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which question is best for making pupils think and explain their ideas in a science lesson?",
+                "options": [
+                    {
+                        "text": "\"Is the plant leaning towards the window?\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Why do you think the plant leaned towards the window?\"",
+                        "correct": true
+                    },
+                    {
+                        "text": "\"What is the name of this plant?\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Does the plant need light, yes or no?\"",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Open 'why' questions make learners reason and explain, while yes/no and naming questions need only short recall."
+            },
+            {
+                "competency": "Subject knowledge and teaching methods",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is the best-written learning objective for a lesson on flowers?",
+                "options": [
+                    {
+                        "text": "The teacher will cover page 24 of the textbook.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pupils will enjoy the lesson on flowers today.",
+                        "correct": false
+                    },
+                    {
+                        "text": "To teach pupils about the different kinds of flowers that grow in our villages and gardens.",
+                        "correct": false
+                    },
+                    {
+                        "text": "By the end, pupils will be able to name and describe three parts of a flower.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A good objective says what learners will be able to do, in a way that can be observed and checked."
+            },
+            {
+                "competency": "Assessment and feedback",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is the main purpose of formative assessment?",
+                "options": [
+                    {
+                        "text": "To give marks that will be printed on the school report at the end of term",
+                        "correct": false
+                    },
+                    {
+                        "text": "To check what learners understand so the teacher can adjust teaching",
+                        "correct": true
+                    },
+                    {
+                        "text": "To rank pupils from first to last in each class at the end of the year",
+                        "correct": false
+                    },
+                    {
+                        "text": "To decide which pupils will be promoted to the next class in January",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Formative assessment happens during learning and is used to improve teaching and learning, not only to give grades."
+            },
+            {
+                "competency": "Subject knowledge and teaching methods",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What does 'scaffolding' mean in teaching?",
+                "options": [
+                    {
+                        "text": "Giving learners the final answers so they can copy them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Leaving learners to work alone so they learn from mistakes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving learners temporary support that is reduced as they become able to work alone",
+                        "correct": true
+                    },
+                    {
+                        "text": "Making all tasks easier for weak learners for the whole year so that they never feel failure",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Scaffolding is support that helps a learner reach a task they cannot yet do alone, then is gradually removed."
+            },
+            {
+                "competency": "Child protection and professional conduct",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which behaviour shows good professional conduct towards pupils?",
+                "options": [
+                    {
+                        "text": "Asking older pupils to run personal errands for you after school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keeping relationships respectful and open, and avoiding private meetings behind closed doors",
+                        "correct": true
+                    },
+                    {
+                        "text": "Accepting friend requests from pupils on personal social media so you can keep in touch about homework",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving small gifts to favourite pupils who get high marks",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Professional teachers keep clear boundaries and transparent relationships that protect both pupils and themselves."
+            },
+            {
+                "competency": "Inclusion and meeting individual needs",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which actions help include learners with different abilities in one class? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Explaining ideas with objects and pictures as well as words",
+                        "correct": true
+                    },
+                    {
+                        "text": "Using one method only, copying notes from the board",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving challenging questions only to the strongest learners",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving tasks at different levels of difficulty on the same topic",
+                        "correct": true
+                    },
+                    {
+                        "text": "Seating slower learners at the back so they do not disturb others",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Different task levels and several ways of explaining let more learners understand and take part."
+            },
+            {
+                "competency": "Lesson delivery and learner engagement",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Which activities are learner-centred? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Pupils prepare a short demonstration of a method for classmates",
+                        "correct": true
+                    },
+                    {
+                        "text": "Small groups build a model and explain it to the class",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pupils silently copy notes from the board for the whole period",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pairs discuss a problem and then share their answers (think-pair-share)",
+                        "correct": true
+                    },
+                    {
+                        "text": "The teacher answers every question and pupils only listen",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Learner-centred activities make pupils discuss, make and explain, not only listen or copy."
+            },
+            {
+                "competency": "Assessment and feedback",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which exam question best tests higher-order thinking (judging and justifying)?",
+                "options": [
+                    {
+                        "text": "\"Two farmers store maize differently. Which way suits your village better, and why?\"",
+                        "correct": true
+                    },
+                    {
+                        "text": "\"List three ways of storing maize after harvest and write them neatly in your book.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Define the word 'storage' in your own words and give one example from your home.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Copy the diagram of a maize granary into your book and label all of its main parts.\"",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Comparing options and giving reasons requires evaluation, while listing, defining and copying require only recall."
+            },
+            {
+                "competency": "Lesson delivery and learner engagement",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Five pupils finish the class exercise much earlier than the others and begin to disturb their neighbours. What is the best response?",
+                "options": [
+                    {
+                        "text": "Let them leave the room quietly and wait outside under a tree until the rest of the class finishes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give them the same exercise again to repeat",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give them an extension task that deepens the same topic, such as making their own problem",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell them to sit with folded arms until others finish",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Extension tasks keep fast learners thinking and on topic, which also reduces disturbance."
+            },
+            {
+                "competency": "Assessment and feedback",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "After a short quiz, 18 of your 40 pupils give the same wrong answer to a key question. What should you do?",
+                "options": [
+                    {
+                        "text": "Write the correct answer on the board and ask them to copy it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move on because the syllabus is long and time is short",
+                        "correct": false
+                    },
+                    {
+                        "text": "Find out why they made the mistake, reteach with a different example, then check again",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give extra homework using the same explanation as before",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A common error shows a misunderstanding; reteaching in a new way and re-checking addresses the cause."
+            },
+            {
+                "competency": "Inclusion and meeting individual needs",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A pupil often squints, says the board is blurry and is falling behind. His marks were good last year. What is the best action?",
+                "options": [
+                    {
+                        "text": "Move him to the front, inform his parents and head teacher, and suggest an eye check",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask a classmate to do his written work for him",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell him he must try harder and concentrate like the other pupils if he wants good marks",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep him at the back so he learns to be independent",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Possible sight problems should be supported at once and referred to parents and health services, not treated as laziness."
+            },
+            {
+                "competency": "Child protection and professional conduct",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A 12-year-old girl privately tells you that an adult at home beats her badly. She shows marks and asks you not to tell anyone. What should you do?",
+                "options": [
+                    {
+                        "text": "Promise secrecy and go to her home that same evening to confront the adult yourself directly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen calmly, do not promise secrecy, and report to the head teacher using school procedure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait a few weeks to see whether more marks appear on her before you decide to tell anyone at school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask other pupils in her class whether her story is true before you take any action at all about it",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A child at risk must be protected; teachers report through the proper channel and must not promise secrecy or investigate alone."
+            }
+        ]
+    },
+    {
+        "skill_slug": "classroom-management",
+        "skill_name": "Classroom Management",
+        "description": "Checks ability to set routines, use positive discipline, manage large classes, keep learners engaged and treat every learner fairly.",
+        "competencies": [
+            {
+                "name": "Routines and classroom organisation",
+                "description": "Sets and practises routines for starting, moving, handing out materials and ending lessons.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Positive behaviour and discipline",
+                "description": "Uses clear rules, praise and calm responses to guide behaviour without harming learners.",
+                "weight": 30,
+                "is_critical": 1
+            },
+            {
+                "name": "Managing large classes",
+                "description": "Organises seating, materials and group work in classes of 40 to 100 pupils.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Engagement and use of time",
+                "description": "Gains attention and keeps lesson time productive.",
+                "weight": 10,
+                "is_critical": 0
+            },
+            {
+                "name": "Fairness and respect for learners",
+                "description": "Treats all learners fairly and acts when a learner is treated harshly or unfairly.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Routines and classroom organisation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Why should a teacher teach and practise classroom routines in the first days of a term?",
+                "options": [
+                    {
+                        "text": "Pupils know what to do, so less time is lost and fewer problems start",
+                        "correct": true
+                    },
+                    {
+                        "text": "Routines remove the need to prepare lessons carefully for the rest of the term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Routines keep pupils completely silent for the whole day",
+                        "correct": false
+                    },
+                    {
+                        "text": "Routines show pupils early that the teacher is very strict",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Practised routines make expectations clear, save learning time and prevent many behaviour problems."
+            },
+            {
+                "competency": "Positive behaviour and discipline",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is the best way to set classroom rules?",
+                "options": [
+                    {
+                        "text": "Let the head teacher announce rules without any explanation",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree a few clear, positive rules with pupils and display them",
+                        "correct": true
+                    },
+                    {
+                        "text": "Write a long list of rules with a clear punishment for each one that is broken",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make rules only after pupils have misbehaved",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Few, clear rules that pupils helped to make are easier to understand, remember and follow."
+            },
+            {
+                "competency": "Positive behaviour and discipline",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Two pupils are chatting while you teach. Which response is best first?",
+                "options": [
+                    {
+                        "text": "Announce that they are the noisiest pupils in the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move closer or use a quiet signal, then give a short private reminder if needed",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send them out of the classroom for the rest of the lesson",
+                        "correct": false
+                    },
+                    {
+                        "text": "Shout their names loudly so that the whole class hears and learns that talking is not allowed",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Low-key, private responses stop minor misbehaviour without embarrassing pupils or wasting lesson time."
+            },
+            {
+                "competency": "Managing large classes",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You have 80 pupils and only 20 textbooks. Which arrangement works best?",
+                "options": [
+                    {
+                        "text": "Give books to the best pupils and let the others watch",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pass the books around the class one pupil at a time until every pupil has had a turn",
+                        "correct": false
+                    },
+                    {
+                        "text": "Groups of four with one book each and clear roles such as reader and recorder",
+                        "correct": true
+                    },
+                    {
+                        "text": "Leave the books unused and only talk to the class",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Group work with defined roles lets many pupils use limited resources and stay active."
+            },
+            {
+                "competency": "Engagement and use of time",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which is the most effective way to get a noisy class's attention?",
+                "options": [
+                    {
+                        "text": "Wait silently at the front without speaking or doing anything, even if it takes the whole lesson",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a signal the class has practised, such as a raised hand or clap pattern",
+                        "correct": true
+                    },
+                    {
+                        "text": "Shout louder than the pupils until they stop",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hit the table with a stick at the start of every lesson",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A practised signal is calm, quick and can be used again and again without raising your voice."
+            },
+            {
+                "competency": "Managing large classes",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Which strategies help manage a class of about 90 pupils? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Group leaders who keep their group on task and report back",
+                        "correct": true
+                    },
+                    {
+                        "text": "Avoiding questions to the back rows because they are far away",
+                        "correct": false
+                    },
+                    {
+                        "text": "Clear routines and pupil helpers for giving out and collecting books",
+                        "correct": true
+                    },
+                    {
+                        "text": "Teaching only by whole-class lecture so everyone hears the same thing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Seating in groups with a lane so you can walk through the room",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Routines, helpers, accessible seating and group leaders make a big class manageable and keep all pupils involved."
+            },
+            {
+                "competency": "Positive behaviour and discipline",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which feedback best reinforces good behaviour?",
+                "options": [
+                    {
+                        "text": "\"Amina, thank you for raising your hand and waiting; it let everyone hear Juma.\"",
+                        "correct": true
+                    },
+                    {
+                        "text": "\"Sit down, you are always the noisy one.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Good, class.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Finally you are behaving like normal pupils.\"",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Specific praise tells the pupil exactly which behaviour was good, so it is more likely to be repeated."
+            },
+            {
+                "competency": "Positive behaviour and discipline",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Two pupils begin pushing each other during a lesson. What should you do first?",
+                "options": [
+                    {
+                        "text": "Calmly separate them, then speak with each one later and follow school procedure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Join in by shouting at both pupils in front of the whole class until they stop",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignore it so the pupils learn to settle it themselves without the teacher's help",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the other pupils to decide who is guilty and punish him in front of the class",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Safety comes first; a calm separation followed by private discussion addresses the cause and respects procedure."
+            },
+            {
+                "competency": "Routines and classroom organisation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your class comes back from break noisy and you lose ten minutes every day settling them. What is the best long-term solution?",
+                "options": [
+                    {
+                        "text": "Ask the head teacher to shorten the break",
+                        "correct": false
+                    },
+                    {
+                        "text": "Shout at pupils until they sit down every time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teach a re-entry routine: stand at the door, pupils enter quietly and begin a task on the board",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cancel the first ten minutes of each lesson after break",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A practised re-entry routine with a ready task turns lost time into learning time."
+            },
+            {
+                "competency": "Fairness and respect for learners",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You see a colleague hit a pupil hard in anger, leaving marks on the pupil's arm. What should you do?",
+                "options": [
+                    {
+                        "text": "Say nothing because the colleague is more senior than you and knows the pupils better",
+                        "correct": false
+                    },
+                    {
+                        "text": "Discuss it with other pupils to see who agrees that the colleague was wrong to do it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the pupil to behave better so that it does not happen again in any of the future lessons",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make sure the pupil gets care and report it to the head teacher using school procedure",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Harmful or humiliating punishment is not acceptable; staff must protect the pupil and report to the head teacher."
+            },
+            {
+                "competency": "Positive behaviour and discipline",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "One pupil disturbs your lessons every day, and reminders have not worked. What is the best next step?",
+                "options": [
+                    {
+                        "text": "Make him stand outside the classroom for the whole term so others can learn in peace",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send him to the head teacher at the start of every lesson until his behaviour changes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Meet him privately to find the cause, agree a plan, and involve parents if needed",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the whole class that he is the worst pupil in the school so that he feels ashamed",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Repeated misbehaviour usually has a cause; a private talk and agreed plan, with support, works better than exclusion or shaming."
+            },
+            {
+                "competency": "Fairness and respect for learners",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "You notice that you usually ask the same few pupils at the front to answer questions. What should you do?",
+                "options": [
+                    {
+                        "text": "Ask only the pupils who raise their hands the fastest, since they are the most interested",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a fair method such as a name list so every pupil gets a chance to answer",
+                        "correct": true
+                    },
+                    {
+                        "text": "Continue, because those pupils always give correct answers",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop asking questions so no one feels left out",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Giving all pupils a chance to take part is fair and shows every learner they matter."
+            }
+        ]
+    },
+    {
+        "skill_slug": "lesson-planning-assessment",
+        "skill_name": "Lesson Planning & Assessment",
+        "description": "Checks ability to prepare schemes of work and lesson plans, write measurable objectives, and use fair formative and summative assessment.",
+        "competencies": [
+            {
+                "name": "Schemes of work and lesson planning",
+                "description": "Prepares schemes of work and lesson plans that fit the syllabus and the available time.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Learning objectives and competency-based design",
+                "description": "Writes measurable objectives and aligns activities and assessment with them.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Formative assessment and feedback",
+                "description": "Checks learning during lessons and gives useful feedback.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Test quality and fair marking",
+                "description": "Designs valid tests and marks them honestly and fairly.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Using results to improve teaching",
+                "description": "Analyses results to find weaknesses and improve teaching.",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Schemes of work and lesson planning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a scheme of work?",
+                "options": [
+                    {
+                        "text": "A detailed plan for teaching one lesson on one day",
+                        "correct": false
+                    },
+                    {
+                        "text": "A timetable that shows when examinations will be held",
+                        "correct": false
+                    },
+                    {
+                        "text": "A plan that divides the syllabus into topics across the weeks of a term or year",
+                        "correct": true
+                    },
+                    {
+                        "text": "A record of every pupil's marks and attendance in each test and exercise of the term",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A scheme of work spreads syllabus content across the available weeks; a lesson plan covers a single lesson."
+            },
+            {
+                "competency": "Learning objectives and competency-based design",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which verb is best for a measurable learning objective?",
+                "options": [
+                    {
+                        "text": "Calculate",
+                        "correct": true
+                    },
+                    {
+                        "text": "Know about",
+                        "correct": false
+                    },
+                    {
+                        "text": "Appreciate",
+                        "correct": false
+                    },
+                    {
+                        "text": "Understand",
+                        "correct": false
+                    }
+                ],
+                "explanation": "'Calculate' describes something you can observe and check; the other verbs describe inner states that cannot be directly measured."
+            },
+            {
+                "competency": "Schemes of work and lesson planning",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which items should a good lesson plan include? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Teaching and learning activities for teacher and pupils",
+                        "correct": true
+                    },
+                    {
+                        "text": "The names and occupations of pupils' parents",
+                        "correct": false
+                    },
+                    {
+                        "text": "A way to check learning during or at the end of the lesson",
+                        "correct": true
+                    },
+                    {
+                        "text": "Learning objectives for the lesson",
+                        "correct": true
+                    },
+                    {
+                        "text": "The fee balances of the pupils in the class",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A lesson plan sets objectives, activities and a way of checking whether the objectives were achieved."
+            },
+            {
+                "competency": "Formative assessment and feedback",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which is an example of formative assessment?",
+                "options": [
+                    {
+                        "text": "A short exit question at the end of a lesson that the teacher reads to see who understood",
+                        "correct": true
+                    },
+                    {
+                        "text": "An admission test taken before joining the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "The annual class ranking printed on the report card",
+                        "correct": false
+                    },
+                    {
+                        "text": "The end-of-year national examination that decides which pupils proceed to the next level of education",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Formative assessment is used during teaching to see understanding and adjust the next steps."
+            },
+            {
+                "competency": "Formative assessment and feedback",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which feedback on a pupil's written work is most useful?",
+                "options": [
+                    {
+                        "text": "A short comment such as 'Poor work'",
+                        "correct": false
+                    },
+                    {
+                        "text": "Specific comments on what is correct and one clear step to improve",
+                        "correct": true
+                    },
+                    {
+                        "text": "A grade and the pupil's position in the class, compared with all other pupils",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only a tick or a cross on each question",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Useful feedback is specific and tells the learner how to improve, not only how well they did."
+            },
+            {
+                "competency": "Test quality and fair marking",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "When is a test considered valid?",
+                "options": [
+                    {
+                        "text": "When it measures the topics and skills that were taught and meant to be assessed",
+                        "correct": true
+                    },
+                    {
+                        "text": "When it is long and has many questions",
+                        "correct": false
+                    },
+                    {
+                        "text": "When it can be marked very quickly",
+                        "correct": false
+                    },
+                    {
+                        "text": "When it is difficult enough that only a few of the very best pupils in the class can pass",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Validity means the test measures what it is supposed to measure, in line with the objectives and syllabus."
+            },
+            {
+                "competency": "Learning objectives and competency-based design",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What does competency-based assessment mainly require pupils to do?",
+                "options": [
+                    {
+                        "text": "Finish the whole syllabus faster than other pupils and other classes in the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Take only written tests at the end of the term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Show that they can apply knowledge and skills in real tasks",
+                        "correct": true
+                    },
+                    {
+                        "text": "Memorise facts and repeat them in the exam",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Competency-based assessment checks what learners can do with their knowledge and skills in realistic tasks."
+            },
+            {
+                "competency": "Schemes of work and lesson planning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your scheme of work covers 12 weeks, but two weeks were lost to school events. What should you do?",
+                "options": [
+                    {
+                        "text": "Remove topics randomly without telling anyone in the department or the head teacher",
+                        "correct": false
+                    },
+                    {
+                        "text": "Review the scheme, prioritise essential topics, and inform the head of department",
+                        "correct": true
+                    },
+                    {
+                        "text": "Skip all assessments for the rest of the term so that you can teach every topic",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teach all topics as fast as possible without checking understanding along the way",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Planning should be adjusted openly, focusing on the most important learning and still checking understanding."
+            },
+            {
+                "competency": "Using results to improve teaching",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "After marking a test, you see that most pupils scored very low on questions about one topic. What is the best next step?",
+                "options": [
+                    {
+                        "text": "Remove those questions and give everyone full marks",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check whether the topic was taught well and the questions were clear, then reteach and review",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the pupils they did not study hard enough and ask them to revise the whole topic again at home",
+                        "correct": false
+                    },
+                    {
+                        "text": "Record the marks and move on to the next topic",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Results show where teaching or testing may have problems; reteaching helps learners while also improving future tests."
+            },
+            {
+                "competency": "Test quality and fair marking",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A colleague asks you to increase the marks of your weaker class so that the school average looks better. What should you do?",
+                "options": [
+                    {
+                        "text": "Agree, because the school's reputation is more important",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change the marks only for the pupils who are close to passing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refuse to change the marks, and report the concern to the head of department if the pressure continues",
+                        "correct": true
+                    },
+                    {
+                        "text": "Add a few marks to every pupil so no one is noticed",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Marks must honestly reflect pupils' performance; changing them is dishonest and hides learning problems."
+            },
+            {
+                "competency": "Formative assessment and feedback",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You must check 80 exercise books but cannot write detailed comments for every pupil. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Give every pupil a tick without reading the work, so that all the books are returned by Friday",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop marking exercise books for the term and use the time to prepare new lessons instead of marking",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mark only the books of the best pupils and leave the rest of the books until next term begins",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give whole-class feedback on common errors, use peer marking with a key, and sample-check",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Targeted and shared feedback methods make feedback manageable in big classes while still helping learning."
+            },
+            {
+                "competency": "Learning objectives and competency-based design",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your objective is 'pupils will write a formal letter', but the plan only has you reading a sample letter, with no check at the end. What is the best improvement?",
+                "options": [
+                    {
+                        "text": "Add guided practice where pupils write a letter, and check it against a few clear criteria",
+                        "correct": true
+                    },
+                    {
+                        "text": "Keep the plan and read a second sample letter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change the objective to 'pupils will listen to a letter'",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep the plan and give a dictation exercise for homework",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Activities and assessment should match the objective; pupils must practise and be checked on writing the letter."
+            }
+        ]
+    },
+    {
+        "skill_slug": "early-childhood-education",
+        "skill_name": "Early Childhood Education",
+        "description": "Checks knowledge of pre-primary (awali) teaching: child development, play-based learning, early literacy and numeracy, safety and working with parents.",
+        "competencies": [
+            {
+                "name": "Child development",
+                "description": "Understands how young children grow and learn, including emotional needs.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Play-based learning",
+                "description": "Uses play and hands-on activities, and observation, rather than formal drilling.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Early literacy and numeracy",
+                "description": "Builds early language, reading and number skills through age-appropriate activities.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Safety, health and protection",
+                "description": "Keeps young children safe, healthy and protected from harm.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Working with parents",
+                "description": "Communicates with parents about how young children learn.",
+                "weight": 10,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Play-based learning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "How do children aged 4 to 6 learn best in pre-primary school?",
+                "options": [
+                    {
+                        "text": "By sitting silently and memorising lessons",
+                        "correct": false
+                    },
+                    {
+                        "text": "Through play, songs, stories and hands-on activities",
+                        "correct": true
+                    },
+                    {
+                        "text": "By copying long notes from the board each day and reading them aloud together",
+                        "correct": false
+                    },
+                    {
+                        "text": "By taking written tests every week",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Young children learn through active play, talking and handling real objects."
+            },
+            {
+                "competency": "Safety, health and protection",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What should a teacher do while young children play outside?",
+                "options": [
+                    {
+                        "text": "Ask older pupils from Standard Six to supervise them without any adult present",
+                        "correct": false
+                    },
+                    {
+                        "text": "Supervise them all the time and check that the area is free from hazards",
+                        "correct": true
+                    },
+                    {
+                        "text": "Allow them to play alone while she marks books inside",
+                        "correct": false
+                    },
+                    {
+                        "text": "Lock them in the classroom so that no one gets hurt",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Young children need constant adult supervision, and the play area must be safe."
+            },
+            {
+                "competency": "Child development",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "In a pre-primary class, some children speak in full sentences while others use only a few words. How should the teacher think about this?",
+                "options": [
+                    {
+                        "text": "Children develop at different rates, so she should support each child without comparing them",
+                        "correct": true
+                    },
+                    {
+                        "text": "The slower children are lazy and need to be punished",
+                        "correct": false
+                    },
+                    {
+                        "text": "All children should reach the same level by the end of the first month of school, whatever their age or home background",
+                        "correct": false
+                    },
+                    {
+                        "text": "Slower children should be moved to another class immediately",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Children grow at different rates; teachers provide support and monitor progress without labelling."
+            },
+            {
+                "competency": "Early literacy and numeracy",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which activity best builds early reading skills?",
+                "options": [
+                    {
+                        "text": "Reading aloud alone in front of the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copying long sentences from the board",
+                        "correct": false
+                    },
+                    {
+                        "text": "Writing each letter 50 times in a notebook every morning before play",
+                        "correct": false
+                    },
+                    {
+                        "text": "Songs, rhymes, stories and talking about pictures",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Listening to and enjoying language builds vocabulary and sound awareness, which prepare children for reading."
+            },
+            {
+                "competency": "Early literacy and numeracy",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which activities build early number skills? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Counting stones, bottle tops or seeds",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sorting objects by size and colour",
+                        "correct": true
+                    },
+                    {
+                        "text": "Writing the multiplication table 20 times",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copying long addition sums from a textbook",
+                        "correct": false
+                    },
+                    {
+                        "text": "Singing counting songs with actions",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Handling real objects and singing build number sense; written drill is too advanced for this age."
+            },
+            {
+                "competency": "Early literacy and numeracy",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A new pre-primary child speaks only her mother tongue at home. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Welcome her home language and slowly build Kiswahili with songs and objects",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore her until she begins speaking Kiswahili like the other children in class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Punish her whenever she speaks her mother tongue so that she learns Kiswahili faster",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teach her in English only, since English will be the main language she needs later",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Respecting the home language and building the school language through meaningful activity helps children feel safe and learn."
+            },
+            {
+                "competency": "Play-based learning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What is the best way to check the progress of a pre-primary child?",
+                "options": [
+                    {
+                        "text": "Ask each child to recite the whole alphabet alone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give a written exam at the end of each term and record every child's total marks",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rank the children by position in the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Observe the child during play and keep simple records or samples of work",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Observation during natural activities shows what young children can really do."
+            },
+            {
+                "competency": "Child development",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A 4-year-old cries every morning when her mother leaves. What should the teacher do?",
+                "options": [
+                    {
+                        "text": "Scold her for crying in front of the other children so that she stops crying quickly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let the parent stay in the room all day until the child stops crying completely",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the parent to leave quietly without saying goodbye so the child does not notice",
+                        "correct": false
+                    },
+                    {
+                        "text": "Greet her warmly, allow a short goodbye, then comfort her and offer an activity",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A warm, predictable goodbye and comforting activity help the child feel secure."
+            },
+            {
+                "competency": "Safety, health and protection",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A child has a fever and keeps vomiting at school. What should the teacher do?",
+                "options": [
+                    {
+                        "text": "Keep the child comfortable and supervised, tell the head teacher and contact the parent or guardian",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask the child to rest and continue the lesson as normal",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send the child home alone on foot",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the child medicine from her own bag",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A sick young child needs adult care and prompt contact with the family; teachers should not give medicine."
+            },
+            {
+                "competency": "Safety, health and protection",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A 5-year-old girl tells you that an older man who collects her sometimes touches her private parts. What should you do?",
+                "options": [
+                    {
+                        "text": "Wait for a week to see if it happens again, then tell her parents at the next meeting",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask her to show you exactly what he did, using a doll or a drawing, to be sure",
+                        "correct": false
+                    },
+                    {
+                        "text": "Confront the man when he comes to collect her and warn him in front of other parents",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen calmly, do not promise secrecy, and report at once to the head teacher",
+                        "correct": true
+                    }
+                ],
+                "explanation": "The child must be protected quickly through the proper channel, without repeated questioning or promises of secrecy."
+            },
+            {
+                "competency": "Play-based learning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The head teacher asks you to make your 5-year-olds sit and copy long text to prepare for Standard One. What is the best response?",
+                "options": [
+                    {
+                        "text": "Stop all writing activities for the whole year",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain respectfully why play-based activities suit their age and suggest short pre-writing activities",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore the request and say nothing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Follow the instruction completely, since you cannot disagree",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Teachers can respectfully advise on age-appropriate practice, such as pre-writing play, while cooperating with the school."
+            },
+            {
+                "competency": "Working with parents",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A parent says: 'My child only plays at school and does not write. Why am I paying fees?' What is the best response?",
+                "options": [
+                    {
+                        "text": "Tell the parent that the school's methods are not open to question or discussion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the parent to hire a private tutor for writing lessons after school each day",
+                        "correct": false
+                    },
+                    {
+                        "text": "Say that the child is behind and must start long writing tasks from next week",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain that play builds reading and writing skills, and show her child's work",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Parents accept play-based learning more when teachers explain its purpose and show evidence of progress."
+            }
+        ]
+    },
+    {
+        "skill_slug": "special-needs-education",
+        "skill_name": "Special Needs & Inclusive Education",
+        "description": "Checks ability to identify learners with disabilities or learning difficulties, teach inclusively, plan individual support and work respectfully with families and specialists.",
+        "competencies": [
+            {
+                "name": "Identifying learners' needs",
+                "description": "Notices signs of disability or learning difficulty and responds carefully.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Inclusive teaching strategies",
+                "description": "Adapts teaching, seating and materials so all learners can take part.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Individual plans and supports",
+                "description": "Understands and uses individual education plans and realistic goals.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Attitudes, rights and respect",
+                "description": "Uses respectful language and challenges stigma and teasing.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Working with parents and specialists",
+                "description": "Works with parents, school leaders and health or special education services.",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Attitudes, rights and respect",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which phrase shows respectful language about a learner?",
+                "options": [
+                    {
+                        "text": "\"The abnormal pupil\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"The handicapped child in my class\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"A learner with a disability\"",
+                        "correct": true
+                    },
+                    {
+                        "text": "\"One of the slow ones\"",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Person-first language puts the learner before the disability and avoids labels."
+            },
+            {
+                "competency": "Identifying learners' needs",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which sign might suggest that a learner has a hearing difficulty?",
+                "options": [
+                    {
+                        "text": "Prefers to play football at break time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Often asks others to repeat, and does not respond when called from behind",
+                        "correct": true
+                    },
+                    {
+                        "text": "Writes neatly and finishes written work quickly, before most of the other learners",
+                        "correct": false
+                    },
+                    {
+                        "text": "Is quiet during group discussions",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Repeated requests to repeat and not reacting to sounds from behind may show hearing difficulty and need follow-up."
+            },
+            {
+                "competency": "Inclusive teaching strategies",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "How should you support a learner with low vision, including some learners with albinism?",
+                "options": [
+                    {
+                        "text": "Write in small letters to save chalk and fit more notes on the board",
+                        "correct": false
+                    },
+                    {
+                        "text": "Always let a classmate copy the notes instead of expecting the learner to read",
+                        "correct": false
+                    },
+                    {
+                        "text": "Seat the learner near the front and write large and clear on the board",
+                        "correct": true
+                    },
+                    {
+                        "text": "Seat the learner at the back of the class so the others can see the board",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Front seating, large clear writing and good contrast help learners with low vision to see and take part."
+            },
+            {
+                "competency": "Individual plans and supports",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is an individual education plan (IEP)?",
+                "options": [
+                    {
+                        "text": "A plan for waiving a learner's school fees",
+                        "correct": false
+                    },
+                    {
+                        "text": "A list of all learners who have a disability, kept by the head teacher for the school inspectors",
+                        "correct": false
+                    },
+                    {
+                        "text": "A written plan with goals, support and review dates for one learner",
+                        "correct": true
+                    },
+                    {
+                        "text": "A disciplinary record for learners who misbehave",
+                        "correct": false
+                    }
+                ],
+                "explanation": "An IEP sets personal goals and supports for a learner and is reviewed regularly."
+            },
+            {
+                "competency": "Inclusive teaching strategies",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which supports help a learner who has serious difficulty with reading? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Giving extra time and short, clear instructions",
+                        "correct": true
+                    },
+                    {
+                        "text": "Using pictures and reading aloud together",
+                        "correct": true
+                    },
+                    {
+                        "text": "Asking the learner to read alone in front of the class daily",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teaching in small steps with repeated practice",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reducing marks for every spelling mistake in all subjects",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Extra time, multi-sensory support and small steps help; public reading and penalties for spelling often discourage the learner."
+            },
+            {
+                "competency": "Identifying learners' needs",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Before deciding that a learner has a learning disability, what should a teacher do?",
+                "options": [
+                    {
+                        "text": "Decide quickly from one poor test result, then place the learner in a special school at once",
+                        "correct": false
+                    },
+                    {
+                        "text": "Observe over time in different activities, keep notes, and consult parents and specialists",
+                        "correct": true
+                    },
+                    {
+                        "text": "Label the learner as lazy so he works harder",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask other pupils whether the learner is slow",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A careful, shared assessment is needed; teachers observe and refer, and do not diagnose alone."
+            },
+            {
+                "competency": "Inclusive teaching strategies",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which approach is most inclusive in a class that includes learners with disabilities?",
+                "options": [
+                    {
+                        "text": "Plan lessons with several ways for learners to access content, take part and show what they know",
+                        "correct": true
+                    },
+                    {
+                        "text": "Teach learners with disabilities in a separate room at all times",
+                        "correct": false
+                    },
+                    {
+                        "text": "Exempt learners with disabilities from all assessments",
+                        "correct": false
+                    },
+                    {
+                        "text": "Teach all learners in the same way, at the same speed, and expect the same output from every learner in the class",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Inclusive planning offers different routes to learning and ways of showing learning, so all learners can take part."
+            },
+            {
+                "competency": "Attitudes, rights and respect",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Pupils laugh when a boy who stammers reads aloud. What should you do?",
+                "options": [
+                    {
+                        "text": "Ignore it because children always tease one another, and he must learn to accept it as part of school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make him read aloud more often until he is cured",
+                        "correct": false
+                    },
+                    {
+                        "text": "Excuse him from all speaking in class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop the teasing calmly, teach respect, and give the boy time and choices about how to take part",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Teachers must stop teasing and create a safe environment while supporting the learner's participation."
+            },
+            {
+                "competency": "Inclusive teaching strategies",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A learner who uses crutches cannot easily reach your classroom, which is up several steps. What is the best action?",
+                "options": [
+                    {
+                        "text": "Ask the head teacher for changes, such as a ground-floor room or a ramp",
+                        "correct": true
+                    },
+                    {
+                        "text": "Teach him separately at home until the school can find a suitable classroom for him",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask his parents to carry him up the steps every day before the lessons begin",
+                        "correct": false
+                    },
+                    {
+                        "text": "Allow him to skip every lesson that is held in a classroom upstairs",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Schools should remove barriers so the learner can participate fully and safely."
+            },
+            {
+                "competency": "Individual plans and supports",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A learner with an intellectual disability cannot do the Standard Five mathematics tasks. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Let him draw during mathematics lessons",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give him the lowest marks and move on",
+                        "correct": false
+                    },
+                    {
+                        "text": "Set smaller, achievable goals on the same topic in his IEP, give extra support, and review progress",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give him the same tasks as everyone else with no help",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Realistic, individual goals with support allow the learner to make progress and stay part of the class."
+            },
+            {
+                "competency": "Working with parents and specialists",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A mother of a child with albinism wants to keep her at home because she fears for her safety and teasing at school. What is the best response?",
+                "options": [
+                    {
+                        "text": "Tell her that her fears are only superstition and that nothing will happen to her child",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree that the child should stay at home until she is older and the teasing has stopped",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen with empathy, explain the school's safety measures, and plan safe travel",
+                        "correct": true
+                    },
+                    {
+                        "text": "Warn her that the child will be removed from the register if she does not attend",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Respectful listening and joint safety planning keep the child in school and protect her."
+            },
+            {
+                "competency": "Working with parents and specialists",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A learner repeatedly fails to copy notes and seems not to hear instructions. What should you do?",
+                "options": [
+                    {
+                        "text": "Suspend the learner until the behaviour improves",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait until the next school level to see if things improve",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move the learner to the back of the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the head teacher and parents, and ask for a health or special education assessment",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Persistent difficulties should be reported to the school and family and referred for proper assessment."
+            }
+        ]
+    },
+    {
+        "skill_slug": "school-counselling",
+        "skill_name": "School Guidance & Counselling",
+        "description": "Checks counselling basics, confidentiality and its limits, referral, handling bullying and abuse disclosures, and career guidance for learners.",
+        "competencies": [
+            {
+                "name": "Counselling basics and listening",
+                "description": "Listens actively and responds with empathy to learners in distress.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Confidentiality and ethics",
+                "description": "Protects learners' private information and explains the limits of confidentiality.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Referral and working with others",
+                "description": "Knows when to refer and who to involve for learner safety and wellbeing.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Bullying and abuse disclosures",
+                "description": "Responds correctly when a learner reports bullying or abuse.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Career and academic guidance",
+                "description": "Helps learners explore realistic study and career options.",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Counselling basics and listening",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which describes active listening?",
+                "options": [
+                    {
+                        "text": "Giving full attention, reflecting what the learner says, and asking open questions",
+                        "correct": true
+                    },
+                    {
+                        "text": "Telling your own similar story to show you understand",
+                        "correct": false
+                    },
+                    {
+                        "text": "Writing notes while looking away from the learner",
+                        "correct": false
+                    },
+                    {
+                        "text": "Interrupting quickly to give the learner advice, because you have more experience than she does",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Active listening means focusing on the learner and showing that you understand."
+            },
+            {
+                "competency": "Confidentiality and ethics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does confidentiality mean in school counselling?",
+                "options": [
+                    {
+                        "text": "Everything a learner says is always kept secret from everyone",
+                        "correct": false
+                    },
+                    {
+                        "text": "What the learner says is always reported to the parents",
+                        "correct": false
+                    },
+                    {
+                        "text": "What a learner shares is kept private, except when someone's safety is at risk",
+                        "correct": true
+                    },
+                    {
+                        "text": "What the learner says is shared with all the teachers, so they can support the learner in class",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Counsellors protect privacy but must act when there is serious risk of harm."
+            },
+            {
+                "competency": "Counselling basics and listening",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which response shows empathy to a learner who says 'I feel alone since my mother travelled'?",
+                "options": [
+                    {
+                        "text": "\"Don't worry about it; many children feel like this and it will soon pass, so go back to class.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"It sounds like you have been feeling very alone since your mother went away.\"",
+                        "correct": true
+                    },
+                    {
+                        "text": "\"Other children have worse problems than you.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"You should be stronger than this.\"",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Empathy reflects the learner's feelings without judging or minimising them."
+            },
+            {
+                "competency": "Referral and working with others",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "When should a school counsellor refer a learner to another professional?",
+                "options": [
+                    {
+                        "text": "Never, because counsellors should deal with every problem alone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only when the learner's parent asks for it",
+                        "correct": false
+                    },
+                    {
+                        "text": "For every problem, immediately, without first listening",
+                        "correct": false
+                    },
+                    {
+                        "text": "When the problem is beyond the counsellor's role, such as serious mental health, medical need or abuse",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Referral protects learners when needs go beyond school counselling."
+            },
+            {
+                "competency": "Career and academic guidance",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which is good career guidance for a Form Four student?",
+                "options": [
+                    {
+                        "text": "Help him explore his interests, results and options, including vocational training",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the student which career to choose because you know the job market better",
+                        "correct": false
+                    },
+                    {
+                        "text": "Encourage everyone to choose only medicine or engineering because they pay the most",
+                        "correct": false
+                    },
+                    {
+                        "text": "Choose the career that the parents prefer, since they are paying for the studies",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Career guidance gives information and helps the learner make an informed choice."
+            },
+            {
+                "competency": "Confidentiality and ethics",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "In which situations must a counsellor break confidentiality and act? Select all that apply.",
+                "options": [
+                    {
+                        "text": "A learner says he dislikes a teacher's lessons",
+                        "correct": false
+                    },
+                    {
+                        "text": "A learner says he failed a test and feels sad",
+                        "correct": false
+                    },
+                    {
+                        "text": "A learner reports that an adult is sexually abusing her",
+                        "correct": true
+                    },
+                    {
+                        "text": "A learner threatens to seriously hurt another person",
+                        "correct": true
+                    },
+                    {
+                        "text": "A learner says she plans to harm herself",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Confidentiality has limits when there is serious risk of harm to the learner or others."
+            },
+            {
+                "competency": "Confidentiality and ethics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Where should a counsellor keep notes from counselling sessions?",
+                "options": [
+                    {
+                        "text": "In a locked place that only the counsellor can access",
+                        "correct": true
+                    },
+                    {
+                        "text": "On the notice board for the learner to review",
+                        "correct": false
+                    },
+                    {
+                        "text": "In the learner's general class file",
+                        "correct": false
+                    },
+                    {
+                        "text": "In an open file in the staff room where all teachers can read it when needed",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Counselling records are sensitive and should be kept secure and private."
+            },
+            {
+                "competency": "Referral and working with others",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A Form Two girl says she has felt hopeless and not slept for weeks. What is the best response?",
+                "options": [
+                    {
+                        "text": "Tell the class what she said so that her friends can cheer her up and keep her company",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask her to pray and come back to see you next term if she still feels the same way",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell her to be strong and keep it to herself because others have worse problems",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen, ask about thoughts of self-harm, and involve the guardian and a clinician",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Signs of serious distress need careful asking about safety, involvement of responsible adults and professional referral."
+            },
+            {
+                "competency": "Bullying and abuse disclosures",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A boy tells you that older boys bully him in the dormitory and begs you not to tell anyone. What should you do?",
+                "options": [
+                    {
+                        "text": "Confront the older boys publicly in the dining hall so that everyone sees the bullying stop",
+                        "correct": false
+                    },
+                    {
+                        "text": "Advise him to fight back so that the older boys stop bothering him in the dormitory",
+                        "correct": false
+                    },
+                    {
+                        "text": "Support him, explain that you must act to keep him safe, and report to the head teacher",
+                        "correct": true
+                    },
+                    {
+                        "text": "Promise secrecy and do nothing else, since he trusts only you with what he told you",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Bullying must be addressed for the learner's safety; be honest with him about the steps and report properly."
+            },
+            {
+                "competency": "Bullying and abuse disclosures",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A 14-year-old girl tells you that her uncle touches her at night. What should you do?",
+                "options": [
+                    {
+                        "text": "Tell her to avoid her uncle and take no further action, as it is a family matter",
+                        "correct": true
+                    },
+                    {
+                        "text": "Question the uncle yourself to learn the truth before telling anyone else at school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Counsel her for several weeks before telling anyone, so that she is not frightened",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen and reassure her, then report at once to the head teacher",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Abuse disclosures must be reported at once through the proper channel; counsellors do not investigate themselves."
+            },
+            {
+                "competency": "Career and academic guidance",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A Form Four student with low marks wants a course that needs very high marks, and his family is pressuring him. What is the best guidance?",
+                "options": [
+                    {
+                        "text": "Discuss realistic options, including vocational training or retaking subjects, and respect his final decision",
+                        "correct": true
+                    },
+                    {
+                        "text": "Promise him he will succeed if he wants it enough",
+                        "correct": false
+                    },
+                    {
+                        "text": "Choose a course for him that you think is best",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell him to give up his dream completely",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Honest information about realistic routes helps the learner make a good decision."
+            },
+            {
+                "competency": "Counselling basics and listening",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A student starts to cry in your office and cannot speak. What should you do?",
+                "options": [
+                    {
+                        "text": "Send her back to class until she can talk",
+                        "correct": false
+                    },
+                    {
+                        "text": "Call her classmates to comfort her",
+                        "correct": false
+                    },
+                    {
+                        "text": "Demand that she explains right now, because you have other learners waiting to see you",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stay calm and patient, give her time, and tell her you are there when she is ready",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Calm patience gives the learner safety and time to start talking."
+            }
+        ]
+    }
+]

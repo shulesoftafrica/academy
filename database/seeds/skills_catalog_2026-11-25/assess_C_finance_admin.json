@@ -1,0 +1,2144 @@
+[
+    {
+        "skill_slug": "accounting",
+        "skill_name": "Accounting",
+        "description": "Checks core accounting knowledge: double entry, financial statements, reconciliations, adjustments and ethical practice.",
+        "competencies": [
+            {
+                "name": "Double-entry and journals",
+                "description": "Applies debits and credits correctly to common transactions",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Financial statements",
+                "description": "Understands the financial statements and the accrual basis",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Reconciliations and internal controls",
+                "description": "Reconciles records and detects errors and irregularities",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Accruals, prepayments and adjustments",
+                "description": "Handles prepayments, depreciation and allowances",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Accounting practice and ethics",
+                "description": "Follows sound practice, honesty and the imprest system",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Double-entry and journals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A school receives TZS 500,000 cash from a parent for fees that were already invoiced earlier. Which entry is correct?",
+                "options": [
+                    {
+                        "text": "Debit Fees receivable, credit Cash",
+                        "correct": false
+                    },
+                    {
+                        "text": "Debit Cash, credit Fees receivable (debtors)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Debit Cash, credit Fee income again, as the income is earned when paid",
+                        "correct": false
+                    },
+                    {
+                        "text": "Debit Fee income, credit Fees receivable",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The fee income was recorded when the invoice was raised. Receiving the cash increases Cash and reduces the amount owed by the parent."
+            },
+            {
+                "competency": "Financial statements",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which financial statement shows a school's assets, liabilities and equity at one particular date?",
+                "options": [
+                    {
+                        "text": "Statement of cash flows",
+                        "correct": false
+                    },
+                    {
+                        "text": "Income and expenditure statement (surplus or deficit)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Trial balance of the year",
+                        "correct": false
+                    },
+                    {
+                        "text": "Statement of financial position (balance sheet)",
+                        "correct": true
+                    }
+                ],
+                "explanation": "The statement of financial position lists what the school owns, what it owes and the accumulated funds at a date. The other statements cover a period or are not financial statements."
+            },
+            {
+                "competency": "Accruals, prepayments and adjustments",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "On 1 October a school pays TZS 1,200,000 for 12 months of insurance. The financial year ends on 31 December. How much is prepaid at year-end?",
+                "options": [
+                    {
+                        "text": "TZS 900,000",
+                        "correct": true
+                    },
+                    {
+                        "text": "TZS 300,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 1,200,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 100,000",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Three months (Oct-Dec) are used, leaving nine months unused: 9 x 100,000 = 900,000, which is shown as a prepayment (current asset)."
+            },
+            {
+                "competency": "Reconciliations and internal controls",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which of these can explain a difference between the cash book balance and the bank statement balance at month-end? Select all that apply.",
+                "options": [
+                    {
+                        "text": "A deposit made on the last day that the bank has not yet credited",
+                        "correct": true
+                    },
+                    {
+                        "text": "A cheque issued by the school that the bank has not yet paid",
+                        "correct": true
+                    },
+                    {
+                        "text": "Depreciation of equipment not yet posted",
+                        "correct": false
+                    },
+                    {
+                        "text": "A supplier invoice received but not yet paid",
+                        "correct": false
+                    },
+                    {
+                        "text": "Bank charges that are not yet recorded in the cash book",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Timing differences and bank items not yet in the cash book appear in a bank reconciliation. Unpaid invoices and depreciation do not involve the bank account."
+            },
+            {
+                "competency": "Financial statements",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Under the accrual basis of accounting, when is an expense recognised?",
+                "options": [
+                    {
+                        "text": "Only on the day the money actually leaves the school's bank account",
+                        "correct": false
+                    },
+                    {
+                        "text": "When the order is placed with the supplier",
+                        "correct": false
+                    },
+                    {
+                        "text": "When the supplier sends a payment reminder",
+                        "correct": false
+                    },
+                    {
+                        "text": "When it is incurred, even if it has not yet been paid",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Accrual accounting matches expenses to the period in which the goods or services were used, regardless of when cash is paid."
+            },
+            {
+                "competency": "Accruals, prepayments and adjustments",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A school has debtors of TZS 10,000,000. The allowance for doubtful debts is currently TZS 300,000 and must be increased to TZS 500,000. What is charged to expenses this year?",
+                "options": [
+                    {
+                        "text": "TZS 500,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 200,000",
+                        "correct": true
+                    },
+                    {
+                        "text": "TZS 300,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 800,000",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Only the increase in the allowance is charged to the income statement: 500,000 - 300,000 = 200,000."
+            },
+            {
+                "competency": "Reconciliations and internal controls",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A trial balance agrees (debits equal credits). Which error would still NOT be revealed by it?",
+                "options": [
+                    {
+                        "text": "A debit entry posted but the matching credit left out of the ledger completely",
+                        "correct": false
+                    },
+                    {
+                        "text": "A debit of TZS 45,000 posted as TZS 54,000 only",
+                        "correct": false
+                    },
+                    {
+                        "text": "A purchase of stationery posted to the repairs expense account",
+                        "correct": true
+                    },
+                    {
+                        "text": "A credit entry posted twice with one debit",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Posting to the wrong account of the right type keeps debits equal to credits. The other errors make the two totals different."
+            },
+            {
+                "competency": "Reconciliations and internal controls",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "While preparing a bank reconciliation you find a TZS 800,000 withdrawal on the bank statement that is not in the cash book and nobody can explain it. What should you do?",
+                "options": [
+                    {
+                        "text": "Report it to the accountant or head and ask the bank for the supporting document",
+                        "correct": true
+                    },
+                    {
+                        "text": "Record it as a miscellaneous expense so the books balance and the reconciliation closes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Leave it in the reconciliation until the year-end audit",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the cashier to correct the cash book without telling anyone",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Unexplained bank items may be errors or fraud. They must be reported and investigated, not hidden in an expense account."
+            },
+            {
+                "competency": "Double-entry and journals",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "The school buys 5 desks for TZS 750,000 and the supplier gives 30 days to pay. The invoice is not yet paid. Which entry is correct?",
+                "options": [
+                    {
+                        "text": "Debit Furniture, credit Cash",
+                        "correct": false
+                    },
+                    {
+                        "text": "Debit Furniture, credit Creditors (accounts payable)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Debit Furniture expense, credit Fee income for the term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Debit Creditors, credit Furniture",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The desks are an asset, and the school now owes the supplier, so a liability (creditors) is created instead of reducing cash."
+            },
+            {
+                "competency": "Accounting practice and ethics",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Last month's books are closed. A manager asks you to change the date of a TZS 2,000,000 expense so that it appears in last month and next month looks better. What is the best response?",
+                "options": [
+                    {
+                        "text": "Agree, because the manager is responsible for the results of the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree if it is only a small amount for the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change the date and add a note in your own file",
+                        "correct": false
+                    },
+                    {
+                        "text": "Decline, record it with its true date and tell your supervisor",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Records must show when transactions really happened. Changing dates to influence results is misreporting, so it should be declined and escalated."
+            },
+            {
+                "competency": "Financial statements",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A board member notes that the income statement shows a surplus of TZS 3,000,000, but the bank balance is very low. What is the most likely explanation?",
+                "options": [
+                    {
+                        "text": "Some fees are invoiced but not yet collected, and cash was used to buy equipment",
+                        "correct": true
+                    },
+                    {
+                        "text": "The surplus must always equal the bank balance, so a mistake was made in the accounts",
+                        "correct": false
+                    },
+                    {
+                        "text": "The bank has made an error and should be contacted",
+                        "correct": false
+                    },
+                    {
+                        "text": "Depreciation has reduced the cash in the bank account",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A surplus is income earned minus expenses incurred. Unpaid fees and cash spent on assets reduce cash without reducing the surplus."
+            },
+            {
+                "competency": "Accounting practice and ethics",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The petty cash float is TZS 100,000 under the imprest system. Paid vouchers total TZS 62,000 and the box holds TZS 38,000. What should be done to restore the float?",
+                "options": [
+                    {
+                        "text": "Do nothing, because the cash left in the box is already the correct amount",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reimburse TZS 38,000 and keep the vouchers for later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reimburse TZS 62,000 against the approved vouchers",
+                        "correct": true
+                    },
+                    {
+                        "text": "Add TZS 100,000 more so the box holds TZS 138,000",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Under an imprest system the cash plus vouchers always equals the float, and the vouchers total is refunded to restore it."
+            }
+        ]
+    },
+    {
+        "skill_slug": "bookkeeping",
+        "skill_name": "Bookkeeping",
+        "description": "Checks daily record keeping, cash book, ledger posting, trial balance and bank reconciliation skills.",
+        "competencies": [
+            {
+                "name": "Source documents and records",
+                "description": "Identifies source documents and records transactions from valid evidence",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Cash book and petty cash",
+                "description": "Keeps the cash book and petty cash with proper vouchers",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Ledgers and double entry",
+                "description": "Posts to ledgers using debits and credits and corrects errors properly",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Trial balance and error finding",
+                "description": "Prepares a trial balance and traces differences",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Bank reconciliation",
+                "description": "Prepares bank reconciliations",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Source documents and records",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "easy",
+                "text": "Which of these are source documents for bookkeeping entries? Select all that apply.",
+                "options": [
+                    {
+                        "text": "A trial balance",
+                        "correct": false
+                    },
+                    {
+                        "text": "A statement of financial position",
+                        "correct": false
+                    },
+                    {
+                        "text": "A supplier invoice",
+                        "correct": true
+                    },
+                    {
+                        "text": "A bank deposit slip",
+                        "correct": true
+                    },
+                    {
+                        "text": "A ledger account",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Source documents are the original evidence of transactions. The trial balance, ledger and statements are records prepared from them."
+            },
+            {
+                "competency": "Ledgers and double entry",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does \"double entry\" mean in bookkeeping?",
+                "options": [
+                    {
+                        "text": "Every transaction is written twice in the same book, once by each of two different clerks",
+                        "correct": false
+                    },
+                    {
+                        "text": "Two people must sign every entry in the cash book",
+                        "correct": false
+                    },
+                    {
+                        "text": "Each transaction is copied to a second book for safety",
+                        "correct": false
+                    },
+                    {
+                        "text": "Every transaction is recorded in at least two accounts, with equal debits and credits",
+                        "correct": true
+                    }
+                ],
+                "explanation": "In double entry each transaction has a debit effect and a credit effect of equal value."
+            },
+            {
+                "competency": "Cash book and petty cash",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "In a two-column or three-column cash book, where is money received recorded?",
+                "options": [
+                    {
+                        "text": "On the debit side",
+                        "correct": true
+                    },
+                    {
+                        "text": "On the credit side",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only in the narrative column",
+                        "correct": false
+                    },
+                    {
+                        "text": "In the balance column only",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Cash is an asset, so receipts are debited and payments are credited in the cash book."
+            },
+            {
+                "competency": "Ledgers and double entry",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which of these accounts normally have a debit balance? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Fee income",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cash at bank",
+                        "correct": true
+                    },
+                    {
+                        "text": "Furniture",
+                        "correct": true
+                    },
+                    {
+                        "text": "Creditors (accounts payable)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rent expense",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Assets and expenses normally have debit balances. Income, liabilities and capital normally have credit balances."
+            },
+            {
+                "competency": "Trial balance and error finding",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is the main purpose of a trial balance?",
+                "options": [
+                    {
+                        "text": "To prove that there are no errors of any kind in the ledger accounts",
+                        "correct": false
+                    },
+                    {
+                        "text": "To show the school's profit for the year only",
+                        "correct": false
+                    },
+                    {
+                        "text": "To list all payments made through the bank",
+                        "correct": false
+                    },
+                    {
+                        "text": "To check that total debit balances equal total credit balances",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A trial balance tests the arithmetic of double entry, but some errors can remain even when it agrees."
+            },
+            {
+                "competency": "Bank reconciliation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The cash book shows TZS 1,000,000. The bank statement shows bank charges of TZS 15,000 that are not yet in the cash book. What is the correct updated cash book balance?",
+                "options": [
+                    {
+                        "text": "TZS 1,015,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 985,000",
+                        "correct": true
+                    },
+                    {
+                        "text": "TZS 1,000,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 970,000",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Bank charges reduce the bank balance, so the cash book must be reduced: 1,000,000 - 15,000 = 985,000."
+            },
+            {
+                "competency": "Trial balance and error finding",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A trial balance is out by TZS 20,000 and the debit total is too low. Which is a possible cause?",
+                "options": [
+                    {
+                        "text": "A credit of TZS 20,000 was never posted to the ledger",
+                        "correct": false
+                    },
+                    {
+                        "text": "A debit of TZS 20,000 was posted twice",
+                        "correct": false
+                    },
+                    {
+                        "text": "A debit of TZS 20,000 was never posted to the ledger",
+                        "correct": true
+                    },
+                    {
+                        "text": "A purchase was posted to the wrong expense account",
+                        "correct": false
+                    }
+                ],
+                "explanation": "If debits are too low, a debit was left out (or a credit was posted twice). A wrong-account error does not change the totals."
+            },
+            {
+                "competency": "Cash book and petty cash",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A teacher asks for TZS 15,000 from petty cash for transport and says the receipt will come later. What should you do?",
+                "options": [
+                    {
+                        "text": "Pay only against a petty cash voucher approved by the authorised person",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pay now and record the payment in the cash book when the receipt arrives",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pay now and write \"miscellaneous\" in the cash book",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refuse to give petty cash to any teacher",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Every petty cash payment needs an approved voucher so it can be supported, recorded correctly and checked."
+            },
+            {
+                "competency": "Source documents and records",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A parent shows an M-Pesa message saying he paid TZS 300,000 fees, but you cannot see it on the school's mobile money statement. What should you do?",
+                "options": [
+                    {
+                        "text": "Issue the receipt, because the message is proof of payment",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do not issue a receipt or record it until the payment is verified with the provider",
+                        "correct": true
+                    },
+                    {
+                        "text": "Record it in the cash book now and check it against the statement at the month-end close",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the parent to pay again and claim a refund later",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Messages can be forged or sent in error. Money is recorded only when it is confirmed in the school's own statement."
+            },
+            {
+                "competency": "Ledgers and double entry",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You posted the school's electricity bill to the Water expense account by mistake. What is the best way to correct it?",
+                "options": [
+                    {
+                        "text": "Erase the original entry and write it again in the correct account",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete the page and re-create it without a note",
+                        "correct": false
+                    },
+                    {
+                        "text": "Leave it until the auditors find it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make a correcting journal entry with a clear explanation",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Records must keep an audit trail, so errors are corrected by a journal (debit Electricity, credit Water) and not by erasing."
+            },
+            {
+                "competency": "Trial balance and error finding",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your trial balance does not agree, and you have already re-added the columns. What is the best next step?",
+                "options": [
+                    {
+                        "text": "Check if the difference equals one entry or half of one, then trace postings",
+                        "correct": true
+                    },
+                    {
+                        "text": "Put the difference in a suspense account and treat the trial balance as agreed",
+                        "correct": false
+                    },
+                    {
+                        "text": "Adjust the cash balance by the difference so that the totals agree",
+                        "correct": false
+                    },
+                    {
+                        "text": "Start the entire year's books again from January and ignore the old ones",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A difference equal to one entry suggests an omission, and half of an entry suggests a debit/credit reversed. A suspense account is only a temporary place to hold a difference until it is found."
+            },
+            {
+                "competency": "Bank reconciliation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The cash book balance is TZS 2,400,000. The bank statement shows TZS 2,560,000. Unpresented cheques are TZS 300,000. The only other difference is an uncredited deposit. How much is that deposit?",
+                "options": [
+                    {
+                        "text": "TZS 160,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 300,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 140,000",
+                        "correct": true
+                    },
+                    {
+                        "text": "TZS 460,000",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Bank balance 2,560,000 - cheques 300,000 + deposit = cash book 2,400,000, so the deposit is 140,000."
+            }
+        ]
+    },
+    {
+        "skill_slug": "payroll-administration",
+        "skill_name": "Payroll Administration",
+        "description": "Checks knowledge of Tanzanian payroll deductions, net pay, statutory remittance, payroll controls and staff changes.",
+        "competencies": [
+            {
+                "name": "Statutory deductions and contributions",
+                "description": "Knows which deductions and employer contributions exist, who collects them and who pays",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Gross-to-net pay and payslips",
+                "description": "Calculates net pay and handles payslip queries",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Statutory returns and remittance",
+                "description": "Understands statutory returns, remittance and the consequences of delay",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Payroll controls and fraud prevention",
+                "description": "Applies payroll controls and responds to suspected fraud",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Starters, leavers and changes",
+                "description": "Processes new staff, leavers and changes correctly",
+                "weight": 10,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Statutory deductions and contributions",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which of these are costs paid by the employer and NOT deducted from the employee's salary? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Workers Compensation Fund (WCF) contribution",
+                        "correct": true
+                    },
+                    {
+                        "text": "The employee's share of the pension contribution",
+                        "correct": false
+                    },
+                    {
+                        "text": "PAYE (income tax on employment)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Skills and Development Levy (SDL)",
+                        "correct": true
+                    },
+                    {
+                        "text": "HESLB student loan repayment",
+                        "correct": false
+                    }
+                ],
+                "explanation": "WCF and SDL are employer obligations. PAYE, the employee's pension share and HESLB loan repayments are deducted from the employee's pay."
+            },
+            {
+                "competency": "Gross-to-net pay and payslips",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "How is an employee's net pay calculated?",
+                "options": [
+                    {
+                        "text": "Basic salary plus all allowances paid to the employee in the month",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gross pay minus the employer's contributions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gross pay plus the employer's contributions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gross pay minus all deductions taken from the employee",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Net pay is the amount the employee receives after PAYE, the employee pension share and other authorised deductions are taken from gross pay."
+            },
+            {
+                "competency": "Statutory deductions and contributions",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which authority collects PAYE from employers in Tanzania?",
+                "options": [
+                    {
+                        "text": "Tanzania Revenue Authority (TRA)",
+                        "correct": true
+                    },
+                    {
+                        "text": "National Social Security Fund (NSSF)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Workers Compensation Fund (WCF)",
+                        "correct": false
+                    },
+                    {
+                        "text": "The local government authority",
+                        "correct": false
+                    }
+                ],
+                "explanation": "PAYE is income tax, and employers withhold it and pay it to the TRA."
+            },
+            {
+                "competency": "Statutory deductions and contributions",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which fund is the social security scheme for public servants, such as teachers employed by the government?",
+                "options": [
+                    {
+                        "text": "Workers Compensation Fund (WCF)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Skills and Development Levy fund",
+                        "correct": false
+                    },
+                    {
+                        "text": "Public Service Social Security Fund (PSSSF)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Higher Education Students' Loans Board (HESLB)",
+                        "correct": false
+                    }
+                ],
+                "explanation": "PSSSF covers public servants, while NSSF mainly covers private-sector employees."
+            },
+            {
+                "competency": "Statutory returns and remittance",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "An employer deducts PAYE from salaries but does not pay it to TRA by the deadline. What is the likely result?",
+                "options": [
+                    {
+                        "text": "Nothing happens, because each employee pays their own tax when filing at year-end",
+                        "correct": false
+                    },
+                    {
+                        "text": "The employees become liable for the unpaid amount",
+                        "correct": false
+                    },
+                    {
+                        "text": "TRA automatically waives the penalty for schools",
+                        "correct": false
+                    },
+                    {
+                        "text": "The employer becomes liable for penalties and interest on the late payment",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Tax withheld belongs to the authority. Late payment makes the employer liable for penalties and interest."
+            },
+            {
+                "competency": "Payroll controls and fraud prevention",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which controls help prevent \"ghost workers\" on a payroll? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Pay all salaries in cash to avoid bank records",
+                        "correct": false
+                    },
+                    {
+                        "text": "Compare the payroll list with HR staff records every month",
+                        "correct": true
+                    },
+                    {
+                        "text": "Let the payroll clerk change bank details without approval",
+                        "correct": false
+                    },
+                    {
+                        "text": "Have someone other than the preparer approve the payroll",
+                        "correct": true
+                    },
+                    {
+                        "text": "Verify staff identity and attendance from time to time",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Reconciling with HR, separating preparation from approval and checking that staff exist all reduce ghost-worker fraud. Uncontrolled changes and cash payments increase risk."
+            },
+            {
+                "competency": "Gross-to-net pay and payslips",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Gross pay is TZS 900,000. Deductions: PAYE 50,000, employee pension 45,000, HESLB 30,000 and staff loan 25,000. The employer also owes WCF and SDL. What is the net pay?",
+                "options": [
+                    {
+                        "text": "TZS 805,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 855,000",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 750,000",
+                        "correct": true
+                    },
+                    {
+                        "text": "TZS 725,000",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Employee deductions total 150,000, so net pay is 900,000 - 150,000. Employer-only costs such as WCF and SDL are not taken from net pay."
+            },
+            {
+                "competency": "Payroll controls and fraud prevention",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "During review you find a teacher who left three months ago is still being paid, and the bank account details were changed last month. What is the best action?",
+                "options": [
+                    {
+                        "text": "Hold the payment, report to the finance manager and HR, and keep the records",
+                        "correct": true
+                    },
+                    {
+                        "text": "Remove the name quietly from the list and tell nobody about the earlier payments",
+                        "correct": false
+                    },
+                    {
+                        "text": "Call the former teacher and ask for a refund first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait for the year-end audit to raise it",
+                        "correct": false
+                    }
+                ],
+                "explanation": "This may be fraud. Stop further payments, report promptly through the proper channel and preserve evidence for investigation."
+            },
+            {
+                "competency": "Gross-to-net pay and payslips",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A staff member says her net pay is lower than expected and she does not recognise one deduction on the payslip. What should you do?",
+                "options": [
+                    {
+                        "text": "Tell her that payroll deductions are confidential and cannot be discussed with staff",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check the deduction against the signed authorisation and explain or correct it",
+                        "correct": true
+                    },
+                    {
+                        "text": "Remove the deduction immediately without checking",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask her to wait until next year's payroll",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Each deduction must be supported by law or the employee's written consent. Checking the record resolves the query and fixes any error."
+            },
+            {
+                "competency": "Starters, leavers and changes",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A new teacher starts work in the middle of the month. What do you need before adding the teacher to the payroll?",
+                "options": [
+                    {
+                        "text": "A verbal confirmation from the head teacher that the person has started work",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only the teacher's bank or mobile money number",
+                        "correct": false
+                    },
+                    {
+                        "text": "Nothing until the probation period is over",
+                        "correct": false
+                    },
+                    {
+                        "text": "An approved appointment letter plus identity, TIN and pension details",
+                        "correct": true
+                    }
+                ],
+                "explanation": "New starters must be added using approved, documented terms and the details needed for tax and social security."
+            },
+            {
+                "competency": "Statutory returns and remittance",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Cash is tight this month. The head suggests delaying the remittance of PAYE and pension deductions to pay suppliers first. What is the best response?",
+                "options": [
+                    {
+                        "text": "Explain these amounts belong to the authorities and propose other options with the head",
+                        "correct": true
+                    },
+                    {
+                        "text": "Agree to the delay and plan to pay both months together with next month's remittance",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree, but record the deductions as already paid in the payroll system to avoid questions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pay half and wait to see if the authorities ask",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Withheld statutory amounts are held for the authorities and must be paid on time. Delay creates penalties and legal risk, so alternatives (such as supplier terms) should be discussed."
+            },
+            {
+                "competency": "Starters, leavers and changes",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A teacher resigns and her last working day is the end of the month. Which payroll step is correct?",
+                "options": [
+                    {
+                        "text": "Remove her from payroll at once and pay nothing for the part of the month worked",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep her on payroll for three more months",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pay final salary and entitlements per contract with statutory deductions, then stop her pay",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pay her final salary in full without any statutory deductions, because she is leaving the school",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Leavers are paid what is due under the contract, with the normal deductions and records, and then taken off the payroll."
+            }
+        ]
+    },
+    {
+        "skill_slug": "budgeting-financial-planning",
+        "skill_name": "Budgeting & Financial Planning",
+        "description": "Checks budget preparation, variance analysis, cash-flow forecasting, budget control and prioritisation skills.",
+        "competencies": [
+            {
+                "name": "Budget preparation",
+                "description": "Prepares realistic income and expense budgets",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Variance analysis",
+                "description": "Calculates and explains budget variances",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Cash-flow forecasting",
+                "description": "Forecasts cash flow and manages timing gaps",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Budget monitoring and control",
+                "description": "Monitors spending and enforces approval controls",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Prioritisation and planning",
+                "description": "Prioritises requests when funds are limited",
+                "weight": 10,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Budget preparation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a budget?",
+                "options": [
+                    {
+                        "text": "A report showing what the school earned and spent in the last financial year",
+                        "correct": false
+                    },
+                    {
+                        "text": "A plan of expected income and spending for a future period",
+                        "correct": true
+                    },
+                    {
+                        "text": "A list of all bank accounts of the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "A record of fees that parents have paid",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A budget is forward-looking: it sets expected income and planned spending so they can be controlled."
+            },
+            {
+                "competency": "Budget preparation",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "easy",
+                "text": "Which information is needed to estimate next year's fee income? Select all that apply.",
+                "options": [
+                    {
+                        "text": "The approved fee per pupil",
+                        "correct": true
+                    },
+                    {
+                        "text": "Expected number of pupils in each class",
+                        "correct": true
+                    },
+                    {
+                        "text": "The cost of repairs done last year",
+                        "correct": false
+                    },
+                    {
+                        "text": "The planned salary increase for teachers",
+                        "correct": false
+                    },
+                    {
+                        "text": "Expected discounts, bursaries and unpaid fees",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Fee income depends on pupil numbers, fee levels and how much will actually be collected. Salaries and repairs are expenses."
+            },
+            {
+                "competency": "Variance analysis",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "The electricity budget for the month is TZS 600,000 and the actual cost is TZS 540,000. What is the variance?",
+                "options": [
+                    {
+                        "text": "TZS 60,000 favourable",
+                        "correct": true
+                    },
+                    {
+                        "text": "TZS 60,000 adverse",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 540,000 favourable",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 600,000 adverse",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Spending below budget is a favourable variance: 600,000 - 540,000 = 60,000."
+            },
+            {
+                "competency": "Variance analysis",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Budgeted fee income for the term was TZS 20,000,000. Actual fee income was TZS 17,000,000. What is the variance as a percentage of budget?",
+                "options": [
+                    {
+                        "text": "15% favourable",
+                        "correct": false
+                    },
+                    {
+                        "text": "17% adverse",
+                        "correct": false
+                    },
+                    {
+                        "text": "15% adverse",
+                        "correct": true
+                    },
+                    {
+                        "text": "3% adverse",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The shortfall is 3,000,000, which is 15% of 20,000,000. Income lower than budget is adverse."
+            },
+            {
+                "competency": "Cash-flow forecasting",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Why can a school with a budget surplus still run out of cash?",
+                "options": [
+                    {
+                        "text": "A surplus budget always creates the same amount of cash in the bank automatically",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cash problems only happen when the budget has a deficit",
+                        "correct": false
+                    },
+                    {
+                        "text": "The bank takes the surplus at the end of each term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fees may be collected late while expenses must be paid every month",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A budget shows totals, but a cash-flow forecast shows timing. Late collections and early payments can cause a cash shortage."
+            },
+            {
+                "competency": "Cash-flow forecasting",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which items belong in a monthly cash-flow forecast? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Depreciation of school vehicles",
+                        "correct": false
+                    },
+                    {
+                        "text": "A bank loan instalment due in the month",
+                        "correct": true
+                    },
+                    {
+                        "text": "The allowance for doubtful debts",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fees expected to be collected in the month",
+                        "correct": true
+                    },
+                    {
+                        "text": "Salaries paid at month-end",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Cash-flow forecasts include actual cash movements. Depreciation and allowances are non-cash accounting entries."
+            },
+            {
+                "competency": "Budget preparation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which best describes zero-based budgeting?",
+                "options": [
+                    {
+                        "text": "Last year's budget is carried forward and increased by a fixed percentage each year",
+                        "correct": false
+                    },
+                    {
+                        "text": "Planned income is set exactly equal to planned spending",
+                        "correct": false
+                    },
+                    {
+                        "text": "Each budget line must be justified again every period, starting from zero",
+                        "correct": true
+                    },
+                    {
+                        "text": "The budget is changed every month to match actual results",
+                        "correct": false
+                    }
+                ],
+                "explanation": "In zero-based budgeting nothing is assumed from last year, so each cost must be justified and approved afresh."
+            },
+            {
+                "competency": "Variance analysis",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Halfway through the year, maintenance spending is 40% above budget because a storm damaged the roof. What is the best action?",
+                "options": [
+                    {
+                        "text": "Investigate, report the cause to management and ask for approved reallocation or extra funds",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore it, because it is a one-off event",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop all maintenance until the new financial year starts, including urgent safety repairs",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reduce the recorded expense so that it matches the budget and the variance disappears from reports",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Variances should be explained and reported, with an approved decision on how to fund them. Records must never be changed to hide a variance."
+            },
+            {
+                "competency": "Budget monitoring and control",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A department asks you to buy equipment costing TZS 2,000,000 that is not in the approved budget. What should you do?",
+                "options": [
+                    {
+                        "text": "Buy it now and move the cost to another budget line once the month is closed",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the requester to submit it for approval through the unbudgeted-expense procedure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Refuse every unbudgeted request under all circumstances, including urgent safety needs",
+                        "correct": false
+                    },
+                    {
+                        "text": "Approve it directly, because the head of department has asked for it in writing",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Unbudgeted spending is possible, but only through the proper approval process and with a funding source identified."
+            },
+            {
+                "competency": "Cash-flow forecasting",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your forecast shows a cash shortfall in two months because most fees arrive later. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Wait until the shortfall actually happens, then ask the bank for an overdraft quickly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use the exam fees already collected from parents to pay general expenses until fees arrive",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reduce staff salaries without telling them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Plan early: follow up arrears, negotiate supplier terms and delay non-essential spending",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A forecast lets you act before the shortfall. Money collected for a specific purpose, such as exams, should not be spent on other items."
+            },
+            {
+                "competency": "Prioritisation and planning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Budget requests total TZS 30 million, but only TZS 22 million is available. How should the requests be handled?",
+                "options": [
+                    {
+                        "text": "Rank them by priority and fund essential items first, such as safety and salaries",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cut every request by the same percentage so that each department is treated equally",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fund requests in the order in which they were received until the money is finished",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fund the requests from the most senior staff first, then the others if money remains",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Limited funds should go first to essential, high-priority needs agreed with stakeholders, not to equal cuts or first-come requests."
+            },
+            {
+                "competency": "Budget monitoring and control",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The stationery budget is TZS 5,000,000. Spent so far: TZS 3,000,000. Approved orders not yet delivered: TZS 1,500,000. A new order of TZS 800,000 is requested. What is the correct conclusion?",
+                "options": [
+                    {
+                        "text": "TZS 2,000,000 is available, so the order can go ahead",
+                        "correct": false
+                    },
+                    {
+                        "text": "TZS 3,500,000 is available, so the order can go ahead",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only TZS 500,000 is available, so the order needs extra approval",
+                        "correct": true
+                    },
+                    {
+                        "text": "The order can go ahead, since only the money actually spent counts against the budget",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Available budget = 5,000,000 - 3,000,000 spent - 1,500,000 committed = 500,000. The 800,000 order exceeds it."
+            }
+        ]
+    },
+    {
+        "skill_slug": "fee-collection-credit-control",
+        "skill_name": "Fee Collection & Credit Control",
+        "description": "Checks school fee billing, receipting, arrears follow-up, mobile money and bank reconciliation, and fraud awareness.",
+        "competencies": [
+            {
+                "name": "Fee billing and receipting",
+                "description": "Raises invoices and issues receipts in a controlled way",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Arrears follow-up and payment plans",
+                "description": "Follows up arrears, agrees plans and handles write-offs",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Mobile money and bank reconciliation",
+                "description": "Matches mobile money and bank payments to pupil accounts",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Fraud awareness and controls",
+                "description": "Recognises fraud risks and applies controls",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Parent communication",
+                "description": "Communicates respectfully with parents",
+                "weight": 10,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Fee billing and receipting",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Why should fee receipts be numbered in sequence?",
+                "options": [
+                    {
+                        "text": "So parents can easily see how many other pupils have paid their fees in the same term",
+                        "correct": false
+                    },
+                    {
+                        "text": "So every receipt is accounted for and missing or cancelled ones can be detected",
+                        "correct": true
+                    },
+                    {
+                        "text": "So receipts look more professional to parents",
+                        "correct": false
+                    },
+                    {
+                        "text": "So the bank can use them as payment proof",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Sequential numbering allows checks that all receipts issued are recorded and that none were removed or misused."
+            },
+            {
+                "competency": "Arrears follow-up and payment plans",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What are \"fee arrears\"?",
+                "options": [
+                    {
+                        "text": "Fees that parents have paid in advance for terms that have not yet started",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fees refunded to parents after a transfer",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fees that the school has decided not to charge",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fees that were due but have not been paid by the due date",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Arrears are overdue amounts owed by parents or guardians."
+            },
+            {
+                "competency": "Arrears follow-up and payment plans",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is an ageing analysis of fee debtors?",
+                "options": [
+                    {
+                        "text": "A list of unpaid balances grouped by how long they have been overdue",
+                        "correct": true
+                    },
+                    {
+                        "text": "A list of pupils with unpaid balances grouped by their age and class level",
+                        "correct": false
+                    },
+                    {
+                        "text": "A report of payments grouped by payment method",
+                        "correct": false
+                    },
+                    {
+                        "text": "A list of fees grouped by class and term",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Ageing shows which debts are older and riskier, so follow-up can be prioritised."
+            },
+            {
+                "competency": "Mobile money and bank reconciliation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Why should a bank deposit slip shown by a parent be confirmed on the bank statement before the account is marked as paid?",
+                "options": [
+                    {
+                        "text": "The bank statement is printed more clearly than slips and is easier to keep in files",
+                        "correct": false
+                    },
+                    {
+                        "text": "The slip only shows the date and not the amount",
+                        "correct": false
+                    },
+                    {
+                        "text": "The slip can be forged or altered, or the deposit may not have been completed",
+                        "correct": true
+                    },
+                    {
+                        "text": "Parents are not allowed to make bank deposits for fees",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A slip is not proof that the money reached the school's account. Only the bank statement confirms receipt."
+            },
+            {
+                "competency": "Mobile money and bank reconciliation",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which details help match a mobile money payment to the right pupil? Select all that apply.",
+                "options": [
+                    {
+                        "text": "The pupil's admission or control number used as reference",
+                        "correct": true
+                    },
+                    {
+                        "text": "The payer's phone number, amount and date",
+                        "correct": true
+                    },
+                    {
+                        "text": "The pupil's home village",
+                        "correct": false
+                    },
+                    {
+                        "text": "The number of subjects the pupil studies",
+                        "correct": false
+                    },
+                    {
+                        "text": "The transaction ID given by the provider",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Unique references and payment details link a payment to an account. Personal details unrelated to the payment do not help matching."
+            },
+            {
+                "competency": "Fraud awareness and controls",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which arrangement best reduces the risk of fraud in fee collection?",
+                "options": [
+                    {
+                        "text": "One trusted person receives, records and banks all the money to avoid confusion",
+                        "correct": false
+                    },
+                    {
+                        "text": "Different people receive money, record it and reconcile the accounts",
+                        "correct": true
+                    },
+                    {
+                        "text": "The head teacher personally counts all fees every day",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fees are kept in the office until the end of the week",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Separating duties means no single person can take money and hide it in the records."
+            },
+            {
+                "competency": "Arrears follow-up and payment plans",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A family has left the country. After reasonable follow-up, TZS 1,200,000 of fees cannot be recovered. What is the correct treatment?",
+                "options": [
+                    {
+                        "text": "Delete the pupil's balance from the system quietly so that the debtors list looks clean",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move the amount to another pupil's account",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write it off with written approval from the authorised person and keep the record",
+                        "correct": true
+                    },
+                    {
+                        "text": "Keep it on the current-term list forever",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Bad debts are written off only with documented approval, so the record stays visible and the process can be checked."
+            },
+            {
+                "competency": "Fraud awareness and controls",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A parent says she gave TZS 400,000 cash to the class teacher but has no receipt, and the school has not received it. What should you do?",
+                "options": [
+                    {
+                        "text": "Do not mark it paid; check with the teacher and remind parents of official channels",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mark it as paid, because the parent is a trusted and long-standing member of the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the parent that the loss is her own problem and that nothing can be done",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the teacher to give you cash from his own pocket to cover the amount",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Fees should be paid only to the cashier or official accounts with an official receipt. Check the facts before changing records."
+            },
+            {
+                "competency": "Mobile money and bank reconciliation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A mobile money payment of TZS 450,000 has the reference \"Hassan\". Two pupils named Hassan are in the school. What is the best action?",
+                "options": [
+                    {
+                        "text": "Allocate it to the Hassan who has the larger unpaid balance, since he owes the most money",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hold it as unallocated, contact the payer on the number shown and confirm which pupil",
+                        "correct": true
+                    },
+                    {
+                        "text": "Split it equally between both pupils",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refund it to the sender straight away",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Never guess allocations. Confirm with the payer, and keep the money unallocated until it is identified."
+            },
+            {
+                "competency": "Fraud awareness and controls",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A parent says he paid TZS 800,000 to a number given by someone on WhatsApp who claimed to be the school accountant. What is the best action?",
+                "options": [
+                    {
+                        "text": "Credit the pupil's account in full, because the parent acted honestly and in good faith in the matter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the parent to pay again and keep the receipt of the first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignore it, since the money did not come to the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check the number is not official, report to the head, and tell parents the official channels",
+                        "correct": true
+                    }
+                ],
+                "explanation": "This is probably a scam. The school should confirm and report it, warn other parents and never credit money it did not receive."
+            },
+            {
+                "competency": "Parent communication",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A parent who recently lost her job comes upset about an arrears notice, and she raises her voice in a busy office. What should you do?",
+                "options": [
+                    {
+                        "text": "Invite her to a private place, check her balance and explain the payment options",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask her to leave the office now and to come back only when she has the money",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell her loudly that rules apply to everyone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remove her child's name from the class list until the full arrears have been paid",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Calm, private and respectful communication protects dignity and usually leads to a written payment plan under school policy."
+            },
+            {
+                "competency": "Mobile money and bank reconciliation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "At month-end, fee receipts issued total TZS 12,500,000, but bank and mobile money credits for fees total TZS 12,200,000. What is the best action?",
+                "options": [
+                    {
+                        "text": "Reduce the receipts total by TZS 300,000 so that the two totals will agree again at month-end",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait until the end of the year to check the difference",
+                        "correct": false
+                    },
+                    {
+                        "text": "Match each receipt to a credit and investigate every unmatched item before adjusting",
+                        "correct": true
+                    },
+                    {
+                        "text": "Add TZS 300,000 as a cash payment to balance it",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A difference means some receipts may not have been banked or some credits are unrecorded. Item-by-item matching finds the cause."
+            }
+        ]
+    },
+    {
+        "skill_slug": "procurement-stores",
+        "skill_name": "Procurement & Stores Management",
+        "description": "Checks purchasing procedures, supplier selection, goods receiving, stock control and asset management.",
+        "competencies": [
+            {
+                "name": "Purchasing procedures and approvals",
+                "description": "Follows purchasing procedures, approvals and conflict-of-interest rules",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Quotations, tenders and supplier selection",
+                "description": "Obtains quotations and selects suppliers fairly",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Receiving and inspecting goods",
+                "description": "Inspects and records deliveries and matches documents",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Stock control and stores records",
+                "description": "Keeps stock records, controls issues and investigates differences",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Asset management",
+                "description": "Manages assets and their disposal",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Purchasing procedures and approvals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which document is sent to a supplier to formally order goods?",
+                "options": [
+                    {
+                        "text": "A goods received note from the store",
+                        "correct": false
+                    },
+                    {
+                        "text": "A local purchase order (LPO)",
+                        "correct": true
+                    },
+                    {
+                        "text": "A purchase requisition from the department",
+                        "correct": false
+                    },
+                    {
+                        "text": "A stock card kept in the store",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The LPO is the approved order sent to the supplier. A requisition is only an internal request."
+            },
+            {
+                "competency": "Quotations, tenders and supplier selection",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Why does a school obtain several quotations before buying expensive items?",
+                "options": [
+                    {
+                        "text": "To make sure that the offer with the lowest price is always accepted by the school",
+                        "correct": false
+                    },
+                    {
+                        "text": "To delay the purchase until the budget is approved",
+                        "correct": false
+                    },
+                    {
+                        "text": "To give every supplier in the area some business",
+                        "correct": false
+                    },
+                    {
+                        "text": "To compare price and quality and obtain value for money",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Competitive quotations help a school choose the best offer and reduce favouritism."
+            },
+            {
+                "competency": "Quotations, tenders and supplier selection",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which body regulates public procurement in Tanzania?",
+                "options": [
+                    {
+                        "text": "Public Procurement Regulatory Authority (PPRA)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tanzania Revenue Authority (TRA)",
+                        "correct": false
+                    },
+                    {
+                        "text": "National Examinations Council (NECTA)",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tanzania Communications Regulatory Authority (TCRA)",
+                        "correct": false
+                    }
+                ],
+                "explanation": "PPRA is the regulator of public procurement, which public schools and other public bodies must follow."
+            },
+            {
+                "competency": "Receiving and inspecting goods",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which documents should be compared before a supplier is paid (the three-way match)?",
+                "options": [
+                    {
+                        "text": "Requisition, quotation and bank statement",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delivery note, stock card and the monthly payroll summary",
+                        "correct": false
+                    },
+                    {
+                        "text": "Purchase order, goods received note and supplier invoice",
+                        "correct": true
+                    },
+                    {
+                        "text": "Invoice, tender notice and the supplier's business licence",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Payment should be made only if the goods ordered, the goods actually received and the amount invoiced agree."
+            },
+            {
+                "competency": "Stock control and stores records",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which details should a stock card (bin card) show? Select all that apply.",
+                "options": [
+                    {
+                        "text": "The supplier's bank account number",
+                        "correct": false
+                    },
+                    {
+                        "text": "The running balance after each movement",
+                        "correct": true
+                    },
+                    {
+                        "text": "Quantities received and issued, with dates and references",
+                        "correct": true
+                    },
+                    {
+                        "text": "Item description and unit of measure",
+                        "correct": true
+                    },
+                    {
+                        "text": "The depreciation rate of the item",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A stock card tracks the movement and balance of one item. Payment and depreciation details belong in other records."
+            },
+            {
+                "competency": "Stock control and stores records",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which issuing method should the school kitchen use for food items that can expire?",
+                "options": [
+                    {
+                        "text": "Last in, first out",
+                        "correct": false
+                    },
+                    {
+                        "text": "First expiry, first out (FEFO)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Issue whichever is easiest to reach",
+                        "correct": false
+                    },
+                    {
+                        "text": "Issue the newest stock first",
+                        "correct": false
+                    }
+                ],
+                "explanation": "FEFO issues the items that will expire soonest first, reducing waste."
+            },
+            {
+                "competency": "Asset management",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What is the correct way to dispose of an old school computer that no longer works?",
+                "options": [
+                    {
+                        "text": "Give it to any staff member who asks for it and tell the storekeeper afterwards",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let the storekeeper sell it to whoever offers the best cash price today, keeping the money",
+                        "correct": false
+                    },
+                    {
+                        "text": "Obtain written approval, dispose of it properly and update the asset register",
+                        "correct": true
+                    },
+                    {
+                        "text": "Throw it away and delete it from the asset register without any approval",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Disposals need authorisation and records, so assets cannot be taken privately and the register stays accurate."
+            },
+            {
+                "competency": "Purchasing procedures and approvals",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The head asks you to buy three laptops for TZS 4,500,000 from his relative without quotations. What is the best response?",
+                "options": [
+                    {
+                        "text": "Insist on quotations, declare the conflict of interest and follow approval rules",
+                        "correct": true
+                    },
+                    {
+                        "text": "Buy them as asked, since the head has the final authority over all school spending",
+                        "correct": false
+                    },
+                    {
+                        "text": "Split the order into three smaller orders so that each stays below the approval limit",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the relative to bring two other quotations from friends so the file looks complete",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Procurement must be fair and transparent. Conflicts of interest must be declared, and splitting orders or fake quotations breaks the rules."
+            },
+            {
+                "competency": "Receiving and inspecting goods",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A delivery note shows 50 bags of rice, but three bags are torn when delivered. What should you do?",
+                "options": [
+                    {
+                        "text": "Sign for all 50 bags to avoid delays and raise the problem with the supplier later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Count and inspect, record the accepted bags, note the damage and inform the supplier",
+                        "correct": true
+                    },
+                    {
+                        "text": "Refuse the whole delivery without writing anything",
+                        "correct": false
+                    },
+                    {
+                        "text": "Accept 50 bags and repair the torn ones yourself",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Goods are accepted only after checking quantity and condition. Damage must be recorded on the delivery documents for a replacement or credit."
+            },
+            {
+                "competency": "Stock control and stores records",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A stock count shows 20 fewer exercise books than the stock card. What is the best action?",
+                "options": [
+                    {
+                        "text": "Adjust the stock card quietly so that it matches the physical count and the file is clean",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the storekeeper to replace the books",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignore it, since it is a small difference and the books will probably be found later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Recount, check unrecorded issues or returns and report the variance before adjusting",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Differences should be investigated first. Any adjustment needs approval and a documented reason."
+            },
+            {
+                "competency": "Quotations, tenders and supplier selection",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Quotation A is TZS 1,200,000 but does not meet the specification. Quotation B is TZS 1,300,000 and meets it. What is the best decision?",
+                "options": [
+                    {
+                        "text": "Choose B, because A is not compliant with the specification",
+                        "correct": true
+                    },
+                    {
+                        "text": "Choose A, because the lowest price always wins",
+                        "correct": false
+                    },
+                    {
+                        "text": "Choose B only if the supplier gives a personal gift",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask both suppliers to reduce prices by negotiating in secret",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Offers are first checked against the specification. The best choice is the lowest-priced offer that meets the requirements."
+            },
+            {
+                "competency": "Stock control and stores records",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "The storekeeper is on leave and a teacher takes items from the store without a requisition. What is the correct approach?",
+                "options": [
+                    {
+                        "text": "Allow it, because the teacher is a trusted colleague",
+                        "correct": false
+                    },
+                    {
+                        "text": "Allow it if the teacher promises to inform the storekeeper about the items later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Issue items only against an approved requisition and record every issue",
+                        "correct": true
+                    },
+                    {
+                        "text": "Let the cleaners hold the store keys for the day",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Stores issues must be authorised and recorded to avoid losses and to keep stock records accurate."
+            }
+        ]
+    }
+]

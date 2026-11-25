@@ -1,0 +1,2846 @@
+[
+    {
+        "skill_slug": "customer-service",
+        "skill_name": "Customer Service",
+        "description": "Checks whether the candidate can handle customers professionally and effectively by phone, WhatsApp and in person.",
+        "competencies": [
+            {
+                "name": "Communication Channels and Etiquette",
+                "description": "Using phone, WhatsApp and face-to-face contact in a polite, clear and professional way.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Empathy and Active Listening",
+                "description": "Listening carefully and showing understanding of the customer's situation and feelings.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Problem Solving and Ownership",
+                "description": "Taking responsibility for a customer's issue and driving it to a correct resolution or a proper hand-over.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Handling Complaints and Difficult Customers",
+                "description": "Staying calm and professional with angry customers and applying policy fairly.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Follow-up and Service Standards",
+                "description": "Keeping promises, following up and learning from repeated problems.",
+                "weight": 10,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Communication Channels and Etiquette",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A customer calls your school-software support line. What is the best way to begin the call?",
+                "options": [
+                    {
+                        "text": "Say 'Hello' and then wait silently until the customer has explained everything.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Greet the customer, say your name and company, and ask how you can help.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask the customer to send the problem by email instead of speaking to you.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask for the customer's account number before you say anything else.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A clear greeting with your name and company is polite and builds trust. Then you ask how you can help."
+            },
+            {
+                "competency": "Communication Channels and Etiquette",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A parent sends a WhatsApp message at 8 pm asking about a fee balance. Your office closes at 5 pm. What is the best response?",
+                "options": [
+                    {
+                        "text": "Wait until Friday so that you can answer all of the week's fee messages together in one batch.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Guess the balance from last term's figures so that the parent is not left waiting overnight.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reply briefly that you received the message and will give the balance tomorrow morning.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Phone the parent repeatedly during the night until the parent answers to give the balance.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A short acknowledgement with a clear time for the answer manages expectations. Guessing a balance or disturbing the parent at night is unprofessional."
+            },
+            {
+                "competency": "Empathy and Active Listening",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does active listening mean?",
+                "options": [
+                    {
+                        "text": "Thinking about your reply while the customer is still speaking, so that you answer faster.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Repeating the same sentence louder and more slowly until the customer finally agrees.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Writing down only the customer's name and phone number so that you can call back later.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving full attention, not interrupting, and checking that you understood.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Active listening means focusing on the speaker, letting them finish, and confirming what you heard."
+            },
+            {
+                "competency": "Empathy and Active Listening",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A parent comes to the school office and shouts that the invoice is wrong. What should you do first?",
+                "options": [
+                    {
+                        "text": "Let the parent finish, show that you understand the concern, then check the invoice.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the parent that the office never makes mistakes and that the invoice must be paid as shown.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cancel the invoice immediately and issue a new one so that the parent calms down quickly.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the parent to leave and come back later with another family member to discuss it calmly.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Letting the person speak and acknowledging the concern calms the situation. You then check the facts before taking any action."
+            },
+            {
+                "competency": "Problem Solving and Ownership",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You cannot solve a customer's problem and must pass it to a colleague. What is the best practice?",
+                "options": [
+                    {
+                        "text": "Tell the customer it is not your department and that they should call the main office again tomorrow.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pass on only the customer's name and phone number and let the colleague ask everything again.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain who will help, share all case details, and say when the customer will hear back.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Promise that the problem will be fixed today without first checking with the colleague who will handle it.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A good hand-over means the customer does not repeat the story and knows who will help and when."
+            },
+            {
+                "competency": "Problem Solving and Ownership",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A school bursar says a parent paid by mobile money, but the system shows no payment. What is the best first action?",
+                "options": [
+                    {
+                        "text": "Tell the parent to pay again so that the system can update, and promise to refund the first payment later.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask for the transaction reference, amount and time, then check them against the payment records.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Say that the payment never happened because it is not in the system, and ask the parent to bring proof.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Record the payment as received without checking, to keep the parent happy and avoid a long argument.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Verify the details first. Asking for double payment, denying the payment, or recording it without checking can all cause loss or disputes."
+            },
+            {
+                "competency": "Handling Complaints and Difficult Customers",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which actions help to calm an angry customer? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Tell the customer to calm down.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Speak slowly and calmly in a respectful tone.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Point out immediately where the customer made a mistake.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Apologise for the inconvenience and explain what you will do next.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Listen without interrupting until the customer has finished.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A calm tone, a sincere apology with next steps, and patient listening reduce anger. Telling someone to calm down or blaming them makes it worse."
+            },
+            {
+                "competency": "Handling Complaints and Difficult Customers",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A school owner asks you to waive a setup fee, but company policy does not allow it. What is the best response?",
+                "options": [
+                    {
+                        "text": "Agree quietly now, and then ask your manager to approve the waiver later when nobody is watching the accounts.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Say you will ask your manager and promise the owner that the waiver will be approved by the end of the week.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refuse and end the call straight away because the policy is final and cannot be discussed with anyone.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain the policy and its reason politely, offer what is allowed, and escalate if the owner asks.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Explaining the policy respectfully, offering alternatives and escalating when asked is honest and keeps the relationship. Over-promising or ignoring policy causes bigger problems later."
+            },
+            {
+                "competency": "Problem Solving and Ownership",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The same problem is reported by several schools every week. What is the best long-term action?",
+                "options": [
+                    {
+                        "text": "Find the root cause, record the pattern, and report it so that it can be fixed.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give each school the same temporary workaround and keep closing the cases.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the schools that the problem is known and they must wait.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Handle it only when a school complains loudly enough.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Repeated problems need a root-cause fix. Closing each case with a workaround treats the symptom, not the cause."
+            },
+            {
+                "competency": "Follow-up and Service Standards",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Why should you follow up with a customer after solving their problem?",
+                "options": [
+                    {
+                        "text": "To make the customer buy another product immediately.",
+                        "correct": false
+                    },
+                    {
+                        "text": "To confirm that the problem is really solved and the customer is satisfied.",
+                        "correct": true
+                    },
+                    {
+                        "text": "To keep the ticket open for longer on the system.",
+                        "correct": false
+                    },
+                    {
+                        "text": "To avoid receiving more calls from the same customer.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Follow-up confirms the solution worked and shows the customer that you care about the result."
+            },
+            {
+                "competency": "Communication Channels and Etiquette",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which are good practices when giving support by WhatsApp? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Keep messages short, clear and polite.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use slang and many abbreviations to sound friendly.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do not share another customer's personal details.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reply 'OK' when you did not understand the request.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Confirm that you understood the problem before giving a solution.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Short clear messages, protecting other customers' privacy and confirming understanding make WhatsApp support professional."
+            },
+            {
+                "competency": "Follow-up and Service Standards",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You promised a school to call back on Friday, but you still do not have the answer. What should you do?",
+                "options": [
+                    {
+                        "text": "Wait until you have the answer, even if it takes until next week.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask a colleague to say that you are not available.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Call on Friday as promised, explain the progress, and agree on a new time.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send the answer later without any message on Friday.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Keeping your promise to update, even without the final answer, protects trust and lets the customer plan."
+            }
+        ]
+    },
+    {
+        "skill_slug": "customer-success-onboarding",
+        "skill_name": "Customer Success & Onboarding",
+        "description": "Checks whether the candidate can onboard schools onto software, drive adoption, monitor account health and prevent churn.",
+        "competencies": [
+            {
+                "name": "Onboarding Planning",
+                "description": "Setting goals, timelines and data preparation so that a new school starts correctly.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Training and Adoption",
+                "description": "Training users by role and helping them to use the software regularly.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Customer Health Monitoring",
+                "description": "Using usage and relationship signals to see which customers are healthy or at risk.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Retention and Churn Prevention",
+                "description": "Acting early to keep customers, understanding reasons for leaving and handling renewals fairly.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Stakeholder Communication",
+                "description": "Setting expectations and giving clear updates to school leaders and users.",
+                "weight": 10,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Onboarding Planning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is the main goal of onboarding a new school onto school-management software?",
+                "options": [
+                    {
+                        "text": "Collect the first payment as quickly as possible, before the school changes its mind.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Show every feature of the system in one long meeting so that nothing is left out.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Help the school use the key features correctly so that it gets value quickly.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Make sure the school never needs to contact support after the go-live date has passed.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Onboarding exists to bring the customer to real value quickly. Payment, long demos and zero support are not the goal."
+            },
+            {
+                "competency": "Onboarding Planning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which activity should happen early in onboarding, before the main training?",
+                "options": [
+                    {
+                        "text": "Agree the school's goals, a timeline, and who is responsible for each task.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send an invoice for next year's renewal so that the payment is arranged in advance.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Switch on all optional features for every user so that nobody misses anything later.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait until staff ask for training before planning anything, so the sessions match their needs.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A shared plan with goals, dates and owners keeps onboarding on track from the start."
+            },
+            {
+                "competency": "Onboarding Planning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A school has 800 student records in several Excel files with different formats and wants to go live next week. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Import all files as they are to meet the go-live date, and correct any errors during the term.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree a standard template, clean and check the data, import it, and move the date if needed.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the school that the software cannot work with Excel files and that it must retype everything.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Type all 800 students yourself from the files, without checking them against the original records.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Clean, checked data is the base of a successful start. A short delay is better than wrong records for the whole term."
+            },
+            {
+                "competency": "Training and Adoption",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which training approach usually helps school staff to adopt new software best?",
+                "options": [
+                    {
+                        "text": "One long lecture about every feature of the system, given to all staff together in the school hall.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A long PDF manual sent to each person, who must read it alone before the system goes live next month.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Training only the headmaster, who then teaches everyone else in his own way when he has time.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Short sessions for each role, such as bursar and teachers, with practice on real tasks.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Role-based, hands-on training lets each person practise the tasks they will really do."
+            },
+            {
+                "competency": "Training and Adoption",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Three weeks after training, teachers at a school still record marks on paper. What should you do first?",
+                "options": [
+                    {
+                        "text": "Tell the headmaster that the teachers are resisting change and should be ordered to use the system.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Repeat the same full training once more without changing anything, since it worked well at other schools.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the teachers why, for example about skills, devices or time, and then address the barriers.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Close the onboarding project because the training is complete and the school now has the system.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Adoption problems have causes. Finding the real barrier lets you fix it instead of repeating what did not work."
+            },
+            {
+                "competency": "Customer Health Monitoring",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which signals may show that a school is at risk of leaving? Select all that apply.",
+                "options": [
+                    {
+                        "text": "The main users have not logged in for several weeks.",
+                        "correct": true
+                    },
+                    {
+                        "text": "The school asks for training for newly employed staff.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The school does not reply to your messages about the renewal.",
+                        "correct": true
+                    },
+                    {
+                        "text": "The school uses reports from the system every month.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The bursar who championed the system left and nobody replaced them.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Low usage, silence and the loss of a champion are warning signs. Asking for training and using reports are healthy signs."
+            },
+            {
+                "competency": "Customer Health Monitoring",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What is a customer health score?",
+                "options": [
+                    {
+                        "text": "A combined score of usage, support and relationship signals showing how likely the customer is to stay.",
+                        "correct": true
+                    },
+                    {
+                        "text": "The total amount of money that the customer has paid so far, including setup fees and every renewal payment.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The average rating that a customer gives after each support call, on a scale of one to five stars, over a year.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The number of support tickets the customer has opened during the current subscription year.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A health score combines several signals so that the team can spot at-risk and healthy accounts early. One number alone, such as payments or tickets, is not enough."
+            },
+            {
+                "competency": "Retention and Churn Prevention",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A school's logins fell sharply this term and its renewal is in two months. What is the best action?",
+                "options": [
+                    {
+                        "text": "Wait until the renewal date is very close and then ask the owner whether the school wants to continue.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Offer a large discount immediately, before you have found out why the school's usage has dropped.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send a general SMS about the renewal deadline to all customers and wait for this school to reply.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Contact the school now, find the cause, agree a recovery plan, and involve the decision-maker.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Early contact, finding the cause and involving the decision-maker gives the best chance to recover the account."
+            },
+            {
+                "competency": "Retention and Churn Prevention",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does 'churn' mean in customer success?",
+                "options": [
+                    {
+                        "text": "New customers who sign up during a month.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Customers who stop using or paying for your service.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Customers who ask for extra training.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Staff who leave your own company.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Churn is the loss of customers, either when they cancel or when they stop paying or using the service."
+            },
+            {
+                "competency": "Retention and Churn Prevention",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A school says it will not renew because the fee is too high and it hardly uses the SMS module. What is the best response?",
+                "options": [
+                    {
+                        "text": "Agree and cancel the account at once, without asking any questions about the school's usage or needs.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain that all schools pay the same price, so the fee cannot be discussed or changed for this school.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Review what the school uses, show missing value or suggest a fitting plan, and respect its decision.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the school that the SMS module is compulsory for everyone and cannot be removed from any plan.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Understanding actual use and needs lets you offer real value or a better-fitting plan, while respecting the customer's choice."
+            },
+            {
+                "competency": "Stakeholder Communication",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What should a good progress update to a school during onboarding include?",
+                "options": [
+                    {
+                        "text": "What is done, what comes next, and what the school must do.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Only good news, so that the school stays happy.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Technical details about our servers and databases.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A list of staff members who did not complete training.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Clear updates show progress, next steps and shared responsibilities. Hiding problems or giving irrelevant details does not help."
+            },
+            {
+                "competency": "Stakeholder Communication",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A headmaster complains that parents cannot see fee balances in the app. You find that the school has not yet entered the invoices. How do you respond?",
+                "options": [
+                    {
+                        "text": "Tell the headmaster that it is a system fault and promise a fix tomorrow.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain politely what is missing, show the steps to add the invoices, and offer to help.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Say it is the school's fault and end the conversation.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Enter the invoices yourself without telling the school.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Honest, polite explanation with clear steps solves the problem and teaches the school. Blaming or making false promises damages trust."
+            }
+        ]
+    },
+    {
+        "skill_slug": "communication",
+        "skill_name": "Communication",
+        "description": "Checks clear written and verbal communication at work, including listening, audience awareness and professional use of channels.",
+        "competencies": [
+            {
+                "name": "Clear Writing",
+                "description": "Writing emails, notices and messages that are clear, correct and well organised.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Verbal and Phone Communication",
+                "description": "Speaking clearly and confirming key details in calls and meetings.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Active Listening and Feedback",
+                "description": "Listening carefully and giving and receiving feedback constructively.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Audience and Message Clarity",
+                "description": "Adapting language and structure to the reader so that the message is understood and acted on.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Professional Etiquette and Channels",
+                "description": "Choosing the right channel and keeping a professional tone and confidentiality.",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Clear Writing",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which email subject line is the clearest?",
+                "options": [
+                    {
+                        "text": "Hello, please read this message when you have a moment",
+                        "correct": false
+                    },
+                    {
+                        "text": "Urgent, please read this email as soon as possible",
+                        "correct": false
+                    },
+                    {
+                        "text": "Term 2 fee report needed by Friday",
+                        "correct": true
+                    },
+                    {
+                        "text": "Request for a meeting about some matters this term",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A clear subject line states the topic and the deadline, so the reader knows what to do."
+            },
+            {
+                "competency": "Clear Writing",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is most important to check when you proofread a work message before sending it?",
+                "options": [
+                    {
+                        "text": "The number of emojis used in the message, and whether they match the topic being discussed.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Whether the message is long enough to look serious and important to a busy senior reader.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Names, numbers, dates and spelling, so that nothing misleads the reader.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Whether the message uses difficult words that make the writer look well educated.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Wrong names, figures or dates can cause real mistakes, so check them carefully."
+            },
+            {
+                "competency": "Clear Writing",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You send a notice to staff, and three people reply with questions that show they misunderstood it. What is the best response?",
+                "options": [
+                    {
+                        "text": "Tell them to read messages more carefully next time, since the notice was clear enough already.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send a short, simpler clarification and think about why the first message was unclear.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore the questions because the notice was already sent and staff should check it again.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Answer each person privately, giving a slightly different explanation to suit their question.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "When several readers misunderstand, the message is probably unclear. A single clear clarification helps everyone and improves your next message."
+            },
+            {
+                "competency": "Verbal and Phone Communication",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "When speaking on the phone, what helps the other person to understand you?",
+                "options": [
+                    {
+                        "text": "Speaking quickly to save time and money, because the caller can always call back later.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Using many technical terms so that you sound professional and the caller trusts you.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Speaking in a very low voice so that other people in the office do not hear your call.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Speaking clearly at a moderate speed and spelling names or numbers when needed.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Clear speech at a moderate speed, with names and numbers spelled out, avoids errors on a phone line."
+            },
+            {
+                "competency": "Verbal and Phone Communication",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You phone a supplier to order 200 exercise books for delivery on Monday. What should you do at the end of the call?",
+                "options": [
+                    {
+                        "text": "Thank the supplier warmly and end the call quickly so that you do not waste airtime.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Assume the supplier will remember everything because it was said clearly on the phone.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Repeat the quantity, day and place of delivery to confirm them.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask the supplier to call you only if there is a problem with the order.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Repeating the key details confirms that both sides understood. A short written confirmation afterwards is even better."
+            },
+            {
+                "competency": "Active Listening and Feedback",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which behaviours show good listening? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Looking at the speaker and giving your full attention.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Interrupting as soon as you think you know what will be said.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Asking questions when something is not clear.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Checking your phone while the other person is talking.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Summarising what you heard to confirm that you understood.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Attention, clarifying questions and summarising are the main signs of good listening."
+            },
+            {
+                "competency": "Active Listening and Feedback",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your supervisor says your reports are often late. You believe the delay is because another department sends data late. What is the best response?",
+                "options": [
+                    {
+                        "text": "Say the feedback is unfair and end the discussion.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree without comment and change nothing.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Complain about the other department to your colleagues.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Thank your supervisor, explain the data delay with an example, and suggest a solution.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Receiving feedback well means listening, giving facts calmly and proposing a way forward, not defending or blaming."
+            },
+            {
+                "competency": "Audience and Message Clarity",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Before you write or speak, which question is most useful to ask yourself first?",
+                "options": [
+                    {
+                        "text": "How long can I make this message so that it looks complete and detailed?",
+                        "correct": false
+                    },
+                    {
+                        "text": "Who is my audience, and what do they need to know or do?",
+                        "correct": true
+                    },
+                    {
+                        "text": "How can I include everything that I know about the topic in one message?",
+                        "correct": false
+                    },
+                    {
+                        "text": "How can I sound more impressive than the other writers in the office?",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Knowing the audience and the action you want helps you choose the right words, detail and structure."
+            },
+            {
+                "competency": "Audience and Message Clarity",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You must explain a new fee payment procedure to parents who mostly use basic phones and prefer Kiswahili. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Use short, simple Kiswahili with clear steps by SMS, and offer to explain at school.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send a long formal letter with detailed legal wording to every family through the pupils' bags.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Post a detailed notice in English on the school website and ask parents to read it there.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask teachers to explain it to parents in their own way when they meet them.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "The message should fit the audience's language and technology, and be simple with clear steps. The other options are hard for many parents to access or understand."
+            },
+            {
+                "competency": "Audience and Message Clarity",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your message needs a decision from the director. What makes a quick and correct reply most likely?",
+                "options": [
+                    {
+                        "text": "Put the request at the end, after all the background.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send several short messages, each with a different part of the request.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Put the decision needed and the deadline first, with the options if possible.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mention the request lightly and hope the director asks questions.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Busy readers act faster when the request, deadline and options appear at the start of the message."
+            },
+            {
+                "competency": "Professional Etiquette and Channels",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which channel is most suitable for sending an official notice to a staff member?",
+                "options": [
+                    {
+                        "text": "A formal letter or email addressed to that person.",
+                        "correct": true
+                    },
+                    {
+                        "text": "A WhatsApp status update that is visible to all of your contacts.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A voice note sent in a large group chat with other staff.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A message passed through a friend of the staff member.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Official notices need a formal, traceable channel addressed to the person concerned."
+            },
+            {
+                "competency": "Professional Etiquette and Channels",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You post a message with confidential staff information in a parents' WhatsApp group by mistake. What should you do?",
+                "options": [
+                    {
+                        "text": "Say nothing and hope that no one has read it.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask members to ignore it but leave the message visible.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete it for everyone if possible, inform your supervisor at once, and apologise briefly.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Leave the group without telling anyone.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Act quickly to limit the harm, and be honest with your supervisor so that the situation can be managed properly."
+            }
+        ]
+    },
+    {
+        "skill_slug": "report-writing",
+        "skill_name": "Report Writing",
+        "description": "Checks whether the candidate can structure workplace reports, write summaries, use accurate evidence, make recommendations and record minutes.",
+        "competencies": [
+            {
+                "name": "Report Structure and Format",
+                "description": "Organising a report logically with clear headings and the right place for detail.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Executive Summary and Clarity",
+                "description": "Summarising key findings for busy readers in clear, plain language.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Evidence and Accuracy",
+                "description": "Using checked data and sources and separating facts from opinion.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Conclusions and Recommendations",
+                "description": "Making specific, practical recommendations that follow from the findings.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Minutes and Meeting Records",
+                "description": "Recording decisions, actions, owners and deadlines accurately.",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Report Structure and Format",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which order is commonly used for a workplace report?",
+                "options": [
+                    {
+                        "text": "Recommendations, title, conclusion, introduction, and then the findings at the very end.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Findings, references, title, introduction, and then conclusions in the last section.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Conclusions, appendix, title, findings, and then the introduction after the findings.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Title, introduction or purpose, findings, conclusions, recommendations.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A logical flow from purpose to findings to conclusions and recommendations helps the reader to follow the argument."
+            },
+            {
+                "competency": "Executive Summary and Clarity",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is an executive summary?",
+                "options": [
+                    {
+                        "text": "A short opening section giving the main findings and recommendations for busy readers.",
+                        "correct": true
+                    },
+                    {
+                        "text": "A list of all the books, articles and websites that the writer used while preparing the report.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The longest section of the report, which contains every data table and chart in full detail.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A copy of the meeting agenda that is attached to the front of the report.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "An executive summary lets a busy reader understand the key points and decisions needed without reading the full report."
+            },
+            {
+                "competency": "Executive Summary and Clarity",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which content is best for an executive summary?",
+                "options": [
+                    {
+                        "text": "Detailed raw data tables from all twelve months, so that readers can check every single figure.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Long acknowledgements and the history of the organisation, starting from its founding year.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The purpose, key findings and main recommendations, in about one page or less.",
+                        "correct": true
+                    },
+                    {
+                        "text": "New information that does not appear anywhere else in the report, to surprise the reader.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A good summary is short and covers purpose, findings and recommendations. Raw data and new information belong elsewhere."
+            },
+            {
+                "competency": "Executive Summary and Clarity",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The school owner has only five minutes to read your 20-page report on fee collection. What do you do?",
+                "options": [
+                    {
+                        "text": "Tell the owner to find more time and read all 20 pages, because every detail matters.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remove all figures and tables so that the report looks shorter and is easier to read quickly.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send only the appendix, because it contains all the data that the owner needs to see.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Add a one-page summary at the front with key figures and recommended actions.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A short summary at the front respects the reader's time and highlights what matters most."
+            },
+            {
+                "competency": "Evidence and Accuracy",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Why should a report state the source of its data?",
+                "options": [
+                    {
+                        "text": "So that readers can check the information and trust it.",
+                        "correct": true
+                    },
+                    {
+                        "text": "So that the report looks longer and more serious.",
+                        "correct": false
+                    },
+                    {
+                        "text": "So that the writer can avoid being asked questions.",
+                        "correct": false
+                    },
+                    {
+                        "text": "So that the report can be printed on more pages.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Stating sources makes the report credible and lets others verify the facts."
+            },
+            {
+                "competency": "Evidence and Accuracy",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "While writing a report on attendance, you find that two registers give different totals for the same class. What should you do?",
+                "options": [
+                    {
+                        "text": "Use the higher number because it looks better for the school and nobody will ask for proof.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Take the average of the two numbers and use it without telling anyone how you got it.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check the original records, find the correct figure, and note any uncertainty.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Leave that class out of the report without explanation, since the totals do not agree.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Accuracy and honesty require checking the source and being open about any doubt. Hiding or guessing damages trust in the report."
+            },
+            {
+                "competency": "Evidence and Accuracy",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Which practices make the findings of a report more reliable? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Separating facts from opinions.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Using only the data that supports your preferred conclusion.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Checking figures and totals before submitting.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Giving dates and sources of the data.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rounding all figures upward.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Separating facts from opinion, checking figures and naming sources make a report reliable. Selective data and biased rounding mislead readers."
+            },
+            {
+                "competency": "Conclusions and Recommendations",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which description fits a good recommendation?",
+                "options": [
+                    {
+                        "text": "General and broad, such as 'improve everything' or 'do better next year'.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Written before the findings are known, so that it can be sent early.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Based mainly on the personal feelings and opinions of the writer.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Specific, practical, and clearly linked to the findings.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Good recommendations say what to do, who should do it, and why, based on the evidence."
+            },
+            {
+                "competency": "Conclusions and Recommendations",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your report finds that many fee arrears come from parents who never received payment instructions. Which recommendation is best?",
+                "options": [
+                    {
+                        "text": "Tell parents in a letter that they must pay on time and warn them about late payment penalties.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Say that further research is needed before anything can be done about the arrears this year.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send payment instructions by SMS with every invoice, and review arrears after one term.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Increase school fees by ten percent next year to cover the arrears that remain unpaid.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "This recommendation is specific, solves the cause that was found, and includes a review. The others do not address the cause."
+            },
+            {
+                "competency": "Minutes and Meeting Records",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is the main purpose of the minutes of a meeting?",
+                "options": [
+                    {
+                        "text": "To record every word that each person said.",
+                        "correct": false
+                    },
+                    {
+                        "text": "To record decisions, actions, who is responsible and deadlines.",
+                        "correct": true
+                    },
+                    {
+                        "text": "To show who spoke the most during the meeting.",
+                        "correct": false
+                    },
+                    {
+                        "text": "To replace the agenda of the next meeting.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Minutes are a short official record of decisions and actions, so that people know what was agreed and who must do what."
+            },
+            {
+                "competency": "Minutes and Meeting Records",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You are taking minutes. The committee agrees that the bursar will present the draft budget at the next meeting. How should you record this?",
+                "options": [
+                    {
+                        "text": "The committee talked about the draft budget for a long time and then moved on to other matters.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Resolved: the bursar will present the draft budget at the next meeting. Action: Bursar.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Many different opinions were given about the budget, and members agreed to think about it further.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The bursar is good at preparing budgets and was praised by several members of the committee.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Minutes should state the decision and the person responsible, not the length of discussion or opinions."
+            },
+            {
+                "competency": "Report Structure and Format",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your 12-page report is difficult to read, and readers cannot find information quickly. What is the best improvement?",
+                "options": [
+                    {
+                        "text": "Use a smaller font so that the report becomes shorter.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remove the headings to make it look continuous.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use clear headings, numbered sections, and short paragraphs.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Move all the findings to the end of the report.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Headings, numbering and short paragraphs help readers to find and understand information quickly."
+            }
+        ]
+    },
+    {
+        "skill_slug": "project-management",
+        "skill_name": "Project Management",
+        "description": "Checks whether the candidate can define scope, schedule work, manage risks and stakeholders, track progress and close projects.",
+        "competencies": [
+            {
+                "name": "Scope and Planning",
+                "description": "Defining objectives and scope and controlling changes.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Scheduling and Resources",
+                "description": "Sequencing tasks, understanding dependencies and managing time.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Risk Management",
+                "description": "Identifying, assessing and responding to risks before they harm the project.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Stakeholder Management",
+                "description": "Identifying and communicating with people affected by the project.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Monitoring and Closing",
+                "description": "Tracking progress against the plan and closing projects with sign-off and lessons learned.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Scope and Planning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which of these is a project?",
+                "options": [
+                    {
+                        "text": "Cleaning the classrooms every morning before the pupils arrive, as a routine duty.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Running the monthly payroll for all staff, which is repeated in the same way each month.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Answering parents' calls every day, which continues as long as the school operates.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Launching a new fee system at a school, with a clear start and end date.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A project is temporary, has a start and end, and creates a unique result. Daily or monthly routines are operations."
+            },
+            {
+                "competency": "Scope and Planning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is 'scope creep'?",
+                "options": [
+                    {
+                        "text": "A project finishing earlier than planned because the team worked very hard on it.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Uncontrolled additions to the project scope without adjusting time or cost.",
+                        "correct": true
+                    },
+                    {
+                        "text": "A delay caused by bad weather, power cuts or other events outside the team's control.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The project team getting smaller over time as members leave for other work or study.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Scope creep happens when extra work is added informally, which often causes delays and extra cost."
+            },
+            {
+                "competency": "Scope and Planning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Halfway through a school software installation, the headmaster asks for three new features that were not agreed. What is the best action?",
+                "options": [
+                    {
+                        "text": "Add them quietly to keep the headmaster happy and to protect your working relationship.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refuse every request for changes until the project is completely finished, whatever the reason.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check the effect on time and cost, then agree a formal change before starting.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Stop the project until the headmaster decides everything that he wants in the system.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Changes should be assessed and agreed formally, so that time, cost and expectations stay under control."
+            },
+            {
+                "competency": "Scheduling and Resources",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which tool shows project tasks, their durations and their dependencies over time?",
+                "options": [
+                    {
+                        "text": "A balance sheet.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A Gantt chart.",
+                        "correct": true
+                    },
+                    {
+                        "text": "An organisation chart.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A pie chart of expenses.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A Gantt chart displays tasks along a timeline and shows how they depend on each other."
+            },
+            {
+                "competency": "Scheduling and Resources",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What is the critical path of a project?",
+                "options": [
+                    {
+                        "text": "The most expensive tasks in the project, which need the most careful approval.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The tasks that the project manager likes best and wants to supervise personally.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The shortest list of tasks that can safely be skipped if the project runs late.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The longest chain of dependent tasks, which sets the earliest finish date.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Any delay on the critical path delays the whole project, so these tasks need the closest attention."
+            },
+            {
+                "competency": "Scheduling and Resources",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "In your rollout plan, training cannot start until the data import is done. The import is three days late. What should you do?",
+                "options": [
+                    {
+                        "text": "Check the effect on the schedule, tell stakeholders, and look for ways to recover time.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Start training anyway with an empty system and add the real data after the first sessions.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignore the delay because it is only three days and the team can surely absorb it later on.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cancel all the training sessions and ask the school to wait until the data is finally ready.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A delay in a dependent task can move later dates, so assess the effect, communicate, and plan recovery."
+            },
+            {
+                "competency": "Risk Management",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a risk in project management?",
+                "options": [
+                    {
+                        "text": "A problem that has already happened and must now be solved by the team.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A mistake made by the team leader during the planning of the project.",
+                        "correct": false
+                    },
+                    {
+                        "text": "An uncertain event that could affect the project objectives.",
+                        "correct": true
+                    },
+                    {
+                        "text": "The total budget of the project, including the money kept for emergencies.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A risk is something that might happen. Once it happens, it becomes an issue."
+            },
+            {
+                "competency": "Risk Management",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "A project to move five schools to new software has the risk 'key staff may be absent during go-live'. Which responses reduce this risk? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Train a backup person for each key role.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore the risk until it happens.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Plan go-live outside exam and holiday periods.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Record the risk, give it an owner, and review it regularly.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Remove it from the list so that the team does not worry.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Backups, better timing and active ownership all reduce the chance or effect of the risk. Ignoring or hiding it does not."
+            },
+            {
+                "competency": "Stakeholder Management",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Who is a stakeholder of a project?",
+                "options": [
+                    {
+                        "text": "Only the person who pays for the project and approves its budget.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Anyone who is affected by the project or can influence it.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Only the project team members who do the daily work on the tasks.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only the people who will use the final product after it is delivered.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Stakeholders include sponsors, users, staff, parents and others who are affected by or can influence the project."
+            },
+            {
+                "competency": "Stakeholder Management",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A teacher representative opposes your timetable system project because she was not told about changes. What is the best action?",
+                "options": [
+                    {
+                        "text": "Ignore her because she is not a manager.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the headmaster to remove her from the committee.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Meet her, listen to her concerns, explain the plan, and agree how she will be informed.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send her the full technical document by email.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Engaging an unhappy stakeholder, listening, and agreeing regular communication turns opposition into support."
+            },
+            {
+                "competency": "Monitoring and Closing",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which is a useful way to track project progress?",
+                "options": [
+                    {
+                        "text": "Asking team members how they feel about the project.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Comparing planned progress with actual progress at regular status meetings.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Waiting until the final deadline to check the work.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Counting the number of emails sent about the project.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Regular comparison of plan and actual progress shows problems early, while there is still time to act."
+            },
+            {
+                "competency": "Monitoring and Closing",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The school is now using the new system, and the project work is complete. Which closing activity is most important?",
+                "options": [
+                    {
+                        "text": "Delete all project documents to save storage space.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Start another project immediately without any review.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop communicating with the school.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hold a lessons-learned review, hand over documents, and get formal sign-off.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Closing includes formal acceptance, a handover of documents, and learning for future projects."
+            }
+        ]
+    },
+    {
+        "skill_slug": "leadership",
+        "skill_name": "Leadership",
+        "description": "Checks leadership judgment in setting direction, acting with integrity, motivating people, making decisions and leading change.",
+        "competencies": [
+            {
+                "name": "Vision and Direction",
+                "description": "Setting a clear direction and linking daily work to goals.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Integrity and Accountability",
+                "description": "Leading by example, admitting mistakes and handling conflicts of interest honestly.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Motivating and Developing People",
+                "description": "Inspiring, delegating to and growing team members.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Decision Making",
+                "description": "Making fair, well-informed and timely decisions.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Leading Change",
+                "description": "Guiding people through change and resolving tensions in the team.",
+                "weight": 20,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Vision and Direction",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a vision for a school or a team?",
+                "options": [
+                    {
+                        "text": "A clear picture of the future that the group wants to achieve.",
+                        "correct": true
+                    },
+                    {
+                        "text": "A list of the rules and procedures that all staff must follow every day.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A report of last year's results and the lessons that were learned from them.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A timetable for the next week showing who teaches or works in each place.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A vision describes the desired future and gives people a common direction."
+            },
+            {
+                "competency": "Vision and Direction",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your team is busy with daily tasks and has lost sight of why their work matters. What should you do?",
+                "options": [
+                    {
+                        "text": "Add more tasks to their daily schedule so that they have no time to think about problems.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Link their daily tasks to the team goals and explain the purpose clearly.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait until the team asks for direction before you say anything about the goals.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the team to work harder and reward the fastest workers without explanation.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "People work with more energy when they understand how their tasks support a larger goal."
+            },
+            {
+                "competency": "Integrity and Accountability",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which example best describes leading by example?",
+                "options": [
+                    {
+                        "text": "Giving orders and checking that everyone obeys them without asking questions.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Asking staff to follow rules that you are too senior to follow yourself.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Arriving on time yourself when you ask staff to be punctual.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Telling stories about how well you worked in your previous school.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Leaders earn trust when their own behaviour matches what they ask of others."
+            },
+            {
+                "competency": "Integrity and Accountability",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You find a mistake you made in a report that already went to the board. No one has noticed it. What should you do?",
+                "options": [
+                    {
+                        "text": "Say nothing because the board will probably never notice such a small mistake in the report.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Quietly replace the file on the shared drive without telling anyone that it was changed.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Blame a junior staff member who helped you for the error, if somebody asks about it.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the board, send the correction, and explain how you will avoid the error again.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Accountability means admitting and correcting your own errors openly. This builds trust."
+            },
+            {
+                "competency": "Integrity and Accountability",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A friend applies for a job in your department, and you are on the interview panel. What is the right action?",
+                "options": [
+                    {
+                        "text": "Declare the relationship and step aside from that selection decision.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Interview your friend but give scores without telling anyone about the friendship.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell your friend the interview questions in advance to be fair.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Say nothing because you are sure you can be objective.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A conflict of interest must be declared, and the person should not take part in the decision, to keep the process fair."
+            },
+            {
+                "competency": "Motivating and Developing People",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which action most improves the motivation of a team member?",
+                "options": [
+                    {
+                        "text": "Increasing the workload to show trust.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Criticising mistakes in front of the whole team.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving clear goals, recognising good work, and offering chances to learn and grow.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Giving the same feedback to everyone, whatever they do.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Clear goals, recognition and growth opportunities are strong, lasting motivators."
+            },
+            {
+                "competency": "Motivating and Developing People",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A talented new teacher lacks confidence and avoids leading activities. What is the best leadership action?",
+                "options": [
+                    {
+                        "text": "Give a large responsibility without any support so that the teacher learns fast.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait until the teacher asks for more responsibility, however long that takes.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the teacher to stop being shy and to speak up in front of colleagues.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give small responsibilities with support, feedback, and encouragement.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Gradual responsibility with support builds confidence and skills."
+            },
+            {
+                "competency": "Motivating and Developing People",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which behaviours show good delegation? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Explaining the task, the expected result, and the deadline.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Giving the task and then disappearing without support.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving the person the authority needed to do the task.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Checking progress without taking the task back.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delegating only the tasks that you dislike.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Good delegation gives clarity, authority and follow-up while leaving the person responsible for doing the work."
+            },
+            {
+                "competency": "Decision Making",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What should come first when you make a decision?",
+                "options": [
+                    {
+                        "text": "Choose the option that is the cheapest for the school this year.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the most senior person in the room what they prefer.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Announce your decision to the staff before anyone can object.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Define the problem clearly and gather the facts.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Good decisions start with a clear problem and reliable facts."
+            },
+            {
+                "competency": "Decision Making",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A parent makes a serious complaint about a teacher. You have heard only the parent's side. What should you do?",
+                "options": [
+                    {
+                        "text": "Dismiss the teacher at once to protect the school.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the parent that teachers are always right.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen to the teacher, collect facts, follow school procedures, then decide fairly.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignore the complaint until the parent complains again.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A fair leader hears both sides and uses a proper procedure before deciding."
+            },
+            {
+                "competency": "Leading Change",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "What is the best first step when introducing a big change, such as a new school system?",
+                "options": [
+                    {
+                        "text": "Announce it suddenly so that no one has time to resist.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain why the change is needed and involve staff early.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait until the old system fails completely.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Introduce it first to the staff who like change and ignore others.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "People accept change more easily when they understand the reason and have a voice in how it happens."
+            },
+            {
+                "competency": "Leading Change",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Two senior teachers argue regularly and the staff room is tense. What should you do?",
+                "options": [
+                    {
+                        "text": "Ignore it until they stop by themselves.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Support the teacher that you like more.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move one of them to another block without discussion.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Meet them separately and then together, focus on the issues, and agree on solutions.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Leaders address conflict early, listen to both sides, and focus on issues rather than personalities."
+            }
+        ]
+    },
+    {
+        "skill_slug": "team-management",
+        "skill_name": "Team Management",
+        "description": "Checks practical team-management skills: delegation, coaching, performance conversations, conflict resolution, motivation and meetings.",
+        "competencies": [
+            {
+                "name": "Delegation and Work Allocation",
+                "description": "Giving tasks, authority and support to the right people.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Coaching and Feedback",
+                "description": "Helping people to improve through clear, constructive feedback and guidance.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Performance Management",
+                "description": "Setting clear goals and holding fair, specific performance conversations.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Conflict Resolution",
+                "description": "Handling disagreements fairly and early, and finding solutions that last.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Motivation and Running Meetings",
+                "description": "Recognising effort and leading meetings that produce decisions and actions.",
+                "weight": 20,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Delegation and Work Allocation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is delegation?",
+                "options": [
+                    {
+                        "text": "Doing all the important work yourself so that it is always done to your own standard.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Giving someone a task and the authority to do it, while you stay accountable.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Telling someone to do a task and blaming them completely if the result is poor.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sharing your personal problems with your team members so that they understand you better.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Delegation passes the task and authority to another person, but the manager is still accountable for the outcome."
+            },
+            {
+                "competency": "Delegation and Work Allocation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You have a large report to complete. A team member has the skills but little experience. What should you do?",
+                "options": [
+                    {
+                        "text": "Give clear instructions, a deadline and support, and let the member do part of it.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Do the whole report yourself, to avoid mistakes and to be sure of meeting the deadline.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the member only the hardest part of the report and offer no help along the way.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the task without instructions so that they learn alone by finding their own way.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Clear instructions and support let a developing team member succeed and grow."
+            },
+            {
+                "competency": "Coaching and Feedback",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is an example of constructive feedback?",
+                "options": [
+                    {
+                        "text": "'You are always so careless with your work, and I am tired of correcting your mistakes every week.'",
+                        "correct": false
+                    },
+                    {
+                        "text": "'Your report is simply bad, and it is far below the standard that we expect in this office.'",
+                        "correct": false
+                    },
+                    {
+                        "text": "'The totals in your last report did not match the table. Please recheck; I can show you how.'",
+                        "correct": true
+                    },
+                    {
+                        "text": "'Some people say that your report is poor, so you should try to do much better next time.'",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Constructive feedback is specific, focused on the work, and offers help to improve."
+            },
+            {
+                "competency": "Coaching and Feedback",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A new staff member makes the same data-entry mistake for the third time. What is the best coaching approach?",
+                "options": [
+                    {
+                        "text": "Send a formal warning letter at once and place a copy of it in the staff member's file.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remind them in front of the whole team to be more careful with the data they enter.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move the task to another person without explanation, and give the new staff member other work.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sit with them, show the correct method, let them practise, and agree on a check.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Coaching combines demonstration, practice and follow-up. Punishment or public correction does not teach the skill."
+            },
+            {
+                "competency": "Performance Management",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "In goal setting, what do the letters in SMART goals stand for?",
+                "options": [
+                    {
+                        "text": "Specific, Measurable, Achievable, Relevant, Time-bound",
+                        "correct": true
+                    },
+                    {
+                        "text": "Simple, Manageable, Action-oriented, Realistic, Timetabled",
+                        "correct": false
+                    },
+                    {
+                        "text": "Strategic, Meaningful, Ambitious, Rewarding, Time-limited",
+                        "correct": false
+                    },
+                    {
+                        "text": "Specific, Minimal, Agreed, Random, Timed",
+                        "correct": false
+                    }
+                ],
+                "explanation": "SMART goals are Specific, Measurable, Achievable, Relevant and Time-bound, which makes them clear and trackable."
+            },
+            {
+                "competency": "Performance Management",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A staff member's performance has dropped over the last two months. What should you do first?",
+                "options": [
+                    {
+                        "text": "Give a formal written warning immediately and send a copy to the head office for the file.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Talk privately to understand the reasons, share examples, and agree support and targets.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Discuss the matter openly in the next team meeting so that every colleague can give their views on it.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait for the annual appraisal and then discuss the drop in performance with the staff member.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A private, fact-based conversation finds the cause and agrees a plan. Public or delayed action is unfair and less effective."
+            },
+            {
+                "competency": "Performance Management",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Which should be included in a good performance conversation? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Specific examples of results or behaviour.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Comparison with a named colleague.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listening to the employee's point of view.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Agreed next steps and a follow-up date.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Criticism of the employee's personal character.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Good conversations are specific, two-way and end with agreed actions. Comparisons and personal attacks harm trust."
+            },
+            {
+                "competency": "Conflict Resolution",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which approach to conflict aims to find a solution that satisfies both sides?",
+                "options": [
+                    {
+                        "text": "Avoiding, where the issue is never discussed and both sides simply move on.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Competing, where one side must win and the other side has to accept the result.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Collaborating, where both sides work together to solve the problem.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Giving in, where one side always accepts the other's demand to keep the peace.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Collaborating looks for a solution that meets the needs of both parties and keeps the relationship."
+            },
+            {
+                "competency": "Conflict Resolution",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Two team members each complain about the other to you separately and each wants you to take their side. What should you do?",
+                "options": [
+                    {
+                        "text": "Agree with the one who complained first.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell them to solve it alone without your involvement.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move one of them to a different team immediately.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen to both, stay neutral, then bring them together to agree on a solution.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Neutral listening followed by a joint conversation treats both fairly and aims at a lasting solution."
+            },
+            {
+                "competency": "Motivation and Running Meetings",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is a good way to recognise a team member's effort?",
+                "options": [
+                    {
+                        "text": "Give no feedback so that the person does not become proud or expect a reward.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Praise only the person who already receives the most praise from the manager.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Mention their effort only in the yearly review, together with their other results.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Thank them specifically for what they did and how it helped.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Specific and timely recognition motivates people and shows what good work looks like."
+            },
+            {
+                "competency": "Motivation and Running Meetings",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What makes a team meeting effective?",
+                "options": [
+                    {
+                        "text": "A long discussion without a fixed end time.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A clear agenda, a start and an end on time, and recorded actions.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Inviting everyone in the school whether or not it concerns them.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Having the leader speak for most of the time.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "An agenda, time discipline and recorded actions make meetings productive."
+            },
+            {
+                "competency": "Motivation and Running Meetings",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "In your weekly meeting, one person talks most of the time and others stay silent. What should you do?",
+                "options": [
+                    {
+                        "text": "Allow it because the talkative person knows the most.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop holding meetings and send messages instead.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the quiet members by name for their ideas and set time limits for speakers.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell the quiet members they must speak more or leave.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Inviting quiet members and managing speaking time gives everyone a voice and improves decisions."
+            }
+        ]
+    },
+    {
+        "skill_slug": "strategic-planning",
+        "skill_name": "Strategic Planning",
+        "description": "Checks whether the candidate can set goals, analyse the situation, choose KPIs, allocate resources and review progress against a plan.",
+        "competencies": [
+            {
+                "name": "Vision, Mission and Goals",
+                "description": "Defining purpose, direction and clear goals.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Situation Analysis",
+                "description": "Using tools such as SWOT to understand internal and external factors.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "KPIs and Measurement",
+                "description": "Choosing measurable indicators that show progress toward goals.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Resource Allocation and Action Planning",
+                "description": "Linking budget, people and time to strategic priorities.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Monitoring and Review",
+                "description": "Reviewing progress regularly and adjusting the plan when conditions change.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Vision, Mission and Goals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does a mission statement describe?",
+                "options": [
+                    {
+                        "text": "The future position that the organisation hopes to reach in ten years.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The yearly budget of the organisation.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Why the organisation exists, what it does, and who it serves.",
+                        "correct": true
+                    },
+                    {
+                        "text": "The list of staff and their job titles.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A mission states the purpose of the organisation. The future picture is the vision."
+            },
+            {
+                "competency": "Vision, Mission and Goals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which is the best-written school goal?",
+                "options": [
+                    {
+                        "text": "Improve the results in all subjects and in all classes as much as we possibly can.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Have a good school that parents are proud of and that is respected in the region.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do better than other schools in the district in every examination that we sit.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Raise the Standard Seven pass rate from 70% to 80% by the end of next year.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A good goal is specific, measurable and has a deadline."
+            },
+            {
+                "competency": "Vision, Mission and Goals",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The board wants the school to become 'the best in the region' but has not said how this will be measured. What should you do?",
+                "options": [
+                    {
+                        "text": "Accept the statement as it is, because it is inspiring and will motivate the staff.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Help the board to turn it into specific, measurable goals with deadlines.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait until the end of the year to decide how the school's progress should be measured.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Choose the measure that makes the school look best to parents and visitors.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Broad ambitions need measurable goals and dates, so that progress can be checked."
+            },
+            {
+                "competency": "Situation Analysis",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does SWOT stand for?",
+                "options": [
+                    {
+                        "text": "Strengths, Weaknesses, Opportunities, Threats",
+                        "correct": true
+                    },
+                    {
+                        "text": "Standards, Workloads, Objectives, Time-schedules",
+                        "correct": false
+                    },
+                    {
+                        "text": "Skills, Salaries, Outcomes, Time-management",
+                        "correct": false
+                    },
+                    {
+                        "text": "Strategy, Wealth, Operations, Training-needs",
+                        "correct": false
+                    }
+                ],
+                "explanation": "SWOT analysis looks at internal strengths and weaknesses and external opportunities and threats."
+            },
+            {
+                "competency": "Situation Analysis",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "In a SWOT analysis of a school, a new competing school opening nearby is best classified as which?",
+                "options": [
+                    {
+                        "text": "A strength",
+                        "correct": false
+                    },
+                    {
+                        "text": "An opportunity",
+                        "correct": false
+                    },
+                    {
+                        "text": "A weakness",
+                        "correct": false
+                    },
+                    {
+                        "text": "A threat",
+                        "correct": true
+                    }
+                ],
+                "explanation": "It is an external factor that could harm the school, so it is a threat."
+            },
+            {
+                "competency": "Situation Analysis",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Staff are listing items for a SWOT analysis of your school. Which one is an internal weakness?",
+                "options": [
+                    {
+                        "text": "Many teachers have not been trained to use computers.",
+                        "correct": true
+                    },
+                    {
+                        "text": "The government starts a new support programme for schools.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The cost of electricity is rising across the country.",
+                        "correct": false
+                    },
+                    {
+                        "text": "The school has a strong reputation in the community.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Weaknesses are internal factors that the school can improve, such as staff skills. The others are external or strengths."
+            },
+            {
+                "competency": "KPIs and Measurement",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a KPI?",
+                "options": [
+                    {
+                        "text": "A list of the problems that staff have reported to the management this term.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A yearly party that is held for all the staff to celebrate the end of the school year.",
+                        "correct": false
+                    },
+                    {
+                        "text": "A measurable value that shows how well a key objective is being achieved.",
+                        "correct": true
+                    },
+                    {
+                        "text": "A document that shows the school's rules and the penalties for breaking them.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "KPI means key performance indicator, a number used to track progress toward an objective."
+            },
+            {
+                "competency": "KPIs and Measurement",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "A school wants to improve fee collection. Which would be good KPIs? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Percentage of fees collected by the due date.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Number of staff members in the office.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Total fee arrears at the end of each term.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Number of posters on the notice board.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Average number of days parents take to pay after the invoice.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "These indicators directly measure fee collection performance. Staff numbers and posters do not."
+            },
+            {
+                "competency": "Resource Allocation and Action Planning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Why should the budget be linked to the strategic priorities?",
+                "options": [
+                    {
+                        "text": "So that every department receives exactly the same amount, whatever its role in the plan.",
+                        "correct": false
+                    },
+                    {
+                        "text": "So that limited money and staff time go to the activities that best support goals.",
+                        "correct": true
+                    },
+                    {
+                        "text": "So that the budget never has to change during the year, even if the situation changes.",
+                        "correct": false
+                    },
+                    {
+                        "text": "So that spending on every plan activity needs no approval from the head or the board.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Resources are limited, so they should support the most important goals."
+            },
+            {
+                "competency": "Resource Allocation and Action Planning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your school can afford only one of three projects: a computer lab, a new library roof, or a school bus. How should you decide?",
+                "options": [
+                    {
+                        "text": "Divide the money equally among the three projects.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Choose the cheapest one to save the most money.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rank them against the plan's priorities using criteria such as impact, urgency and cost.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Choose the project that the loudest staff member wants.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Prioritising with clear criteria linked to the strategy leads to fair, defensible decisions."
+            },
+            {
+                "competency": "Monitoring and Review",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Why should a strategic plan be reviewed regularly?",
+                "options": [
+                    {
+                        "text": "To replace the vision every term.",
+                        "correct": false
+                    },
+                    {
+                        "text": "To show that the plan cannot be changed.",
+                        "correct": false
+                    },
+                    {
+                        "text": "To check progress, learn from results, and adjust to changes.",
+                        "correct": true
+                    },
+                    {
+                        "text": "To find staff to blame.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Regular reviews show whether the plan is working and allow corrections when conditions change."
+            },
+            {
+                "competency": "Monitoring and Review",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "At the mid-year review, most targets are behind because the plan assumed a grant that was never received. What should you do?",
+                "options": [
+                    {
+                        "text": "Continue unchanged and hope that the grant arrives.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hide the results from the board until the end of the year.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Blame the staff for not working hard enough.",
+                        "correct": false
+                    },
+                    {
+                        "text": "Identify the cause, revise the targets and priorities, and tell stakeholders.",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A plan must be adjusted when a key assumption fails. Honest review and communication keep the plan realistic."
+            }
+        ]
+    }
+]

@@ -1,0 +1,2136 @@
+[
+    {
+        "skill_slug": "child-safeguarding",
+        "skill_name": "Child Protection & Safeguarding",
+        "description": "Checks whether a candidate can recognise signs of abuse, respond correctly to a disclosure, report and record concerns, keep safe boundaries and protect confidentiality.",
+        "competencies": [
+            {
+                "name": "Recognising Signs of Abuse",
+                "description": "Knows the main forms of abuse and the warning signs in children",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Responding to Disclosures",
+                "description": "Responds calmly and correctly when a child tells about abuse",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Reporting and Recording",
+                "description": "Reports concerns to the right person and records facts accurately",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Safe Behaviour and Boundaries",
+                "description": "Follows safe codes of conduct and spots unsafe adult behaviour",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Safe Recruitment and Confidentiality",
+                "description": "Understands safe hiring checks and need-to-know confidentiality",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Recognising Signs of Abuse",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which of these is a possible warning sign that a child is being abused?",
+                "options": [
+                    {
+                        "text": "Being late to school once because of heavy rain",
+                        "correct": false
+                    },
+                    {
+                        "text": "Asking many questions during a science lesson",
+                        "correct": false
+                    },
+                    {
+                        "text": "A sudden change in behaviour, such as fear of going home",
+                        "correct": true
+                    },
+                    {
+                        "text": "Losing a pencil case and feeling sad about it",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Sudden, unexplained changes in behaviour, mood or attendance are common warning signs. One sign is not proof, but it should be taken seriously."
+            },
+            {
+                "competency": "Recognising Signs of Abuse",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "easy",
+                "text": "Which of the following are recognised forms of child abuse? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Physical abuse, such as hitting or burning a child",
+                        "correct": true
+                    },
+                    {
+                        "text": "Setting age-appropriate homework for the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Neglect, such as repeatedly failing to give food or care",
+                        "correct": true
+                    },
+                    {
+                        "text": "Praising a pupil in front of the class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Emotional abuse, such as constant insults or threats",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Physical abuse, neglect and emotional abuse (as well as sexual abuse) are the main forms of child abuse. Homework and praise are normal school practice."
+            },
+            {
+                "competency": "Responding to Disclosures",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A 10-year-old girl tells you privately that an adult relative touches her in ways that scare her. She begs, \"Please do not tell anyone.\" What should you do?",
+                "options": [
+                    {
+                        "text": "Promise to keep it secret so that she continues to trust you and tells you more",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen calmly, say you cannot keep this secret, and tell her you will get help",
+                        "correct": true
+                    },
+                    {
+                        "text": "Visit the relative at his home and ask him to explain his side of the story first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask her many detailed questions until you are completely sure that it is true",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Never promise secrecy. Listen, reassure the child, explain that you must tell the person who can help, and do not investigate yourself."
+            },
+            {
+                "competency": "Responding to Disclosures",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A child has just told you about abuse. Which response is most helpful?",
+                "options": [
+                    {
+                        "text": "\"Are you sure? That sounds very unlikely, so think carefully.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Why did you wait so long to tell anyone about this?\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Do not tell anyone else; I will handle it myself quietly.\"",
+                        "correct": false
+                    },
+                    {
+                        "text": "\"Thank you for telling me. This is not your fault.\"",
+                        "correct": true
+                    }
+                ],
+                "explanation": "The child needs to feel believed and not blamed. Questioning, blaming or promising to handle it alone can silence the child and delay protection."
+            },
+            {
+                "competency": "Reporting and Recording",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "In most schools, who should a staff member first report a child protection concern to?",
+                "options": [
+                    {
+                        "text": "The school's designated safeguarding or child protection person",
+                        "correct": true
+                    },
+                    {
+                        "text": "The parents of the child, before anyone else is told",
+                        "correct": false
+                    },
+                    {
+                        "text": "The person suspected, so that he or she can respond",
+                        "correct": false
+                    },
+                    {
+                        "text": "Other teachers in the staffroom, for their advice",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Concerns go to the designated safeguarding person (or head teacher where none is named). Telling the suspected person or discussing widely can put the child at risk."
+            },
+            {
+                "competency": "Reporting and Recording",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You suspect that the head teacher is abusing a pupil. Normally concerns go to the head teacher. What is the best action?",
+                "options": [
+                    {
+                        "text": "Say nothing, because the head teacher has full authority over all school matters",
+                        "correct": false
+                    },
+                    {
+                        "text": "Question several pupils yourself first so that you can collect strong proof",
+                        "correct": false
+                    },
+                    {
+                        "text": "Report to the school board or owner, or to the social welfare office or police",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait until the end of term to see whether the pupil says more",
+                        "correct": false
+                    }
+                ],
+                "explanation": "When the usual reporting person is involved, report to the next level up or to the external child protection authorities. Do not investigate yourself or delay."
+            },
+            {
+                "competency": "Reporting and Recording",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "How should you record what a child tells you about abuse?",
+                "options": [
+                    {
+                        "text": "Write the child's own words with the date and time, as facts only",
+                        "correct": true
+                    },
+                    {
+                        "text": "Write your opinion about whether the child is telling the truth",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write a short note from memory a few weeks later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write nothing, so that the matter stays private",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Records should be prompt, factual and use the child's own words. Opinions and late notes weaken the record."
+            },
+            {
+                "competency": "Safe Behaviour and Boundaries",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A teacher gives extra lessons to one pupil after school. Which arrangement is safest?",
+                "options": [
+                    {
+                        "text": "In a closed office with the door shut so other pupils do not disturb them",
+                        "correct": false
+                    },
+                    {
+                        "text": "At the teacher's house, where it is quiet and nobody will interrupt",
+                        "correct": false
+                    },
+                    {
+                        "text": "In a visible place, or with another adult nearby and the door open",
+                        "correct": true
+                    },
+                    {
+                        "text": "In a parked car while waiting for the pupil's parent to arrive",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Safe practice avoids being alone with a child out of sight. Open, visible settings protect both the child and the teacher."
+            },
+            {
+                "competency": "Safe Behaviour and Boundaries",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "You notice that a colleague often gives one pupil gifts, phones the pupil at night, and drives the pupil home alone. Which actions are appropriate? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Write down factually what you have seen and when",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait until you have clear proof before telling anyone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Warn the colleague privately and keep the matter quiet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Report your concern to the designated safeguarding person",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask the pupil's classmates to find out what is happening",
+                        "correct": false
+                    }
+                ],
+                "explanation": "These are warning signs of grooming. You should record facts and report promptly, and leave any investigation to the proper authorities."
+            },
+            {
+                "competency": "Safe Recruitment and Confidentiality",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which step is part of safe recruitment of staff who will work with children?",
+                "options": [
+                    {
+                        "text": "Hiring a friend of the head teacher without an interview or reference check",
+                        "correct": false
+                    },
+                    {
+                        "text": "Checking identity, certificates and references, including work with children",
+                        "correct": true
+                    },
+                    {
+                        "text": "Skipping checks for volunteers because they are not paid or only come briefly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Relying only on how confident the candidate looks",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Safe recruitment means verifying identity, qualifications and references for every person, paid or unpaid, who will have access to children."
+            },
+            {
+                "competency": "Safe Recruitment and Confidentiality",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "In the staffroom a colleague asks about a rumour that a pupil was abused. You know the details because you attended the case meeting. What is the best response?",
+                "options": [
+                    {
+                        "text": "Share a little so that the rumour stops spreading",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell everyone in the staffroom so that all staff can watch the pupil closely",
+                        "correct": false
+                    },
+                    {
+                        "text": "Politely decline, saying details go only to those who need to know",
+                        "correct": true
+                    },
+                    {
+                        "text": "Post the main facts on the staff WhatsApp group so everyone is informed",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Child protection information is confidential and shared only with those who need it to protect the child. Gossip can harm the child and the investigation."
+            },
+            {
+                "competency": "Recognising Signs of Abuse",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A Standard 5 pupil, once cheerful, now sleeps in class, looks hungry, wears dirty clothes, and no adult attends meetings. What is the best first step?",
+                "options": [
+                    {
+                        "text": "Punish the pupil for sleeping so that it stops",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do nothing, since poverty and tiredness are not a child protection matter",
+                        "correct": false
+                    },
+                    {
+                        "text": "Visit the home alone and confront the parents about how they treat the child",
+                        "correct": false
+                    },
+                    {
+                        "text": "Record what you see and tell the designated safeguarding person",
+                        "correct": true
+                    }
+                ],
+                "explanation": "These may be signs of neglect. Teachers should record observations and pass them to the designated person so the family's needs and the child's safety can be assessed."
+            }
+        ]
+    },
+    {
+        "skill_slug": "first-aid-school-health",
+        "skill_name": "First Aid & School Health",
+        "description": "Checks basic first aid knowledge for common school emergencies, hygiene and infection control, knowing when to refer, and keeping incident records.",
+        "competencies": [
+            {
+                "name": "Emergency Response and Priorities",
+                "description": "Makes the scene safe, calls for help and acts in the right order",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Bleeding, Burns and Injuries",
+                "description": "Treats bleeding, burns, nosebleeds and suspected fractures correctly",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Choking, Breathing and Seizures",
+                "description": "Responds correctly to choking, seizures and a child who is not breathing",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Illness and Infection Control",
+                "description": "Uses good hygiene and handles common illnesses such as fever sensibly",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Referral and Record Keeping",
+                "description": "Knows when to refer to a health facility and records incidents properly",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Emergency Response and Priorities",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "You arrive at the scene of an accident at school. What should you do first?",
+                "options": [
+                    {
+                        "text": "Move the injured pupil immediately",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the pupil something to drink",
+                        "correct": false
+                    },
+                    {
+                        "text": "Start bandaging the most visible injury",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check that the area is safe for you and the pupil",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Check for danger first. If you become a casualty yourself, you cannot help anyone."
+            },
+            {
+                "competency": "Bleeding, Burns and Injuries",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A pupil has a nosebleed. What is the correct way to help?",
+                "options": [
+                    {
+                        "text": "Sit forward and pinch the soft part of the nose for about 10 minutes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Lay the pupil flat on the back and tilt the head back so the blood stops running",
+                        "correct": false
+                    },
+                    {
+                        "text": "Push tissue paper deep into the nostril",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the pupil to keep blowing the nose hard to clear out the blood",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Leaning forward stops blood running down the throat, and firm pressure on the soft part of the nose usually stops the bleeding."
+            },
+            {
+                "competency": "Bleeding, Burns and Injuries",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A pupil cuts her leg deeply on a metal sheet and blood is flowing heavily. What is the best immediate action?",
+                "options": [
+                    {
+                        "text": "Wash the wound with soap and water for 10 minutes before doing anything else",
+                        "correct": false
+                    },
+                    {
+                        "text": "Press firmly on the wound with a clean cloth and keep pressing until help comes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tie a tight string or wire above the wound and leave it there until the doctor comes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Leave the wound open so that it can clot by itself",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Direct pressure with a clean cloth is the first treatment for heavy bleeding. Keep pressing, and add more cloth rather than removing a soaked one."
+            },
+            {
+                "competency": "Bleeding, Burns and Injuries",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A pupil is scalded by hot porridge on the arm. What is the best first aid?",
+                "options": [
+                    {
+                        "text": "Cool the burn under running cool water for at least 10 minutes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rub butter or cooking oil on the burn to seal it and keep the air out",
+                        "correct": false
+                    },
+                    {
+                        "text": "Burst any blisters to let the fluid out and help the skin heal",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cover it with toothpaste to cool it and stop the pain",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Cooling with running water reduces damage and pain. Butter, oil and toothpaste can trap heat and cause infection, and blisters should be left intact."
+            },
+            {
+                "competency": "Choking, Breathing and Seizures",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A child is choking and cannot cough, speak or breathe. What should you do?",
+                "options": [
+                    {
+                        "text": "Give water so the food is washed down, then ask the child to lie flat",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hold the child upside down by the ankles and shake until it drops out",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give 5 back blows, then 5 abdominal thrusts, and call for help",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait and watch to see whether it clears on its own before doing anything",
+                        "correct": false
+                    }
+                ],
+                "explanation": "For severe choking, alternate back blows and abdominal thrusts for a child, and get help. Drinks and waiting do not clear a blocked airway."
+            },
+            {
+                "competency": "Choking, Breathing and Seizures",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "A pupil has a convulsive seizure in class. Which actions are correct? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Move hard objects away and cushion the head",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hold the pupil down firmly to stop the movements",
+                        "correct": false
+                    },
+                    {
+                        "text": "Put a spoon or stick in the mouth to protect the tongue",
+                        "correct": false
+                    },
+                    {
+                        "text": "Note the time, and place the pupil in the recovery position when the jerking stops",
+                        "correct": true
+                    },
+                    {
+                        "text": "Get an adult to stay with the pupil and check breathing until fully awake",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Protect the head, never restrain or put anything in the mouth, time the seizure, and keep checking breathing afterwards. Call emergency help if it lasts too long or repeats."
+            },
+            {
+                "competency": "Emergency Response and Priorities",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A pupil collapses on the field, does not respond and is not breathing normally. What is the best action?",
+                "options": [
+                    {
+                        "text": "Carry the pupil to the staff room, lay him on a bench, and wait quietly for him to wake up",
+                        "correct": false
+                    },
+                    {
+                        "text": "Splash water on the face and wait a few minutes to see whether he wakes up",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give a sweet drink to restore energy",
+                        "correct": false
+                    },
+                    {
+                        "text": "Shout for help, call emergency services, and start chest compressions if trained",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A person who is unresponsive and not breathing normally needs urgent help and CPR. Delay or moving the person wastes vital time."
+            },
+            {
+                "competency": "Illness and Infection Control",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "When should a first aider wash their hands?",
+                "options": [
+                    {
+                        "text": "Before and after treating a pupil, using soap and clean water",
+                        "correct": true
+                    },
+                    {
+                        "text": "Only at the end of the day",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only if the hands look very dirty",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only after treating a pupil with blood on the skin",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Handwashing with soap before and after treatment protects both the helper and the pupil from infection."
+            },
+            {
+                "competency": "Illness and Infection Control",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A pupil has a high fever, chills, headache and has vomited, in an area where malaria is common. What is the best action?",
+                "options": [
+                    {
+                        "text": "Send the pupil back to class after a cold drink and a short rest outside in the shade",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give leftover antibiotics from the staff room cupboard and watch the pupil",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep the pupil resting, inform the parents, and refer to a clinic for testing",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait until the next day to see if the fever goes away by itself, and only then decide",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Fever in a child may be malaria and needs prompt testing and treatment. Do not give unprescribed medicine or delay."
+            },
+            {
+                "competency": "Referral and Record Keeping",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which details should be written in a school incident or first aid record?",
+                "options": [
+                    {
+                        "text": "Only the name of the pupil",
+                        "correct": false
+                    },
+                    {
+                        "text": "Date, time, what happened, treatment given, and who was informed",
+                        "correct": true
+                    },
+                    {
+                        "text": "Your opinion about who is to blame",
+                        "correct": false
+                    },
+                    {
+                        "text": "A photo of the pupil to share on the class group",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A good record is factual: when and what happened, the care given and who was told. Opinions and photos shared on groups break confidentiality."
+            },
+            {
+                "competency": "Referral and Record Keeping",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "During football a pupil hits his head. An hour later he vomits and seems very sleepy. What should you do?",
+                "options": [
+                    {
+                        "text": "Let him rest in class and check again tomorrow",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give him tea and send him back to the field",
+                        "correct": false
+                    },
+                    {
+                        "text": "Arrange urgent medical care and inform his parents",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell him to sleep at the sick bay and not disturb him",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Vomiting and drowsiness after a head injury can mean serious injury to the head. The pupil needs urgent medical assessment, and parents must be told."
+            },
+            {
+                "competency": "Bleeding, Burns and Injuries",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A pupil falls from a tree and cannot move his arm, which looks bent and is painful. What is the best first aid?",
+                "options": [
+                    {
+                        "text": "Pull the arm straight to see whether it moves normally and how much it hurts",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rub oil on the arm and massage it gently to ease the pain",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask him to move the arm to test it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep the arm still and supported as found, then take him for medical care",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A suspected fracture should be supported and kept still, not straightened or moved, and the pupil taken to a health facility."
+            }
+        ]
+    },
+    {
+        "skill_slug": "driving-fleet-safety",
+        "skill_name": "School Transport Driving & Safety",
+        "description": "Checks a school transport driver's knowledge of vehicle checks, safe driving, child loading and supervision, emergency response and record keeping.",
+        "competencies": [
+            {
+                "name": "Pre-trip Vehicle Checks",
+                "description": "Carries out and reports daily vehicle checks before carrying children",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Safe Driving and Road Rules",
+                "description": "Drives safely and lawfully with children on board",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Loading, Offloading and Child Supervision",
+                "description": "Loads, counts and offloads children safely and never overloads",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Emergencies and Breakdowns",
+                "description": "Responds correctly to breakdowns and accidents",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Records and Compliance",
+                "description": "Keeps logs and holds valid documents",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Pre-trip Vehicle Checks",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "When should the daily vehicle check be done?",
+                "options": [
+                    {
+                        "text": "Once a week, on Monday morning",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only when a warning light comes on",
+                        "correct": false
+                    },
+                    {
+                        "text": "After the last trip of the day",
+                        "correct": false
+                    },
+                    {
+                        "text": "Every day before the first trip, before children board",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A walk-round check every day before loading finds faults while the vehicle is still safe to stop and repair."
+            },
+            {
+                "competency": "Safe Driving and Road Rules",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is a safe driver practice when children are on board?",
+                "options": [
+                    {
+                        "text": "Answering phone calls while driving, if the road ahead looks clear and empty",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keeping the phone away and not using it while the vehicle is moving",
+                        "correct": true
+                    },
+                    {
+                        "text": "Driving fast on empty stretches of road to save time on the route",
+                        "correct": false
+                    },
+                    {
+                        "text": "Allowing children to stand in the aisle if the bus is full",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Phone use distracts the driver. Children must be seated, and speed must suit the road, not the clock."
+            },
+            {
+                "competency": "Pre-trip Vehicle Checks",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which items should be checked before the school run? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Tyre condition and pressure",
+                        "correct": true
+                    },
+                    {
+                        "text": "Brakes and brake pedal feel",
+                        "correct": true
+                    },
+                    {
+                        "text": "Whether the radio and music system works",
+                        "correct": false
+                    },
+                    {
+                        "text": "Whether the outside of the vehicle has been washed",
+                        "correct": false
+                    },
+                    {
+                        "text": "Lights, indicators and mirrors",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Tyres, brakes, lights, indicators and mirrors are safety-critical. Music and cleanliness do not affect safe operation."
+            },
+            {
+                "competency": "Loading, Offloading and Child Supervision",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "At a stop, a child drops a book near the rear wheel just as you are about to move. What is the best action?",
+                "options": [
+                    {
+                        "text": "Reverse slowly towards the child so that the child can step out and pick up the book",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop, apply the handbrake, check around, and fetch the book or ask the attendant",
+                        "correct": true
+                    },
+                    {
+                        "text": "Drive off and tell the child to leave it on the road because the bus is already late",
+                        "correct": false
+                    },
+                    {
+                        "text": "Let the child run back to pick it up quickly while the engine keeps running",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Never move until you know exactly where every child is. A child near a wheel can be hidden from the mirrors."
+            },
+            {
+                "competency": "Loading, Offloading and Child Supervision",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "After offloading at the last stop, what should the driver do before leaving the vehicle?",
+                "options": [
+                    {
+                        "text": "Lock the doors immediately to prevent theft",
+                        "correct": false
+                    },
+                    {
+                        "text": "Look only in the rear mirror",
+                        "correct": false
+                    },
+                    {
+                        "text": "Walk through the vehicle and check every seat for a sleeping or hiding child",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask the last child to confirm nobody is left",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A full walk-through at the end of the route prevents a child being left behind, for example asleep on a back seat."
+            },
+            {
+                "competency": "Safe Driving and Road Rules",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You are 20 minutes late for pick-up and parents are waiting. The road ahead is clear. What should you do?",
+                "options": [
+                    {
+                        "text": "Drive faster than the safe speed to catch up with the time lost on the route",
+                        "correct": false
+                    },
+                    {
+                        "text": "Skip the last two stops on the route to save time and avoid more delay",
+                        "correct": false
+                    },
+                    {
+                        "text": "Drive through the junctions without slowing down so as to make up time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep to safe speeds and road rules and phone the school about the delay",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Being late is never a reason to take risks with children. Inform the school and arrive safely."
+            },
+            {
+                "competency": "Loading, Offloading and Child Supervision",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A manager asks you to carry 15 extra children standing in the aisle \"just this once\". What should you do?",
+                "options": [
+                    {
+                        "text": "Agree, but drive more slowly than usual and keep to the quietest roads",
+                        "correct": false
+                    },
+                    {
+                        "text": "Agree if the children hold the seat rails tightly and the extra ones sit in the aisle",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refuse to exceed the seats, and ask for a second trip or another vehicle",
+                        "correct": true
+                    },
+                    {
+                        "text": "Agree, but only for the shorter route and only on the first morning trip",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Overloading and standing children greatly increase injury risk in a crash or sudden stop. Each child needs a seat."
+            },
+            {
+                "competency": "Emergencies and Breakdowns",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your vehicle breaks down on a narrow road with children on board. What is the best action?",
+                "options": [
+                    {
+                        "text": "Park in the middle of the road so that other drivers can see you from far away",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the older children to get out and push the bus off the road",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep driving slowly on the flat tyre to the next town while the children stay seated",
+                        "correct": false
+                    },
+                    {
+                        "text": "Move off the road, switch on hazards, set the triangle, and keep the children safe",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Make the vehicle visible, keep children away from traffic, and call for help. Do not let children stay in dangerous positions."
+            },
+            {
+                "competency": "Emergencies and Breakdowns",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "After a minor collision, a child says her neck hurts. What should you do?",
+                "options": [
+                    {
+                        "text": "Stop, switch off, avoid moving her unnecessarily, and call for medical help",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell her to move her neck around to see whether it hurts, then decide what next",
+                        "correct": false
+                    },
+                    {
+                        "text": "Carry her quickly to the front seat and drive on to the school as fast as you can",
+                        "correct": false
+                    },
+                    {
+                        "text": "Say nothing and continue the trip to avoid delays, and report it the next day",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Neck pain after a collision may be a serious injury. Keep the child still unless in danger, and get emergency help."
+            },
+            {
+                "competency": "Records and Compliance",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which documents must a school driver keep valid and available?",
+                "options": [
+                    {
+                        "text": "A photo of the vehicle for the school website",
+                        "correct": false
+                    },
+                    {
+                        "text": "The school's timetable for pupils",
+                        "correct": false
+                    },
+                    {
+                        "text": "A list of the best routes drawn by the driver",
+                        "correct": false
+                    },
+                    {
+                        "text": "A valid driving licence, vehicle insurance and required inspection documents",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A driver must be legally licensed and the vehicle insured and inspected as required. These protect children and the school."
+            },
+            {
+                "competency": "Records and Compliance",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "While driving, you notice the brake pedal feels soft. What is the best action?",
+                "options": [
+                    {
+                        "text": "Report it to your supervisor, and do not carry children until it is repaired",
+                        "correct": true
+                    },
+                    {
+                        "text": "Continue the route and tell the mechanic at the end of the week when it is convenient",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pump the brakes harder on each stop and carry on with the usual route and timetable",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait to see whether the problem gets worse before you tell anyone about the brakes",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A brake defect is a safety fault. It must be logged, reported and fixed before the vehicle carries children again."
+            },
+            {
+                "competency": "Safe Driving and Road Rules",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "On which side of the road do vehicles drive in Tanzania?",
+                "options": [
+                    {
+                        "text": "The right side",
+                        "correct": false
+                    },
+                    {
+                        "text": "The left side",
+                        "correct": true
+                    },
+                    {
+                        "text": "Either side, depending on traffic",
+                        "correct": false
+                    },
+                    {
+                        "text": "The side with fewer potholes",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Tanzania drives on the left side of the road."
+            }
+        ]
+    },
+    {
+        "skill_slug": "food-safety-catering",
+        "skill_name": "Food Safety & Catering",
+        "description": "Checks school kitchen staff knowledge of hygiene, preventing cross-contamination, temperature control and storage, menu planning and kitchen safety.",
+        "competencies": [
+            {
+                "name": "Personal Hygiene",
+                "description": "Keeps good personal hygiene and stays away from food work when ill",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Cross-Contamination and Safe Handling",
+                "description": "Prevents bacteria spreading from raw to ready-to-eat food",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Temperature Control and Storage",
+                "description": "Cooks, cools, reheats and stores food at safe temperatures",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Menu Planning and Portions",
+                "description": "Plans balanced menus, controls portions and protects pupils with allergies",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Kitchen Safety and Cleaning",
+                "description": "Works safely in the kitchen and cleans correctly",
+                "weight": 20,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Personal Hygiene",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "When must kitchen staff wash their hands with soap and water?",
+                "options": [
+                    {
+                        "text": "Only at the end of the working day, when the kitchen is closed and cleaned",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only when the hands look visibly dirty or sticky after working",
+                        "correct": false
+                    },
+                    {
+                        "text": "After using the toilet and after handling raw meat or fish",
+                        "correct": true
+                    },
+                    {
+                        "text": "Only after eating a meal or drinking tea during the break",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Hands carry germs that cannot be seen. Wash after the toilet, after raw meat, waste or eating, and before food preparation."
+            },
+            {
+                "competency": "Personal Hygiene",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A cook has diarrhoea and vomiting this morning but says he can work because the kitchen is short of staff. What is correct?",
+                "options": [
+                    {
+                        "text": "He may continue cooking if he wears gloves and a mask the whole time",
+                        "correct": false
+                    },
+                    {
+                        "text": "He may work only on the cold dishes, away from the hot cooking area",
+                        "correct": false
+                    },
+                    {
+                        "text": "He should stay off food handling until he is well and cleared",
+                        "correct": true
+                    },
+                    {
+                        "text": "He may work if he washes his hands more often during the shift",
+                        "correct": false
+                    }
+                ],
+                "explanation": "People with diarrhoea or vomiting can spread illness through food. They must stay away from food work until well and cleared."
+            },
+            {
+                "competency": "Cross-Contamination and Safe Handling",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Why should raw meat and ready-to-eat food use separate boards and knives?",
+                "options": [
+                    {
+                        "text": "So that the knives stay sharp longer",
+                        "correct": false
+                    },
+                    {
+                        "text": "So that bacteria from raw food do not pass to food that will not be cooked again",
+                        "correct": true
+                    },
+                    {
+                        "text": "So that the food keeps its flavour",
+                        "correct": false
+                    },
+                    {
+                        "text": "So that the boards can be washed less often",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Raw foods carry bacteria. Using separate equipment stops these spreading to food eaten without further cooking."
+            },
+            {
+                "competency": "Cross-Contamination and Safe Handling",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You have just cut raw chicken and now must slice tomatoes for the salad. What should you do?",
+                "options": [
+                    {
+                        "text": "Wipe the knife and board with a dry cloth, then carry on slicing the tomatoes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wash your hands, then use a clean board and knife, or wash and sanitise them",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rinse the board with cold water only and carry on with the same knife",
+                        "correct": false
+                    },
+                    {
+                        "text": "Slice the tomatoes on the same board without cleaning it, since they will be washed later",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Salad is not cooked, so any chicken bacteria left on equipment will reach the pupils. Clean thoroughly or use separate equipment."
+            },
+            {
+                "competency": "Temperature Control and Storage",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What does the \"danger zone\" for food mean?",
+                "options": [
+                    {
+                        "text": "The range between about 5 degrees and 60 degrees Celsius, where bacteria multiply fastest",
+                        "correct": true
+                    },
+                    {
+                        "text": "Temperatures above 100 degrees Celsius",
+                        "correct": false
+                    },
+                    {
+                        "text": "Temperatures below freezing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Any food stored near the cooker",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Bacteria grow quickly between roughly 5 and 60 degrees Celsius. Food should be kept cold or served hot, and not left in this range."
+            },
+            {
+                "competency": "Temperature Control and Storage",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "Rice and beans were cooked for lunch and some is left over. Which practices are safe? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Cool it quickly in shallow containers and refrigerate within about two hours",
+                        "correct": true
+                    },
+                    {
+                        "text": "Leave the pot covered on the stove overnight",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reheat it until steaming hot all the way through",
+                        "correct": true
+                    },
+                    {
+                        "text": "Mix the leftover into a fresh batch so it is not wasted",
+                        "correct": false
+                    },
+                    {
+                        "text": "Throw away food that has stood at room temperature for many hours",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Leftovers must be cooled and chilled promptly and reheated until very hot. Food left too long in the danger zone should be thrown away."
+            },
+            {
+                "competency": "Temperature Control and Storage",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does \"first in, first out\" (FIFO) mean in a food store?",
+                "options": [
+                    {
+                        "text": "Use the newest stock first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use the cheapest stock first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use the heaviest sacks first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use the oldest stock first",
+                        "correct": true
+                    }
+                ],
+                "explanation": "FIFO rotates stock so older items are used before they spoil or expire."
+            },
+            {
+                "competency": "Temperature Control and Storage",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Where should sacks of maize flour and beans be stored?",
+                "options": [
+                    {
+                        "text": "Directly on the floor, against the wall, to save space on the shelves",
+                        "correct": false
+                    },
+                    {
+                        "text": "On racks off the floor, in a dry, ventilated, pest-proof store",
+                        "correct": true
+                    },
+                    {
+                        "text": "In the open yard under a sheet, so that the store stays free",
+                        "correct": false
+                    },
+                    {
+                        "text": "Next to the cleaning chemicals to save space in the small store room",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Dry foods need to be kept off the floor, dry and protected from pests and chemicals to avoid spoilage and contamination."
+            },
+            {
+                "competency": "Menu Planning and Portions",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You plan weekly meals for 300 boarders on a limited budget. Which menu approach is best?",
+                "options": [
+                    {
+                        "text": "The cheapest staple only, every day, to save money",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rice and meat every day, because pupils like it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Whatever the pupils ask for on each day",
+                        "correct": false
+                    },
+                    {
+                        "text": "A staple with beans, fish or eggs, plus vegetables, with variety through the week",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A balanced school menu combines staple foods, protein, and vegetables or fruit, with variety, and can still be affordable."
+            },
+            {
+                "competency": "Menu Planning and Portions",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "The parent of a pupil has told the school that the pupil is allergic to groundnuts, and today's sauce contains groundnuts. What should you do?",
+                "options": [
+                    {
+                        "text": "Remove the groundnuts from the pupil's plate only and serve it from the same pot",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the pupil to eat a small amount to see whether any reaction happens",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the pupil the same food and watch carefully for any signs of a reaction",
+                        "correct": false
+                    },
+                    {
+                        "text": "Prepare a separate safe meal with clean utensils and tell the serving staff",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Allergens can cause serious reactions even in small amounts. Prepare a separate safe meal and avoid cross-contact."
+            },
+            {
+                "competency": "Kitchen Safety and Cleaning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Cooking oil in a pan catches fire. What should you do?",
+                "options": [
+                    {
+                        "text": "Pour a full bucket of water onto the burning pan to put the fire out quickly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Turn off the heat if safe, and cover the pan with a lid or damp cloth",
+                        "correct": true
+                    },
+                    {
+                        "text": "Carry the pan outside quickly while the oil is still burning",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fan the flames to blow the fire out before it spreads further",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Water makes oil fires spread violently. Switch off the heat if safe and smother the flames by cutting off air."
+            },
+            {
+                "competency": "Kitchen Safety and Cleaning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "How should kitchen work surfaces be cleaned?",
+                "options": [
+                    {
+                        "text": "Wipe with a damp cloth only, then leave the surface to dry in the air",
+                        "correct": false
+                    },
+                    {
+                        "text": "Spray with air freshener so that the surface smells clean and fresh",
+                        "correct": false
+                    },
+                    {
+                        "text": "Clean with detergent and water first, then sanitise",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sweep with a dry broom and then leave it until the next day",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Cleaning removes dirt and grease, and sanitising then reduces germs. Sanitiser does not work well on dirty surfaces."
+            }
+        ]
+    },
+    {
+        "skill_slug": "facilities-maintenance",
+        "skill_name": "Facilities & Maintenance",
+        "description": "Checks knowledge of preventive maintenance, hazard control, fire safety, cleaning and sanitation, and managing contractors in a school setting.",
+        "competencies": [
+            {
+                "name": "Preventive Maintenance",
+                "description": "Plans regular inspections and servicing before faults become failures",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Hazard Identification and Control",
+                "description": "Spots hazards and makes them safe quickly",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Fire Safety",
+                "description": "Knows fire basics, extinguishers, exits and evacuation",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Cleaning and Sanitation",
+                "description": "Keeps toilets, classrooms and water points clean and hygienic",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Contractor and Repair Management",
+                "description": "Hires, supervises and signs off contractor work properly",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Preventive Maintenance",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is an example of preventive maintenance?",
+                "options": [
+                    {
+                        "text": "Replacing a generator only after it has broken down completely",
+                        "correct": false
+                    },
+                    {
+                        "text": "Servicing the generator on a regular schedule",
+                        "correct": true
+                    },
+                    {
+                        "text": "Repairing a roof only after it has started to leak badly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignoring small faults until they get worse and become big ones",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Preventive maintenance means regular servicing and inspection to prevent breakdowns, which is cheaper and safer than emergency repair."
+            },
+            {
+                "competency": "Preventive Maintenance",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is the main purpose of a maintenance schedule and log?",
+                "options": [
+                    {
+                        "text": "To plan tasks, assign who does them, and record what was done",
+                        "correct": true
+                    },
+                    {
+                        "text": "To show visitors that the school is busy",
+                        "correct": false
+                    },
+                    {
+                        "text": "To replace the need for inspections",
+                        "correct": false
+                    },
+                    {
+                        "text": "To give the head teacher a list to read once a year",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A schedule and log make sure work is done on time and give a history of repairs and costs for future decisions."
+            },
+            {
+                "competency": "Preventive Maintenance",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "The rainy season is coming. Which tasks should the maintenance team do now? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Clear gutters and drains",
+                        "correct": true
+                    },
+                    {
+                        "text": "Repaint the outside walls first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Inspect roof sheets and repair loose or damaged ones",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait until leaks are reported before checking the roofs",
+                        "correct": false
+                    },
+                    {
+                        "text": "Postpone drainage work until the rains end",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Clearing drainage and fixing roofs before the rains prevents flooding and leaks. Waiting for reports means damage has already happened."
+            },
+            {
+                "competency": "Hazard Identification and Control",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You see exposed electrical wires hanging in a corridor used by pupils. What is the best action?",
+                "options": [
+                    {
+                        "text": "Wrap the wires with insulating tape yourself and leave them where they are",
+                        "correct": false
+                    },
+                    {
+                        "text": "Leave it until the monthly inspection",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep people away with a barrier, report it, and call a qualified electrician",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell pupils to avoid the area but put up no sign or barrier and report nothing",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Exposed live wires can kill. Make the area safe immediately and use a qualified person for the repair."
+            },
+            {
+                "competency": "Hazard Identification and Control",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "A corridor has just been mopped and is wet. What should you do?",
+                "options": [
+                    {
+                        "text": "Put up a \"wet floor\" sign until it is dry",
+                        "correct": true
+                    },
+                    {
+                        "text": "Tell pupils to run through quickly so that they do not slip on it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Leave the area with no warning and let people find their own way",
+                        "correct": false
+                    },
+                    {
+                        "text": "Close the school until the floor dries, even if that takes the whole day",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A warning sign reduces slips and falls while the floor is wet."
+            },
+            {
+                "competency": "Fire Safety",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which three things does a fire need to burn?",
+                "options": [
+                    {
+                        "text": "Heat, smoke and running water",
+                        "correct": false
+                    },
+                    {
+                        "text": "Fuel, wind and cold water",
+                        "correct": false
+                    },
+                    {
+                        "text": "Heat, fuel and oxygen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Oxygen, ash and heat from the sun",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Fire needs heat, fuel and oxygen. Removing any one of them puts the fire out."
+            },
+            {
+                "competency": "Fire Safety",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which is suitable for fighting a fire in electrical equipment?",
+                "options": [
+                    {
+                        "text": "A bucket of water",
+                        "correct": false
+                    },
+                    {
+                        "text": "A water extinguisher",
+                        "correct": false
+                    },
+                    {
+                        "text": "A wet blanket thrown over the plugs",
+                        "correct": false
+                    },
+                    {
+                        "text": "A CO2 or dry powder extinguisher",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Water conducts electricity and can cause shock. CO2 or dry powder extinguishers are designed for electrical fires."
+            },
+            {
+                "competency": "Fire Safety",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "During a fire drill, a teacher counts the class at the assembly point and one pupil is missing. What should the teacher do?",
+                "options": [
+                    {
+                        "text": "Run back into the building to search alone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the head teacher or fire team immediately and do not re-enter the building",
+                        "correct": true
+                    },
+                    {
+                        "text": "Wait ten minutes to see if the pupil arrives",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send other pupils back to search the classroom",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Re-entering endangers more lives. Report the missing person at once so trained responders can search."
+            },
+            {
+                "competency": "Fire Safety",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You find an exit door padlocked during school hours \"to prevent theft\". What should you do?",
+                "options": [
+                    {
+                        "text": "Leave it as it is, because theft is the greater risk at night in this area",
+                        "correct": false
+                    },
+                    {
+                        "text": "Lock the other exits as well so that nobody can get in from outside",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep the only key with the watchman at the gate on the far side of the whole compound",
+                        "correct": false
+                    },
+                    {
+                        "text": "Report it to management and have the lock removed so the door opens from inside",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Exits must be unlocked and clear whenever people are in the building, or people could be trapped in a fire."
+            },
+            {
+                "competency": "Contractor and Repair Management",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Before hiring a contractor for electrical work, what should you check?",
+                "options": [
+                    {
+                        "text": "That the contractor is a relative of a staff member who recommended him",
+                        "correct": false
+                    },
+                    {
+                        "text": "That the contractor has the lowest price, whatever the quality of the work done",
+                        "correct": false
+                    },
+                    {
+                        "text": "Licence or qualifications, references, and a written quotation with scope",
+                        "correct": true
+                    },
+                    {
+                        "text": "That the contractor owns a new vehicle and has a smart business card",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Verify competence and agree a written scope and price. Poor electrical work is a serious safety risk."
+            },
+            {
+                "competency": "Cleaning and Sanitation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which best keeps school toilets hygienic?",
+                "options": [
+                    {
+                        "text": "Cleaning only when the toilets smell",
+                        "correct": false
+                    },
+                    {
+                        "text": "A cleaning schedule with a signed checklist, and soap and water at handwashing points",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cleaning once at the start of the term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Locking the toilets between lessons",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Regular, checked cleaning and working handwashing reduce disease spread among pupils."
+            },
+            {
+                "competency": "Contractor and Repair Management",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A contractor finishes repairing a classroom roof and asks for full payment immediately. What should you do before paying?",
+                "options": [
+                    {
+                        "text": "Pay now in full, to keep the contractor friendly and willing to return",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pay half now and forget the check, since the work looks fine from outside",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the pupils whether the roof looks good and pay if they are satisfied",
+                        "correct": false
+                    },
+                    {
+                        "text": "Inspect the work against the written scope and quotation, then sign off",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Check that the work meets the agreed scope and quality before payment. This protects school funds and safety."
+            }
+        ]
+    },
+    {
+        "skill_slug": "laboratory-management",
+        "skill_name": "Laboratory Management",
+        "description": "Checks safe storage and labelling of chemicals, laboratory safety practice, equipment and inventory care, practical preparation, and waste and emergency response.",
+        "competencies": [
+            {
+                "name": "Chemical Storage and Labelling",
+                "description": "Stores and labels chemicals by hazard in a secure place",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Laboratory Safety and PPE",
+                "description": "Uses protective equipment and safe working methods",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Equipment Care and Inventory",
+                "description": "Looks after equipment and keeps stock records current",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Practical Preparation",
+                "description": "Prepares practicals in advance with enough safe materials",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Waste Disposal and Emergencies",
+                "description": "Disposes of waste safely and responds correctly to spills and accidents",
+                "weight": 25,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Chemical Storage and Labelling",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is the best way to store chemicals in a school laboratory store?",
+                "options": [
+                    {
+                        "text": "In alphabetical order on one shelf, regardless of the hazards",
+                        "correct": false
+                    },
+                    {
+                        "text": "In a locked, cool, ventilated store, grouped by hazard and clearly labelled",
+                        "correct": true
+                    },
+                    {
+                        "text": "In the preparation room so teachers can reach them quickly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wherever there is space, with the heaviest bottles on top",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Chemicals should be locked away and grouped by hazard so that incompatible ones, such as acids and bases, are kept apart."
+            },
+            {
+                "competency": "Chemical Storage and Labelling",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You find a bottle with a faded label. What is the correct action?",
+                "options": [
+                    {
+                        "text": "Smell it carefully to identify it before deciding what to do with it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour it down the sink to be safe and rinse the bottle for reuse",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use it in a class practical, since it is probably only water or a mild solution",
+                        "correct": false
+                    },
+                    {
+                        "text": "Do not use it, mark it unknown, and seek advice on safe disposal",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Unidentified chemicals can be dangerous. Never use, smell or taste them. Isolate and ask a qualified person for safe disposal."
+            },
+            {
+                "competency": "Chemical Storage and Labelling",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which information should be on a chemical container label? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Chemical name and concentration",
+                        "correct": true
+                    },
+                    {
+                        "text": "The name of the pupil who last used it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Hazard warning, such as corrosive or flammable",
+                        "correct": true
+                    },
+                    {
+                        "text": "The price paid at purchase",
+                        "correct": false
+                    },
+                    {
+                        "text": "Date received or prepared",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A label should identify the substance, warn of its hazard, and show when it was received or prepared."
+            },
+            {
+                "competency": "Laboratory Safety and PPE",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is the minimum protective gear for a pupil doing a chemistry practical?",
+                "options": [
+                    {
+                        "text": "Normal clothes and open sandals, as long as the experiment looks simple",
+                        "correct": false
+                    },
+                    {
+                        "text": "Gloves only, since goggles and aprons make pupils too hot",
+                        "correct": false
+                    },
+                    {
+                        "text": "A lab coat, safety goggles, closed shoes, and tied-back hair",
+                        "correct": true
+                    },
+                    {
+                        "text": "No protection if the chemicals are weak or the amounts are very small",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Eyes and skin must be protected from splashes, even with dilute solutions. Closed shoes and tied hair also prevent injuries."
+            },
+            {
+                "competency": "Laboratory Safety and PPE",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You see a pupil about to draw sodium hydroxide solution into a pipette by mouth. What should you do?",
+                "options": [
+                    {
+                        "text": "Let him continue if he is careful and does not swallow any of the liquid",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell him to rinse his mouth afterwards and carry on with the practical",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask him to hold his breath while doing it and spit out any liquid",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stop him at once and show him how to use a pipette filler",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Never pipette by mouth. Chemicals can be swallowed or inhaled, so use a pipette filler or bulb."
+            },
+            {
+                "competency": "Laboratory Safety and PPE",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "How should you dilute concentrated acid?",
+                "options": [
+                    {
+                        "text": "Add the acid slowly to the water, stirring",
+                        "correct": true
+                    },
+                    {
+                        "text": "Add the water quickly and all at once to the acid",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour both together at the same time into a flask",
+                        "correct": false
+                    },
+                    {
+                        "text": "Heat the acid first, then add water to it fast",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Always add acid to water slowly. Adding water to concentrated acid can cause violent boiling and splashing."
+            },
+            {
+                "competency": "Waste Disposal and Emergencies",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Acid splashes onto a pupil's forearm. What is the right immediate action?",
+                "options": [
+                    {
+                        "text": "Wipe it off with a dry cloth",
+                        "correct": false
+                    },
+                    {
+                        "text": "Put sodium hydroxide solution on it to neutralise the acid",
+                        "correct": false
+                    },
+                    {
+                        "text": "Rinse under running water for at least 10 minutes, remove any wet clothing, and seek help",
+                        "correct": true
+                    },
+                    {
+                        "text": "Cover it with butter",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Plenty of running water dilutes and removes the chemical. Do not use neutralising chemicals on skin, because that can cause further damage."
+            },
+            {
+                "competency": "Waste Disposal and Emergencies",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "After a practical, you have leftover solution containing lead or copper salts. What should you do?",
+                "options": [
+                    {
+                        "text": "Pour it onto the school garden so that the plants and soil absorb it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pour it down the sink with plenty of water running to dilute it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Collect it in a labelled waste container for proper disposal",
+                        "correct": true
+                    },
+                    {
+                        "text": "Leave it in an open beaker in the lab to evaporate over some days",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Heavy-metal waste is toxic and harms water and soil. It must be collected, labelled and disposed of safely."
+            },
+            {
+                "competency": "Equipment Care and Inventory",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "How should a microscope be cared for after use?",
+                "options": [
+                    {
+                        "text": "Remove the slide, clean lenses with lens paper, lower the stage, cover it",
+                        "correct": true
+                    },
+                    {
+                        "text": "Leave the slide on the stage ready for the next class to use",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wipe the lenses with a cloth soaked in water, then dry them with the same cloth",
+                        "correct": false
+                    },
+                    {
+                        "text": "Store it uncovered on the window sill where the light is good",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Cleaning with lens paper, removing slides and covering the microscope protect the lenses and the mechanism."
+            },
+            {
+                "competency": "Equipment Care and Inventory",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A stock check shows several expired chemicals and fewer beakers than the register says. What is the best action?",
+                "options": [
+                    {
+                        "text": "Remove the expired chemicals from the register and say nothing",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignore the beakers because glass often breaks",
+                        "correct": false
+                    },
+                    {
+                        "text": "Update the register, set the expired items aside for safe disposal, and report the shortages",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use the expired chemicals first so they are not wasted",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Records must match what is in stock. Expired chemicals need safe disposal, and shortages must be reported and replaced."
+            },
+            {
+                "competency": "Practical Preparation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What should a laboratory technician do before a practical lesson?",
+                "options": [
+                    {
+                        "text": "Try the experiment, label materials for each group, and check safety items",
+                        "correct": true
+                    },
+                    {
+                        "text": "Prepare materials only after pupils arrive, while they wait in the lab",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give each pupil as much chemical as they want so that nobody runs short or waits",
+                        "correct": false
+                    },
+                    {
+                        "text": "Leave all preparation to the pupils while the teacher marks books",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Trying the practical in advance and preparing enough labelled material reduces accidents and wasted time."
+            },
+            {
+                "competency": "Practical Preparation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A planned practical releases a toxic gas. What should you do?",
+                "options": [
+                    {
+                        "text": "Let pupils do it at their desks with the windows closed to keep the smell inside",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a fume cupboard or ventilated area, or a teacher demonstration with small amounts",
+                        "correct": true
+                    },
+                    {
+                        "text": "Let each pupil use a larger amount to see the result more clearly",
+                        "correct": false
+                    },
+                    {
+                        "text": "Skip the risk assessment, since the teacher has done this experiment many times before",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Toxic gases should be produced only in small quantities with strong ventilation, and often as a controlled teacher demonstration."
+            }
+        ]
+    }
+]

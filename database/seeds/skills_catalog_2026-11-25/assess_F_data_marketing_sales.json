@@ -1,0 +1,2491 @@
+[
+    {
+        "skill_slug": "excel-data-analysis",
+        "skill_name": "Excel / Data Analysis",
+        "description": "Checks practical Excel skills: formulas, data cleaning, PivotTables, charts and checking the accuracy of results.",
+        "competencies": [
+            {
+                "name": "Formulas and functions",
+                "description": "Uses SUM, SUMIF, VLOOKUP and cell references correctly.",
+                "weight": 30,
+                "is_critical": 1
+            },
+            {
+                "name": "Data cleaning",
+                "description": "Prepares messy lists so they can be analysed.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "PivotTables and summaries",
+                "description": "Summarises large lists by group and keeps summaries up to date.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Charts and reporting",
+                "description": "Chooses and formats charts that are easy to read.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Accuracy and checking",
+                "description": "Checks results against the source before sharing them.",
+                "weight": 15,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Formulas and functions",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Cells A2:A5 contain Paid, Unpaid, Paid, Paid. Cells B2:B5 contain 50000, 30000, 20000, 10000. What does =SUMIF(A2:A5,\"Paid\",B2:B5) return?",
+                "options": [
+                    {
+                        "text": "110000",
+                        "correct": false
+                    },
+                    {
+                        "text": "30000",
+                        "correct": false
+                    },
+                    {
+                        "text": "80000",
+                        "correct": true
+                    },
+                    {
+                        "text": "3",
+                        "correct": false
+                    }
+                ],
+                "explanation": "SUMIF adds only the values in B where column A says Paid: 50000 + 20000 + 10000 = 80000."
+            },
+            {
+                "competency": "Formulas and functions",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Admission numbers are in column A, names in B and fee balances in C (rows 2 to 100). You type an admission number in F2. Which formula returns that student's fee balance using an exact match?",
+                "options": [
+                    {
+                        "text": "=VLOOKUP(F2,A2:C100,3,FALSE)",
+                        "correct": true
+                    },
+                    {
+                        "text": "=VLOOKUP(F2,$A$2:$C$100,3,TRUE)",
+                        "correct": false
+                    },
+                    {
+                        "text": "=HLOOKUP(F2,A2:C100,3,FALSE)",
+                        "correct": false
+                    },
+                    {
+                        "text": "=VLOOKUP(F2,A2:C100,4,FALSE)",
+                        "correct": false
+                    }
+                ],
+                "explanation": "VLOOKUP with the last argument FALSE finds an exact match and column index 3 returns the balance in column C."
+            },
+            {
+                "competency": "Formulas and functions",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "In D2 you type =B2*C1, where C1 holds a commission rate. When you copy the formula down, D3 gives a wrong answer. Which formula in D2, copied down, will use C1 correctly in every row?",
+                "options": [
+                    {
+                        "text": "=ROUND($B2*C1,0)",
+                        "correct": false
+                    },
+                    {
+                        "text": "=B$2*C1",
+                        "correct": false
+                    },
+                    {
+                        "text": "=$B$2*C1",
+                        "correct": false
+                    },
+                    {
+                        "text": "=B2*$C$1",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Dollar signs make C1 an absolute reference, so it does not move when the formula is copied down."
+            },
+            {
+                "competency": "Data cleaning",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Your list of student records has some students entered twice. Which Excel feature removes duplicate rows?",
+                "options": [
+                    {
+                        "text": "Home > Merge and Center",
+                        "correct": false
+                    },
+                    {
+                        "text": "Data > Remove Duplicates",
+                        "correct": true
+                    },
+                    {
+                        "text": "View > Freeze Panes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Insert > Header and Footer",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Data > Remove Duplicates deletes repeated rows based on the columns you choose."
+            },
+            {
+                "competency": "Data cleaning",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "A column of parents' phone numbers has extra spaces and mixed formats, such as 0712345678 and 712345678. Which actions help to clean it? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Use TRIM to remove extra spaces around the numbers",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sort the column from A to Z so the formats become equal",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use Find and Replace or a formula to give every number the same format",
+                        "correct": true
+                    },
+                    {
+                        "text": "Delete every row where the number looks different",
+                        "correct": false
+                    },
+                    {
+                        "text": "Format the column as Text so a leading zero is not dropped",
+                        "correct": true
+                    }
+                ],
+                "explanation": "TRIM removes extra spaces, one common format makes numbers consistent, and Text format keeps a leading zero. Sorting does not change formats, and deleting rows loses data."
+            },
+            {
+                "competency": "Data cleaning",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You import fee amounts from the school system. The total from SUM is lower than expected, and some amounts are left-aligned with a small green triangle. What is the most likely cause?",
+                "options": [
+                    {
+                        "text": "The worksheet has already run out of empty rows",
+                        "correct": false
+                    },
+                    {
+                        "text": "Some amounts are stored as text, not numbers",
+                        "correct": true
+                    },
+                    {
+                        "text": "The formula points to a different workbook that is closed",
+                        "correct": false
+                    },
+                    {
+                        "text": "The file is too large for Excel to add up the numbers",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Numbers stored as text are ignored by SUM. Convert them to real numbers."
+            },
+            {
+                "competency": "PivotTables and summaries",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a PivotTable mainly used for?",
+                "options": [
+                    {
+                        "text": "Summarising a list by group, such as fees per class",
+                        "correct": true
+                    },
+                    {
+                        "text": "Locking cells so that nobody else can edit the data in them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Converting a whole worksheet into a PDF file to send by email",
+                        "correct": false
+                    },
+                    {
+                        "text": "Checking the spelling in many worksheets at the same time",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A PivotTable quickly summarises large lists by group, such as total fees per class, without writing many formulas."
+            },
+            {
+                "competency": "PivotTables and summaries",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your manager has 5,000 payment rows and wants total fees collected for each class and each term. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Filter each class and term one by one and add the totals on a calculator",
+                        "correct": false
+                    },
+                    {
+                        "text": "Build a PivotTable with Class in rows, Term in columns and Amount in values",
+                        "correct": true
+                    },
+                    {
+                        "text": "Sort the list by class and type the totals by hand under each group",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remove duplicates from the Class column and read the totals from there",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A PivotTable with Class in rows, Term in columns and Amount summed gives all totals in one step and can be updated."
+            },
+            {
+                "competency": "PivotTables and summaries",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You added 200 new payment rows below the data used by an existing PivotTable, but the pivot does not show them. What should you do?",
+                "options": [
+                    {
+                        "text": "Wait, because PivotTables update automatically as you type new rows",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete the old rows so that the pivot can read the new ones",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change the number format of the Amount column to Currency",
+                        "correct": false
+                    },
+                    {
+                        "text": "Refresh the PivotTable and extend its source range to the new rows",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A PivotTable does not update by itself. Refresh it, and make sure its source range (or an Excel Table) includes the new rows."
+            },
+            {
+                "competency": "Charts and reporting",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which chart is best for showing how monthly fee collection changed over 12 months?",
+                "options": [
+                    {
+                        "text": "Pie chart with 12 slices",
+                        "correct": false
+                    },
+                    {
+                        "text": "Doughnut chart",
+                        "correct": false
+                    },
+                    {
+                        "text": "Line chart",
+                        "correct": true
+                    },
+                    {
+                        "text": "Map chart",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A line chart shows change over time clearly. Pie and doughnut charts show parts of a whole, not trends."
+            },
+            {
+                "competency": "Charts and reporting",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "You are preparing a one-page chart for the head teacher. Which practices make the chart easier to understand? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Give the chart a clear title and labelled axes",
+                        "correct": true
+                    },
+                    {
+                        "text": "Remove clutter such as heavy gridlines and extra decoration",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use many bright colours and 3-D effects so it stands out",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sort categories in a logical order, such as largest to smallest",
+                        "correct": true
+                    },
+                    {
+                        "text": "Put as many different charts as possible on one page",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Clear titles, labelled axes, less clutter and a logical order help readers. Bright 3-D effects and too many charts make reading harder."
+            },
+            {
+                "competency": "Accuracy and checking",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your report total is TZS 48,500,000 but the school accounting system shows TZS 48,200,000 for the same period. What should you do first?",
+                "options": [
+                    {
+                        "text": "Find the cause of the TZS 300,000 difference, such as duplicates or gaps",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send the report anyway and say that the difference is small",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change the formula so that the total matches the accounting system",
+                        "correct": false
+                    },
+                    {
+                        "text": "Round both totals to the nearest million so the gap disappears",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A difference means something is wrong, such as duplicates, missing rows or text values. Find the cause before sharing the report."
+            }
+        ]
+    },
+    {
+        "skill_slug": "data-visualization-reporting",
+        "skill_name": "Data Visualization & Reporting",
+        "description": "Checks ability to choose suitable charts, define useful KPIs, design clear dashboards, avoid misleading visuals and explain data to an audience.",
+        "competencies": [
+            {
+                "name": "Choosing the right chart",
+                "description": "Matches the chart type to the question being answered.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "KPIs and metrics",
+                "description": "Defines clear, measurable indicators linked to goals.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Dashboard design",
+                "description": "Builds dashboards that are simple and easy to scan.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Honest, non-misleading visuals",
+                "description": "Presents data fairly without exaggerating or hiding facts.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Telling a story with data",
+                "description": "Explains findings clearly to a non-technical audience.",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Choosing the right chart",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "You want to compare the average exam score of five classes in one term. Which chart is most suitable?",
+                "options": [
+                    {
+                        "text": "Line chart joining the five classes",
+                        "correct": false
+                    },
+                    {
+                        "text": "Bar chart with one bar per class",
+                        "correct": true
+                    },
+                    {
+                        "text": "Pie chart with five slices",
+                        "correct": false
+                    },
+                    {
+                        "text": "Scatter plot of class names",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A bar or column chart compares values across separate categories clearly."
+            },
+            {
+                "competency": "Choosing the right chart",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You want to see whether students who study more hours also tend to get higher scores. Which chart best shows this relationship?",
+                "options": [
+                    {
+                        "text": "Pie chart showing each student's hours",
+                        "correct": false
+                    },
+                    {
+                        "text": "Line chart of average scores by month",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stacked area chart of scores by class",
+                        "correct": false
+                    },
+                    {
+                        "text": "Scatter plot of hours against scores",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A scatter plot shows the relationship between two numeric measures, one point per student."
+            },
+            {
+                "competency": "Choosing the right chart",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A manager asks you to show the number of students in each of 12 subjects. Some names are long, such as Information and Computer Studies. Which is most readable?",
+                "options": [
+                    {
+                        "text": "3-D pie chart with 12 slices",
+                        "correct": false
+                    },
+                    {
+                        "text": "Radar chart with 12 points",
+                        "correct": false
+                    },
+                    {
+                        "text": "Horizontal bars sorted by size",
+                        "correct": true
+                    },
+                    {
+                        "text": "Line chart joining the subjects",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A horizontal bar chart gives space for long labels, and sorting makes comparison easy. A 12-slice pie is hard to read."
+            },
+            {
+                "competency": "KPIs and metrics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a KPI (Key Performance Indicator)?",
+                "options": [
+                    {
+                        "text": "A measurable value that shows progress toward a goal",
+                        "correct": true
+                    },
+                    {
+                        "text": "A colour scheme used for charts in management dashboards",
+                        "correct": false
+                    },
+                    {
+                        "text": "A software licence that is needed for reporting tools",
+                        "correct": false
+                    },
+                    {
+                        "text": "A special type of chart used only in finance reports and audits",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A KPI is a measurable value that shows how well you are achieving an important objective."
+            },
+            {
+                "competency": "KPIs and metrics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A school wants to improve fee collection. Which is the best KPI to track?",
+                "options": [
+                    {
+                        "text": "Number of SMS reminders sent to parents each month of the term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Number of fee receipts printed by the office every week of term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Percentage of invoiced fees collected by the end of term",
+                        "correct": true
+                    },
+                    {
+                        "text": "Number of staff working in the accounts office at the school",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A KPI should measure the outcome you want. The share of invoiced fees collected shows real progress. Reminders sent only measure activity."
+            },
+            {
+                "competency": "KPIs and metrics",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "A school owner asks for a dashboard of what matters. Which of these are clearly defined KPIs? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Overall school quality, as people feel it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Attendance rate = days present divided by total school days",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fee collection rate = fees paid divided by fees invoiced",
+                        "correct": true
+                    },
+                    {
+                        "text": "Number of charts on the dashboard",
+                        "correct": false
+                    },
+                    {
+                        "text": "Student-teacher ratio = number of students divided by number of teachers",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Good KPIs have a clear formula. Attendance rate, collection rate and student-teacher ratio are all measurable. \"Overall school quality\" and \"number of charts\" are not defined measures."
+            },
+            {
+                "competency": "Dashboard design",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Where should the most important figures be placed on a dashboard?",
+                "options": [
+                    {
+                        "text": "At the bottom, after all the detailed tables",
+                        "correct": false
+                    },
+                    {
+                        "text": "At the top, where they are seen first",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hidden in a second tab to keep the page clean",
+                        "correct": false
+                    },
+                    {
+                        "text": "Spread evenly so that nothing stands out",
+                        "correct": false
+                    }
+                ],
+                "explanation": "People read from the top left first, so key summary numbers go there, with details below."
+            },
+            {
+                "competency": "Dashboard design",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The head teacher says your dashboard with 18 charts is confusing. What is the best response?",
+                "options": [
+                    {
+                        "text": "Keep the charts that answer key questions, and group them",
+                        "correct": true
+                    },
+                    {
+                        "text": "Add more colours so that each chart stands out better",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make all the charts smaller so they fit on one screen",
+                        "correct": false
+                    },
+                    {
+                        "text": "Add animations so that the page looks more modern",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Fewer, well-chosen charts that answer the main questions make a dashboard easy to use. More colour or decoration adds confusion."
+            },
+            {
+                "competency": "Dashboard design",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which is the best use of colour in a chart?",
+                "options": [
+                    {
+                        "text": "Give every single bar a different bright colour",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use red for everything that is important",
+                        "correct": false
+                    },
+                    {
+                        "text": "Change the colours on each page to keep readers interested",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use calm colours and highlight only the key bar",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Colour should have a purpose, for example to highlight the item that matters, and keep the same meaning throughout."
+            },
+            {
+                "competency": "Honest, non-misleading visuals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A bar chart's vertical axis starts at 90 instead of 0, so a rise from 92 to 95 looks huge. Why is this misleading?",
+                "options": [
+                    {
+                        "text": "Bars must always be shown in different colours",
+                        "correct": false
+                    },
+                    {
+                        "text": "Charts should never show numbers above 90 on an axis",
+                        "correct": false
+                    },
+                    {
+                        "text": "It exaggerates a small change, as bar length no longer matches value",
+                        "correct": true
+                    },
+                    {
+                        "text": "Axes must always be hidden in bar charts to be fair",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Bar length should match the value. A cut-off axis exaggerates small differences."
+            },
+            {
+                "competency": "Honest, non-misleading visuals",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Fee collection rose from 62% to 64%. Your manager asks you to make the chart show \"big growth\". What should you do?",
+                "options": [
+                    {
+                        "text": "Start the axis at 60 and do not mention that it was cut",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use 3-D bars so that the rise looks much larger",
+                        "correct": false
+                    },
+                    {
+                        "text": "Show only the last two months and hide the earlier results",
+                        "correct": false
+                    },
+                    {
+                        "text": "Show it honestly and call the rise a small improvement",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Present the data honestly, with a proper axis and context, and describe it as a small increase. Do not exaggerate."
+            },
+            {
+                "competency": "Telling a story with data",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You must present survey results to a parents' committee that is not technical. What is the best way to do it?",
+                "options": [
+                    {
+                        "text": "Show all the raw data tables first and explain every column",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give the main finding first, one or two clear charts, then an action",
+                        "correct": true
+                    },
+                    {
+                        "text": "Explain the formulas you used before showing any results",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use technical statistical terms to show your expertise",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Start with the main finding in plain words, support it with one or two clear charts and suggest an action."
+            }
+        ]
+    },
+    {
+        "skill_slug": "digital-marketing",
+        "skill_name": "Digital Marketing",
+        "description": "Checks knowledge of planning campaigns, using SMS, WhatsApp, email and social media responsibly, SEO basics, audience targeting and measuring results.",
+        "competencies": [
+            {
+                "name": "Campaign planning and goals",
+                "description": "Sets clear goals and plans campaigns around them.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Channels and permission",
+                "description": "Uses SMS, WhatsApp, email and social media properly and respects consent.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "SEO and social media",
+                "description": "Understands search visibility and effective social media posting.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Audience targeting",
+                "description": "Chooses and segments the right audience for each message.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Measurement and analytics",
+                "description": "Uses results such as cost per enquiry to improve campaigns.",
+                "weight": 20,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Campaign planning and goals",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What should you do first when planning a marketing campaign?",
+                "options": [
+                    {
+                        "text": "Design the logo and choose the colours",
+                        "correct": false
+                    },
+                    {
+                        "text": "Decide the goal and who you want to reach",
+                        "correct": true
+                    },
+                    {
+                        "text": "Buy advertising space on radio or online",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write the final social media posts for the month",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Without a clear goal and audience you cannot choose the right message, channel or budget."
+            },
+            {
+                "competency": "Campaign planning and goals",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A new private school wants more admissions for January. Which campaign goal is clear and measurable?",
+                "options": [
+                    {
+                        "text": "Make the school more popular and well known online",
+                        "correct": false
+                    },
+                    {
+                        "text": "Get as many likes and followers as possible on Facebook",
+                        "correct": false
+                    },
+                    {
+                        "text": "Post something new on Facebook every single day of term",
+                        "correct": false
+                    },
+                    {
+                        "text": "Get 60 admission enquiries by 15 December",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A SMART goal has a number, a channel and a deadline, so you can check if it was reached."
+            },
+            {
+                "competency": "Channels and permission",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Before you send marketing messages to people by SMS, WhatsApp or email, what should you have?",
+                "options": [
+                    {
+                        "text": "Their permission to contact them",
+                        "correct": true
+                    },
+                    {
+                        "text": "A list bought from a stranger",
+                        "correct": false
+                    },
+                    {
+                        "text": "A very short message",
+                        "correct": false
+                    },
+                    {
+                        "text": "A new phone number for each message",
+                        "correct": false
+                    }
+                ],
+                "explanation": "People should have agreed to receive your messages. Messages sent without permission annoy people and can damage trust."
+            },
+            {
+                "competency": "Channels and permission",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A parent replies \"STOP, do not send me more messages\" to your school's promotional SMS. What should you do?",
+                "options": [
+                    {
+                        "text": "Keep sending messages in case they change their mind later",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send one more message asking them why they decided to leave",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remove the number from the marketing list straight away",
+                        "correct": true
+                    },
+                    {
+                        "text": "Switch to sending WhatsApp promotions to that parent instead",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Respect the request: remove the number from marketing lists promptly. Continuing can anger parents and breaks trust."
+            },
+            {
+                "competency": "SEO and social media",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does SEO (Search Engine Optimisation) mean?",
+                "options": [
+                    {
+                        "text": "Paying Google to show your advert at the top of search results",
+                        "correct": false
+                    },
+                    {
+                        "text": "Sending the same email to many people at exactly the same time",
+                        "correct": false
+                    },
+                    {
+                        "text": "Creating a business account on several social media platforms",
+                        "correct": false
+                    },
+                    {
+                        "text": "Improving a site so it ranks higher in free search results",
+                        "correct": true
+                    }
+                ],
+                "explanation": "SEO is the work of improving a website so that it appears higher in unpaid (organic) search results."
+            },
+            {
+                "competency": "SEO and social media",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which action helps a school website appear in local searches such as \"primary school in Arusha\"?",
+                "options": [
+                    {
+                        "text": "Repeat the word \"school\" hundreds of times on the page",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use clear page titles and list the school on Google Business Profile",
+                        "correct": true
+                    },
+                    {
+                        "text": "Hide extra keywords in white text on a white background",
+                        "correct": false
+                    },
+                    {
+                        "text": "Buy thousands of visitors from unknown websites online",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Clear titles and useful content with words people search for, plus a local business listing, help search engines understand the school."
+            },
+            {
+                "competency": "SEO and social media",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Your school's Facebook page has low engagement. Which actions are likely to help? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Post real photos and short videos of school activities (with permission)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Buy thousands of followers so the page looks popular",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reply to comments and messages quickly",
+                        "correct": true
+                    },
+                    {
+                        "text": "Test posting times when parents are most likely to be online",
+                        "correct": true
+                    },
+                    {
+                        "text": "Post the same advert twenty times a day",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Real photos and videos, quick replies and posting when parents are online build engagement. Fake followers and posting the same ad many times do not."
+            },
+            {
+                "competency": "Audience targeting",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A tuition centre wants to advertise Form 4 revision classes on Facebook. Who should the advert target?",
+                "options": [
+                    {
+                        "text": "Everyone in the world, so that the advert gets the most views",
+                        "correct": false
+                    },
+                    {
+                        "text": "Children under 13 years old in any region of the country",
+                        "correct": false
+                    },
+                    {
+                        "text": "Parents and students near the centre who are interested in education",
+                        "correct": true
+                    },
+                    {
+                        "text": "People chosen at random each day, whatever their interests",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Good targeting focuses on people likely to buy: parents and students in the area who are interested in education."
+            },
+            {
+                "competency": "Audience targeting",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "You split your parent contacts into groups, such as nursery parents and secondary parents, so each group gets a suitable message. What is this called?",
+                "options": [
+                    {
+                        "text": "Spamming",
+                        "correct": false
+                    },
+                    {
+                        "text": "Segmentation",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rebranding",
+                        "correct": false
+                    },
+                    {
+                        "text": "Cold calling by phone",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Segmentation divides an audience into groups with similar needs so messages are more relevant."
+            },
+            {
+                "competency": "Measurement and analytics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What does click-through rate (CTR) measure?",
+                "options": [
+                    {
+                        "text": "Clicks divided by the number of times the advert was shown",
+                        "correct": true
+                    },
+                    {
+                        "text": "Money spent on the advert divided by the number of enquiries",
+                        "correct": false
+                    },
+                    {
+                        "text": "Total followers divided by the number of posts made",
+                        "correct": false
+                    },
+                    {
+                        "text": "Messages sent divided by the number of messages read",
+                        "correct": false
+                    }
+                ],
+                "explanation": "CTR = clicks divided by impressions, showing how many people who saw the advert clicked it."
+            },
+            {
+                "competency": "Measurement and analytics",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Ad A cost TZS 100,000 and brought 50 enquiries. Ad B cost TZS 150,000 and brought 60 enquiries. Your goal is enquiries at the lowest cost. Where should extra budget go?",
+                "options": [
+                    {
+                        "text": "Ad B, because it brought more enquiries in total than Ad A",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ad A, at TZS 2,000 per enquiry against TZS 2,500",
+                        "correct": true
+                    },
+                    {
+                        "text": "Split equally, because the costs are the same for both",
+                        "correct": false
+                    },
+                    {
+                        "text": "Neither, because the results cannot be compared fairly",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Ad A costs TZS 2,000 per enquiry (100,000 / 50). Ad B costs TZS 2,500 (150,000 / 60). Ad A is cheaper per enquiry."
+            },
+            {
+                "competency": "Measurement and analytics",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Your campaign got 20,000 views but almost no enquiries. What does this most likely tell you?",
+                "options": [
+                    {
+                        "text": "The campaign was successful because views are the main goal",
+                        "correct": false
+                    },
+                    {
+                        "text": "You should spend more money on the same advert",
+                        "correct": false
+                    },
+                    {
+                        "text": "Nothing, because views and enquiries are not related",
+                        "correct": false
+                    },
+                    {
+                        "text": "People saw it, but the message or call to action may be weak",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Views show reach, not results. Check the message, call to action, audience and how easy it is to enquire."
+            }
+        ]
+    },
+    {
+        "skill_slug": "social-media-management",
+        "skill_name": "Social Media Management",
+        "description": "Checks ability to plan content, pick suitable platforms, manage community conversations, read analytics and handle reputation problems for an organisation.",
+        "competencies": [
+            {
+                "name": "Content planning and calendar",
+                "description": "Plans a varied schedule of posts around key dates.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Platform choice",
+                "description": "Chooses the right platform and feature for each purpose.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Community management",
+                "description": "Responds to followers politely, quickly and safely.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Analytics",
+                "description": "Reads metrics correctly to judge what works.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Crisis handling and reputation",
+                "description": "Responds calmly and honestly to errors, rumours and complaints.",
+                "weight": 25,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Content planning and calendar",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a content calendar?",
+                "options": [
+                    {
+                        "text": "A list of public holidays in the whole country",
+                        "correct": false
+                    },
+                    {
+                        "text": "A report of last month's followers and likes",
+                        "correct": false
+                    },
+                    {
+                        "text": "A schedule of what to post, where and when",
+                        "correct": true
+                    },
+                    {
+                        "text": "A design template for posters and social media banners",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A content calendar is a schedule showing what will be posted, on which platform and when."
+            },
+            {
+                "competency": "Content planning and calendar",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You manage a school's pages. Exams, a holiday and the admission season are coming in the next month. How should you plan?",
+                "options": [
+                    {
+                        "text": "Post only on the day when something actually happens",
+                        "correct": false
+                    },
+                    {
+                        "text": "Plan next month's posts around those key dates",
+                        "correct": true
+                    },
+                    {
+                        "text": "Copy what other schools posted at the same time last year",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait for ideas and post whenever you feel inspired",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Planning ahead around key dates keeps posting regular and relevant. Last-minute posting leads to gaps and mistakes."
+            },
+            {
+                "competency": "Content planning and calendar",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which items belong in a healthy content mix for a school's Facebook page? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Student achievements and events (with parent permission)",
+                        "correct": true
+                    },
+                    {
+                        "text": "Reminders about term dates and deadlines",
+                        "correct": true
+                    },
+                    {
+                        "text": "Posts that criticise staff or other schools",
+                        "correct": false
+                    },
+                    {
+                        "text": "Short learning tips for parents and students",
+                        "correct": true
+                    },
+                    {
+                        "text": "\"Register now\" adverts only, every single day",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A mix of achievements, useful reminders and educational tips keeps followers interested. Posting only adverts or staff politics does not."
+            },
+            {
+                "competency": "Platform choice",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which platform is best known for professional networking and recruiting?",
+                "options": [
+                    {
+                        "text": "TikTok",
+                        "correct": false
+                    },
+                    {
+                        "text": "Instagram",
+                        "correct": false
+                    },
+                    {
+                        "text": "WhatsApp Status",
+                        "correct": false
+                    },
+                    {
+                        "text": "LinkedIn",
+                        "correct": true
+                    }
+                ],
+                "explanation": "LinkedIn is built for professional profiles, jobs and business networking."
+            },
+            {
+                "competency": "Platform choice",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A school wants to share fun short videos of a student talent show to reach young people. Which is the best choice?",
+                "options": [
+                    {
+                        "text": "Short videos on TikTok or Instagram Reels",
+                        "correct": true
+                    },
+                    {
+                        "text": "Long text posts on LinkedIn and company blogs",
+                        "correct": false
+                    },
+                    {
+                        "text": "PDF newsletters sent by email to all parents",
+                        "correct": false
+                    },
+                    {
+                        "text": "Photos of printed notices uploaded to Facebook",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Short vertical videos suit TikTok and Instagram Reels, where young people spend time."
+            },
+            {
+                "competency": "Platform choice",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A school wants to send fee reminders to parents so that parents do not see each other's phone numbers. Which approach is best?",
+                "options": [
+                    {
+                        "text": "Post the reminder in a large WhatsApp group with all parents",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write the reminder in a Facebook comment",
+                        "correct": false
+                    },
+                    {
+                        "text": "Send individual messages or use a broadcast list",
+                        "correct": true
+                    },
+                    {
+                        "text": "Post the reminder as a WhatsApp Status only",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Individual messages or a broadcast list deliver the reminder privately. A large group shows all numbers to everyone."
+            },
+            {
+                "competency": "Community management",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A parent comments on your school's Facebook post: \"My son's result slip was wrong.\" How should you respond?",
+                "options": [
+                    {
+                        "text": "Delete the comment so others do not see it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reply politely and ask to continue by private message",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ask the parent to stop complaining about the school online",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait a week and see whether other people comment",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Reply quickly and politely in public to show you care, then move private details to a direct message or phone call."
+            },
+            {
+                "competency": "Community management",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "One follower keeps posting abusive language and insults to other parents on your page. What is the best action?",
+                "options": [
+                    {
+                        "text": "Answer the person using the same rude language they used",
+                        "correct": false
+                    },
+                    {
+                        "text": "Delete every negative comment from every parent on the page",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ignore it, because abusive people usually stop on their own",
+                        "correct": false
+                    },
+                    {
+                        "text": "Remove abusive comments, warn them, and block if it continues",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Follow clear page rules: hide or remove abusive comments, warn the person, and block if it continues. Keep a record. Honest complaints should not be deleted."
+            },
+            {
+                "competency": "Analytics",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which metric counts how many different people saw your post?",
+                "options": [
+                    {
+                        "text": "Impressions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Followers",
+                        "correct": false
+                    },
+                    {
+                        "text": "Reach",
+                        "correct": true
+                    },
+                    {
+                        "text": "Shares",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Reach counts unique people. Impressions count total views, including repeat views by the same person."
+            },
+            {
+                "competency": "Analytics",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Post A had a reach of 10,000 and 50 reactions. Post B had a reach of 2,000 and 100 reactions. Using reactions divided by reach, which post had the higher engagement rate?",
+                "options": [
+                    {
+                        "text": "Post B, with 5% against 0.5%",
+                        "correct": true
+                    },
+                    {
+                        "text": "Post A, with 0.5% against 5%",
+                        "correct": false
+                    },
+                    {
+                        "text": "Both are equal because both have reactions",
+                        "correct": false
+                    },
+                    {
+                        "text": "Post A, because its reach is larger",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Post A: 50 / 10,000 = 0.5%. Post B: 100 / 2,000 = 5%. Post B performed better."
+            },
+            {
+                "competency": "Crisis handling and reputation",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A false post says a pupil was seriously injured at your school. It is spreading on WhatsApp and Facebook. What is the best first step?",
+                "options": [
+                    {
+                        "text": "Delete all the comments and say nothing about it to anyone",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell school leadership, confirm the facts, then prepare a statement",
+                        "correct": true
+                    },
+                    {
+                        "text": "Post an angry denial straight away, before checking any facts",
+                        "correct": false
+                    },
+                    {
+                        "text": "Wait quietly for the rumour to die down by itself",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Inform school leadership immediately and check the facts. Then give an approved, honest statement. Acting without facts can make it worse."
+            },
+            {
+                "competency": "Crisis handling and reputation",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Your school page published a wrong exam date. What is the best practice?",
+                "options": [
+                    {
+                        "text": "Quietly delete the post and hope that nobody saw the mistake",
+                        "correct": false
+                    },
+                    {
+                        "text": "Blame the teacher who gave you the wrong date to protect yourself",
+                        "correct": false
+                    },
+                    {
+                        "text": "Post a clear correction, apologise briefly and inform parents",
+                        "correct": true
+                    },
+                    {
+                        "text": "Leave it, because parents will find the right date themselves",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Correct the mistake quickly, say so openly and make sure affected parents are informed. Hiding it damages trust."
+            }
+        ]
+    },
+    {
+        "skill_slug": "content-writing",
+        "skill_name": "Content Writing & Copywriting",
+        "description": "Checks ability to write clearly for an audience, create effective headlines and calls to action, edit carefully, and avoid plagiarism and unchecked facts.",
+        "competencies": [
+            {
+                "name": "Audience and purpose",
+                "description": "Writes for the reader with a clear goal.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Clarity and structure",
+                "description": "Uses simple, well-organised writing.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Headlines and persuasion",
+                "description": "Writes honest headlines and calls to action that work.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Editing and proofreading",
+                "description": "Finds and corrects errors before publishing.",
+                "weight": 20,
+                "is_critical": 1
+            },
+            {
+                "name": "Originality and fact-checking",
+                "description": "Uses original work and checks facts and sources.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Audience and purpose",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What should you think about before you start writing?",
+                "options": [
+                    {
+                        "text": "How many pages you will be able to fill with text",
+                        "correct": false
+                    },
+                    {
+                        "text": "Who the readers are and what you want them to do",
+                        "correct": true
+                    },
+                    {
+                        "text": "Which difficult words you can use to impress people",
+                        "correct": false
+                    },
+                    {
+                        "text": "Which font will look the most professional on the page",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Good writing begins with knowing who will read it and what you want them to understand or do."
+            },
+            {
+                "competency": "Audience and purpose",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You must write a fee-deadline notice for parents, and many of them read English as a second language. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Use formal legal language so the notice sounds serious",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write one long paragraph that explains the whole fee policy",
+                        "correct": false
+                    },
+                    {
+                        "text": "Add idioms and proverbs to make it interesting",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use short sentences with the date, the TZS amount and how to pay",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Short sentences, simple words and clear details (date, amount, how to pay) make the notice easy to act on."
+            },
+            {
+                "competency": "Clarity and structure",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which sentence is the clearest?",
+                "options": [
+                    {
+                        "text": "Parents should pay the fees before 30 November.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Fees are to be paid by parents, who should make sure payment happens before 30 November.",
+                        "correct": false
+                    },
+                    {
+                        "text": "It is required that fees be settled by parents at a time prior to 30 November.",
+                        "correct": false
+                    },
+                    {
+                        "text": "There is an expectation that payment of fees will take place before the 30 November date.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Short, active sentences are easiest to understand. Long passive sentences hide who must act."
+            },
+            {
+                "competency": "Clarity and structure",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "You are drafting a school newsletter. Which practices improve clarity? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Use long, complex words to sound professional",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep paragraphs short, with one main idea each",
+                        "correct": true
+                    },
+                    {
+                        "text": "Use headings and bullet points for lists of dates",
+                        "correct": true
+                    },
+                    {
+                        "text": "Prefer active verbs, such as \"The school will close\"",
+                        "correct": true
+                    },
+                    {
+                        "text": "Put the most important information at the very end",
+                        "correct": false
+                    }
+                ],
+                "explanation": "One idea per paragraph, headings or bullets and active verbs all help readers. Long words and burying key information make reading harder."
+            },
+            {
+                "competency": "Headlines and persuasion",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which headline is the most specific and useful for parents?",
+                "options": [
+                    {
+                        "text": "Big news is coming from our school this month, so stay tuned!",
+                        "correct": false
+                    },
+                    {
+                        "text": "You will not believe what happened at our school this week!",
+                        "correct": false
+                    },
+                    {
+                        "text": "Admissions open for Standard One: apply by 30 November",
+                        "correct": true
+                    },
+                    {
+                        "text": "Important school announcement for everybody in the community",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A good headline tells readers exactly what the news is and what to do."
+            },
+            {
+                "competency": "Headlines and persuasion",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You are writing a short WhatsApp message to promote after-school Maths classes. Which version has a clear call to action?",
+                "options": [
+                    {
+                        "text": "To reserve a place, reply \"YES\" on WhatsApp before Friday.",
+                        "correct": true
+                    },
+                    {
+                        "text": "Our Maths classes are very good and useful for every child.",
+                        "correct": false
+                    },
+                    {
+                        "text": "We have many experienced teachers who love teaching.",
+                        "correct": false
+                    },
+                    {
+                        "text": "We hope that you will consider our classes in the future.",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A call to action tells the reader exactly what to do and by when."
+            },
+            {
+                "competency": "Headlines and persuasion",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "Which sentence for a school advert is both persuasive and honest?",
+                "options": [
+                    {
+                        "text": "We guarantee an A grade for every single student",
+                        "correct": false
+                    },
+                    {
+                        "text": "Our Form 4 pass rate rose from 70% to 78% in 2025",
+                        "correct": true
+                    },
+                    {
+                        "text": "We are the best school in all of Africa, with no doubt",
+                        "correct": false
+                    },
+                    {
+                        "text": "Other schools in town are failing their students",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Honest persuasion uses specific facts that can be proven. Guarantees, unproven \"best\" claims and attacks on others are misleading."
+            },
+            {
+                "competency": "Editing and proofreading",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is a good way to find mistakes in your own writing?",
+                "options": [
+                    {
+                        "text": "Take a short break, then read it aloud slowly",
+                        "correct": true
+                    },
+                    {
+                        "text": "Rely only on the spellchecker in your software",
+                        "correct": false
+                    },
+                    {
+                        "text": "Read only the first paragraph and the last one",
+                        "correct": false
+                    },
+                    {
+                        "text": "Publish it and let readers report errors",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Leaving the text for a while and reading it aloud and slowly helps you notice errors you missed before."
+            },
+            {
+                "competency": "Editing and proofreading",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Why is a spellchecker alone not enough?",
+                "options": [
+                    {
+                        "text": "It only works for text written in the Swahili language",
+                        "correct": false
+                    },
+                    {
+                        "text": "It always removes correct words from the text you type",
+                        "correct": false
+                    },
+                    {
+                        "text": "It cannot check any grammar mistakes at all in a text",
+                        "correct": false
+                    },
+                    {
+                        "text": "It misses wrongly used real words and wrong facts",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Spellcheckers miss correctly spelled but wrong words, such as \"there\" for \"their\", and cannot check dates, names or numbers."
+            },
+            {
+                "competency": "Editing and proofreading",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A colleague asks you to edit a parents' notice with dates, amounts in TZS and a phone number. Which check is the most important before it is published?",
+                "options": [
+                    {
+                        "text": "Check that the headline is written in a bigger font size",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make sure the notice fills at least one whole page",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check dates, amounts and the phone number against the source",
+                        "correct": true
+                    },
+                    {
+                        "text": "Add more adjectives to make it more attractive",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Wrong dates, amounts or phone numbers cause real problems. Check them against the official source."
+            },
+            {
+                "competency": "Originality and fact-checking",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You find a perfect paragraph on another school's website and want to use it in your own blog post. What should you do?",
+                "options": [
+                    {
+                        "text": "Copy it exactly, because it is public on the internet",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copy it and change only a few of the words in it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Copy it and remove the other school's name from it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Write your own version, and credit them if you use their ideas",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Copying someone's work is plagiarism. Write in your own words, and credit or ask permission if you use their words or ideas."
+            },
+            {
+                "competency": "Originality and fact-checking",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A blog draft says \"Studies show 90% of students prefer online lessons\" with no source. What should you do before using it?",
+                "options": [
+                    {
+                        "text": "Keep it, because it supports the argument",
+                        "correct": false
+                    },
+                    {
+                        "text": "Find and check the source, or remove the number",
+                        "correct": true
+                    },
+                    {
+                        "text": "Change it to 95% so it sounds more recent",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep it, but add the word \"maybe\" before the number",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Statistics without a source may be false. Find the original reliable source, or do not use the number."
+            }
+        ]
+    },
+    {
+        "skill_slug": "graphic-design-basics",
+        "skill_name": "Graphic Design Basics",
+        "description": "Checks understanding of layout, colour, typography, file formats and resolution, brand consistency, and preparing files for print and social media.",
+        "competencies": [
+            {
+                "name": "Layout and composition",
+                "description": "Arranges elements so the main message is clear.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Colour and typography",
+                "description": "Uses colour and fonts for readability and meaning.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "File formats and resolution",
+                "description": "Chooses suitable file types and image quality.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Brand consistency",
+                "description": "Applies logos, colours and fonts correctly.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Preparing print and social media assets",
+                "description": "Prepares files correctly for printers and online platforms.",
+                "weight": 20,
+                "is_critical": 1
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Layout and composition",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does white space (empty space) do in a design?",
+                "options": [
+                    {
+                        "text": "It wastes space and should always be filled with more text",
+                        "correct": false
+                    },
+                    {
+                        "text": "It makes the design easier to read and look organised",
+                        "correct": true
+                    },
+                    {
+                        "text": "It makes the file size smaller every time the design is saved",
+                        "correct": false
+                    },
+                    {
+                        "text": "It is only needed on designs that will be printed on paper",
+                        "correct": false
+                    }
+                ],
+                "explanation": "White space gives the eye a rest and makes text and images easier to read and separate."
+            },
+            {
+                "competency": "Layout and composition",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A poster uses six fonts and eight colours, and the date is hard to find. What is the best fix?",
+                "options": [
+                    {
+                        "text": "Add a thick border so that the poster looks complete and neat",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make all the text the same size so that it looks balanced and fair",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make the date and title prominent and limit fonts and colours",
+                        "correct": true
+                    },
+                    {
+                        "text": "Add more images to fill the remaining empty space on it",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A clear hierarchy, with the key message largest and fewer fonts and colours, helps readers find information quickly."
+            },
+            {
+                "competency": "Colour and typography",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which combination is easiest to read for body text?",
+                "options": [
+                    {
+                        "text": "Dark navy text on a white background",
+                        "correct": true
+                    },
+                    {
+                        "text": "Light yellow text on a white background",
+                        "correct": false
+                    },
+                    {
+                        "text": "Light grey text on a white background",
+                        "correct": false
+                    },
+                    {
+                        "text": "Red text on a green background",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Strong contrast between text and background makes reading easier, including for people with weak eyesight."
+            },
+            {
+                "competency": "Colour and typography",
+                "section": "knowledge",
+                "type": "multiple",
+                "difficulty": "medium",
+                "text": "Which are good typography practices? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Use only one or two font families in a design",
+                        "correct": true
+                    },
+                    {
+                        "text": "Make the text large enough to read on a phone screen",
+                        "correct": true
+                    },
+                    {
+                        "text": "Write long paragraphs in all capital letters",
+                        "correct": false
+                    },
+                    {
+                        "text": "Use a decorative script font for all body text",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep alignment and line spacing consistent",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Few fonts, readable sizes and consistent alignment help readers. All capitals for long text and decorative fonts for body text reduce readability."
+            },
+            {
+                "competency": "Colour and typography",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which colour mode is normally used for designs viewed on screens, such as Instagram posts?",
+                "options": [
+                    {
+                        "text": "CMYK",
+                        "correct": false
+                    },
+                    {
+                        "text": "Grayscale only",
+                        "correct": false
+                    },
+                    {
+                        "text": "Pantone only",
+                        "correct": false
+                    },
+                    {
+                        "text": "RGB",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Screens create colour with light, so RGB is used. CMYK is the standard for professional printing."
+            },
+            {
+                "competency": "File formats and resolution",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "Which file format is best for a school logo that needs a transparent background on a website?",
+                "options": [
+                    {
+                        "text": "JPG",
+                        "correct": false
+                    },
+                    {
+                        "text": "DOCX",
+                        "correct": false
+                    },
+                    {
+                        "text": "PNG",
+                        "correct": true
+                    },
+                    {
+                        "text": "MP3",
+                        "correct": false
+                    }
+                ],
+                "explanation": "PNG supports transparency. JPG does not, so a logo would show a solid background."
+            },
+            {
+                "competency": "File formats and resolution",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is the main advantage of a vector file such as SVG or AI for a logo?",
+                "options": [
+                    {
+                        "text": "It always has the smallest possible file size of any format",
+                        "correct": false
+                    },
+                    {
+                        "text": "It can be enlarged to any size without becoming blurry",
+                        "correct": true
+                    },
+                    {
+                        "text": "It works only on social media sites and on websites, not print",
+                        "correct": false
+                    },
+                    {
+                        "text": "It automatically fixes spelling mistakes in the text of the logo",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Vector files are made of shapes and paths, so they can be scaled to any size without losing quality."
+            },
+            {
+                "competency": "File formats and resolution",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "A printer says the 300 by 200 pixel logo you saved from Facebook looks blurry on a large banner. Why?",
+                "options": [
+                    {
+                        "text": "It is too small, so it looks pixelated when enlarged",
+                        "correct": true
+                    },
+                    {
+                        "text": "The printer ink was the wrong colour for the large banner",
+                        "correct": false
+                    },
+                    {
+                        "text": "The logo should have been saved as a Word file instead",
+                        "correct": false
+                    },
+                    {
+                        "text": "Banners can only ever print logos that are in black and white",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A small raster image is stretched when enlarged, so it looks pixelated. Use a high-resolution or vector original."
+            },
+            {
+                "competency": "Brand consistency",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "What is a brand guide (or brand guidelines)?",
+                "options": [
+                    {
+                        "text": "A list of competitors and their prices in the market",
+                        "correct": false
+                    },
+                    {
+                        "text": "A schedule of social media posts for the month ahead",
+                        "correct": false
+                    },
+                    {
+                        "text": "A manual for learning to use design software",
+                        "correct": false
+                    },
+                    {
+                        "text": "A document with rules for logo, colours and fonts",
+                        "correct": true
+                    }
+                ],
+                "explanation": "A brand guide sets rules for using the logo, colours and fonts so the organisation looks consistent everywhere."
+            },
+            {
+                "competency": "Brand consistency",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A teacher asks you to stretch the school logo to fit a banner space and change its colours to match a slide. What should you do?",
+                "options": [
+                    {
+                        "text": "Stretch it, because the banner space is more important",
+                        "correct": false
+                    },
+                    {
+                        "text": "Keep its proportions and official colours, and change the layout",
+                        "correct": true
+                    },
+                    {
+                        "text": "Recolour it to match the colours of each new design",
+                        "correct": false
+                    },
+                    {
+                        "text": "Crop the edges of the logo so that it fits the space",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Never stretch or recolour a logo. Keep its proportions and official colours, and adjust the layout around it."
+            },
+            {
+                "competency": "Preparing print and social media assets",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You designed an A4 flyer for printing. What should you send the printer for best results?",
+                "options": [
+                    {
+                        "text": "A screenshot of the design from your phone",
+                        "correct": false
+                    },
+                    {
+                        "text": "A JPG that was compressed by sending it on WhatsApp",
+                        "correct": false
+                    },
+                    {
+                        "text": "A print-ready PDF with sharp images, CMYK colour and bleed",
+                        "correct": true
+                    },
+                    {
+                        "text": "A low-resolution PowerPoint file saved in RGB colours",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Print-ready files use high-resolution images, CMYK colour and bleed, which is extra design beyond the cut line so no white edges appear."
+            },
+            {
+                "competency": "Preparing print and social media assets",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You must use one design for an Instagram post and a Facebook cover photo. What is the best approach?",
+                "options": [
+                    {
+                        "text": "Resize for each platform and keep key text away from the edges",
+                        "correct": true
+                    },
+                    {
+                        "text": "Upload the same image to both and let the platform fix it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Stretch the image until it fills the whole space on each one",
+                        "correct": false
+                    },
+                    {
+                        "text": "Make the file bigger so the platform fits it automatically",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Each platform has its own recommended sizes. Resize or crop each version and keep important text in the safe area, away from the edges."
+            }
+        ]
+    },
+    {
+        "skill_slug": "account-management",
+        "skill_name": "Account Management",
+        "description": "Checks how well a candidate manages existing school customers: building relationships, renewals, upselling, handling escalations and planning account work.",
+        "competencies": [
+            {
+                "name": "Relationship building",
+                "description": "Builds trust with school leaders and staff.",
+                "weight": 20,
+                "is_critical": 0
+            },
+            {
+                "name": "Renewals and retention",
+                "description": "Keeps customers by showing value and handling renewal concerns.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Upselling and adding value",
+                "description": "Recommends extra products only when they solve a real need.",
+                "weight": 15,
+                "is_critical": 0
+            },
+            {
+                "name": "Handling escalations",
+                "description": "Responds calmly and honestly to complaints and problems.",
+                "weight": 25,
+                "is_critical": 1
+            },
+            {
+                "name": "Account planning and tracking",
+                "description": "Prioritises accounts and keeps good records.",
+                "weight": 15,
+                "is_critical": 0
+            }
+        ],
+        "questions": [
+            {
+                "competency": "Relationship building",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What is the best way to build long-term trust with a school customer?",
+                "options": [
+                    {
+                        "text": "Contact them only when it is time to renew",
+                        "correct": false
+                    },
+                    {
+                        "text": "Check in often, keep promises and reply quickly",
+                        "correct": true
+                    },
+                    {
+                        "text": "Give them big discounts even when they do not ask",
+                        "correct": false
+                    },
+                    {
+                        "text": "Avoid talking about problems so that they stay happy",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Trust grows when you stay in regular contact, keep promises and respond quickly, not only when you want something."
+            },
+            {
+                "competency": "Relationship building",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "The head teacher of one of your customer schools has been replaced by a new head. What should you do?",
+                "options": [
+                    {
+                        "text": "Wait until the renewal date to introduce yourself to them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Assume nothing will change and continue exactly as before",
+                        "correct": false
+                    },
+                    {
+                        "text": "Arrange an early meeting to learn the new head's goals",
+                        "correct": true
+                    },
+                    {
+                        "text": "Send the new head an invoice with the old terms attached",
+                        "correct": false
+                    }
+                ],
+                "explanation": "A new decision-maker may not know the product or your history. Meet early to learn their priorities and show the value."
+            },
+            {
+                "competency": "Renewals and retention",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "When should you begin renewal discussions with a school customer?",
+                "options": [
+                    {
+                        "text": "On the day the contract expires",
+                        "correct": false
+                    },
+                    {
+                        "text": "After the customer has stopped using the service",
+                        "correct": false
+                    },
+                    {
+                        "text": "Only when the customer asks about it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Two to three months before the renewal date",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Starting well before expiry gives time to review results, solve problems and handle budget approvals."
+            },
+            {
+                "competency": "Renewals and retention",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A school says it may not renew because few teachers use the system. What is the best response?",
+                "options": [
+                    {
+                        "text": "Ask why usage is low and offer training and support",
+                        "correct": true
+                    },
+                    {
+                        "text": "Offer a big discount to them straight away to keep them",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell them it is their own staff's fault for not learning it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Accept their decision and close the account quietly without asking",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Find out why usage is low. Training, support and data on benefits may fix the problem. A discount does not solve low usage."
+            },
+            {
+                "competency": "Renewals and retention",
+                "section": "situational",
+                "type": "multiple",
+                "difficulty": "hard",
+                "text": "A school hesitates to renew because of budget pressure. Which actions are appropriate? Select all that apply.",
+                "options": [
+                    {
+                        "text": "Show the value the school received, using real data",
+                        "correct": true
+                    },
+                    {
+                        "text": "Discuss options within company policy, such as a smaller package or payment plan",
+                        "correct": true
+                    },
+                    {
+                        "text": "Warn that their data will be deleted immediately if they do not renew",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask who is involved in the budget decision and what they need",
+                        "correct": true
+                    },
+                    {
+                        "text": "Promise new features that have not been approved",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Showing value with data, offering options within company policy and understanding who decides are professional steps. Threats and unapproved promises damage trust."
+            },
+            {
+                "competency": "Upselling and adding value",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which is a good example of upselling to a school?",
+                "options": [
+                    {
+                        "text": "Pushing the most expensive package to every school",
+                        "correct": false
+                    },
+                    {
+                        "text": "Adding features the school never asked for to the invoice",
+                        "correct": false
+                    },
+                    {
+                        "text": "Suggesting an extra module for a problem the school mentioned",
+                        "correct": true
+                    },
+                    {
+                        "text": "Telling the school that competitors are worse",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Good upselling matches an extra product to a need the customer has already mentioned."
+            },
+            {
+                "competency": "Upselling and adding value",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A bursar tells you that parents often forget fee deadlines. Your company has an SMS reminder module. What should you do?",
+                "options": [
+                    {
+                        "text": "Wait until the bursar asks you directly about the reminder module",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain how reminders solve this problem and offer a demo",
+                        "correct": true
+                    },
+                    {
+                        "text": "Offer every available module at the same time in one big package",
+                        "correct": false
+                    },
+                    {
+                        "text": "Quote the price only and say nothing about the benefits to them",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Link the extra module to the school's own problem and show how it helps, for example with a short demo."
+            },
+            {
+                "competency": "Handling escalations",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "easy",
+                "text": "What does escalating a customer issue mean?",
+                "options": [
+                    {
+                        "text": "Passing it to a senior person, keeping the customer informed",
+                        "correct": true
+                    },
+                    {
+                        "text": "Ignoring the issue until the customer stops complaining about it",
+                        "correct": false
+                    },
+                    {
+                        "text": "Telling the customer to go and contact somebody else in the company",
+                        "correct": false
+                    },
+                    {
+                        "text": "Closing the ticket without checking whether the problem is fixed",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Escalation means passing the problem to someone with more authority or specialist skill while keeping the customer informed."
+            },
+            {
+                "competency": "Handling escalations",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "A bursar phones, angry that reports are not working before a board meeting. What is the best first response?",
+                "options": [
+                    {
+                        "text": "Say that this is not really the job of your department",
+                        "correct": false
+                    },
+                    {
+                        "text": "Ask the bursar to call back again tomorrow when calm",
+                        "correct": false
+                    },
+                    {
+                        "text": "Explain that other schools are not having this problem",
+                        "correct": false
+                    },
+                    {
+                        "text": "Listen, then involve technical staff and give a time",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Listen, show you understand the urgency, confirm details, give a clear time and involve the technical team. Blaming or delaying makes it worse."
+            },
+            {
+                "competency": "Handling escalations",
+                "section": "situational",
+                "type": "single",
+                "difficulty": "hard",
+                "text": "You promised a school that a problem would be fixed by Friday, but the technical team says it will take until Monday. What should you do?",
+                "options": [
+                    {
+                        "text": "Say nothing and hope that it is fixed on time after all",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell them on Friday afternoon when the time has passed",
+                        "correct": false
+                    },
+                    {
+                        "text": "Tell the school before Friday, give a new date and a workaround",
+                        "correct": true
+                    },
+                    {
+                        "text": "Blame the technical team for the delay in your message",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Tell the customer before the deadline, explain honestly, give a new date and offer a workaround if there is one."
+            },
+            {
+                "competency": "Account planning and tracking",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "Which information belongs in your account notes for a school customer?",
+                "options": [
+                    {
+                        "text": "The login passwords of the school staff, bursar and head teacher",
+                        "correct": false
+                    },
+                    {
+                        "text": "Key contacts, renewal date, past issues and actions",
+                        "correct": true
+                    },
+                    {
+                        "text": "Personal gossip about the school staff members and their families",
+                        "correct": false
+                    },
+                    {
+                        "text": "Your own opinion of the school's teachers and how they teach",
+                        "correct": false
+                    }
+                ],
+                "explanation": "Good notes help colleagues continue the relationship: key contacts, renewal date, past issues and agreed actions. Passwords should never be stored."
+            },
+            {
+                "competency": "Account planning and tracking",
+                "section": "knowledge",
+                "type": "single",
+                "difficulty": "medium",
+                "text": "You manage 25 school accounts, some large, some small and some at risk. What is the best way to prioritise your time?",
+                "options": [
+                    {
+                        "text": "Spend exactly equal time on every school account",
+                        "correct": false
+                    },
+                    {
+                        "text": "Help the school that complains most loudly first",
+                        "correct": false
+                    },
+                    {
+                        "text": "Visit only the newest customers to help them settle",
+                        "correct": false
+                    },
+                    {
+                        "text": "Give more time to large, at-risk or soon-to-renew accounts",
+                        "correct": true
+                    }
+                ],
+                "explanation": "Focus on accounts that are large, at risk or close to renewal, while still keeping contact with all accounts."
+            }
+        ]
+    }
+]
