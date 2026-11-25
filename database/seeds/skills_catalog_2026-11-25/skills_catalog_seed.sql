@@ -1,6 +1,6 @@
 -- Academy skills catalogue + assessments, generated 2026-11-25. Idempotent: skills, competencies and assessments that already exist are left alone.
 -- Level model: every assessment is a Professional-level (id 4) assessment. A score at or above the pass mark awards Professional;
--- 50% up to the pass mark awards the next lower level (Practitioner). Price is the existing Sales assessment price (TZS 10,000).
+-- 50% up to the pass mark awards the next lower level (Practitioner). Price is TZS 5,000 per assessment.
 BEGIN;
 INSERT INTO academy.skill_categories (name, slug, sort_order, status, created_at, updated_at) SELECT 'Human Resources', 'human-resources', 11, 1, now(), now() WHERE NOT EXISTS (SELECT 1 FROM academy.skill_categories WHERE slug = 'human-resources');
 INSERT INTO academy.skill_categories (name, slug, sort_order, status, created_at, updated_at) SELECT 'Operations & Support Services', 'operations-support', 12, 1, now(), now() WHERE NOT EXISTS (SELECT 1 FROM academy.skill_categories WHERE slug = 'operations-support');
@@ -133,7 +133,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Listen calmly, do not promise secrecy, and report to the head teacher using school procedure', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Wait a few weeks to see whether more marks appear on her before you decide to tell anyone at school', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask other pupils in her class whether her story is true before you take any action at all about it', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -221,7 +221,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Use a fair method such as a name list so every pupil gets a chance to answer', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Continue, because those pupils always give correct answers', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Stop asking questions so no one feels left out', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -309,7 +309,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Keep the plan and read a second sample letter', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Change the objective to ''pupils will listen to a letter''', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Keep the plan and give a dictation exercise for homework', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -397,7 +397,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Tell the parent to hire a private tutor for writing lessons after school each day', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Say that the child is behind and must start long writing tasks from next week', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Explain that play builds reading and writing skills, and show her child''s work', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -485,7 +485,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Wait until the next school level to see if things improve', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Move the learner to the back of the class', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Tell the head teacher and parents, and ask for a health or special education assessment', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -573,7 +573,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Call her classmates to comfort her', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Demand that she explains right now, because you have other learners waiting to see you', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Stay calm and patient, give her time, and tell her you are there when she is ready', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -662,7 +662,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Reteach with concrete or drawn models, then check understanding with a short quiz', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Repeat the same lesson in the same way at a louder pace', 0, 0, '', 0, 4);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give targeted practice on the weak steps and return marked work with feedback', 1, 0, '', 0, 5);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -751,7 +751,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Use a simple rubric with clear criteria that pupils know in advance', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give higher marks to pupils who sound most like a native speaker', 0, 0, '', 0, 4);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give feedback on both fluency and accuracy', 1, 0, '', 0, 5);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -840,7 +840,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Kutoa alama za juu kwa wanaozungumza kwa sauti kubwa zaidi', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Kuwaangalia wanafunzi wakati wa majadiliano ya vikundi na kuandika vielelezo', 1, 0, '', 0, 4);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Kutumia mtihani wa kuandika sarufi pekee', 0, 0, '', 0, 5);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -929,7 +929,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Use one plant for each condition and compare them', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give some plants more water to save time', 0, 0, '', 0, 4);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Change only one variable, the amount of fertiliser', 1, 0, '', 0, 5);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1018,7 +1018,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Pupils role-play input, processing, storage and output as a human computer', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Cancel ICT lessons until new computers are bought', 0, 0, '', 0, 4);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Pupils write step-by-step instructions or a flowchart for a daily task', 1, 0, '', 0, 5);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1106,7 +1106,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Pause, remind pupils of the ground rules, and ask them to support their views with evidence', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Stop all discussion of sensitive topics such as the Union for the rest of the year', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Let the argument continue so that pupils learn to defend themselves without help', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1194,7 +1194,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Reimburse TZS 38,000 and keep the vouchers for later', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Reimburse TZS 62,000 against the approved vouchers', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Add TZS 100,000 more so the box holds TZS 138,000', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1283,7 +1283,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'TZS 300,000', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'TZS 140,000', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'TZS 460,000', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1372,7 +1372,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Keep her on payroll for three more months', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Pay final salary and entitlements per contract with statutory deductions, then stop her pay', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Pay her final salary in full without any statutory deductions, because she is leaving the school', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1461,7 +1461,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'TZS 3,500,000 is available, so the order can go ahead', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Only TZS 500,000 is available, so the order needs extra approval', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'The order can go ahead, since only the money actually spent counts against the budget', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1549,7 +1549,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Wait until the end of the year to check the difference', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Match each receipt to a credit and investigate every unmatched item before adjusting', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Add TZS 300,000 as a cash payment to balance it', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1637,7 +1637,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Allow it if the teacher promises to inform the storekeeper about the items later', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Issue items only against an approved requisition and record every issue', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Let the cleaners hold the store keys for the day', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1726,7 +1726,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give the address but not the salary, because the address is public information and the salary is private', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Politely refuse, take his name and number, and pass the request to your manager or HR', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give both, because a government office has the right to know', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1815,7 +1815,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Verify with the certificate, get approval, and correct the record following procedure with a note of the change', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Change the register quietly so it matches the certificate', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Leave it as it is, because the admission register was filled in first and is regarded as the official record of the school', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1904,7 +1904,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Record the incident only if the parent complains', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Tell the parent only if the pupil asks you to', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Record the incident, the action taken and the time in the incident book, and inform the parent', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -1993,7 +1993,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Count the number of shelves and multiply by the books per shelf', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Compare the books on the shelves with the accession register and record missing items', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask pupils and teachers which books they think are missing and write down the titles they mention', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2082,7 +2082,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'The National Examinations Council of Tanzania (NECTA)', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'The Commission for Mediation and Arbitration (CMA)', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'The Tanzania Bureau of Standards (TBS)', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2171,7 +2171,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Introduce him only to the head of the school', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give the contract and job description, explain key policies, and introduce him to the team and a mentor', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give him a desk and expect him to learn the job on his own by watching how the other employees work each day', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2260,7 +2260,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'HTTP status 500 means the user typed a wrong URL', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'HTTP status 200 means the request failed', 0, 0, '', 0, 4);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'JSON is a common format for sending data in APIs', 1, 0, '', 0, 5);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2348,7 +2348,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Make the text italic so it stands out', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Reduce the font size so it looks neater', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Use an even lighter grey so it looks softer', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2436,7 +2436,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Verify him first, for example by calling the number registered for the bursar', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask him to tell you his old password as proof of who he is', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Send the new password to any phone number that he gives you', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2524,7 +2524,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Delete the older backups first to save space', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Move the backup file to a folder on the same disk', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Test a restore on a separate server regularly to confirm the backup works', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2612,7 +2612,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Save the records on the desktop so that they are easy to reach', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give each user their own account, lock the screen when away, and limit access', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Email the records to personal addresses as a backup copy', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2700,7 +2700,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Say that the question is not part of your job', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Be honest, say you will find out, give a time, and then follow up', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ignore the question and talk about something else', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2789,7 +2789,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Send the report anyway and say that the difference is small', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Change the formula so that the total matches the accounting system', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Round both totals to the nearest million so the gap disappears', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2877,7 +2877,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give the main finding first, one or two clear charts, then an action', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Explain the formulas you used before showing any results', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Use technical statistical terms to show your expertise', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -2965,7 +2965,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'You should spend more money on the same advert', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Nothing, because views and enquiries are not related', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'People saw it, but the message or call to action may be weak', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3053,7 +3053,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Blame the teacher who gave you the wrong date to protect yourself', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Post a clear correction, apologise briefly and inform parents', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Leave it, because parents will find the right date themselves', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3141,7 +3141,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Find and check the source, or remove the number', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Change it to 95% so it sounds more recent', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Keep it, but add the word "maybe" before the number', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3229,7 +3229,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Upload the same image to both and let the platform fix it', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Stretch the image until it fills the whole space on each one', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Make the file bigger so the platform fits it automatically', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3317,7 +3317,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Help the school that complains most loudly first', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Visit only the newest customers to help them settle', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Give more time to large, at-risk or soon-to-renew accounts', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3406,7 +3406,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask a colleague to say that you are not available.', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Call on Friday as promised, explain the progress, and agree on a new time.', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Send the answer later without any message on Friday.', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3494,7 +3494,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Explain politely what is missing, show the steps to add the invoices, and offer to help.', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Say it is the school''s fault and end the conversation.', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Enter the invoices yourself without telling the school.', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3582,7 +3582,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask members to ignore it but leave the message visible.', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Delete it for everyone if possible, inform your supervisor at once, and apologise briefly.', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Leave the group without telling anyone.', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3670,7 +3670,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Remove the headings to make it look continuous.', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Use clear headings, numbered sections, and short paragraphs.', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Move all the findings to the end of the report.', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3758,7 +3758,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Start another project immediately without any review.', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Stop communicating with the school.', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Hold a lessons-learned review, hand over documents, and get formal sign-off.', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3846,7 +3846,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Support the teacher that you like more.', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Move one of them to another block without discussion.', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Meet them separately and then together, focus on the issues, and agree on solutions.', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -3934,7 +3934,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Stop holding meetings and send messages instead.', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask the quiet members by name for their ideas and set time limits for speakers.', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Tell the quiet members they must speak more or leave.', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -4022,7 +4022,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Hide the results from the board until the end of the year.', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Blame the staff for not working hard enough.', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Identify the cause, revise the targets and priorities, and tell stakeholders.', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -4111,7 +4111,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Do nothing, since poverty and tiredness are not a child protection matter', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Visit the home alone and confront the parents about how they treat the child', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Record what you see and tell the designated safeguarding person', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -4199,7 +4199,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Rub oil on the arm and massage it gently to ease the pain', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask him to move the arm to test it', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Keep the arm still and supported as found, then take him for medical care', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -4287,7 +4287,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'The left side', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Either side, depending on traffic', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'The side with fewer potholes', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -4375,7 +4375,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Spray with air freshener so that the surface smells clean and fresh', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Clean with detergent and water first, then sanitise', 1, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Sweep with a dry broom and then leave it until the next day', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -4463,7 +4463,7 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Pay half now and forget the check, since the work looks fine from outside', 0, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Ask the pupils whether the roof looks good and pay if they are satisfied', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Inspect the work against the written scope and quotation, then sign off', 1, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 DO $seed$
 DECLARE v_skill int; v_assess int; v_sec_k int; v_sec_s int; v_q int; v_c int; v_comp jsonb := '{}'::jsonb;
@@ -4551,6 +4551,6 @@ BEGIN
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Use a fume cupboard or ventilated area, or a teacher demonstration with small amounts', 1, 0, '', 0, 2);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Let each pupil use a larger amount to see the result more clearly', 0, 0, '', 0, 3);
   INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, 'Skip the risk assessment, since the teacher has done this experiment many times before', 0, 0, '', 0, 4);
-  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 10000, 'TZS', 1, now());
+  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, 4, v_assess, 5000, 'TZS', 1, now());
 END $seed$;
 COMMIT;

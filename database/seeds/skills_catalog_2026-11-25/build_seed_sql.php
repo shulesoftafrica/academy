@@ -19,7 +19,7 @@ $LEVEL = 4; // academy.skill_levels id 4 = Professional (rank 3); Practitioner (
 $out = [];
 $out[] = "-- Academy skills catalogue + assessments, generated " . date('Y-m-d') . ". Idempotent: skills, competencies and assessments that already exist are left alone.";
 $out[] = "-- Level model: every assessment is a Professional-level (id 4) assessment. A score at or above the pass mark awards Professional;";
-$out[] = "-- 50% up to the pass mark awards the next lower level (Practitioner). Price is the existing Sales assessment price (TZS 10,000).";
+$out[] = "-- 50% up to the pass mark awards the next lower level (Practitioner). Price is TZS 5,000 per assessment.";
 $out[] = "BEGIN;";
 
 foreach ($spec['new_categories'] as $c) {
@@ -63,7 +63,7 @@ foreach ($assess as $slug => $a) {
             $b[] = "  INSERT INTO academy.assessment_question_options (question_id, option_text, is_correct, score, match_key, correct_order, sort_order) VALUES (v_q, " . q($o['text']) . ", " . (!empty($o['correct']) ? 1 : 0) . ", 0, '', 0, " . ($j + 1) . ");";
         }
     }
-    $b[] = "  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, $LEVEL, v_assess, 10000, 'TZS', 1, now());";
+    $b[] = "  INSERT INTO academy.assessment_products (skill_id, skill_level_id, assessment_id, price, currency, active, created_at) VALUES (v_skill, $LEVEL, v_assess, 5000, 'TZS', 1, now());";
     $b[] = "END \$seed\$;";
     $out[] = implode("\n", $b);
 }
